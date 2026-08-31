@@ -76,6 +76,15 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   alternates: {
     canonical: SITE_URL,
   },
@@ -111,7 +120,7 @@ export default function RootLayout({
     '@type': 'Organization',
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.ico`,
+    logo: `${SITE_URL}/icon.png`,
     description: 'Clean My Speaker provides free browser-based acoustic utilities for mobile devices.',
     sameAs: ['https://github.com/michaelasmith211/Clean-My-Speaker'],
   };

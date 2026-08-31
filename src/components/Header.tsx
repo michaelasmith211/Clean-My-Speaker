@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export const Header: React.FC = () => {
@@ -29,11 +30,14 @@ export const Header: React.FC = () => {
             className="flex items-center gap-2 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-lg p-1"
             aria-label="Clean My Speaker - Home"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center text-white shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
-              <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5-1.23L6.5 6H2v12h4.5l5 4V2zm2 7.29v5.36c1.3-.64 2.2-1.97 2.2-3.51s-.9-2.87-2.2-1.85z" />
-              </svg>
-            </div>
+            <Image
+              src="/icon.png"
+              alt="Clean My Speaker Icon"
+              width={36}
+              height={36}
+              priority
+              className="rounded-xl shadow-md shadow-sky-500/25 group-hover:scale-105 transition-transform shrink-0"
+            />
             <div className="flex flex-col">
               <span className="font-bold text-lg tracking-tight text-white group-hover:text-sky-300 transition-colors">
                 Clean My Speaker

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Footer: React.FC = () => {
   return (
@@ -8,10 +9,14 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center text-slate-950 font-black">
-                🔊
-              </div>
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/icon.png"
+                alt="Clean My Speaker Icon"
+                width={32}
+                height={32}
+                className="rounded-lg shadow shrink-0"
+              />
               <span className="font-bold text-white text-lg tracking-tight">Clean My Speaker</span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
