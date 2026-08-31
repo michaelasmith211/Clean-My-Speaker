@@ -9,8 +9,29 @@ import { FAQItem } from '@/lib/types';
 const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
   ssr: false,
   loading: () => (
-    <div className="w-full max-w-xl mx-auto h-96 rounded-3xl bg-slate-900/80 border border-slate-800 flex items-center justify-center text-slate-400">
-      <span className="animate-pulse">Loading Speaker Cleaner...</span>
+    <div className="w-full max-w-xl mx-auto rounded-3xl bg-slate-900/90 border border-slate-800/80 p-6 sm:p-8 shadow-2xl backdrop-blur-xl animate-pulse">
+      <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div className="h-4 w-28 bg-slate-800 rounded-full" />
+        <div className="h-6 w-24 bg-slate-800 rounded-full" />
+      </div>
+      <div className="grid grid-cols-3 gap-2 my-6">
+        <div className="h-10 bg-slate-800 rounded-xl" />
+        <div className="h-10 bg-slate-800 rounded-xl" />
+        <div className="h-10 bg-slate-800 rounded-xl" />
+      </div>
+      <div className="flex flex-col items-center justify-center my-6">
+        <div className="w-44 h-44 sm:w-52 sm:h-52 rounded-full bg-slate-800/80 flex items-center justify-center">
+          <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-slate-900 flex flex-col items-center justify-center">
+            <span className="text-3xl opacity-50 mb-1">🔊</span>
+            <span className="text-xs font-bold text-slate-400">CLEAN MY SPEAKER</span>
+          </div>
+        </div>
+      </div>
+      <div className="h-3 w-full bg-slate-800 rounded-full my-4" />
+      <div className="flex justify-between text-xs text-slate-500 pt-2 border-t border-slate-800/80">
+        <span>💡 Position speaker face-down</span>
+        <span>💧 Gently tap on soft towel</span>
+      </div>
     </div>
   ),
 });

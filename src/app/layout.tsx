@@ -143,6 +143,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth bg-slate-950 text-slate-100">
       <head>
+        <link rel="dns-prefetch" href="https://cleanmyspeaker.net" />
+        <link rel="preconnect" href="https://cleanmyspeaker.net" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
