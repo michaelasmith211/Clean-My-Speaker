@@ -79,7 +79,6 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/icon.png', sizes: '48x48', type: 'image/png' },
-      { url: '/favicon.ico', sizes: 'any' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
@@ -152,9 +151,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth bg-slate-950 text-slate-100">
       <head>
-        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
-        <link rel="icon" type="image/png" href="/icon.png?v=2" sizes="48x48" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" sizes="180x180" />
+        <link rel="icon" type="image/png" href="/icon.png" />
+        <link rel="shortcut icon" type="image/png" href="/icon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <link rel="dns-prefetch" href="https://cleanmyspeaker.net" />
         <link rel="preconnect" href="https://cleanmyspeaker.net" crossOrigin="anonymous" />
         <script
