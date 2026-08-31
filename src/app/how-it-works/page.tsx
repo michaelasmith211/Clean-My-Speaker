@@ -158,12 +158,12 @@ export default function HowItWorksPage() {
         <RelatedGuides currentPath="/how-it-works" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             ← Back to Clean My Speaker Tool
           </Link>
           <Link
             href="/remove-water-from-phone-speaker"
-            className="text-sky-400 hover:underline text-sm font-semibold"
+            className="text-sky-300 underline font-semibold text-sm hover:text-sky-200"
           >
             Emergency Water Removal Guide →
           </Link>

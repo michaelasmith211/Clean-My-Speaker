@@ -102,10 +102,10 @@ export default function AndroidSpeakerCleanerPage() {
         <RelatedGuides currentPath="/android-speaker-cleaner" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             ← Home Speaker Cleaner
           </Link>
-          <Link href="/speaker-cleaning-guide" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/speaker-cleaning-guide" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             Physical Dust & Dirt Cleaning Guide →
           </Link>
         </footer>

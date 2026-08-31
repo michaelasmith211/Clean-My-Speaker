@@ -129,10 +129,10 @@ export default function FAQPage() {
         <RelatedGuides currentPath="/faq" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             ← Home
           </Link>
-          <Link href="/how-it-works" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/how-it-works" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             Learn How Sound Waves Work →
           </Link>
         </footer>

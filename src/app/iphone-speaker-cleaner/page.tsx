@@ -116,10 +116,10 @@ export default function IPhoneSpeakerCleanerPage() {
         <RelatedGuides currentPath="/iphone-speaker-cleaner" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <Link href="/remove-water-from-phone-speaker" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/remove-water-from-phone-speaker" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             ← Complete Water Removal Guide
           </Link>
-          <Link href="/speaker-test" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/speaker-test" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             Check Left/Right Stereo Balance →
           </Link>
         </footer>

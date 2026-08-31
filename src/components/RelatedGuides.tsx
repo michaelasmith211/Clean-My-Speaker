@@ -86,7 +86,7 @@ export const RelatedGuides: React.FC<RelatedGuidesProps> = ({ currentPath }) => 
             Related Speaker Resources & Tools
           </h2>
         </div>
-        <Link href="/faq" className="text-xs font-semibold text-sky-400 hover:text-sky-300 hover:underline">
+        <Link href="/faq" className="text-xs font-semibold text-sky-300 underline hover:text-sky-200">
           View All Resources →
         </Link>
       </div>

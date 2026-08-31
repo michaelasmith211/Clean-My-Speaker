@@ -71,10 +71,10 @@ export default function ContactPage() {
         <RelatedGuides currentPath="/contact" />
 
         <footer className="pt-6 border-t border-slate-800 flex justify-between items-center">
-          <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             ← Return to Clean My Speaker Tool
           </Link>
-          <Link href="/privacy-policy" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/privacy-policy" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             Privacy Policy →
           </Link>
         </footer>

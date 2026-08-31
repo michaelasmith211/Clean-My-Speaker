@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
         <RelatedGuides currentPath="/privacy-policy" />
 
         <footer className="pt-6 border-t border-slate-800">
-          <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             ← Return to Clean My Speaker Tool
           </Link>
         </footer>

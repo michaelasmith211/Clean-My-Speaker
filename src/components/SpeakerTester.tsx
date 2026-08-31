@@ -276,7 +276,7 @@ export const SpeakerTester: React.FC = () => {
             className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-400"
             aria-label="Custom test frequency"
           />
-          <div className="flex justify-between text-[10px] text-slate-500">
+          <div className="flex justify-between text-xs text-slate-300 font-medium mt-1">
             <span>40 Hz (Deep Bass)</span>
             <span>1000 Hz (Mid)</span>
             <span>4000 Hz (High Pitch)</span>

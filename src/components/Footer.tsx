@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
               Clean My Speaker is a lightweight, browser-based audio utility providing specially calibrated sound wave vibrations to help loosen trapped water, droplets, and surface moisture from mobile phone speaker grilles.
             </p>
-            <p className="text-[11px] text-slate-500">
+            <p className="text-xs text-slate-400">
               100% Client-Side Processing • No microphone access required • Zero tracking cookies
             </p>
           </div>
@@ -27,22 +27,22 @@ export const Footer: React.FC = () => {
             <h3 className="font-semibold text-white text-xs uppercase tracking-wider">Audio Tools</h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/" className="hover:text-sky-400 transition-colors">
+                  <Link href="/" className="hover:text-sky-300 transition-colors">
                   Clean My Speaker (Home)
                 </Link>
               </li>
               <li>
-                <Link href="/speaker-test" className="hover:text-sky-400 transition-colors">
+                <Link href="/speaker-test" className="hover:text-sky-300 transition-colors">
                   Online Speaker Test
                 </Link>
               </li>
               <li>
-                <Link href="/how-it-works" className="hover:text-sky-400 transition-colors">
+                <Link href="/how-it-works" className="hover:text-sky-300 transition-colors">
                   How the Sound Waves Work
                 </Link>
               </li>
               <li>
-                <Link href="/#tool" className="hover:text-sky-400 transition-colors">
+                <Link href="/#tool" className="hover:text-sky-300 transition-colors">
                   Water Eject Frequency (165Hz)
                 </Link>
               </li>
@@ -54,22 +54,22 @@ export const Footer: React.FC = () => {
             <h3 className="font-semibold text-white text-xs uppercase tracking-wider">Device Guides</h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/remove-water-from-phone-speaker" className="hover:text-sky-400 transition-colors">
+                <Link href="/remove-water-from-phone-speaker" className="hover:text-sky-300 transition-colors">
                   Remove Water From Speaker
                 </Link>
               </li>
               <li>
-                <Link href="/iphone-speaker-cleaner" className="hover:text-sky-400 transition-colors">
+                <Link href="/iphone-speaker-cleaner" className="hover:text-sky-300 transition-colors">
                   iPhone Speaker Cleaner
                 </Link>
               </li>
               <li>
-                <Link href="/android-speaker-cleaner" className="hover:text-sky-400 transition-colors">
+                <Link href="/android-speaker-cleaner" className="hover:text-sky-300 transition-colors">
                   Android Speaker Cleaner
                 </Link>
               </li>
               <li>
-                <Link href="/speaker-cleaning-guide" className="hover:text-sky-400 transition-colors">
+                <Link href="/speaker-cleaning-guide" className="hover:text-sky-300 transition-colors">
                   Physical Cleaning & Dust Guide
                 </Link>
               </li>
@@ -81,22 +81,22 @@ export const Footer: React.FC = () => {
             <h3 className="font-semibold text-white text-xs uppercase tracking-wider">Information</h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/faq" className="hover:text-sky-400 transition-colors">
+                <Link href="/faq" className="hover:text-sky-300 transition-colors">
                   Frequently Asked Questions
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-sky-400 transition-colors">
+                <Link href="/about" className="hover:text-sky-300 transition-colors">
                   About Clean My Speaker
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-sky-400 transition-colors">
+                <Link href="/contact" className="hover:text-sky-300 transition-colors">
                   Contact & Support
                 </Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="hover:text-sky-400 transition-colors">
+                <Link href="/privacy-policy" className="hover:text-sky-300 transition-colors">
                   Privacy Policy
                 </Link>
               </li>
@@ -104,9 +104,9 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <p>© 2026 Clean My Speaker (cleanmyspeaker.net). All rights reserved.</p>
-          <p className="text-center md:text-right text-[11px] text-slate-600">
+          <p className="text-center md:text-right text-xs text-slate-400">
             Disclaimer: Clean My Speaker is an independent web tool and is not affiliated with Apple Inc., Google LLC, or Samsung. Sound vibrations cannot reverse permanent internal liquid damage.
           </p>
         </div>

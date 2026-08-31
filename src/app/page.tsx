@@ -28,7 +28,7 @@ const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
         </div>
       </div>
       <div className="h-3 w-full bg-slate-800 rounded-full my-4" />
-      <div className="flex justify-between text-xs text-slate-500 pt-2 border-t border-slate-800/80">
+      <div className="flex justify-between text-xs text-slate-300 pt-2 border-t border-slate-800/80">
         <span>💡 Position speaker face-down</span>
         <span>💧 Gently tap on soft towel</span>
       </div>
@@ -198,9 +198,9 @@ export default function HomePage() {
               <strong className="text-white">Surface Tension Disruption:</strong> Trapped liquid beads that cling to the hydrophobic mesh are physically pushed out through the speaker holes, where you can easily dab them away with a soft towel.
             </li>
           </ul>
-          <p className="text-xs text-slate-400 mt-2">
+          <p className="text-xs text-slate-300 mt-2">
             Want to learn more about the audio physics behind this process? Read our detailed{' '}
-            <Link href="/how-it-works" className="text-sky-400 hover:underline">
+            <Link href="/how-it-works" className="text-sky-300 underline font-semibold hover:text-sky-200">
               How It Works guide
             </Link>
             .
@@ -240,9 +240,9 @@ export default function HomePage() {
             <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
               <span className="text-sky-400 font-mono font-bold text-xs uppercase tracking-wider">Step 4</span>
               <h3 className="text-lg font-bold text-white">Trigger Clean My Speaker</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 Tap <strong>CLEAN MY SPEAKER</strong> above. Let the 30-second or 45-second cycle run completely. Wipe away droplets as they emerge, then verify audio clarity with our{' '}
-                <Link href="/speaker-test" className="text-sky-400 hover:underline">
+                <Link href="/speaker-test" className="text-sky-300 underline font-semibold hover:text-sky-200">
                   Speaker Test
                 </Link>
                 .
@@ -283,9 +283,9 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-slate-300">
             For detailed guidance on water immersion, read our complete guide:{' '}
-            <Link href="/remove-water-from-phone-speaker" className="text-sky-400 hover:underline">
+            <Link href="/remove-water-from-phone-speaker" className="text-sky-300 underline font-semibold hover:text-sky-200">
               How to Remove Water From a Phone Speaker
             </Link>
             .
@@ -300,9 +300,9 @@ export default function HomePage() {
             <p className="text-sm text-slate-400 leading-relaxed">
               Modern iPhones (from iPhone 7 through iPhone 15 and 16 Pro) feature stereo audio with an earpiece receiver speaker and bottom speaker grilles. While newer models have IP68 water resistance, water frequently muffles the microphone and speaker cavities after swimming, showering, or rain.
             </p>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-300">
               Clean My Speaker works instantly in Mobile Safari without downloading shortcuts or third-party apps.{' '}
-              <Link href="/iphone-speaker-cleaner" className="text-sky-400 font-semibold hover:underline">
+              <Link href="/iphone-speaker-cleaner" className="text-sky-300 font-semibold underline hover:text-sky-200">
                 View iPhone Speaker Cleaner Guide →
               </Link>
             </p>
@@ -311,12 +311,12 @@ export default function HomePage() {
           <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-3">
             <div className="text-2xl">🤖</div>
             <h2 className="text-xl font-bold text-white">Clean My Speaker for Android</h2>
-            <p className="text-sm text-slate-400 leading-relaxed">
+            <p className="text-sm text-slate-300 leading-relaxed">
               From Samsung Galaxy S24 and Pixel 8 to Xiaomi and OnePlus devices, Android hardware designs feature varied speaker grille sizes and acoustic chamber dimensions. Our multi-frequency sweeps ensure compatibility across all speaker geometries.
             </p>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-300">
               Compatible with Chrome, Samsung Internet, and Firefox for Android.{' '}
-              <Link href="/android-speaker-cleaner" className="text-sky-400 font-semibold hover:underline">
+              <Link href="/android-speaker-cleaner" className="text-sky-300 font-semibold underline hover:text-sky-200">
                 View Android Speaker Cleaner Guide →
               </Link>
             </p>
@@ -352,15 +352,15 @@ export default function HomePage() {
           <div className="space-y-3">
             <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
               <h3 className="font-bold text-white text-base">1. Water Surface Tension</h3>
-              <p className="text-sm text-slate-400 mt-1">
+              <p className="text-sm text-slate-300 mt-1">
                 Water creates a thin liquid film across micro-holes in the speaker mesh. This barrier blocks acoustic pressure waves from transmitting into the surrounding air, producing a dull, quiet, underwater sound.
               </p>
             </div>
             <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
               <h3 className="font-bold text-white text-base">2. Compact Pocket Lint & Debris</h3>
-              <p className="text-sm text-slate-400 mt-1">
+              <p className="text-sm text-slate-300 mt-1">
                 Carrying your phone in pants pockets over months forces fibers, lint, and sweat into the speaker ports, forming an acoustic plug. For physical cleaning instructions, check our{' '}
-                <Link href="/speaker-cleaning-guide" className="text-sky-400 hover:underline">
+                <Link href="/speaker-cleaning-guide" className="text-sky-300 underline font-semibold hover:text-sky-200">
                   Speaker Cleaning & Dust Guide
                 </Link>
                 .

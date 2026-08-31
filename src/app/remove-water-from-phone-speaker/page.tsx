@@ -215,10 +215,10 @@ export default function RemoveWaterPage() {
         <RelatedGuides currentPath="/remove-water-from-phone-speaker" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             ← Clean My Speaker Tool
           </Link>
-          <Link href="/speaker-test" className="text-sky-400 hover:underline text-sm font-semibold">
+          <Link href="/speaker-test" className="text-sky-300 underline font-semibold text-sm hover:text-sky-200">
             Test Speaker Output After Cleaning →
           </Link>
         </footer>

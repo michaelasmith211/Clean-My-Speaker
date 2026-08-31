@@ -266,7 +266,7 @@ export const SpeakerCleaner: React.FC = () => {
               style={{ width: `${progress}%` }}
             />
           </div>
-          <div className="flex justify-between text-[11px] text-slate-500">
+          <div className="flex justify-between text-xs text-slate-300 font-medium">
             <span>{isPlaying ? 'Acoustic wave active' : 'Status: Idle'}</span>
             <span>{secondsRemaining}s / {durationRef.current}s</span>
           </div>
@@ -307,9 +307,9 @@ export const SpeakerCleaner: React.FC = () => {
             className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-400"
             aria-label="Speaker cleaning frequency in Hertz"
           />
-          <div className="flex justify-between text-[10px] text-slate-500 mt-1">
+          <div className="flex justify-between text-xs text-slate-300 font-medium mt-1">
             <span>100 Hz (Low Bass)</span>
-            <span className="text-sky-400 font-medium">165 Hz (Water Eject Peak)</span>
+            <span className="text-sky-300 font-semibold">165 Hz (Water Eject Peak)</span>
             <span>500 Hz (Mid)</span>
           </div>
         </div>
@@ -338,7 +338,7 @@ export const SpeakerCleaner: React.FC = () => {
       </div>
 
       {/* Safety / Practical advice under the tool */}
-      <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+      <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-300 font-medium">
         <span className="flex items-center gap-1">
           <span>💡</span> Position speaker face-down
         </span>
