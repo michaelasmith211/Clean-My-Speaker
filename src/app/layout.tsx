@@ -152,6 +152,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth bg-slate-950 text-slate-100">
       <head>
+        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+        <link rel="icon" type="image/png" href="/icon.png?v=2" sizes="48x48" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" sizes="180x180" />
         <link rel="dns-prefetch" href="https://cleanmyspeaker.net" />
         <link rel="preconnect" href="https://cleanmyspeaker.net" crossOrigin="anonymous" />
         <script
