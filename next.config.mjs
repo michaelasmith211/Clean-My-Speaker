@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  experimental: {
+    optimizeCss: true,
+  },
   headers: async () => [
     {
       source: '/:path*',
