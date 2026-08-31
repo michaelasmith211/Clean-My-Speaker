@@ -4,6 +4,14 @@ export const SITE_URL = 'https://cleanmyspeaker.net';
 export const SITE_NAME = 'Clean My Speaker';
 export const SITE_TAGLINE = 'Clean My Speaker Online — Help Remove Water & Moisture From Your Phone Speaker';
 
+export const SOCIAL_LINKS = [
+  { name: 'X (Twitter)', url: 'https://x.com/cleanmyspeaker', handle: '@cleanmyspeaker' },
+  { name: 'Facebook', url: 'https://www.facebook.com/cleanmyspeaker', handle: 'cleanmyspeaker' },
+  { name: 'Instagram', url: 'https://www.instagram.com/cleanmyspeaker', handle: '@cleanmyspeaker' },
+  { name: 'YouTube', url: 'https://www.youtube.com/@cleanmyspeaker', handle: '@cleanmyspeaker' },
+  { name: 'Pinterest', url: 'https://www.pinterest.com/cleanmyspeaker', handle: 'cleanmyspeaker' },
+];
+
 export const CLEANING_MODES: Record<string, CleaningModeConfig> = {
   quick: {
     id: 'quick',

@@ -121,7 +121,14 @@ export default function RootLayout({
     url: SITE_URL,
     logo: `${SITE_URL}/icon.png`,
     description: 'Clean My Speaker provides free browser-based acoustic utilities for mobile devices.',
-    sameAs: ['https://github.com/michaelasmith211/Clean-My-Speaker'],
+    sameAs: [
+      'https://www.facebook.com/cleanmyspeaker',
+      'https://x.com/cleanmyspeaker',
+      'https://www.instagram.com/cleanmyspeaker',
+      'https://www.youtube.com/@cleanmyspeaker',
+      'https://www.pinterest.com/cleanmyspeaker',
+      'https://github.com/michaelasmith211/Clean-My-Speaker',
+    ],
   };
 
   const jsonLdSoftwareApp = {

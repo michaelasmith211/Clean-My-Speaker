@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { SOCIAL_LINKS } from '@/lib/constants';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -68,6 +69,29 @@ export default function AboutPage() {
           <p className="leading-relaxed">
             Clean My Speaker requires no account registration and does not collect personal identity information. Our tool does not request access to your microphone, camera, or file system. Your privacy remains completely intact.
           </p>
+        </section>
+
+        {/* Community & Social Channels */}
+        <section className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4">
+          <h2 className="text-xl font-bold text-white">Community & Verified Social Channels</h2>
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Join our global community across all major networks to stay informed about smartphone water ejection tips, sound frequency research, and new device audio tests:
+          </p>
+          <div className="flex flex-wrap gap-2.5 pt-1">
+            {SOCIAL_LINKS.map((item) => (
+              <a
+                key={item.name}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-sky-500/40 text-slate-300 hover:text-white text-xs font-semibold transition-all flex items-center gap-2"
+                aria-label={`Visit Clean My Speaker on ${item.name}`}
+              >
+                <span>{item.name}</span>
+                <span className="text-[11px] text-sky-400 font-mono">{item.handle}</span>
+              </a>
+            ))}
+          </div>
         </section>
 
         {/* Dynamic Contextual Interlinking */}

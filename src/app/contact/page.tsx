@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { SOCIAL_LINKS } from '@/lib/constants';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -59,6 +60,37 @@ export default function ContactPage() {
             </ul>
           </div>
         </div>
+
+        {/* Official Social Media Channels */}
+        <section className="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-4">
+          <h2 className="text-xl font-bold text-white">Official Social Media Profiles</h2>
+          <p className="text-sm text-slate-300 leading-relaxed">
+            Follow our verified accounts for sound wave utility updates, browser release compatibility notes, and device cleaning walkthroughs:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-2">
+            {SOCIAL_LINKS.map((item) => (
+              <a
+                key={item.name}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-2xl bg-slate-950 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-900 transition-all flex items-center justify-between group"
+              >
+                <div>
+                  <span className="font-semibold text-white group-hover:text-sky-300 text-sm block transition-colors">
+                    {item.name}
+                  </span>
+                  <span className="text-xs text-slate-400 font-mono">
+                    {item.handle}
+                  </span>
+                </div>
+                <span className="text-sky-400 group-hover:translate-x-1 transition-transform text-sm">
+                  →
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
 
         <section className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 space-y-2 text-sm">
           <h2 className="font-bold text-white">Hardware Repair Notice</h2>

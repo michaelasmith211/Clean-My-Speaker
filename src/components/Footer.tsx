@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { SOCIAL_LINKS } from '@/lib/constants';
 
 export const Footer: React.FC = () => {
   return (
@@ -25,6 +26,27 @@ export const Footer: React.FC = () => {
             <p className="text-xs text-slate-400">
               100% Client-Side Processing • No microphone access required • Zero tracking cookies
             </p>
+
+            {/* Social Media Channels */}
+            <div className="pt-2">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-300 block mb-2">
+                Connect With Us
+              </span>
+              <div className="flex flex-wrap items-center gap-2" aria-label="Social media profiles">
+                {SOCIAL_LINKS.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-sky-500/40 text-slate-300 hover:text-sky-300 text-xs font-medium transition-colors flex items-center gap-1.5"
+                    aria-label={`Follow Clean My Speaker on ${item.name}`}
+                  >
+                    <span>{item.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Quick Tools */}
