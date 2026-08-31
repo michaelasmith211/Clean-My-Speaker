@@ -32,13 +32,13 @@ export const SpeakerCleaner: React.FC = () => {
   }, [currentMode, isPlaying]);
 
   const handleStop = useCallback(() => {
-    const engine = getAudioEngine();
-    if (engine) {
-      engine.stop();
-    }
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
+    }
+    const engine = getAudioEngine();
+    if (engine) {
+      engine.stop();
     }
     setIsPlaying(false);
     setStatusMessage('Cleaning stopped. Check speaker sound.');
