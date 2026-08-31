@@ -70,6 +70,27 @@ const ALL_GUIDES: GuideLink[] = [
     icon: '❓',
     badge: 'FAQ',
   },
+  {
+    title: 'Terms of Service',
+    href: '/terms-of-service',
+    description: 'Terms and conditions governing use of our free browser-based audio sound wave cleaner.',
+    icon: '⚖️',
+    badge: 'Legal',
+  },
+  {
+    title: 'Safety Disclaimer',
+    href: '/disclaimer',
+    description: 'Acoustic cleaning limits, hearing safety precautions, and non-affiliation disclosures.',
+    icon: '🛡️',
+    badge: 'Notice',
+  },
+  {
+    title: 'Cookie Policy',
+    href: '/cookie-policy',
+    description: 'Transparency regarding Google AdSense cookies, DART preferences, and tracking controls.',
+    icon: '🍪',
+    badge: 'Privacy',
+  },
 ];
 
 export const RelatedGuides: React.FC<RelatedGuidesProps> = ({ currentPath }) => {

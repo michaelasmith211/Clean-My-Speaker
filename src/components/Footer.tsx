@@ -105,6 +105,21 @@ export const Footer: React.FC = () => {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link href="/terms-of-service" className="hover:text-sky-300 transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/disclaimer" className="hover:text-sky-300 transition-colors">
+                  Disclaimer
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookie-policy" className="hover:text-sky-300 transition-colors">
+                  Cookie Policy
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

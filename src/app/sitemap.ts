@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/about`, priority: 0.5, changeFrequency: 'yearly' as const },
     { url: `${SITE_URL}/contact`, priority: 0.5, changeFrequency: 'yearly' as const },
     { url: `${SITE_URL}/privacy-policy`, priority: 0.4, changeFrequency: 'yearly' as const },
+    { url: `${SITE_URL}/terms-of-service`, priority: 0.4, changeFrequency: 'yearly' as const },
+    { url: `${SITE_URL}/disclaimer`, priority: 0.4, changeFrequency: 'yearly' as const },
+    { url: `${SITE_URL}/cookie-policy`, priority: 0.4, changeFrequency: 'yearly' as const },
   ];
 
   return routes.map((route) => ({
