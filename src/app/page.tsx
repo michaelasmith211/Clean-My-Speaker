@@ -216,7 +216,7 @@ export default function HomePage() {
             <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
               <span className="text-sky-400 font-mono font-bold text-xs uppercase tracking-wider">Step 1</span>
               <h3 className="text-lg font-bold text-white">Wipe External Moisture</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 Take your phone out of its protective case. Use a dry, lint-free microfiber cloth to thoroughly dry the exterior of the chassis, charging port, and speaker grilles.
               </p>
             </div>
@@ -224,7 +224,7 @@ export default function HomePage() {
             <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
               <span className="text-sky-400 font-mono font-bold text-xs uppercase tracking-wider">Step 2</span>
               <h3 className="text-lg font-bold text-white">Set Volume to 100%</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 Ensure your device media volume is set to maximum. The physical excursion of the speaker diaphragm directly correlates to the volume level.
               </p>
             </div>
@@ -232,7 +232,7 @@ export default function HomePage() {
             <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
               <span className="text-sky-400 font-mono font-bold text-xs uppercase tracking-wider">Step 3</span>
               <h3 className="text-lg font-bold text-white">Position Speaker Downward</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 Hold your device vertically so the affected speaker (earpiece at top or bottom loudspeaker) faces downward. Lay a paper towel or cloth directly beneath it. Gravity assists the sound waves.
               </p>
             </div>
