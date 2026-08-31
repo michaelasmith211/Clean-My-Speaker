@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SafetyNotice } from '@/components/SafetyNotice';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -209,6 +210,9 @@ export default function RemoveWaterPage() {
         </section>
 
         <SafetyNotice />
+
+        {/* Dynamic Contextual Interlinking */}
+        <RelatedGuides currentPath="/remove-water-from-phone-speaker" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">

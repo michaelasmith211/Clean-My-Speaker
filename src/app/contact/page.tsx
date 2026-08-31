@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -65,6 +66,9 @@ export default function ContactPage() {
             Please note that Clean My Speaker is an online audio software utility. We do not provide physical device repair services, replacement parts, or manufacturer warranty replacements. For hardware repairs, please contact an authorized service center for your smartphone manufacturer.
           </p>
         </section>
+
+        {/* Dynamic Contextual Interlinking */}
+        <RelatedGuides currentPath="/contact" />
 
         <footer className="pt-6 border-t border-slate-800 flex justify-between items-center">
           <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">

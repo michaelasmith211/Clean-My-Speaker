@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -68,6 +69,9 @@ export default function AboutPage() {
             Clean My Speaker requires no account registration and does not collect personal identity information. Our tool does not request access to your microphone, camera, or file system. Your privacy remains completely intact.
           </p>
         </section>
+
+        {/* Dynamic Contextual Interlinking */}
+        <RelatedGuides currentPath="/about" />
 
         <footer className="pt-6 border-t border-slate-800 flex justify-between items-center">
           <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">

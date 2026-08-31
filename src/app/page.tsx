@@ -3,6 +3,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { FAQAccordion } from '@/components/FAQAccordion';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { FAQItem } from '@/lib/types';
 
 const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
@@ -96,7 +97,7 @@ export default function HomePage() {
         </p>
 
         {/* Immediate Audio Utility */}
-        <div className="mt-8">
+        <div id="tool" className="mt-8 scroll-mt-24">
           <SpeakerCleaner />
         </div>
 
@@ -381,6 +382,9 @@ export default function HomePage() {
           </div>
           <FAQAccordion items={homepageFaqs} includeSchema={true} />
         </section>
+
+        {/* Dynamic Contextual Interlinking */}
+        <RelatedGuides currentPath="/" />
       </article>
     </main>
   );

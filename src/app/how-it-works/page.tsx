@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -138,13 +139,23 @@ export default function HowItWorksPage() {
           </div>
         </section>
 
-        {/* Section 6: Limitations & Safe Practices */}
+        {/* Limitations */}
         <section className="p-6 rounded-2xl bg-amber-950/30 border border-amber-500/30 space-y-3 text-amber-200/90 text-sm">
           <h2 className="text-lg font-bold text-amber-300">Acoustic Limits & Safety Notice</h2>
           <p className="leading-relaxed text-xs">
-            Sound vibrations can only move liquid that resides in or near the acoustic speaker chamber. If water has penetrated past internal rubber water-resistant gaskets and contacted the battery, logic board, or display connectors, sound waves cannot remedy the moisture. Always follow device manufacturer drying protocols if your phone was deeply submerged.
+            Sound vibrations can only move liquid that resides in or near the acoustic speaker chamber. If water has penetrated past internal rubber water-resistant gaskets and contacted the battery, logic board, or display connectors, sound waves cannot remedy the moisture. Read our{' '}
+            <Link href="/remove-water-from-phone-speaker" className="text-sky-400 font-semibold underline">
+              Emergency Water Removal Guide
+            </Link>{' '}
+            for full immersion protocols, or test your acoustic clarity with our{' '}
+            <Link href="/speaker-test" className="text-sky-400 font-semibold underline">
+              Speaker Test tool
+            </Link>.
           </p>
         </section>
+
+        {/* Dynamic Contextual Interlinking */}
+        <RelatedGuides currentPath="/how-it-works" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">

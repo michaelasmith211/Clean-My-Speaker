@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -73,6 +74,9 @@ export default function PrivacyPolicyPage() {
             <span className="text-sky-400 font-mono">privacy@cleanmyspeaker.net</span>.
           </p>
         </section>
+
+        {/* Dynamic Contextual Interlinking */}
+        <RelatedGuides currentPath="/privacy-policy" />
 
         <footer className="pt-6 border-t border-slate-800">
           <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">

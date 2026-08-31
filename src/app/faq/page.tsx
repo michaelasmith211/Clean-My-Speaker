@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { FAQAccordion } from '@/components/FAQAccordion';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { FAQItem } from '@/lib/types';
 import { Metadata } from 'next';
 
@@ -123,6 +124,9 @@ export default function FAQPage() {
             🔊 Launch Clean My Speaker Tool
           </Link>
         </section>
+
+        {/* Dynamic Contextual Interlinking */}
+        <RelatedGuides currentPath="/faq" />
 
         <footer className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <Link href="/" className="text-sky-400 hover:underline text-sm font-semibold">
