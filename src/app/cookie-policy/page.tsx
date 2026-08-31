@@ -48,7 +48,7 @@ export default function CookiePolicyPage() {
           <p className="text-sm leading-relaxed">
             However, our website may deploy cookies for the following legitimate purposes:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm pt-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm pt-2">
             <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
               <h3 className="font-bold text-sky-400 text-base">Essential & Security Cookies</h3>
               <p className="text-slate-400 text-xs leading-relaxed">
@@ -56,9 +56,15 @@ export default function CookiePolicyPage() {
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
+              <h3 className="font-bold text-sky-400 text-base">Analytics Cookies (GA4)</h3>
+              <p className="text-slate-400 text-xs leading-relaxed">
+                Deployed via Google Analytics (G-HT87NWEHNT) to collect aggregated, anonymized interaction metrics (pageviews, session durations) to understand and improve user experience.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
               <h3 className="font-bold text-sky-400 text-base">Advertising & Targeting Cookies</h3>
               <p className="text-slate-400 text-xs leading-relaxed">
-                Deployed by advertising networks (such as Google AdSense) to serve relevant, non-intrusive ads, limit the number of times you see an advertisement, and measure advertising campaign effectiveness.
+                Deployed by advertising networks (such as Google AdSense) to serve relevant, non-intrusive ads, limit ad repetition, and measure ad campaign effectiveness.
               </p>
             </div>
           </div>
