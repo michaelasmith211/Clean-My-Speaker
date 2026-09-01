@@ -169,12 +169,36 @@ export default function HomePage() {
     ],
   };
 
+  const jsonLdVideo = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Clean My Speaker – How to Clean & Fix Phone Speaker Sound Online',
+    description:
+      'Watch how Clean My Speaker (CleanMySpeaker.net) uses acoustic sound frequencies to clean phone speakers, eject trapped water, and fix muffled audio.',
+    thumbnailUrl: 'https://img.youtube.com/vi/PmxN3frqKJY/maxresdefault.jpg',
+    uploadDate: '2026-08-01T08:00:00+00:00',
+    embedUrl: 'https://www.youtube.com/embed/PmxN3frqKJY',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Clean My Speaker',
+      url: 'https://cleanmyspeaker.net',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://cleanmyspeaker.net/icon.png',
+      },
+    },
+  };
+
   return (
     <main className="min-h-screen">
-      {/* Schema.org HowTo Structured Data */}
+      {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdVideo) }}
       />
 
       {/* HERO SECTION WITH TOOL ABOVE THE FOLD */}
@@ -232,6 +256,52 @@ export default function HomePage() {
             <p className="text-sm text-slate-400 leading-relaxed">
               Works across Apple iPhone, iPad, Samsung Galaxy, Google Pixel, smartwatches, and laptop speakers on Safari, Chrome, and Edge.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* INTRO VIDEO: WATCH HOW CLEAN MY SPEAKER WORKS */}
+      <section id="intro-video" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="bg-slate-900/90 border border-sky-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-xl space-y-6">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-950/80 border border-sky-500/40 text-sky-300 text-xs font-semibold uppercase tracking-wider">
+              <span>🎬</span> Official Intro Video
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              Watch: How to Clean & Fix Your Phone Speaker
+            </h2>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              See how <strong>CleanMySpeaker.net</strong> works: learn how calibrated acoustic sound waves dislodge trapped water, eject dust, and restore crystal-clear speaker volume in seconds.
+            </p>
+          </div>
+
+          {/* 16:9 Responsive Video Player Container */}
+          <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-950">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/PmxN3frqKJY?si=AeWTwWh4JpMbk_Ki"
+              title="Clean My Speaker - Video Introduction & How It Works"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+
+          {/* Video Trust & Feature Highlights */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-300">
+            <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-950 border border-slate-800">
+              <span className="text-sky-400 text-base">▶️</span>
+              <span><strong>Quick Video:</strong> Visual demonstration of sound waves</span>
+            </div>
+            <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-950 border border-slate-800">
+              <span className="text-sky-400 text-base">💧</span>
+              <span><strong>Water Ejection:</strong> Clears trapped moisture from mesh</span>
+            </div>
+            <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-950 border border-slate-800">
+              <span className="text-sky-400 text-base">⚡</span>
+              <span><strong>Instant Fix:</strong> 100% free, safe, and online</span>
+            </div>
           </div>
         </div>
       </section>
