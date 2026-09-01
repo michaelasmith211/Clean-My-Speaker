@@ -28,6 +28,21 @@ const nextConfig = {
       destination: '/icon.png',
       permanent: true,
     },
+    {
+      source: '/images/how-clean-my-speaker-works-infographic.jpg',
+      destination: '/images/how-to-clean-my-speaker-fix-sound.jpg',
+      permanent: true,
+    },
+    {
+      source: '/images/benefits-of-clean-my-speaker-infographic.jpg',
+      destination: '/images/clean-my-speaker-fix-my-speaker-benefits.jpg',
+      permanent: true,
+    },
+    {
+      source: '/images/how-sound-frequencies-work-infographic.jpg',
+      destination: '/images/fix-my-speaker-sound-frequencies-guide.jpg',
+      permanent: true,
+    },
   ],
 };
 
