@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
@@ -46,6 +47,22 @@ export default function HowItWorksPage() {
             🔊 Launch Clean My Speaker
           </Link>
         </div>
+
+        {/* Visual Infographic */}
+        <figure className="relative overflow-hidden rounded-3xl border border-slate-800 shadow-2xl bg-slate-950">
+          <Image
+            src="/images/how-clean-my-speaker-works-infographic.jpg"
+            alt="Clean My Speaker - How It Works Infographic: Visual 5-Step Process to Clean Speaker Online"
+            width={1024}
+            height={576}
+            className="w-full h-auto object-cover rounded-3xl"
+            sizes="(max-width: 768px) 100vw, 896px"
+            priority={false}
+          />
+          <figcaption className="p-4 bg-slate-950/90 border-t border-slate-800 text-xs text-slate-400 text-center">
+            Figure 1: Complete 5-step operational workflow of the Clean My Speaker browser sound utility.
+          </figcaption>
+        </figure>
 
         {/* Section 1: Anatomy of a Phone Speaker */}
         <section className="space-y-4">

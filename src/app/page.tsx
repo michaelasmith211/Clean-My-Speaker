@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { FAQAccordion } from '@/components/FAQAccordion';
@@ -100,8 +101,82 @@ const homepageFaqs: FAQItem[] = [
 ];
 
 export default function HomePage() {
+  const jsonLdHowTo = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Clean My Speaker Online – 5 Step Water & Dust Removal Guide',
+    description:
+      'Learn how to clean your phone speaker online using Clean My Speaker (CleanMySpeaker.net). Uses calibrated 165 Hz sound waves to displace moisture, water droplets, and dust instantly.',
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://cleanmyspeaker.net/images/how-clean-my-speaker-works-infographic.jpg',
+      width: 1024,
+      height: 576,
+      caption: 'Clean My Speaker – How It Works Infographic',
+    },
+    totalTime: 'PT1M',
+    estimatedCost: {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: '0',
+    },
+    tool: [
+      {
+        '@type': 'HowToTool',
+        name: 'Clean My Speaker Web Audio Tool (cleanmyspeaker.net)',
+      },
+      {
+        '@type': 'HowToTool',
+        name: 'Dry microfiber cloth or towel',
+      },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Visit the Website',
+        text: 'Go to CleanMySpeaker.net in your browser on iPhone, Android, or laptop.',
+        url: 'https://cleanmyspeaker.net/#tool',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Click Play',
+        text: 'Press the "CLEAN MY SPEAKER" play button to start generating acoustic cleaning vibrations.',
+        url: 'https://cleanmyspeaker.net/#tool',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Sound Waves Do the Magic',
+        text: 'Special 165 Hz resonant frequencies physically oscillate the speaker cone to push out water, dust, and debris.',
+        url: 'https://cleanmyspeaker.net/#how-it-works-infographic',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Let It Play (30–60 Seconds)',
+        text: 'For best results, let the sound wave cycle play for 30 to 60 seconds while holding your speaker facing downward.',
+        url: 'https://cleanmyspeaker.net/#how-it-works-infographic',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Your Speaker is Clean!',
+        text: 'Dab away any ejected moisture droplets with a dry cloth and enjoy clear, loud, crystal-clear audio again.',
+        url: 'https://cleanmyspeaker.net/#how-it-works-infographic',
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen">
+      {/* Schema.org HowTo Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
+      />
+
       {/* HERO SECTION WITH TOOL ABOVE THE FOLD */}
       <section className="relative pt-8 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
@@ -157,6 +232,143 @@ export default function HomePage() {
             <p className="text-sm text-slate-400 leading-relaxed">
               Works across Apple iPhone, iPad, Samsung Galaxy, Google Pixel, smartwatches, and laptop speakers on Safari, Chrome, and Edge.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS INFOGRAPHIC SHOWCASE */}
+      <section id="how-it-works-infographic" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="bg-slate-900/90 border-2 border-sky-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-xl space-y-8">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-950/80 border border-sky-500/40 text-sky-300 text-xs font-semibold uppercase tracking-wider">
+              <span>📊</span> Clean My Speaker Infographic
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+              How Clean My Speaker Works: 5-Step Visual Process
+            </h2>
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              <strong>CleanMySpeaker.net</strong> uses powerful sound wave frequencies to remove water, dust, and debris from your phone speaker instantly. Follow this visual step-by-step walkthrough to restore crystal-clear audio on your mobile device.
+            </p>
+          </div>
+
+          {/* Infographic Graphic with SEO Figure Container */}
+          <figure className="relative overflow-hidden rounded-2xl border border-slate-800 shadow-2xl bg-slate-950">
+            <Image
+              src="/images/how-clean-my-speaker-works-infographic.jpg"
+              alt="Clean My Speaker - How It Works Infographic: 5 Easy Steps to Remove Water, Dust & Debris From Phone Speaker Online"
+              width={1024}
+              height={576}
+              className="w-full h-auto object-cover rounded-2xl hover:scale-[1.01] transition-transform duration-300"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px"
+              priority={false}
+            />
+            <figcaption className="p-4 bg-slate-950/95 border-t border-slate-800 text-xs text-slate-300 text-center flex flex-col sm:flex-row items-center justify-between gap-2">
+              <span>
+                💡 <strong>Clean My Speaker Workflow:</strong> Visit Website → Click Play → Sound Waves Displace Water → Run 30–60s → Crystal Clear Sound.
+              </span>
+              <a
+                href="/images/how-clean-my-speaker-works-infographic.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
+              >
+                Open Full Infographic ↗
+              </a>
+            </figcaption>
+          </figure>
+
+          {/* 5-Step Interactive Breakdown Cards Matching Infographic */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-bold text-white text-center sm:text-left">
+              Step-by-Step Breakdown: How Sound Waves Clean Your Phone Speaker
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 pt-1">
+              <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800/90 space-y-2 hover:border-sky-500/40 transition-colors">
+                <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                  01
+                </div>
+                <h4 className="font-bold text-white text-sm">Visit the Website</h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Go to <strong className="text-white">CleanMySpeaker.net</strong> in your browser. No app download or configuration needed.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800/90 space-y-2 hover:border-sky-500/40 transition-colors">
+                <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                  02
+                </div>
+                <h4 className="font-bold text-white text-sm">Click Play</h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Press the <strong className="text-white">&ldquo;CLEAN MY SPEAKER&rdquo;</strong> button above to start the cleaning sound waves.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800/90 space-y-2 hover:border-sky-500/40 transition-colors">
+                <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                  03
+                </div>
+                <h4 className="font-bold text-white text-sm">Sound Waves Do Magic</h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Special 165 Hz frequencies create kinetic air pulses that push out trapped water beads and dust from speaker grilles.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800/90 space-y-2 hover:border-sky-500/40 transition-colors">
+                <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                  04
+                </div>
+                <h4 className="font-bold text-white text-sm">Let It Play (30–60s)</h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  For optimal results, allow the sound to play for 30–60 seconds while holding your phone speaker facing downward.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800/90 space-y-2 hover:border-sky-500/40 transition-colors">
+                <div className="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-xs flex items-center justify-center border border-emerald-500/30">
+                  05
+                </div>
+                <h4 className="font-bold text-white text-sm">Your Speaker is Clean!</h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Wipe away dislodged moisture and enjoy clear, loud, and crystal-clear sound again without muffled distortion!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Value Badges Matching Infographic */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-4 border-t border-slate-800 text-xs">
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-lg block">🛡️</span>
+              <span className="font-bold text-white block text-xs">100% Safe</span>
+              <span className="text-[11px] text-slate-400 block">No downloads or hardware risk</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-lg block">⚡</span>
+              <span className="font-bold text-white block text-xs">Instant Result</span>
+              <span className="text-[11px] text-slate-400 block">Works in seconds</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-lg block">🚫</span>
+              <span className="font-bold text-white block text-xs">No Installation</span>
+              <span className="text-[11px] text-slate-400 block">Works directly in browser</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-lg block">📱</span>
+              <span className="font-bold text-white block text-xs">All Devices</span>
+              <span className="text-[11px] text-slate-400 block">iPhone, Android, Tablets</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-lg block">🔊</span>
+              <span className="font-bold text-white block text-xs">Better Sound</span>
+              <span className="text-[11px] text-slate-400 block">Removes water & debris</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-sky-500/40 text-center space-y-1 bg-sky-950/30">
+              <span className="text-lg block">💙</span>
+              <span className="font-bold text-sky-300 block text-xs">One-Click Clean</span>
+              <Link href="/#tool" className="text-[11px] text-sky-300 underline font-semibold block hover:text-sky-200">
+                Clean Now →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
