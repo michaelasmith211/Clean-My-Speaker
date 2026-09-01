@@ -57,6 +57,18 @@ export const metadata: Metadata = {
         height: 630,
         alt: 'Clean My Speaker - Water Eject & Speaker Cleaner Online',
       },
+      {
+        url: `${SITE_URL}/images/how-clean-my-speaker-works-infographic.jpg`,
+        width: 1024,
+        height: 576,
+        alt: 'Clean My Speaker - How It Works Infographic',
+      },
+      {
+        url: `${SITE_URL}/images/benefits-of-clean-my-speaker-infographic.jpg`,
+        width: 1024,
+        height: 682,
+        alt: 'Clean My Speaker - Benefits Infographic',
+      },
     ],
   },
   twitter: {
@@ -64,7 +76,7 @@ export const metadata: Metadata = {
     title: 'Clean My Speaker – Clean Your Phone Speaker Online',
     description:
       'Play specially calibrated sound waves directly in your browser to help push out trapped moisture and restore muffled phone sound.',
-    images: [`${SITE_URL}/og-image.svg`],
+    images: [`${SITE_URL}/images/how-clean-my-speaker-works-infographic.jpg`],
   },
   robots: {
     index: true,

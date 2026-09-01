@@ -37,6 +37,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://cleanmyspeaker.net/speaker-test',
   },
+  openGraph: {
+    title: 'Speaker Test Online – Test Left/Right Stereo Channels & Frequencies',
+    description:
+      'Diagnose speaker health, test stereo balance, and check frequency response from Sub Bass to High Treble with our free online tester.',
+    url: 'https://cleanmyspeaker.net/speaker-test',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/how-sound-frequencies-work-infographic.jpg',
+        width: 1024,
+        height: 682,
+        alt: 'How Sound Frequencies Work - Speaker Test Audio Spectrum Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Speaker Test Online – Test Your Phone & Stereo Speakers',
+    description:
+      'Diagnose speaker health, test stereo balance, and check frequencies with our free online tool.',
+    images: ['https://cleanmyspeaker.net/images/how-sound-frequencies-work-infographic.jpg'],
+  },
 };
 
 export default function SpeakerTestPage() {

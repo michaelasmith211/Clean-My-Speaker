@@ -12,6 +12,33 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://cleanmyspeaker.net/how-it-works',
   },
+  openGraph: {
+    title: 'How Clean My Speaker Works – The Science of Sound-Based Water Ejection',
+    description:
+      'Learn how 165 Hz sound waves, diaphragm excursion, and acoustic air displacement safely dislodge trapped water droplets from phone speakers.',
+    url: 'https://cleanmyspeaker.net/how-it-works',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/how-clean-my-speaker-works-infographic.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'How Clean My Speaker Works Infographic',
+      },
+      {
+        url: 'https://cleanmyspeaker.net/images/how-sound-frequencies-work-infographic.jpg',
+        width: 1024,
+        height: 682,
+        alt: 'How Sound Frequencies Work Infographic',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Clean My Speaker Works – Speaker Cleaning Sound & Physics',
+    description:
+      'Discover how acoustic frequencies and air displacement remove water and moisture from phone speakers.',
+    images: ['https://cleanmyspeaker.net/images/how-clean-my-speaker-works-infographic.jpg'],
+  },
 };
 
 export default function HowItWorksPage() {
