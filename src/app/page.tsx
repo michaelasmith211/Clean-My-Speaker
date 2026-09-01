@@ -104,15 +104,15 @@ export default function HomePage() {
   const jsonLdHowTo = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Clean My Speaker Online – 5 Step Water & Dust Removal Guide',
+    name: 'How to Clean My Speaker & Fix My Speaker Sound – 5 Step Water & Dust Removal Guide',
     description:
-      'Learn how to clean your phone speaker online using Clean My Speaker (CleanMySpeaker.net). Uses calibrated 165 Hz sound waves to displace moisture, water droplets, and dust instantly.',
+      'Learn how to clean my speaker and fix my speaker sound online using Clean My Speaker (CleanMySpeaker.net). Uses calibrated 165 Hz sound waves to fix muffled audio, displace moisture, and eject water instantly.',
     image: {
       '@type': 'ImageObject',
-      url: 'https://cleanmyspeaker.net/images/how-clean-my-speaker-works-infographic.jpg',
+      url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
       width: 1024,
       height: 576,
-      caption: 'Clean My Speaker – How It Works Infographic',
+      caption: 'How to Clean My Speaker & Fix My Speaker Sound Guide',
     },
     totalTime: 'PT1M',
     estimatedCost: {
@@ -134,37 +134,37 @@ export default function HomePage() {
       {
         '@type': 'HowToStep',
         position: 1,
-        name: 'Visit the Website',
+        name: 'Visit CleanMySpeaker.net',
         text: 'Go to CleanMySpeaker.net in your browser on iPhone, Android, or laptop.',
         url: 'https://cleanmyspeaker.net/#tool',
       },
       {
         '@type': 'HowToStep',
         position: 2,
-        name: 'Click Play',
-        text: 'Press the "CLEAN MY SPEAKER" play button to start generating acoustic cleaning vibrations.',
+        name: 'Click Play to Clean My Speaker',
+        text: 'Press the "CLEAN MY SPEAKER" play button to start generating acoustic sound waves.',
         url: 'https://cleanmyspeaker.net/#tool',
       },
       {
         '@type': 'HowToStep',
         position: 3,
-        name: 'Sound Waves Do the Magic',
+        name: 'Sound Waves Fix My Speaker',
         text: 'Special 165 Hz resonant frequencies physically oscillate the speaker cone to push out water, dust, and debris.',
-        url: 'https://cleanmyspeaker.net/#how-it-works-infographic',
+        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker',
       },
       {
         '@type': 'HowToStep',
         position: 4,
         name: 'Let It Play (30–60 Seconds)',
         text: 'For best results, let the sound wave cycle play for 30 to 60 seconds while holding your speaker facing downward.',
-        url: 'https://cleanmyspeaker.net/#how-it-works-infographic',
+        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker',
       },
       {
         '@type': 'HowToStep',
         position: 5,
-        name: 'Your Speaker is Clean!',
+        name: 'Your Speaker is Clean & Fixed!',
         text: 'Dab away any ejected moisture droplets with a dry cloth and enjoy clear, loud, crystal-clear audio again.',
-        url: 'https://cleanmyspeaker.net/#how-it-works-infographic',
+        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker',
       },
     ],
   };
@@ -236,26 +236,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS INFOGRAPHIC SHOWCASE */}
-      <section id="how-it-works-infographic" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      {/* HOW TO CLEAN MY SPEAKER & FIX MY SPEAKER SOUND */}
+      <section id="how-to-clean-and-fix-my-speaker" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="bg-slate-900/90 border-2 border-sky-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-xl space-y-8">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-950/80 border border-sky-500/40 text-sky-300 text-xs font-semibold uppercase tracking-wider">
-              <span>📊</span> Clean My Speaker Infographic
+              <span>🔊</span> Clean My Speaker & Fix My Speaker Guide
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
-              How Clean My Speaker Works: 5-Step Visual Process
+              How to Clean My Speaker & Fix My Speaker Sound
             </h2>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              <strong>CleanMySpeaker.net</strong> uses powerful sound wave frequencies to remove water, dust, and debris from your phone speaker instantly. Follow this visual step-by-step walkthrough to restore crystal-clear audio on your mobile device.
+              <strong>CleanMySpeaker.net</strong> uses powerful sound wave frequencies to remove water, eject dust, and fix muffled speaker sound instantly. Follow this 5-step guide to fix your phone speaker and restore loud, crystal-clear audio.
             </p>
           </div>
 
-          {/* Infographic Graphic with SEO Figure Container */}
+          {/* Graphic with SEO Figure Container */}
           <figure className="relative overflow-hidden rounded-2xl border border-slate-800 shadow-2xl bg-slate-950">
             <Image
-              src="/images/how-clean-my-speaker-works-infographic.jpg"
-              alt="Clean My Speaker - How It Works Infographic: 5 Easy Steps to Remove Water, Dust & Debris From Phone Speaker Online"
+              src="/images/how-to-clean-my-speaker-fix-sound.jpg"
+              alt="How to Clean My Speaker & Fix My Speaker Sound - 5 Step Process to Eject Water and Clean Phone Speaker Online"
               width={1024}
               height={576}
               className="w-full h-auto object-cover rounded-2xl hover:scale-[1.01] transition-transform duration-300"
@@ -264,20 +264,20 @@ export default function HomePage() {
             />
             <figcaption className="p-4 bg-slate-950/95 border-t border-slate-800 text-xs text-slate-300 text-center flex flex-col sm:flex-row items-center justify-between gap-2">
               <span>
-                💡 <strong>Clean My Speaker Workflow:</strong> Visit Website → Click Play → Sound Waves Displace Water → Run 30–60s → Crystal Clear Sound.
+                💡 <strong>Clean My Speaker & Fix My Speaker Steps:</strong> Visit Website → Click Play → Sound Waves Displace Water → Run 30–60s → Crystal Clear Sound.
               </span>
               <a
-                href="/images/how-clean-my-speaker-works-infographic.jpg"
+                href="/images/how-to-clean-my-speaker-fix-sound.jpg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
               >
-                Open Full Infographic ↗
+                Open Full Cleaning Guide ↗
               </a>
             </figcaption>
           </figure>
 
-          {/* 5-Step Interactive Breakdown Cards Matching Infographic */}
+          {/* 5-Step Interactive Breakdown Cards Matching Sound Waves Guide */}
           <div className="space-y-3">
             <h3 className="text-lg font-bold text-white text-center sm:text-left">
               Step-by-Step Breakdown: How Sound Waves Clean Your Phone Speaker
@@ -335,7 +335,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Value Badges Matching Infographic */}
+          {/* Value Badges */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-4 border-t border-slate-800 text-xs">
             <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
               <span className="text-lg block">🛡️</span>
@@ -587,25 +587,25 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Section 9: Benefits of Using CleanMySpeaker.net Infographic Showcase */}
-        <section id="benefits-infographic" className="space-y-8 bg-slate-900/90 border-2 border-sky-500/30 p-6 sm:p-10 rounded-3xl shadow-2xl backdrop-blur-xl">
+        {/* Section 9: Benefits of Using Clean My Speaker to Fix Phone Audio */}
+        <section id="clean-and-fix-my-speaker-benefits" className="space-y-8 bg-slate-900/90 border-2 border-sky-500/30 p-6 sm:p-10 rounded-3xl shadow-2xl backdrop-blur-xl">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-950/80 border border-sky-500/40 text-sky-300 text-xs font-semibold uppercase tracking-wider">
-              <span>🌟</span> Top Benefits Infographic
+              <span>🌟</span> Fix My Speaker Benefits
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              Benefits of Using CleanMySpeaker.net
+              Benefits of Using Clean My Speaker to Fix Your Phone Speaker
             </h2>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              Get crystal-clear sound, higher maximum volume, and a better listening experience in just one click with our browser acoustic sound tool.
+              Fix muffled audio, boost volume, and clean your phone speaker in one click with our browser sound tool.
             </p>
           </div>
 
-          {/* Infographic Graphic with SEO Figure Container */}
+          {/* Graphic with SEO Figure Container */}
           <figure className="relative overflow-hidden rounded-2xl border border-slate-800 shadow-2xl bg-slate-950">
             <Image
-              src="/images/benefits-of-clean-my-speaker-infographic.jpg"
-              alt="Clean My Speaker - Benefits of Using CleanMySpeaker.net Infographic: 8 Key Advantages for Phone Speaker Audio"
+              src="/images/clean-my-speaker-fix-my-speaker-benefits.jpg"
+              alt="Clean My Speaker & Fix My Speaker Benefits: 8 Key Advantages to Fix Muffled Phone Sound and Eject Water"
               width={1024}
               height={682}
               className="w-full h-auto object-cover rounded-2xl hover:scale-[1.01] transition-transform duration-300"
@@ -614,20 +614,20 @@ export default function HomePage() {
             />
             <figcaption className="p-4 bg-slate-950/95 border-t border-slate-800 text-xs text-slate-300 text-center flex flex-col sm:flex-row items-center justify-between gap-2">
               <span>
-                ✨ <strong>Key Benefits:</strong> Instant Water Ejection • Muffled Audio Removal • 100% Safe • 1-Click Free Home Fix.
+                ✨ <strong>Key Benefits:</strong> Fix My Speaker Instantly • Remove Muffled Sound • 100% Safe • Free Home Fix.
               </span>
               <a
-                href="/images/benefits-of-clean-my-speaker-infographic.jpg"
+                href="/images/clean-my-speaker-fix-my-speaker-benefits.jpg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
               >
-                Open Full Infographic ↗
+                Open Full Benefits Guide ↗
               </a>
             </figcaption>
           </figure>
 
-          {/* 8 Responsive Benefit Cards Matching Infographic */}
+          {/* 8 Responsive Benefit Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
             <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
               <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">

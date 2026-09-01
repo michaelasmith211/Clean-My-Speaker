@@ -6,38 +6,38 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How Clean My Speaker Works – Speaker Cleaning Sound & Physics',
+  title: 'How Clean My Speaker Works – Fix My Speaker Sound & Physics',
   description:
-    'Discover the acoustic physics behind how Clean My Speaker generates low-frequency sound waves and air pressure to safely move water and moisture from phone speakers.',
+    'Discover the acoustic physics behind how Clean My Speaker generates low-frequency sound waves and air pressure to fix muffled phone sound and safely eject water.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/how-it-works',
   },
   openGraph: {
-    title: 'How Clean My Speaker Works – The Science of Sound-Based Water Ejection',
+    title: 'How Clean My Speaker Works – Fix My Speaker Sound & Physics',
     description:
-      'Learn how 165 Hz sound waves, diaphragm excursion, and acoustic air displacement safely dislodge trapped water droplets from phone speakers.',
+      'Learn how 165 Hz sound waves, diaphragm excursion, and acoustic air displacement safely dislodge trapped water droplets and fix phone speakers.',
     url: 'https://cleanmyspeaker.net/how-it-works',
     images: [
       {
-        url: 'https://cleanmyspeaker.net/images/how-clean-my-speaker-works-infographic.jpg',
+        url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
         width: 1024,
         height: 576,
-        alt: 'How Clean My Speaker Works Infographic',
+        alt: 'How to Clean My Speaker and Fix My Speaker Sound Guide',
       },
       {
-        url: 'https://cleanmyspeaker.net/images/how-sound-frequencies-work-infographic.jpg',
+        url: 'https://cleanmyspeaker.net/images/fix-my-speaker-sound-frequencies-guide.jpg',
         width: 1024,
         height: 682,
-        alt: 'How Sound Frequencies Work Infographic',
+        alt: 'How Sound Frequencies Work - Fix My Speaker Acoustic Guide',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Clean My Speaker Works – Speaker Cleaning Sound & Physics',
+    title: 'How Clean My Speaker Works – Fix My Speaker Sound & Physics',
     description:
-      'Discover how acoustic frequencies and air displacement remove water and moisture from phone speakers.',
-    images: ['https://cleanmyspeaker.net/images/how-clean-my-speaker-works-infographic.jpg'],
+      'Discover how acoustic frequencies and air displacement remove water and fix phone speaker sound.',
+    images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
   },
 };
 
@@ -51,20 +51,20 @@ export default function HowItWorksPage() {
       <article className="space-y-12 mt-6 text-slate-300">
         <header className="space-y-4">
           <div className="inline-block px-3 py-1 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-400 text-xs font-semibold uppercase tracking-wider">
-            Acoustic Physics & Engineering
+            Acoustic Physics & Audio Engineering
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            How Clean My Speaker Works: The Science of Sound-Based Water Ejection
+            How Clean My Speaker Works: The Science to Fix Your Phone Speaker
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed">
-            Learn how browser-generated acoustic waves, diaphragm excursion, and mechanical resonance work together to dislodge trapped liquid from smartphone speaker grilles.
+            Learn how browser-generated acoustic waves, diaphragm excursion, and mechanical resonance work together to dislodge trapped liquid and fix muffled speaker sound.
           </p>
         </header>
 
         {/* Quick CTA back to tool */}
         <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <h2 className="text-base font-bold text-white">Need to clean your speaker right now?</h2>
+            <h2 className="text-base font-bold text-white">Need to clean and fix your speaker right now?</h2>
             <p className="text-xs text-slate-400">Launch the 165 Hz water eject tone with one tap.</p>
           </div>
           <Link
@@ -75,11 +75,11 @@ export default function HowItWorksPage() {
           </Link>
         </div>
 
-        {/* Visual Infographic */}
+        {/* Visual Guide */}
         <figure className="relative overflow-hidden rounded-3xl border border-slate-800 shadow-2xl bg-slate-950">
           <Image
-            src="/images/how-clean-my-speaker-works-infographic.jpg"
-            alt="Clean My Speaker - How It Works Infographic: Visual 5-Step Process to Clean Speaker Online"
+            src="/images/how-to-clean-my-speaker-fix-sound.jpg"
+            alt="How to Clean My Speaker & Fix My Speaker Sound - 5 Step Process to Eject Water and Clean Phone Speaker Online"
             width={1024}
             height={576}
             className="w-full h-auto object-cover rounded-3xl"
@@ -87,7 +87,7 @@ export default function HowItWorksPage() {
             priority={false}
           />
           <figcaption className="p-4 bg-slate-950/90 border-t border-slate-800 text-xs text-slate-400 text-center">
-            Figure 1: Complete 5-step operational workflow of the Clean My Speaker browser sound utility.
+            Figure 1: Complete 5-step operational workflow to clean and fix your phone speaker with browser sound waves.
           </figcaption>
         </figure>
 
@@ -142,11 +142,11 @@ export default function HowItWorksPage() {
             </p>
           </div>
 
-          {/* Sound Frequencies Infographic */}
+          {/* Sound Frequencies Guide Graphic */}
           <figure className="relative overflow-hidden rounded-2xl border border-slate-800 shadow-2xl bg-slate-950 my-6">
             <Image
-              src="/images/how-sound-frequencies-work-infographic.jpg"
-              alt="Clean My Speaker - How Sound Frequencies Work Infographic: Sub Bass, Bass, Mid Range, and High Frequencies Explained"
+              src="/images/fix-my-speaker-sound-frequencies-guide.jpg"
+              alt="How Sound Frequencies Work - Fix My Speaker Audio Spectrum Guide for Phone Speakers"
               width={1024}
               height={682}
               className="w-full h-auto object-cover rounded-2xl"
@@ -158,12 +158,12 @@ export default function HowItWorksPage() {
                 🔬 <strong>Sound Frequency Spectrum:</strong> Sub Bass (20-60Hz) • Bass (60-250Hz - Water Eject Range) • Mid Range (250-4kHz) • Highs (4k-20kHz).
               </span>
               <a
-                href="/images/how-sound-frequencies-work-infographic.jpg"
+                href="/images/fix-my-speaker-sound-frequencies-guide.jpg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
               >
-                Open Full Infographic ↗
+                Open Full Spectrum Guide ↗
               </a>
             </figcaption>
           </figure>

@@ -38,25 +38,25 @@ export const metadata: Metadata = {
     canonical: 'https://cleanmyspeaker.net/speaker-test',
   },
   openGraph: {
-    title: 'Speaker Test Online – Test Left/Right Stereo Channels & Frequencies',
+    title: 'Speaker Test Online – Test & Fix My Speaker Sound Clarity',
     description:
-      'Diagnose speaker health, test stereo balance, and check frequency response from Sub Bass to High Treble with our free online tester.',
+      'Diagnose speaker health, test stereo balance, and check frequency response from Sub Bass to High Treble to clean and fix your phone speaker.',
     url: 'https://cleanmyspeaker.net/speaker-test',
     images: [
       {
-        url: 'https://cleanmyspeaker.net/images/how-sound-frequencies-work-infographic.jpg',
+        url: 'https://cleanmyspeaker.net/images/fix-my-speaker-sound-frequencies-guide.jpg',
         width: 1024,
         height: 682,
-        alt: 'How Sound Frequencies Work - Speaker Test Audio Spectrum Guide',
+        alt: 'How Sound Frequencies Work - Fix My Speaker Audio Testing Guide',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Speaker Test Online – Test Your Phone & Stereo Speakers',
+    title: 'Speaker Test Online – Test & Fix My Speaker Sound Clarity',
     description:
       'Diagnose speaker health, test stereo balance, and check frequencies with our free online tool.',
-    images: ['https://cleanmyspeaker.net/images/how-sound-frequencies-work-infographic.jpg'],
+    images: ['https://cleanmyspeaker.net/images/fix-my-speaker-sound-frequencies-guide.jpg'],
   },
 };
 
@@ -83,11 +83,11 @@ export default function SpeakerTestPage() {
         {/* Interactive Audio Tester Component */}
         <SpeakerTester />
 
-        {/* Sound Frequency Spectrum Infographic */}
+        {/* Sound Frequency Spectrum Guide */}
         <figure className="relative overflow-hidden rounded-3xl border border-slate-800 shadow-2xl bg-slate-950 my-8">
           <Image
-            src="/images/how-sound-frequencies-work-infographic.jpg"
-            alt="Clean My Speaker - How Sound Frequencies Work Infographic: Guide to Audio Testing Frequency Ranges"
+            src="/images/fix-my-speaker-sound-frequencies-guide.jpg"
+            alt="How Sound Frequencies Work - Fix My Speaker Audio Testing Guide"
             width={1024}
             height={682}
             className="w-full h-auto object-cover rounded-3xl"
@@ -99,12 +99,12 @@ export default function SpeakerTestPage() {
               🔬 <strong>Acoustic Diagnostic Spectrum:</strong> Sub Bass • Bass (Water Eject Zone) • Mid Range • High Frequencies.
             </span>
             <a
-              href="/images/how-sound-frequencies-work-infographic.jpg"
+              href="/images/fix-my-speaker-sound-frequencies-guide.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
             >
-              Open Full Infographic ↗
+              Open Full Frequency Guide ↗
             </a>
           </figcaption>
         </figure>
