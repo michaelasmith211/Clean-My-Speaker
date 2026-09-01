@@ -587,7 +587,155 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Section 9: Diagnostic Test Banner */}
+        {/* Section 9: Benefits of Using CleanMySpeaker.net Infographic Showcase */}
+        <section id="benefits-infographic" className="space-y-8 bg-slate-900/90 border-2 border-sky-500/30 p-6 sm:p-10 rounded-3xl shadow-2xl backdrop-blur-xl">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-950/80 border border-sky-500/40 text-sky-300 text-xs font-semibold uppercase tracking-wider">
+              <span>🌟</span> Top Benefits Infographic
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              Benefits of Using CleanMySpeaker.net
+            </h2>
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Get crystal-clear sound, higher maximum volume, and a better listening experience in just one click with our browser acoustic sound tool.
+            </p>
+          </div>
+
+          {/* Infographic Graphic with SEO Figure Container */}
+          <figure className="relative overflow-hidden rounded-2xl border border-slate-800 shadow-2xl bg-slate-950">
+            <Image
+              src="/images/benefits-of-clean-my-speaker-infographic.jpg"
+              alt="Clean My Speaker - Benefits of Using CleanMySpeaker.net Infographic: 8 Key Advantages for Phone Speaker Audio"
+              width={1024}
+              height={682}
+              className="w-full h-auto object-cover rounded-2xl hover:scale-[1.01] transition-transform duration-300"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1024px"
+              priority={false}
+            />
+            <figcaption className="p-4 bg-slate-950/95 border-t border-slate-800 text-xs text-slate-300 text-center flex flex-col sm:flex-row items-center justify-between gap-2">
+              <span>
+                ✨ <strong>Key Benefits:</strong> Instant Water Ejection • Muffled Audio Removal • 100% Safe • 1-Click Free Home Fix.
+              </span>
+              <a
+                href="/images/benefits-of-clean-my-speaker-infographic.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
+              >
+                Open Full Infographic ↗
+              </a>
+            </figcaption>
+          </figure>
+
+          {/* 8 Responsive Benefit Cards Matching Infographic */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                01
+              </div>
+              <h3 className="font-bold text-white text-base">Remove Water Instantly</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Eject water from your phone speaker quickly using calibrated, powerful 165 Hz sound waves.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                02
+              </div>
+              <h3 className="font-bold text-white text-base">Better Sound Quality</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Eliminate muffled, dull, or distorted audio and enjoy clear, loud, and crisp sound reproduction.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                03
+              </div>
+              <h3 className="font-bold text-white text-base">Safe & Risk-Free</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                100% safe for your device. Sound vibrations clean the acoustic mesh without sharp tools or risk of puncturing.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                04
+              </div>
+              <h3 className="font-bold text-white text-base">Works on All Devices</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Fully compatible with Apple iPhone, iPad, Android smartphones, tablets, smartwatches, and laptops.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                05
+              </div>
+              <h3 className="font-bold text-white text-base">Easy to Use</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Just tap play and let the sound do the magic. No app downloads, accounts, or configurations required.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                06
+              </div>
+              <h3 className="font-bold text-white text-base">Save Time & Money</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                No need to pay expensive repair shop service fees. Clean your speaker right at home for free.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                07
+              </div>
+              <h3 className="font-bold text-white text-base">Improve Device Life</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Regular acoustic maintenance prevents grime buildup and protects your speaker diaphragm long-term.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2 hover:border-sky-500/40 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center justify-center border border-sky-500/30">
+                08
+              </div>
+              <h3 className="font-bold text-white text-base">Better Listening</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Enjoy music, videos, phone calls, podcasts, and gaming without annoying crackles or low volume.
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom Trust & Feature Highlights */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-800 text-xs">
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-base block">🌐</span>
+              <span className="font-bold text-white block text-xs">100% Online</span>
+              <span className="text-[11px] text-slate-400 block">Runs in your browser</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-base block">🔒</span>
+              <span className="font-bold text-white block text-xs">Privacy Friendly</span>
+              <span className="text-[11px] text-slate-400 block">Zero personal data collected</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-base block">⚡</span>
+              <span className="font-bold text-white block text-xs">Instant Results</span>
+              <span className="text-[11px] text-slate-400 block">Feel the audio difference</span>
+            </div>
+            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-center space-y-1">
+              <span className="text-base block">⭐</span>
+              <span className="font-bold text-white block text-xs">Trusted by Thousands</span>
+              <span className="text-[11px] text-slate-400 block">Worldwide daily users</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 10: Diagnostic Test Banner */}
         <section className="p-8 rounded-3xl bg-gradient-to-r from-sky-950/60 to-blue-950/60 border border-sky-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center sm:text-left">
             <h2 className="text-xl sm:text-2xl font-bold text-white">Need to Test Your Speaker Health?</h2>

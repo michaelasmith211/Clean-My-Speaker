@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
@@ -60,6 +61,32 @@ export default function SpeakerTestPage() {
 
         {/* Interactive Audio Tester Component */}
         <SpeakerTester />
+
+        {/* Sound Frequency Spectrum Infographic */}
+        <figure className="relative overflow-hidden rounded-3xl border border-slate-800 shadow-2xl bg-slate-950 my-8">
+          <Image
+            src="/images/how-sound-frequencies-work-infographic.jpg"
+            alt="Clean My Speaker - How Sound Frequencies Work Infographic: Guide to Audio Testing Frequency Ranges"
+            width={1024}
+            height={682}
+            className="w-full h-auto object-cover rounded-3xl"
+            sizes="(max-width: 768px) 100vw, 896px"
+            priority={false}
+          />
+          <figcaption className="p-4 bg-slate-950/95 border-t border-slate-800 text-xs text-slate-300 text-center flex flex-col sm:flex-row items-center justify-between gap-2">
+            <span>
+              🔬 <strong>Acoustic Diagnostic Spectrum:</strong> Sub Bass • Bass (Water Eject Zone) • Mid Range • High Frequencies.
+            </span>
+            <a
+              href="/images/how-sound-frequencies-work-infographic.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
+            >
+              Open Full Infographic ↗
+            </a>
+          </figcaption>
+        </figure>
 
         {/* Informational Guidance */}
         <section className="space-y-6">

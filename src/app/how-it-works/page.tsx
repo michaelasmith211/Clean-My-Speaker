@@ -104,15 +104,100 @@ export default function HowItWorksPage() {
         </section>
 
         {/* Section 3: The 165 Hz Resonance Frequency */}
-        <section className="space-y-4 bg-slate-900/40 p-6 sm:p-8 rounded-3xl border border-slate-800">
-          <h2 className="text-2xl font-bold text-white">3. Why 165 Hz Is the Ideal Water Ejection Frequency</h2>
-          <p className="leading-relaxed">
-            High-pitched sounds (such as 2,000 Hz or 5,000 Hz) vibrate very quickly, but with microscopic displacement. They barely move the air around them.
-          </p>
-          <p className="leading-relaxed">
-            In contrast, low frequencies (between <strong>130 Hz and 250 Hz</strong>, centered near <strong>165 Hz</strong>) produce maximum cone excursion. This means the speaker cone travels its maximum possible distance forward and backward.
-          </p>
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-sm space-y-2">
+        <section className="space-y-6 bg-slate-900/40 p-6 sm:p-8 rounded-3xl border border-slate-800">
+          <div className="space-y-3">
+            <h2 className="text-2xl font-bold text-white">3. Why 165 Hz Is the Ideal Water Ejection Frequency</h2>
+            <p className="leading-relaxed">
+              High-pitched sounds (such as 2,000 Hz or 5,000 Hz) vibrate very quickly, but with microscopic displacement. They barely move the air around them.
+            </p>
+            <p className="leading-relaxed">
+              In contrast, low frequencies (between <strong>130 Hz and 250 Hz</strong>, centered near <strong>165 Hz</strong>) produce maximum cone excursion. This means the speaker cone travels its maximum possible distance forward and backward.
+            </p>
+          </div>
+
+          {/* Sound Frequencies Infographic */}
+          <figure className="relative overflow-hidden rounded-2xl border border-slate-800 shadow-2xl bg-slate-950 my-6">
+            <Image
+              src="/images/how-sound-frequencies-work-infographic.jpg"
+              alt="Clean My Speaker - How Sound Frequencies Work Infographic: Sub Bass, Bass, Mid Range, and High Frequencies Explained"
+              width={1024}
+              height={682}
+              className="w-full h-auto object-cover rounded-2xl"
+              sizes="(max-width: 768px) 100vw, 896px"
+              priority={false}
+            />
+            <figcaption className="p-4 bg-slate-950/95 border-t border-slate-800 text-xs text-slate-300 text-center flex flex-col sm:flex-row items-center justify-between gap-2">
+              <span>
+                🔬 <strong>Sound Frequency Spectrum:</strong> Sub Bass (20-60Hz) • Bass (60-250Hz - Water Eject Range) • Mid Range (250-4kHz) • Highs (4k-20kHz).
+              </span>
+              <a
+                href="/images/how-sound-frequencies-work-infographic.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sky-300 underline font-semibold hover:text-sky-200 shrink-0"
+              >
+                Open Full Infographic ↗
+              </a>
+            </figcaption>
+          </figure>
+
+          {/* 5-Band Frequency Spectrum Grid */}
+          <div className="space-y-3 pt-2">
+            <h3 className="text-lg font-bold text-white">Understanding Frequency Ranges & What They Do</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-emerald-400 text-sm">Sub Bass</span>
+                  <span className="text-[11px] text-slate-400 font-mono">20 – 60 Hz</span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Produces deep rumble felt more than heard (thunder, explosions, sub drops).
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-950 border border-sky-500/50 space-y-1.5 bg-sky-950/20">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-sky-400 text-sm">Bass (Ejection Zone)</span>
+                  <span className="text-[11px] text-sky-300 font-mono font-bold">60 – 250 Hz (165Hz)</span>
+                </div>
+                <p className="text-xs text-slate-200 leading-relaxed">
+                  Adds depth and fullness. <strong>165 Hz</strong> creates peak mechanical excursion to physically expel moisture.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-blue-400 text-sm">Mid Range</span>
+                  <span className="text-[11px] text-slate-400 font-mono">250 – 4,000 Hz</span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  The most critical range for vocals, podcasts, speech clarity, and core musical instruments.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-indigo-400 text-sm">High Frequencies</span>
+                  <span className="text-[11px] text-slate-400 font-mono">4,000 – 20,000 Hz</span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Adds brightness, fine details, and acoustic clarity (cymbals, high notes, consonants).
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5 sm:col-span-2 lg:col-span-2">
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-pink-400 text-sm">Ultra High (Air & Ambience)</span>
+                  <span className="text-[11px] text-slate-400 font-mono">20,000+ Hz</span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Beyond standard human hearing range. Contributes to spatial sense, airiness, and crisp harmonic realism.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-sm space-y-2 mt-4">
             <h3 className="font-semibold text-sky-300">The Air Displacement Effect</h3>
             <p className="text-slate-400 text-xs leading-relaxed">
               When the speaker diaphragm thrusts forward at 165 cycles per second, it pressurizes the small chamber behind the speaker grille. This sudden air pressure overpowers the liquid&apos;s surface tension, bursting the water film and propelling tiny water droplets out through the speaker holes.
