@@ -6,11 +6,32 @@ import { SOCIAL_LINKS } from '@/lib/constants';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Clean My Speaker – Browser-Based Audio Utility',
+  title: 'About Clean My Speaker – Free Online Tool to Clean & Fix Phone Speakers',
   description:
-    'About Clean My Speaker. Learn about our mission to provide free, ultra-fast, client-side acoustic cleaning tools for smartphones worldwide.',
+    'Learn about Clean My Speaker (CleanMySpeaker.net): our mission to provide free, private, instant in-browser sound utilities to clean and fix phone speakers worldwide.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/about',
+  },
+  openGraph: {
+    title: 'About Clean My Speaker – Free Online Tool to Clean & Fix Phone Speakers',
+    description:
+      'Learn about Clean My Speaker and our mission to provide fast, private, 100% in-browser acoustic utilities to fix muffled phone sound.',
+    url: 'https://cleanmyspeaker.net/about',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/clean-my-speaker-fix-my-speaker-benefits.jpg',
+        width: 1024,
+        height: 682,
+        alt: 'About Clean My Speaker & Fix My Speaker Online Tool',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Clean My Speaker',
+    description:
+      'Our mission: free, instant in-browser acoustic utilities to fix muffled smartphone sound.',
+    images: ['https://cleanmyspeaker.net/images/clean-my-speaker-fix-my-speaker-benefits.jpg'],
   },
 };
 

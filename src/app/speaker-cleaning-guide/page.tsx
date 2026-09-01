@@ -6,11 +6,32 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Phone Speaker Cleaning Guide – Clean Dust, Lint & Water Safely',
+  title: 'Phone Speaker Cleaning Guide – Clean & Fix My Speaker Safely',
   description:
-    'Comprehensive phone speaker cleaning guide. Learn how to safely remove pocket lint, dirt, wax, and moisture without damaging fragile speaker mesh.',
+    'Comprehensive phone speaker cleaning guide. Learn how to clean my speaker, fix muffled sound, and remove pocket lint, dirt, and moisture safely without damage.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/speaker-cleaning-guide',
+  },
+  openGraph: {
+    title: 'Phone Speaker Cleaning Guide – Clean & Fix My Speaker Safely',
+    description:
+      'Learn how to clean your phone speaker, remove dust, and fix muffled audio safely without needles or damaging the delicate mesh.',
+    url: 'https://cleanmyspeaker.net/speaker-cleaning-guide',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'Phone Speaker Cleaning Guide - How to Clean & Fix My Speaker',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Phone Speaker Cleaning Guide – Clean & Fix My Speaker Safely',
+    description:
+      'Safe step-by-step methods to clean dust, lint, and moisture from smartphone speakers.',
+    images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
   },
 };
 

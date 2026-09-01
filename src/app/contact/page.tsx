@@ -6,11 +6,32 @@ import { SOCIAL_LINKS } from '@/lib/constants';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Clean My Speaker – Support & Feedback',
+  title: 'Contact Clean My Speaker – Support, Feedback & Audio Inquiries',
   description:
-    'Contact Clean My Speaker for questions, technical feedback, or browser compatibility inquiries regarding our audio utility.',
+    'Contact the Clean My Speaker team for support, sound calibration feedback, partnerships, or browser compatibility inquiries.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/contact',
+  },
+  openGraph: {
+    title: 'Contact Clean My Speaker – Support & Inquiries',
+    description:
+      'Get in touch with the Clean My Speaker team for support, feature suggestions, or compatibility questions.',
+    url: 'https://cleanmyspeaker.net/contact',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/clean-my-speaker-fix-my-speaker-benefits.jpg',
+        width: 1024,
+        height: 682,
+        alt: 'Contact Clean My Speaker Support',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Clean My Speaker',
+    description:
+      'Contact our team for questions or technical feedback regarding our free audio cleaning tool.',
+    images: ['https://cleanmyspeaker.net/images/clean-my-speaker-fix-my-speaker-benefits.jpg'],
   },
 };
 

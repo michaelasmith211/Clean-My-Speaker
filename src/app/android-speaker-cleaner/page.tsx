@@ -6,11 +6,32 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Android Speaker Cleaner – Clean Your Android Speaker Online',
+  title: 'Android Speaker Cleaner – Fix My Android Speaker & Eject Water Online',
   description:
-    'Clean your Android phone speaker online. Eject water and loosen pocket dust on Samsung Galaxy, Google Pixel, Xiaomi, OnePlus, and Motorola devices with browser-generated sound waves.',
+    'Clean and fix your Android phone speaker online. Eject water and fix muffled sound on Samsung Galaxy, Google Pixel, Xiaomi, and OnePlus devices with browser sound waves.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/android-speaker-cleaner',
+  },
+  openGraph: {
+    title: 'Android Speaker Cleaner – Fix My Android Speaker & Eject Water Online',
+    description:
+      'Eject water droplets, clear pocket dust, and fix muffled speaker sound on Samsung Galaxy, Google Pixel, and all Android phones.',
+    url: 'https://cleanmyspeaker.net/android-speaker-cleaner',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'Android Speaker Cleaner - Clean & Fix My Speaker Sound',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Android Speaker Cleaner – Fix My Android Speaker Online',
+    description:
+      'Fix muffled audio and eject water from Samsung Galaxy, Pixel, and Android speakers with free browser sound waves.',
+    images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
   },
 };
 

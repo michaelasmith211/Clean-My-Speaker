@@ -8,19 +8,23 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Clean My Speaker – Clean Your Phone Speaker Online',
+    default: 'Clean My Speaker – Fix My Speaker & Clean Phone Speaker Online',
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'Clean my speaker online with a browser-based sound tool designed to help move water and moisture from your phone speaker. No app required.',
+    'Clean my speaker and fix my speaker sound online with our free browser tool. Eject trapped water, clear dust, and fix muffled audio on iPhone, Android, and laptops.',
   keywords: [
     'clean my speaker',
+    'fix my speaker',
     'clean my speaker online',
+    'fix my speaker sound',
     'clean phone speaker',
-    'clean my phone speaker',
+    'fix phone speaker',
+    'fix muffled speaker',
     'speaker cleaner',
     'speaker cleaner online',
     'phone speaker cleaner',
+    'fix phone speaker water',
     'remove water from speaker',
     'remove water from phone speaker',
     'water eject speaker',
@@ -28,11 +32,12 @@ export const metadata: Metadata = {
     'speaker cleaning sound',
     'sound to remove water from speaker',
     'clean iPhone speaker',
+    'fix iPhone speaker',
     'iPhone speaker cleaner',
     'clean Android speaker',
+    'fix Android speaker',
     'Android speaker cleaner',
     'phone speaker water removal',
-    'remove moisture from speaker',
     'fix muffled phone speaker',
     'speaker water remover',
   ],
@@ -47,9 +52,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: 'Clean My Speaker – Clean Your Phone Speaker Online',
+    title: 'Clean My Speaker – Fix My Speaker & Clean Phone Speaker Online',
     description:
-      'Clean my speaker online with a browser-based sound tool designed to help move water and moisture from your phone speaker. No app required.',
+      'Clean my speaker and fix my speaker sound online. Eject water and fix muffled phone audio with calibrated 165 Hz sound waves. 100% free, no app needed.',
     images: [
       {
         url: `${SITE_URL}/og-image.svg`,

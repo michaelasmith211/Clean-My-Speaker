@@ -6,11 +6,32 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'iPhone Speaker Cleaner – Clean Your iPhone Speaker Online',
+  title: 'iPhone Speaker Cleaner – Fix My iPhone Speaker & Eject Water Online',
   description:
-    'Free online iPhone speaker cleaner. Generate water eject sound waves directly in Safari to remove trapped water from your iPhone speaker and fix muffled audio.',
+    'Free online iPhone speaker cleaner. Generate water eject sound waves directly in Safari to fix my speaker, remove trapped water from iPhone, and restore loud audio.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/iphone-speaker-cleaner',
+  },
+  openGraph: {
+    title: 'iPhone Speaker Cleaner – Fix My iPhone Speaker & Eject Water Online',
+    description:
+      'Generate calibrated water eject sound waves directly in Safari to clean iPhone speakers and fix muffled sound without downloading apps.',
+    url: 'https://cleanmyspeaker.net/iphone-speaker-cleaner',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'iPhone Speaker Cleaner - How to Clean My Speaker and Fix Sound',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'iPhone Speaker Cleaner – Fix My iPhone Speaker Online',
+    description:
+      'Eject water and fix muffled sound on iPhone with calibrated browser sound waves. Free & instant in Safari.',
+    images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
   },
 };
 

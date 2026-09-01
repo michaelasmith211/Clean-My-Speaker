@@ -7,11 +7,32 @@ import { FAQItem } from '@/lib/types';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Clean My Speaker FAQ – Questions About Speaker Cleaning & Water Ejection',
+  title: 'Clean My Speaker & Fix My Speaker FAQ – Water Eject & Audio Questions',
   description:
-    'Frequently asked questions about cleaning phone speakers, ejecting water with sound, restoring muffled audio, and device safety on iPhone and Android.',
+    'Frequently asked questions about how to clean my speaker, fix my speaker sound, eject water with 165 Hz audio, and repair muffled phone speakers on iPhone & Android.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/faq',
+  },
+  openGraph: {
+    title: 'Clean My Speaker & Fix My Speaker FAQ – Water Eject & Audio Questions',
+    description:
+      'Answers to top questions about cleaning phone speakers, ejecting water with sound, and fixing muffled audio safely.',
+    url: 'https://cleanmyspeaker.net/faq',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'Clean My Speaker & Fix My Speaker FAQ Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Clean My Speaker & Fix My Speaker FAQ',
+    description:
+      'Answers to common questions about ejecting water from phone speakers and fixing muffled audio with sound waves.',
+    images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
   },
 };
 
