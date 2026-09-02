@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { FAQAccordion } from '@/components/FAQAccordion';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 import { FAQItem } from '@/lib/types';
 import { Metadata } from 'next';
 
@@ -150,6 +151,13 @@ export default function FAQPage() {
             🔊 Launch Clean My Speaker Tool
           </Link>
         </section>
+
+        {/* Social Sharing Callout */}
+        <ShareButtons
+          title="Clean My Speaker FAQ: Questions & Answers"
+          description="Find answers to common questions about water ejection, 165 Hz audio frequencies, phone safety, and troubleshooting muffled speakers."
+          variant="card"
+        />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/faq" />

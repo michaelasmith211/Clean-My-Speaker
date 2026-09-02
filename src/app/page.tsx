@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { FAQAccordion } from '@/components/FAQAccordion';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 import { FAQItem } from '@/lib/types';
 
 const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
@@ -289,6 +290,11 @@ export default function HomePage() {
 
         {/* Safety / Practical advice under the tool */}
         <SafetyNotice />
+
+        {/* Social Sharing Callout */}
+        <div className="mt-8 max-w-2xl mx-auto">
+          <ShareButtons variant="card" />
+        </div>
       </section>
 
       {/* QUICK FEATURE TILES */}
@@ -899,6 +905,9 @@ export default function HomePage() {
           </div>
           <FAQAccordion items={homepageFaqs} includeSchema={false} />
         </section>
+
+        {/* Social Sharing Callout */}
+        <ShareButtons variant="card" />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/" />

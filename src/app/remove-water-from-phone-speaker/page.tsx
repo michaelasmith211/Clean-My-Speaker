@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -247,6 +248,13 @@ export default function RemoveWaterPage() {
         </section>
 
         <SafetyNotice />
+
+        {/* Social Sharing Callout */}
+        <ShareButtons
+          title="How to Remove Water From a Phone Speaker (Safe Guide)"
+          description="Complete emergency guide to remove trapped water, eject moisture, and fix muffled sound on iPhone and Android phone speakers."
+          variant="card"
+        />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/remove-water-from-phone-speaker" />

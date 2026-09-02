@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -182,6 +183,13 @@ export default function IPhoneSpeakerCleanerPage() {
         </section>
 
         <SafetyNotice />
+
+        {/* Social Sharing Callout */}
+        <ShareButtons
+          title="iPhone Speaker Cleaner: How to Eject Water & Fix iPhone Sound Online"
+          description="Eject water from iPhone speakers and fix muffled sound directly in Mobile Safari with free 165 Hz sound waves."
+          variant="card"
+        />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/iphone-speaker-cleaner" />

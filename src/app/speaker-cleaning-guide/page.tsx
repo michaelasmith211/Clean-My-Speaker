@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -194,6 +195,13 @@ export default function SpeakerCleaningGuidePage() {
         </section>
 
         <SafetyNotice />
+
+        {/* Social Sharing Callout */}
+        <ShareButtons
+          title="Phone Speaker Cleaning Guide: Safely Clean Dust, Lint & Moisture"
+          description="Learn safe step-by-step methods to clean dust, lint, and earwax from iPhone and Android speaker grilles without needles or damage."
+          variant="card"
+        />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/speaker-cleaning-guide" />

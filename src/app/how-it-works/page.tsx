@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -309,6 +310,13 @@ export default function HowItWorksPage() {
             </Link>.
           </p>
         </section>
+
+        {/* Social Sharing Callout */}
+        <ShareButtons
+          title="How Clean My Speaker Works: The Science of Water Ejection"
+          description="Learn how browser 165 Hz sound waves, diaphragm excursion, and kinetic air displacement safely eject water from phone speakers."
+          variant="card"
+        />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/how-it-works" />

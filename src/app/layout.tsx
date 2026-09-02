@@ -57,27 +57,32 @@ export const metadata: Metadata = {
       'Clean my speaker and fix my speaker sound online. Eject water and fix muffled phone audio with calibrated 165 Hz sound waves. 100% free, no app needed.',
     images: [
       {
-        url: `${SITE_URL}/og-image.svg`,
-        width: 1200,
-        height: 630,
-        alt: 'Clean My Speaker & Fix My Speaker - Water Eject & Speaker Cleaner Online',
-      },
-      {
         url: `${SITE_URL}/images/how-to-clean-my-speaker-fix-sound.jpg`,
         width: 1024,
         height: 576,
-        alt: 'How to Clean My Speaker & Fix My Speaker Sound',
+        alt: 'How to Clean My Speaker & Fix My Speaker Sound Online',
+        type: 'image/jpeg',
       },
       {
         url: `${SITE_URL}/images/clean-my-speaker-fix-my-speaker-benefits.jpg`,
         width: 1024,
         height: 682,
         alt: 'Clean My Speaker & Fix My Speaker Benefits',
+        type: 'image/jpeg',
+      },
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1024,
+        height: 576,
+        alt: 'Clean My Speaker - Online Water Eject & Speaker Cleaner',
+        type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@cleanmyspeaker',
+    creator: '@cleanmyspeaker',
     title: 'Clean My Speaker – Clean & Fix Your Phone Speaker Online',
     description:
       'Play specially calibrated sound waves directly in your browser to eject trapped water, clean dust, and fix muffled phone sound.',

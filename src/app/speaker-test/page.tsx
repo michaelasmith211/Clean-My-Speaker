@@ -4,6 +4,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 
 const SpeakerTester = dynamic(() => import('@/components/SpeakerTester'), {
   ssr: false,
@@ -176,6 +177,13 @@ export default function SpeakerTestPage() {
             🔊 Clean My Speaker Now
           </Link>
         </section>
+
+        {/* Social Sharing Callout */}
+        <ShareButtons
+          title="Online Speaker Tester & Audio Diagnostic Tool"
+          description="Free online tool to test stereo channels, diagnose muffled sound, check frequency response, and detect speaker distortion."
+          variant="card"
+        />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/speaker-test" />

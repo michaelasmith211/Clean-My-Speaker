@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -168,6 +169,13 @@ export default function AndroidSpeakerCleanerPage() {
         </section>
 
         <SafetyNotice />
+
+        {/* Social Sharing Callout */}
+        <ShareButtons
+          title="Android Speaker Cleaner: Eject Water & Fix Sound on Samsung & Android"
+          description="Eject water droplets, remove dust, and fix muffled audio on Samsung Galaxy, Google Pixel, Xiaomi, and all Android phones with free browser sound waves."
+          variant="card"
+        />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/android-speaker-cleaner" />
