@@ -6,29 +6,29 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How to Remove Water From a Phone Speaker – Fix My Speaker Online',
+  title: 'How to Remove Water From a Phone Speaker – Fix Clean My Speaker Guide',
   description:
-    'Complete guide to remove water from your phone speaker and fix muffled sound. Learn emergency drying steps, what never to do, and how to clean my speaker online.',
+    'Complete emergency guide to remove water from phone speakers and fix clean my speaker sound online. Learn safe drying steps, sound ejection, and what never to do.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/remove-water-from-phone-speaker',
   },
   openGraph: {
-    title: 'How to Remove Water From a Phone Speaker – Fix My Speaker Online',
+    title: 'How to Remove Water From a Phone Speaker – Fix Clean My Speaker Guide',
     description:
-      'Learn emergency steps to safely remove water, eject moisture, and fix muffled sound on any smartphone speaker.',
+      'Learn emergency steps to safely remove water, eject moisture, and fix clean my speaker sound on any smartphone.',
     url: 'https://cleanmyspeaker.net/remove-water-from-phone-speaker',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
         width: 1024,
         height: 576,
-        alt: 'How to Remove Water From Phone Speaker & Fix My Speaker Sound',
+        alt: 'How to Remove Water From Phone Speaker & Fix Clean My Speaker',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Remove Water From a Phone Speaker – Fix My Speaker Online',
+    title: 'How to Remove Water From a Phone Speaker – Fix Clean My Speaker',
     description:
       'Safely remove water droplets from your phone speaker and fix muffled audio with our free sound tool.',
     images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
@@ -41,26 +41,42 @@ export default function RemoveWaterPage() {
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Remove Water From a Phone Speaker',
+    name: 'How to Remove Water From a Phone Speaker – Fix Clean My Speaker',
     description: 'Safe step-by-step procedure to remove water and moisture from a phone speaker using acoustic vibrations and safe physical drying.',
+    image: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+    totalTime: 'PT5M',
+    tool: [
+      {
+        '@type': 'HowToTool',
+        name: 'Clean My Speaker Web Audio Tool (cleanmyspeaker.net)',
+      },
+      {
+        '@type': 'HowToTool',
+        name: 'Dry microfiber cloth or paper towel',
+      },
+    ],
     step: [
       {
         '@type': 'HowToStep',
+        position: 1,
         name: 'Remove from liquid and dry exterior',
         text: 'Immediately remove your phone from water, disconnect all cables, and wipe the exterior with a microfiber cloth.',
       },
       {
         '@type': 'HowToStep',
+        position: 2,
         name: 'Position the phone with speaker down',
         text: 'Angle the speaker holes downward toward a dry, absorbent surface so gravity assists liquid egress.',
       },
       {
         '@type': 'HowToStep',
+        position: 3,
         name: 'Run Clean My Speaker audio tone',
         text: 'Open Clean My Speaker in your browser, set volume to 100%, and run the Water Eject or Deep Clean mode for 30 to 60 seconds.',
       },
       {
         '@type': 'HowToStep',
+        position: 4,
         name: 'Dab away expelled water and air-dry',
         text: 'Wipe off droplets ejected from the grille and allow the phone to rest in a dry, ventilated area for at least a few hours.',
       },

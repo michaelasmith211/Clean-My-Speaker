@@ -39,15 +39,64 @@ const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Clean My Speaker – Clean Your Phone Speaker Online',
+  title: 'Clean My Speaker – Fix My Speaker & Fix Clean My Speaker Online',
   description:
-    'Clean my speaker online with a browser-based sound tool designed to help move water and moisture from your phone speaker. No app required.',
+    'Clean my speaker and fix my speaker sound online. Easily fix clean my speaker, eject trapped water, and restore crystal-clear audio with our free 165 Hz sound tool.',
+  keywords: [
+    'clean my speaker',
+    'fix my speaker',
+    'fix clean my speaker',
+    'clean phone speaker',
+    'fix phone speaker',
+    'clean my phone speaker',
+    'fix my phone speaker',
+    'clean and fix my speaker',
+    'speaker cleaner',
+    'speaker cleaner online',
+    'phone speaker cleaner',
+    'remove water from speaker',
+    'remove water from phone speaker',
+    'water eject speaker',
+    'water eject sound',
+    'speaker cleaning sound',
+    'fix muffled phone speaker',
+    'fix speaker sound',
+    'clean iPhone speaker',
+    'clean Android speaker',
+    'speaker water remover',
+  ],
   alternates: {
     canonical: 'https://cleanmyspeaker.net/',
+  },
+  openGraph: {
+    title: 'Clean My Speaker – Fix My Speaker & Fix Clean My Speaker Online',
+    description:
+      'Clean my speaker and fix my speaker sound online with our free 165 Hz water eject sound wave tool. Works instantly in Safari, Chrome & Edge.',
+    url: 'https://cleanmyspeaker.net/',
+    images: [
+      {
+        url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+        width: 1024,
+        height: 576,
+        alt: 'Clean My Speaker – Fix My Speaker & Fix Clean My Speaker Online',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Clean My Speaker – Fix My Speaker & Fix Clean My Speaker Online',
+    description:
+      'Fix clean my speaker online: eject water droplets, clean dust, and fix muffled audio with free 165 Hz sound waves.',
+    images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
   },
 };
 
 const homepageFaqs: FAQItem[] = [
+  {
+    question: 'How do I fix clean my speaker?',
+    answer:
+      'To fix clean my speaker online, turn your phone media volume up to 100%, point the speaker grilles downward toward a dry microfiber cloth, and click "CLEAN MY SPEAKER". Let the 165 Hz acoustic wave run for 30 to 60 seconds to vibrate out trapped water and dislodge dust particles.',
+  },
   {
     question: 'How do I clean my speaker?',
     answer:
@@ -106,7 +155,7 @@ export default function HomePage() {
     '@type': 'HowTo',
     name: 'How to Clean My Speaker & Fix My Speaker Sound – 5 Step Water & Dust Removal Guide',
     description:
-      'Learn how to clean my speaker and fix my speaker sound online using Clean My Speaker (CleanMySpeaker.net). Uses calibrated 165 Hz sound waves to fix muffled audio, displace moisture, and eject water instantly.',
+      'Learn how to clean my speaker, fix my speaker, and fix clean my speaker sound online using Clean My Speaker (CleanMySpeaker.net). Uses calibrated 165 Hz sound waves to fix muffled audio, displace moisture, and eject water instantly.',
     image: {
       '@type': 'ImageObject',
       url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
@@ -189,6 +238,19 @@ export default function HomePage() {
     },
   };
 
+  const jsonLdFaq = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: homepageFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <main className="min-h-screen">
       {/* Schema.org Structured Data */}
@@ -200,6 +262,10 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdVideo) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
 
       {/* HERO SECTION WITH TOOL ABOVE THE FOLD */}
       <section className="relative pt-8 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
@@ -209,11 +275,11 @@ export default function HomePage() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight text-balance max-w-3xl mx-auto leading-tight">
-          Clean My Speaker – <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-blue-500">Clean Your Phone Speaker Online</span>
+          Clean My Speaker – <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-blue-500">Fix My Speaker & Clean Phone Speaker Online</span>
         </h1>
 
         <p className="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed text-balance">
-          Play a specially generated sound to help move water and moisture from your phone speaker. No app or download required.
+          Play calibrated 165 Hz sound waves to <strong>clean my speaker</strong>, <strong>fix my speaker</strong>, and <strong>fix clean my speaker</strong> sound online. Eject trapped water and clear muffled audio with one click — no app download required.
         </p>
 
         {/* Immediate Audio Utility */}
@@ -445,23 +511,23 @@ export default function HomePage() {
 
       {/* COMPREHENSIVE PEOPLE-FIRST SEO CONTENT */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16 text-slate-300">
-        {/* Section 1: Clean My Speaker Online */}
+        {/* Section 1: Fix Clean My Speaker Online */}
         <section className="space-y-4">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            Clean My Speaker Online – How It Works & When to Use It
+            Fix Clean My Speaker Online – How to Clean & Fix Phone Speakers
           </h2>
           <p className="leading-relaxed">
-            Accidentally dropping your smartphone into the sink, getting caught in heavy rain, or setting your device near the shower can cause water to enter the small acoustic speaker cavities. Even on IP68 water-resistant smartphones, surface tension holds tiny water droplets inside the speaker mesh. This moisture obstructs sound waves, causing your phone speaker to sound muffled, crackly, or barely audible.
+            Accidentally dropping your smartphone into water, getting caught in rain, or setting your device in a humid bathroom can cause water droplets to become trapped inside the micro-speaker cavities. Even on water-resistant phones, moisture creates surface tension across the speaker mesh, muffling your audio and making music, calls, and videos sound distant or crackly.
           </p>
           <p className="leading-relaxed">
-            The <strong>Clean My Speaker</strong> online utility gives you instant access to low-frequency sound pulses right from your browser. Instead of putting your smartphone in rice or using dangerous pointed tools that can pierce delicate membranes, our tool creates controlled mechanical vibrations designed to encourage surface liquid beads to dislodge and exit the speaker ports.
+            The <strong>Clean My Speaker</strong> online sound utility allows you to <strong>clean my speaker</strong>, <strong>fix my speaker</strong>, and <strong>fix clean my speaker</strong> sound directly from your mobile browser. Instead of dangerous rice or sharp needles that can puncture delicate diaphragms, our tool uses 165 Hz sound waves to vibrate out moisture and clear dust in seconds.
           </p>
         </section>
 
         {/* Section 2: How Does Clean My Speaker Work? */}
         <section className="space-y-4 bg-slate-900/50 p-6 sm:p-8 rounded-3xl border border-slate-800">
           <h2 className="text-2xl font-bold text-white tracking-tight">
-            How Does Clean My Speaker Work? The Physics of Water Ejection
+            How Does Clean My Speaker Work? The Science of Water Ejection
           </h2>
           <p className="leading-relaxed">
             Every smartphone speaker relies on a tiny, flexible diaphragm (or cone) that vibrates back and forth when driven by an electromagnetic coil. When you play normal speech or music, these vibrations are complex, high-frequency, and irregular.
@@ -492,7 +558,7 @@ export default function HomePage() {
         {/* Section 3: Step-by-Step Instructions */}
         <section className="space-y-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            How to Clean My Phone Speaker: Step-by-Step Instructions
+            How to Fix Clean My Speaker: Step-by-Step Instructions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
@@ -578,7 +644,7 @@ export default function HomePage() {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-3">
             <div className="text-2xl">🍎</div>
-            <h2 className="text-xl font-bold text-white">Clean My Speaker for iPhone</h2>
+            <h2 className="text-xl font-bold text-white">Fix Clean My Speaker for iPhone</h2>
             <p className="text-sm text-slate-400 leading-relaxed">
               Modern iPhones (from iPhone 7 through iPhone 15 and 16 Pro) feature stereo audio with an earpiece receiver speaker and bottom speaker grilles. While newer models have IP68 water resistance, water frequently muffles the microphone and speaker cavities after swimming, showering, or rain.
             </p>
@@ -592,7 +658,7 @@ export default function HomePage() {
 
           <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-3">
             <div className="text-2xl">🤖</div>
-            <h2 className="text-xl font-bold text-white">Clean My Speaker for Android</h2>
+            <h2 className="text-xl font-bold text-white">Fix Clean My Speaker for Android</h2>
             <p className="text-sm text-slate-300 leading-relaxed">
               From Samsung Galaxy S24 and Pixel 8 to Xiaomi and OnePlus devices, Android hardware designs feature varied speaker grille sizes and acoustic chamber dimensions. Our multi-frequency sweeps ensure compatibility across all speaker geometries.
             </p>
@@ -821,17 +887,17 @@ export default function HomePage() {
           </Link>
         </section>
 
-        {/* Section 10: FAQ Accordion */}
+        {/* Section 11: FAQ Accordion */}
         <section className="space-y-6">
           <div className="text-center space-y-2">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              Frequently Asked Questions About Speaker Cleaning
+              Frequently Asked Questions About How to Clean & Fix My Speaker
             </h2>
             <p className="text-sm text-slate-400 max-w-xl mx-auto">
-              Clear, practical answers about phone water eject sounds, speaker maintenance, and device safety.
+              Clear, practical answers about how to fix clean my speaker, phone water eject sounds, and speaker maintenance.
             </p>
           </div>
-          <FAQAccordion items={homepageFaqs} includeSchema={true} />
+          <FAQAccordion items={homepageFaqs} includeSchema={false} />
         </section>
 
         {/* Dynamic Contextual Interlinking */}

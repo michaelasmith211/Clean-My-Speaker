@@ -6,14 +6,14 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'iPhone Speaker Cleaner – Fix My iPhone Speaker & Eject Water Online',
+  title: 'iPhone Speaker Cleaner – Fix Clean My Speaker & Eject Water on iPhone',
   description:
-    'Free online iPhone speaker cleaner. Generate water eject sound waves directly in Safari to fix my speaker, remove trapped water from iPhone, and restore loud audio.',
+    'Clean and fix your iPhone speaker online. Play 165 Hz water eject sound waves directly in Safari to fix clean my speaker, expel trapped liquid, and fix muffled iPhone audio.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/iphone-speaker-cleaner',
   },
   openGraph: {
-    title: 'iPhone Speaker Cleaner – Fix My iPhone Speaker & Eject Water Online',
+    title: 'iPhone Speaker Cleaner – Fix Clean My Speaker & Eject Water on iPhone',
     description:
       'Generate calibrated water eject sound waves directly in Safari to clean iPhone speakers and fix muffled sound without downloading apps.',
     url: 'https://cleanmyspeaker.net/iphone-speaker-cleaner',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'iPhone Speaker Cleaner – Fix My iPhone Speaker Online',
+    title: 'iPhone Speaker Cleaner – Fix Clean My Speaker Online',
     description:
       'Eject water and fix muffled sound on iPhone with calibrated browser sound waves. Free & instant in Safari.',
     images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
@@ -38,8 +38,58 @@ export const metadata: Metadata = {
 export default function IPhoneSpeakerCleanerPage() {
   const breadcrumbs = [{ name: 'iPhone Speaker Cleaner', href: '/iphone-speaker-cleaner' }];
 
+  const jsonLdHowTo = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Clean iPhone Speaker & Eject Water Online',
+    description:
+      'Step-by-step guide to eject water and clean iPhone speakers using browser-generated 165 Hz acoustic sound waves in Safari.',
+    image: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+    totalTime: 'PT2M',
+    tool: [
+      {
+        '@type': 'HowToTool',
+        name: 'Clean My Speaker Web Audio Tool (cleanmyspeaker.net)',
+      },
+      {
+        '@type': 'HowToTool',
+        name: 'Dry microfiber cloth or towel',
+      },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Open CleanMySpeaker.net in Safari',
+        text: 'Navigate to CleanMySpeaker.net on your iPhone. Turn volume up to 100%.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Position iPhone Speaker Facing Down',
+        text: 'Hold your iPhone vertically with the bottom speaker grille angled downward toward a dry cloth.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Play Cleaning Sound Wave',
+        text: 'Tap "CLEAN MY SPEAKER" to play the 165 Hz water eject tone for 30 to 60 seconds.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Dab Away Ejected Moisture',
+        text: 'Gently wipe off expelled droplets from the speaker mesh and enjoy restored clear sound.',
+      },
+    ],
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="space-y-12 mt-6 text-slate-300">
@@ -48,7 +98,7 @@ export default function IPhoneSpeakerCleanerPage() {
             iOS & Apple Devices
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            iPhone Speaker Cleaner: How to Clean Your iPhone Speaker Online
+            iPhone Speaker Cleaner: How to Fix Clean My Speaker on iPhone
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed">
             Fix muffled iPhone sound, remove trapped water from speaker grilles, and restore crisp audio after water exposure using browser-based acoustic vibration.

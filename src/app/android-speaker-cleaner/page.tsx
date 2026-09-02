@@ -6,14 +6,14 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Android Speaker Cleaner – Fix My Android Speaker & Eject Water Online',
+  title: 'Android Speaker Cleaner – Fix Clean My Speaker on Samsung & Android',
   description:
-    'Clean and fix your Android phone speaker online. Eject water and fix muffled sound on Samsung Galaxy, Google Pixel, Xiaomi, and OnePlus devices with browser sound waves.',
+    'Clean and fix your Android phone speaker online. Eject water and fix clean my speaker sound on Samsung Galaxy, Pixel, Xiaomi, and OnePlus with browser sound waves.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/android-speaker-cleaner',
   },
   openGraph: {
-    title: 'Android Speaker Cleaner – Fix My Android Speaker & Eject Water Online',
+    title: 'Android Speaker Cleaner – Fix Clean My Speaker on Samsung & Android',
     description:
       'Eject water droplets, clear pocket dust, and fix muffled speaker sound on Samsung Galaxy, Google Pixel, and all Android phones.',
     url: 'https://cleanmyspeaker.net/android-speaker-cleaner',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Android Speaker Cleaner – Fix My Android Speaker Online',
+    title: 'Android Speaker Cleaner – Fix Clean My Speaker Online',
     description:
       'Fix muffled audio and eject water from Samsung Galaxy, Pixel, and Android speakers with free browser sound waves.',
     images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
@@ -38,8 +38,58 @@ export const metadata: Metadata = {
 export default function AndroidSpeakerCleanerPage() {
   const breadcrumbs = [{ name: 'Android Speaker Cleaner', href: '/android-speaker-cleaner' }];
 
+  const jsonLdHowTo = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Clean Android Phone Speaker & Eject Water Online',
+    description:
+      'Step-by-step guide to eject water and clean Android smartphone speakers using 165 Hz acoustic frequencies in Chrome or Samsung Internet.',
+    image: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+    totalTime: 'PT2M',
+    tool: [
+      {
+        '@type': 'HowToTool',
+        name: 'Clean My Speaker Web Audio Tool (cleanmyspeaker.net)',
+      },
+      {
+        '@type': 'HowToTool',
+        name: 'Dry microfiber cloth or towel',
+      },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Open CleanMySpeaker.net in Chrome',
+        text: 'Navigate to CleanMySpeaker.net on your Android device and increase media volume to 100%.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Point Speaker Grille Downward',
+        text: 'Angle your Android device vertically toward a clean, absorbent cloth or surface.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Run Cleaning Audio Sweep',
+        text: 'Tap "CLEAN MY SPEAKER" to activate the 165 Hz multi-frequency cleaner sweep for 30–60 seconds.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Wipe Clean & Test Sound',
+        text: 'Dab away any liquid expelled from the speaker openings and test your sound clarity.',
+      },
+    ],
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="space-y-12 mt-6 text-slate-300">
@@ -48,7 +98,7 @@ export default function AndroidSpeakerCleanerPage() {
             Android Ecosystem
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            Android Speaker Cleaner: Clean Your Android Phone Speaker Online
+            Android Speaker Cleaner: How to Fix Clean My Speaker on Android
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed">
             Quickly remove moisture and fix muffled audio on Samsung Galaxy, Google Pixel, Xiaomi, OnePlus, and Motorola smartphones using calibrated sound frequencies.

@@ -31,14 +31,14 @@ const SpeakerTester = dynamic(() => import('@/components/SpeakerTester'), {
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Speaker Test Online – Test Your Phone & Stereo Speakers',
+  title: 'Speaker Test Online – Test & Fix Clean My Speaker Sound Quality',
   description:
-    'Free online speaker test. Test left and right stereo audio channels, diagnose muffled sound, check frequency response from 100 Hz to 10 kHz, and detect speaker distortion.',
+    'Free online speaker test. Test stereo channels, check audio frequencies from 100 Hz to 10 kHz, diagnose muffled sound, and fix clean my speaker audio clarity.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/speaker-test',
   },
   openGraph: {
-    title: 'Speaker Test Online – Test & Fix My Speaker Sound Clarity',
+    title: 'Speaker Test Online – Test & Fix Clean My Speaker Sound Quality',
     description:
       'Diagnose speaker health, test stereo balance, and check frequency response from Sub Bass to High Treble to clean and fix your phone speaker.',
     url: 'https://cleanmyspeaker.net/speaker-test',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Speaker Test Online – Test & Fix My Speaker Sound Clarity',
+    title: 'Speaker Test Online – Test & Fix Clean My Speaker Sound Quality',
     description:
       'Diagnose speaker health, test stereo balance, and check frequencies with our free online tool.',
     images: ['https://cleanmyspeaker.net/images/fix-my-speaker-sound-frequencies-guide.jpg'],
@@ -63,8 +63,28 @@ export const metadata: Metadata = {
 export default function SpeakerTestPage() {
   const breadcrumbs = [{ name: 'Speaker Test', href: '/speaker-test' }];
 
+  const jsonLdTestApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Online Speaker Tester & Audio Diagnostic Tool',
+    url: 'https://cleanmyspeaker.net/speaker-test',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'All (iOS, Android, Windows, macOS)',
+    offers: {
+      '@type': 'Offer',
+      price: '0.00',
+      priceCurrency: 'USD',
+    },
+    description:
+      'Online stereo channel tester and multi-frequency acoustic generator to diagnose mobile phone speaker health.',
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdTestApp) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="space-y-12 mt-6 text-slate-300">

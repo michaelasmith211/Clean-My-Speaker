@@ -7,14 +7,14 @@ import { FAQItem } from '@/lib/types';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Clean My Speaker & Fix My Speaker FAQ – Water Eject & Audio Questions',
+  title: 'Clean My Speaker & Fix Clean My Speaker FAQ – Audio Questions',
   description:
-    'Frequently asked questions about how to clean my speaker, fix my speaker sound, eject water with 165 Hz audio, and repair muffled phone speakers on iPhone & Android.',
+    'Frequently asked questions about how to clean my speaker, fix my speaker, and fix clean my speaker sound with 165 Hz water eject tones on iPhone & Android.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/faq',
   },
   openGraph: {
-    title: 'Clean My Speaker & Fix My Speaker FAQ – Water Eject & Audio Questions',
+    title: 'Clean My Speaker & Fix Clean My Speaker FAQ – Audio Questions',
     description:
       'Answers to top questions about cleaning phone speakers, ejecting water with sound, and fixing muffled audio safely.',
     url: 'https://cleanmyspeaker.net/faq',
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
         width: 1024,
         height: 576,
-        alt: 'Clean My Speaker & Fix My Speaker FAQ Guide',
+        alt: 'Clean My Speaker & Fix Clean My Speaker FAQ Guide',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Clean My Speaker & Fix My Speaker FAQ',
+    title: 'Clean My Speaker & Fix Clean My Speaker FAQ',
     description:
       'Answers to common questions about ejecting water from phone speakers and fixing muffled audio with sound waves.',
     images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
@@ -37,6 +37,11 @@ export const metadata: Metadata = {
 };
 
 const fullFaqList: FAQItem[] = [
+  {
+    question: 'How do I fix clean my speaker?',
+    answer:
+      'To fix clean my speaker online, set your phone volume to 100%, hold the speaker opening pointing downward on a dry cloth, and click "CLEAN MY SPEAKER". Let the 165 Hz resonant wave run for 30 to 60 seconds to vibrate out trapped water droplets and dust.',
+  },
   {
     question: 'How do I clean my speaker?',
     answer:

@@ -6,14 +6,14 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How Clean My Speaker Works – Fix My Speaker Sound & Physics',
+  title: 'How Clean My Speaker Works – Fix Clean My Speaker Sound & Physics',
   description:
-    'Discover the acoustic physics behind how Clean My Speaker generates low-frequency sound waves and air pressure to fix muffled phone sound and safely eject water.',
+    'Discover the acoustic physics behind how Clean My Speaker generates low-frequency sound waves and air pressure to fix clean my speaker sound and safely eject water.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/how-it-works',
   },
   openGraph: {
-    title: 'How Clean My Speaker Works – Fix My Speaker Sound & Physics',
+    title: 'How Clean My Speaker Works – Fix Clean My Speaker Sound & Physics',
     description:
       'Learn how 165 Hz sound waves, diaphragm excursion, and acoustic air displacement safely dislodge trapped water droplets and fix phone speakers.',
     url: 'https://cleanmyspeaker.net/how-it-works',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Clean My Speaker Works – Fix My Speaker Sound & Physics',
+    title: 'How Clean My Speaker Works – Fix Clean My Speaker Sound & Physics',
     description:
       'Discover how acoustic frequencies and air displacement remove water and fix phone speaker sound.',
     images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
@@ -44,8 +44,35 @@ export const metadata: Metadata = {
 export default function HowItWorksPage() {
   const breadcrumbs = [{ name: 'How It Works', href: '/how-it-works' }];
 
+  const jsonLdArticle = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'How Clean My Speaker Works: The Science of Sound-Based Water Ejection',
+    description:
+      'Discover the acoustic physics behind how Clean My Speaker uses 165 Hz sound waves and kinetic air displacement to remove water from phone speakers.',
+    image: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+    author: {
+      '@type': 'Organization',
+      name: 'Clean My Speaker Team',
+      url: 'https://cleanmyspeaker.net',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Clean My Speaker',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://cleanmyspeaker.net/icon.png',
+      },
+    },
+    mainEntityOfPage: 'https://cleanmyspeaker.net/how-it-works',
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="space-y-12 mt-6 text-slate-300">

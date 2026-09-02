@@ -6,14 +6,14 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Phone Speaker Cleaning Guide – Clean & Fix My Speaker Safely',
+  title: 'Phone Speaker Cleaning Guide – How to Clean & Fix Clean My Speaker Safely',
   description:
-    'Comprehensive phone speaker cleaning guide. Learn how to clean my speaker, fix muffled sound, and remove pocket lint, dirt, and moisture safely without damage.',
+    'Comprehensive phone speaker cleaning guide. Learn how to clean my speaker, fix clean my speaker sound, and remove pocket lint, dirt, wax, and moisture safely.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/speaker-cleaning-guide',
   },
   openGraph: {
-    title: 'Phone Speaker Cleaning Guide – Clean & Fix My Speaker Safely',
+    title: 'Phone Speaker Cleaning Guide – How to Clean & Fix Clean My Speaker Safely',
     description:
       'Learn how to clean your phone speaker, remove dust, and fix muffled audio safely without needles or damaging the delicate mesh.',
     url: 'https://cleanmyspeaker.net/speaker-cleaning-guide',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Phone Speaker Cleaning Guide – Clean & Fix My Speaker Safely',
+    title: 'Phone Speaker Cleaning Guide – Fix Clean My Speaker Safely',
     description:
       'Safe step-by-step methods to clean dust, lint, and moisture from smartphone speakers.',
     images: ['https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg'],
@@ -38,8 +38,56 @@ export const metadata: Metadata = {
 export default function SpeakerCleaningGuidePage() {
   const breadcrumbs = [{ name: 'Speaker Cleaning Guide', href: '/speaker-cleaning-guide' }];
 
+  const jsonLdHowTo = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Safely Clean Phone Speakers from Dust, Lint & Moisture',
+    description:
+      'Safe procedures for removing dust, earwax, and pocket lint from mobile phone speaker grilles.',
+    image: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+    totalTime: 'PT10M',
+    tool: [
+      {
+        '@type': 'HowToTool',
+        name: 'Soft-bristled toothbrush or detailing brush',
+      },
+      {
+        '@type': 'HowToTool',
+        name: 'Dry microfiber cloth',
+      },
+      {
+        '@type': 'HowToTool',
+        name: 'Clean My Speaker Web Audio Tool (cleanmyspeaker.net)',
+      },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Run Acoustic Sound Waves First',
+        text: 'Play Clean My Speaker online to loosen and eject fine moisture and dust particles with 165 Hz vibrations.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Gently Brush Speaker Grilles',
+        text: 'Use a clean, dry, soft-bristled brush held at an angle to sweep dislodged lint out of speaker ports.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Wipe Exterior Clean',
+        text: 'Wipe the frame and ports with a dry microfiber cloth without applying moisture or liquid chemicals.',
+      },
+    ],
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="space-y-12 mt-6 text-slate-300">
@@ -48,7 +96,7 @@ export default function SpeakerCleaningGuidePage() {
             Maintenance & Care Manual
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            Phone Speaker Cleaning Guide: How to Safely Clean Dust, Lint & Moisture
+            Phone Speaker Cleaning Guide: How to Safely Clean & Fix My Speaker
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed">
             Over months of everyday use, smartphone speaker openings accumulate lint from pockets, skin oils, makeup, and microscopic dust particles. Here is how to safely restore clear sound without damaging your device.
