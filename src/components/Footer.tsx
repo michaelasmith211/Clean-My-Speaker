@@ -1,9 +1,17 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SOCIAL_LINKS } from '@/lib/constants';
 
 export const Footer: React.FC = () => {
+  const handleOpenCookieSettings = () => {
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('open-cookie-preferences'));
+    }
+  };
+
   return (
     <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 text-sm mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -54,7 +62,7 @@ export const Footer: React.FC = () => {
             <h3 className="font-semibold text-white text-xs uppercase tracking-wider">Audio Tools</h3>
             <ul className="space-y-2 text-xs">
               <li>
-                  <Link href="/" className="hover:text-sky-300 transition-colors">
+                <Link href="/" className="hover:text-sky-300 transition-colors">
                   Clean My Speaker (Home)
                 </Link>
               </li>
@@ -97,7 +105,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/speaker-cleaning-guide" className="hover:text-sky-300 transition-colors">
-                  Physical Cleaning & Dust Guide
+                  Physical Cleaning &amp; Dust Guide
                 </Link>
               </li>
             </ul>
@@ -119,7 +127,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/contact" className="hover:text-sky-300 transition-colors">
-                  Contact & Support
+                  Contact &amp; Support
                 </Link>
               </li>
               <li>
@@ -141,6 +149,16 @@ export const Footer: React.FC = () => {
                 <Link href="/cookie-policy" className="hover:text-sky-300 transition-colors">
                   Cookie Policy
                 </Link>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={handleOpenCookieSettings}
+                  className="hover:text-sky-300 transition-colors text-left flex items-center gap-1 text-sky-400 font-medium"
+                  aria-label="Open cookie preferences modal"
+                >
+                  <span>🍪</span> Cookie Settings
+                </button>
               </li>
             </ul>
           </div>

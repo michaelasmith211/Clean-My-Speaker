@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { ManageCookiesButton } from '@/components/ManageCookiesButton';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -90,9 +91,20 @@ export default function CookiePolicyPage() {
           <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm text-slate-400">
             <li><strong>Google Chrome:</strong> Settings → Privacy and security → Cookies and other site data.</li>
             <li><strong>Apple Safari:</strong> Preferences → Privacy → Block all cookies.</li>
-            <li><strong>Mozilla Firefox:</strong> Options → Privacy & Security → Enhanced Tracking Protection.</li>
+            <li><strong>Mozilla Firefox:</strong> Options → Privacy &amp; Security → Enhanced Tracking Protection.</li>
             <li><strong>Microsoft Edge:</strong> Settings → Cookies and site permissions.</li>
           </ul>
+        </section>
+
+        {/* Interactive Cookie Preference Center */}
+        <section className="space-y-4 p-6 sm:p-8 rounded-3xl bg-slate-900 border border-sky-500/30 text-center">
+          <h2 className="text-xl font-bold text-white">Manage Your Cookie Preferences</h2>
+          <p className="text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
+            You can modify your consent preferences or withdraw consent for optional analytics cookies at any time.
+          </p>
+          <div className="pt-2">
+            <ManageCookiesButton />
+          </div>
         </section>
 
         <section className="space-y-4">
