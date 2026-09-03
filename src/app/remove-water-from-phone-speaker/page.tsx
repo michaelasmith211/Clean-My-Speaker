@@ -7,17 +7,17 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How to Remove Water From a Phone Speaker – Fix Clean My Speaker Guide',
+  title: 'How to Remove Water From Phone Speaker & Fix Sound',
   description:
     'Complete emergency guide to remove water from phone speakers and fix clean my speaker sound online. Learn safe drying steps, sound ejection, and what never to do.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/remove-water-from-phone-speaker',
+    canonical: 'https://cleanmyspeaker.net/remove-water-from-phone-speaker/',
   },
   openGraph: {
     title: 'How to Remove Water From a Phone Speaker – Fix Clean My Speaker Guide',
     description:
       'Learn emergency steps to safely remove water, eject moisture, and fix clean my speaker sound on any smartphone.',
-    url: 'https://cleanmyspeaker.net/remove-water-from-phone-speaker',
+    url: 'https://cleanmyspeaker.net/remove-water-from-phone-speaker/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',

@@ -5,11 +5,11 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy – Clean My Speaker',
+  title: 'Privacy Policy',
   description:
     'Privacy Policy for Clean My Speaker. Full disclosure of data handling, Google AdSense compliance, DoubleClick DART cookies, GDPR, CCPA, and client-side processing.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/privacy-policy',
+    canonical: 'https://cleanmyspeaker.net/privacy-policy/',
   },
 };
 

@@ -6,11 +6,11 @@ import { ManageCookiesButton } from '@/components/ManageCookiesButton';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy – Clean My Speaker',
+  title: 'Cookie Policy',
   description:
     'Cookie Policy for Clean My Speaker. Learn about how cookies, web beacons, and Google AdSense DART cookies are used and how to control your cookie preferences.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/cookie-policy',
+    canonical: 'https://cleanmyspeaker.net/cookie-policy/',
   },
 };
 

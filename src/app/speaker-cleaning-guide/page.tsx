@@ -7,17 +7,17 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Phone Speaker Cleaning Guide – How to Clean & Fix Clean My Speaker Safely',
+  title: 'Speaker Cleaning Guide – Clean Dust & Fix Sound',
   description:
     'Comprehensive phone speaker cleaning guide. Learn how to clean my speaker, fix clean my speaker sound, and remove pocket lint, dirt, wax, and moisture safely.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/speaker-cleaning-guide',
+    canonical: 'https://cleanmyspeaker.net/speaker-cleaning-guide/',
   },
   openGraph: {
     title: 'Phone Speaker Cleaning Guide – How to Clean & Fix Clean My Speaker Safely',
     description:
       'Learn how to clean your phone speaker, remove dust, and fix muffled audio safely without needles or damaging the delicate mesh.',
-    url: 'https://cleanmyspeaker.net/speaker-cleaning-guide',
+    url: 'https://cleanmyspeaker.net/speaker-cleaning-guide/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',

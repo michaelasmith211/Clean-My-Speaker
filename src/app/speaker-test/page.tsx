@@ -32,17 +32,17 @@ const SpeakerTester = dynamic(() => import('@/components/SpeakerTester'), {
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Speaker Test Online – Test & Fix Clean My Speaker Sound Quality',
+  title: 'Speaker Test Online – Check & Fix Speaker Sound',
   description:
     'Free online speaker test. Test stereo channels, check audio frequencies from 100 Hz to 10 kHz, diagnose muffled sound, and fix clean my speaker audio clarity.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/speaker-test',
+    canonical: 'https://cleanmyspeaker.net/speaker-test/',
   },
   openGraph: {
     title: 'Speaker Test Online – Test & Fix Clean My Speaker Sound Quality',
     description:
       'Diagnose speaker health, test stereo balance, and check frequency response from Sub Bass to High Treble to clean and fix your phone speaker.',
-    url: 'https://cleanmyspeaker.net/speaker-test',
+    url: 'https://cleanmyspeaker.net/speaker-test/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/fix-my-speaker-sound-frequencies-guide.jpg',
@@ -68,7 +68,7 @@ export default function SpeakerTestPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Online Speaker Tester & Audio Diagnostic Tool',
-    url: 'https://cleanmyspeaker.net/speaker-test',
+    url: 'https://cleanmyspeaker.net/speaker-test/',
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'All (iOS, Android, Windows, macOS)',
     offers: {

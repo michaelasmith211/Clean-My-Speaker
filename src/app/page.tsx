@@ -40,7 +40,7 @@ const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Clean My Speaker – Fix My Speaker & Fix Clean My Speaker Online',
+  title: 'Clean My Speaker – Fix My Speaker & Clean Phone Speaker Online',
   description:
     'Clean my speaker and fix my speaker sound online. Easily fix clean my speaker, eject trapped water, and restore crystal-clear audio with our free 165 Hz sound tool.',
   keywords: [
@@ -186,35 +186,35 @@ export default function HomePage() {
         position: 1,
         name: 'Visit CleanMySpeaker.net',
         text: 'Go to CleanMySpeaker.net in your browser on iPhone, Android, or laptop.',
-        url: 'https://cleanmyspeaker.net/#tool',
+        url: 'https://cleanmyspeaker.net/#tool/',
       },
       {
         '@type': 'HowToStep',
         position: 2,
         name: 'Click Play to Clean My Speaker',
         text: 'Press the "CLEAN MY SPEAKER" play button to start generating acoustic sound waves.',
-        url: 'https://cleanmyspeaker.net/#tool',
+        url: 'https://cleanmyspeaker.net/#tool/',
       },
       {
         '@type': 'HowToStep',
         position: 3,
         name: 'Sound Waves Fix My Speaker',
         text: 'Special 165 Hz resonant frequencies physically oscillate the speaker cone to push out water, dust, and debris.',
-        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker',
+        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker/',
       },
       {
         '@type': 'HowToStep',
         position: 4,
         name: 'Let It Play (30–60 Seconds)',
         text: 'For best results, let the sound wave cycle play for 30 to 60 seconds while holding your speaker facing downward.',
-        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker',
+        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker/',
       },
       {
         '@type': 'HowToStep',
         position: 5,
         name: 'Your Speaker is Clean & Fixed!',
         text: 'Dab away any ejected moisture droplets with a dry cloth and enjoy clear, loud, crystal-clear audio again.',
-        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker',
+        url: 'https://cleanmyspeaker.net/#how-to-clean-and-fix-my-speaker/',
       },
     ],
   };
@@ -234,7 +234,7 @@ export default function HomePage() {
       url: 'https://cleanmyspeaker.net',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://cleanmyspeaker.net/icon.png',
+        url: 'https://cleanmyspeaker.net/icon.png/',
       },
     },
   };

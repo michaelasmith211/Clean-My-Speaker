@@ -5,11 +5,11 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service – Clean My Speaker',
+  title: 'Terms of Service',
   description:
     'Terms of Service and conditions for using Clean My Speaker. Read our terms regarding fair use, intellectual property, user responsibilities, and acoustic utility limitations.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/terms-of-service',
+    canonical: 'https://cleanmyspeaker.net/terms-of-service/',
   },
 };
 

@@ -7,17 +7,17 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'iPhone Speaker Cleaner – Fix Clean My Speaker & Eject Water on iPhone',
+  title: 'iPhone Speaker Cleaner – Eject Water & Fix Sound',
   description:
     'Clean and fix your iPhone speaker online. Play 165 Hz water eject sound waves directly in Safari to fix clean my speaker, expel trapped liquid, and fix muffled iPhone audio.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/iphone-speaker-cleaner',
+    canonical: 'https://cleanmyspeaker.net/iphone-speaker-cleaner/',
   },
   openGraph: {
     title: 'iPhone Speaker Cleaner – Fix Clean My Speaker & Eject Water on iPhone',
     description:
       'Generate calibrated water eject sound waves directly in Safari to clean iPhone speakers and fix muffled sound without downloading apps.',
-    url: 'https://cleanmyspeaker.net/iphone-speaker-cleaner',
+    url: 'https://cleanmyspeaker.net/iphone-speaker-cleaner/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',

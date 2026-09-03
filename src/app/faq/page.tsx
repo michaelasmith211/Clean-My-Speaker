@@ -8,17 +8,17 @@ import { FAQItem } from '@/lib/types';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Clean My Speaker & Fix Clean My Speaker FAQ – Audio Questions',
+  title: 'Clean My Speaker FAQ – Water Eject & Audio Help',
   description:
     'Frequently asked questions about how to clean my speaker, fix my speaker, and fix clean my speaker sound with 165 Hz water eject tones on iPhone & Android.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/faq',
+    canonical: 'https://cleanmyspeaker.net/faq/',
   },
   openGraph: {
     title: 'Clean My Speaker & Fix Clean My Speaker FAQ – Audio Questions',
     description:
       'Answers to top questions about cleaning phone speakers, ejecting water with sound, and fixing muffled audio safely.',
-    url: 'https://cleanmyspeaker.net/faq',
+    url: 'https://cleanmyspeaker.net/faq/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',

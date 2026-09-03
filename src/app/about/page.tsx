@@ -6,17 +6,17 @@ import { SOCIAL_LINKS } from '@/lib/constants';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Clean My Speaker – Free Online Tool to Clean & Fix Phone Speakers',
+  title: 'About Clean My Speaker – Free Audio Cleaner Tool',
   description:
     'Learn about Clean My Speaker (CleanMySpeaker.net): our mission to provide free, private, instant in-browser sound utilities to clean and fix phone speakers worldwide.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/about',
+    canonical: 'https://cleanmyspeaker.net/about/',
   },
   openGraph: {
     title: 'About Clean My Speaker – Free Online Tool to Clean & Fix Phone Speakers',
     description:
       'Learn about Clean My Speaker and our mission to provide fast, private, 100% in-browser acoustic utilities to fix muffled phone sound.',
-    url: 'https://cleanmyspeaker.net/about',
+    url: 'https://cleanmyspeaker.net/about/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/clean-my-speaker-fix-my-speaker-benefits.jpg',
@@ -38,8 +38,28 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const breadcrumbs = [{ name: 'About', href: '/about' }];
 
+  const jsonLdAbout = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About Clean My Speaker',
+    url: 'https://cleanmyspeaker.net/about/',
+    description:
+      'Learn about Clean My Speaker: our mission to provide free, private, instant in-browser sound utilities to clean and fix phone speakers worldwide.',
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'Clean My Speaker',
+      url: 'https://cleanmyspeaker.net/',
+      logo: 'https://cleanmyspeaker.net/icon.png',
+      sameAs: SOCIAL_LINKS.map((s) => s.url),
+    },
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdAbout) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="space-y-10 mt-6 text-slate-300">

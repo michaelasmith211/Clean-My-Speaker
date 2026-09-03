@@ -7,17 +7,17 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Android Speaker Cleaner – Fix Clean My Speaker on Samsung & Android',
+  title: 'Android Speaker Cleaner – Eject Water & Fix Sound',
   description:
     'Clean and fix your Android phone speaker online. Eject water and fix clean my speaker sound on Samsung Galaxy, Pixel, Xiaomi, and OnePlus with browser sound waves.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/android-speaker-cleaner',
+    canonical: 'https://cleanmyspeaker.net/android-speaker-cleaner/',
   },
   openGraph: {
     title: 'Android Speaker Cleaner – Fix Clean My Speaker on Samsung & Android',
     description:
       'Eject water droplets, clear pocket dust, and fix muffled speaker sound on Samsung Galaxy, Google Pixel, and all Android phones.',
-    url: 'https://cleanmyspeaker.net/android-speaker-cleaner',
+    url: 'https://cleanmyspeaker.net/android-speaker-cleaner/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',

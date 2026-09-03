@@ -6,17 +6,17 @@ import { SOCIAL_LINKS } from '@/lib/constants';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Clean My Speaker – Support, Feedback & Audio Inquiries',
+  title: 'Contact Clean My Speaker – Support & Inquiries',
   description:
     'Contact the Clean My Speaker team for support, sound calibration feedback, partnerships, or browser compatibility inquiries.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/contact',
+    canonical: 'https://cleanmyspeaker.net/contact/',
   },
   openGraph: {
     title: 'Contact Clean My Speaker – Support & Inquiries',
     description:
       'Get in touch with the Clean My Speaker team for support, feature suggestions, or compatibility questions.',
-    url: 'https://cleanmyspeaker.net/contact',
+    url: 'https://cleanmyspeaker.net/contact/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/clean-my-speaker-fix-my-speaker-benefits.jpg',
@@ -38,8 +38,32 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   const breadcrumbs = [{ name: 'Contact', href: '/contact' }];
 
+  const jsonLdContact = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Clean My Speaker',
+    url: 'https://cleanmyspeaker.net/contact/',
+    description:
+      'Contact the Clean My Speaker team for support, sound calibration feedback, partnerships, or browser compatibility inquiries.',
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'Clean My Speaker',
+      url: 'https://cleanmyspeaker.net/',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'Customer Support',
+        email: 'support@cleanmyspeaker.net',
+        availableLanguage: ['English'],
+      },
+    },
+  };
+
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdContact) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
 
       <article className="space-y-10 mt-6 text-slate-300">

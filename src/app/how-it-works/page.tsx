@@ -7,17 +7,17 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How Clean My Speaker Works – Fix Clean My Speaker Sound & Physics',
+  title: 'How Clean My Speaker Works – Fix Speaker Sound',
   description:
     'Discover the acoustic physics behind how Clean My Speaker generates low-frequency sound waves and air pressure to fix clean my speaker sound and safely eject water.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/how-it-works',
+    canonical: 'https://cleanmyspeaker.net/how-it-works/',
   },
   openGraph: {
     title: 'How Clean My Speaker Works – Fix Clean My Speaker Sound & Physics',
     description:
       'Learn how 165 Hz sound waves, diaphragm excursion, and acoustic air displacement safely dislodge trapped water droplets and fix phone speakers.',
-    url: 'https://cleanmyspeaker.net/how-it-works',
+    url: 'https://cleanmyspeaker.net/how-it-works/',
     images: [
       {
         url: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
@@ -62,10 +62,10 @@ export default function HowItWorksPage() {
       name: 'Clean My Speaker',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://cleanmyspeaker.net/icon.png',
+        url: 'https://cleanmyspeaker.net/icon.png/',
       },
     },
-    mainEntityOfPage: 'https://cleanmyspeaker.net/how-it-works',
+    mainEntityOfPage: 'https://cleanmyspeaker.net/how-it-works/',
   };
 
   return (

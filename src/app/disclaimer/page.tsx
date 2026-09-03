@@ -5,11 +5,11 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer – Clean My Speaker',
+  title: 'Disclaimer & Hardware Safety',
   description:
     'Important disclaimer regarding acoustic speaker cleaning capabilities, physical limitations, hearing safety, and non-affiliation with smartphone manufacturers.',
   alternates: {
-    canonical: 'https://cleanmyspeaker.net/disclaimer',
+    canonical: 'https://cleanmyspeaker.net/disclaimer/',
   },
 };
 
