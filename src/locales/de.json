@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Lautsprecher Reinigen Online — Wasser & Feuchtigkeit aus dem Handy-Lautsprecher entfernen",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "disclaimerFooter": "Hinweis: Clean My Speaker ist ein unabhängiges Webtool und steht in keiner Verbindung zu Apple, Google oder Samsung. Schallwellen können keine dauerhaften internen Flüssigkeitsschäden reparieren.",
+    "clientSideProcessing": "100% Client-seitige Verarbeitung • Kein Mikrofonzugriff • Keine Tracking-Cookies",
+    "home": "Startseite",
+    "languages": "Sprachen",
+    "changeLanguage": "Sprache ändern",
+    "selectLanguage": "Sprache wählen",
+    "allLanguages": "Alle Sprachen",
+    "close": "Schließen",
+    "share": "Teilen",
+    "copyLink": "Link kopieren",
+    "copied": "Kopiert!",
+    "shareTitle": "Hat Clean My Speaker geholfen? Teile es!",
+    "shareDesc": "Hilf Freunden und Familie, Wasser aus dem Lautsprecher zu entfernen und dumpfen Ton ohne Reparaturkosten zu beheben.",
+    "cookieNotice": "Cookie-Einstellungen",
+    "loading": "Laden..."
+  },
+  "nav": {
+    "home": "Startseite",
+    "tool": "Wasser-Auswurf-Tool",
+    "howItWorks": "So funktioniert's",
+    "removeWater": "Wasser entfernen",
+    "iphone": "iPhone reinigen",
+    "android": "Android reinigen",
+    "test": "Lautsprechertest",
+    "guide": "Reinigungsanleitung",
+    "faq": "FAQ",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "disclaimer": "Haftungsausschluss",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "cleanNow": "Jetzt reinigen",
+    "audioTools": "Audio-Tools",
+    "deviceGuides": "Geräte-Anleitungen",
+    "information": "Informationen",
+    "connectWithUs": "Folge uns"
+  },
+  "tool": {
+    "badge": "Akustisches Wasser-Auswurf-Tool",
+    "title": "LAUTSPRECHER REINIGEN",
+    "subtitle": "Lautstärke auf 100 % stellen, Lautsprecher nach unten halten und tippen.",
+    "buttonClean": "LAUTSPRECHER REINIGEN",
+    "buttonStop": "REINIGUNG STOPPEN",
+    "statusReady": "Bereit für 165-Hz-Schallwellen. Lautstärke aufdrehen und starten.",
+    "statusPlaying": "Schallwellen bei {freq} Hz werden abgespielt (noch {timeRemaining}s)...",
+    "statusCompleted": "Reinigung abgeschlossen! Lautsprecheröffnung mit trockenem Tuch abtupfen.",
+    "selectMode": "Reinigungsmodus wählen",
+    "quickClean": "Schnellreinigung",
+    "quickCleanDesc": "30s-Impulszyklus für leichte Feuchtigkeit.",
+    "deepClean": "Tiefenreinigung",
+    "deepCleanDesc": "60s-Frequenzdurchlauf für hartnäckige Wassertropfen.",
+    "waterEject": "Wasser Auswerfen",
+    "waterEjectDesc": "45s mit maximaler Membranbewegung zum Ausstoßen von Flüssigkeiten.",
+    "tipPosition": "Lautsprecher nach unten halten",
+    "tipCloth": "Sanft auf Handtuch klopfen",
+    "tipVolume": "Maximale Lautstärke erforderlich",
+    "tipNoHeat": "Niemals Föhn oder Reis nutzen",
+    "tipRepeat": "Bei Bedarf 2–3 Mal wiederholen",
+    "safetyTitle": "Wichtige Sicherheitshinweise",
+    "safetyRule1": "Niemals Nadeln oder spitze Gegenstände in die Lautsprechergitter stecken.",
+    "safetyRule2": "Hitze von Föhnen zerstört Dichtungen und Lautsprechermembranen.",
+    "safetyRule3": "Schallwellen lösen Tropfen am Gitter, beheben aber keine interne Korrosion."
+  },
+  "speakerTest": {
+    "badge": "Akustische Diagnose",
+    "title": "Online-Lautsprecher- & Stereo-Tester",
+    "subtitle": "Stereokanäle, Frequenzbereich (100 Hz – 10 kHz) und Tonqualität testen.",
+    "stereoTitle": "Stereokanaltrennung testen",
+    "stereoDesc": "Audiosignale links/rechts abspielen, um verstopfte oder ungleiche Lautsprecher zu erkennen.",
+    "leftChannel": "Linker Kanal",
+    "rightChannel": "Rechter Kanal",
+    "bothChannels": "Beide Kanäle",
+    "stopTest": "Ton stoppen",
+    "playingChannel": "Kanal {channel} wird getestet...",
+    "frequencyTitle": "Frequenzspektrum-Diagnose",
+    "frequencyDesc": "Bestimmte Audiofrequenzen abspielen, um Bass, Mitten und Höhen zu prüfen.",
+    "playingFreq": "Frequenz {freq} wird abgespielt..."
+  },
+  "home": {
+    "metaTitle": "Lautsprecher Reinigen – Wasser Auswerfen & Ton Reparieren",
+    "metaDesc": "Handy-Lautsprecher online reinigen und dumpfen Klang beheben. Wasser mit 165-Hz-Schallwellen kostenlos auswerfen.",
+    "heroH1": "Lautsprecher Reinigen – Wasser Auswerfen & Ton Reparieren",
+    "heroSub": "Spiele 165-Hz-Schallwellen ab, um Wasser und Staub aus dem Lautsprecher zu entfernen – kostenlos ohne App-Download.",
+    "step1Title": "Lautstärke auf 100 % stellen",
+    "step1Desc": "Medienlautstärke auf Maximum stellen für maximale Membranbewegung.",
+    "step2Title": "Lautsprecher nach unten halten",
+    "step2Desc": "Smartphone mit den Lautsprecheröffnungen nach unten über ein Tuch halten.",
+    "step3Title": "Reinigungston starten",
+    "step3Desc": "Schallwellen abspielen, die den Lautsprecherkonus in Schwingung versetzen.",
+    "step4Title": "2–3 Mal wiederholen",
+    "step4Desc": "Mehrere Zyklen durchführen und Ton mit unserem Lautsprechertest prüfen.",
+    "whyChooseTitle": "Warum Clean My Speaker?",
+    "whyChooseDesc": "Unser Online-Tool löst Feuchtigkeit sicher durch reine Akustikphysik.",
+    "feature1Title": "100 % Kostenlos & Ohne App",
+    "feature1Desc": "Direkt im Browser nutzbar auf Safari, Chrome und Firefox.",
+    "feature2Title": "Präzise 165-Hz-Resonanz",
+    "feature2Desc": "Optimiert für Smartphone-Lautsprechermembranen.",
+    "feature3Title": "Sicher für iPhone & Android",
+    "feature3Desc": "Schonende Reinigung ohne Beschädigung von Dichtungen.",
+    "videoTitle": "Video-Anleitung zum Wasser-Auswurf",
+    "videoDesc": "Sieh dir an, wie 165-Hz-Schallwellen Wassertropfen herausdrücken.",
+    "faqHeading": "Häufig gestellte Fragen zur Lautsprecherreinigung"
+  },
+  "howItWorks": {
+    "metaTitle": "So funktioniert Clean My Speaker – Akustik & Physik",
+    "metaDesc": "Erfahre, wie 165-Hz-Schallwellen und Luftdruck Wasser aus dem Handylautsprecher drücken.",
+    "h1": "So funktioniert Clean My Speaker: Die Wissenschaft dahinter",
+    "sub": "Membranauslenkung und kinetischer Luftdruck zur Entfernung von Feuchtigkeit."
+  },
+  "removeWater": {
+    "metaTitle": "Wasser aus dem Handy-Lautsprecher entfernen",
+    "metaDesc": "Schritt-für-Schritt-Anleitung zur sicheren Wasserentfernung aus Smartphone-Lautsprechern.",
+    "h1": "Wasser aus dem Handy-Lautsprecher entfernen: Anleitung",
+    "sub": "Handy ins Wasser gefallen? Folge dieser sicheren 5-Schritte-Anleitung."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone Lautsprecher Reinigen – Wasser Auswerfen",
+    "metaDesc": "iPhone-Lautsprecher online reinigen und Wasser mit Schallwellen in Safari entfernen.",
+    "h1": "iPhone Lautsprecher Reinigen: Wasser Auswerfen beim iPhone",
+    "sub": "Optimiert für iPhone 15, 14, 13, 12, 11 und SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "Android Lautsprecher Reinigen – Samsung & Xiaomi",
+    "metaDesc": "Lautsprecher von Samsung Galaxy, Pixel und Xiaomi mit Schallwellen reinigen.",
+    "h1": "Android Lautsprecher Reinigen: Wasser & Staub entfernen",
+    "sub": "Sicherer Wasser-Auswurf für alle Android-Smartphones."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Lautsprecher Reinigungsanleitung – Staub & Schmutz entfernen",
+    "metaDesc": "Anleitung zur sicheren Reinigung von Flusen, Staub und Schmutz aus Lautsprechergittern.",
+    "h1": "Lautsprecher Reinigungsanleitung: Staub & Flusen entfernen",
+    "sub": "Praktischer Leitfaden zur Pflege von Smartphone-Lautsprechern."
+  },
+  "faq": {
+    "metaTitle": "Clean My Speaker FAQ – Fragen & Antworten",
+    "metaDesc": "Häufige Fragen zu Schallwellen-Reinigung und Sicherheit bei Smartphones.",
+    "h1": "Clean My Speaker FAQ: Häufige Fragen",
+    "sub": "Alles Wissenswerte über akustische Reinigung und Fehlerbehebung."
+  },
+  "about": {
+    "metaTitle": "Über Clean My Speaker – Kostenloses Audio-Tool",
+    "metaDesc": "Erfahre mehr über unsere Mission für kostenlose Browser-Audiotools.",
+    "h1": "Über Clean My Speaker",
+    "sub": "Leichtes Webtool zur weltweiten Klangwiederherstellung."
+  },
+  "contact": {
+    "metaTitle": "Kontakt – Support & Feedback",
+    "metaDesc": "Kontaktiere das Team von Clean My Speaker für Support und Feedback.",
+    "h1": "Kontakt & Support",
+    "sub": "Fragen oder Feedback zu Audiofrequenzen? Kontaktiere uns."
+  },
+  "privacy": {
+    "metaTitle": "Datenschutzerklärung",
+    "metaDesc": "Datenschutzerklärung von Clean My Speaker.",
+    "h1": "Datenschutzerklärung"
+  },
+  "terms": {
+    "metaTitle": "Nutzungsbedingungen",
+    "metaDesc": "Nutzungsbedingungen für Clean My Speaker.",
+    "h1": "Nutzungsbedingungen"
+  },
+  "disclaimer": {
+    "metaTitle": "Haftungsausschluss & Hardwaresicherheit",
+    "metaDesc": "Wichtiger Hinweis zur Hardwaresicherheit.",
+    "h1": "Haftungsausschluss"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Cookie-Richtlinie",
+    "metaDesc": "Informationen zu Cookies und Einwilligung.",
+    "h1": "Cookie-Richtlinie"
+  },
+  "languages": {
+    "metaTitle": "Verfügbare Sprachen – Clean My Speaker",
+    "metaDesc": "Clean My Speaker ist in 27 Sprachen verfügbar.",
+    "h1": "Wähle deine Sprache",
+    "sub": "Weltweit in 27 Sprachen verfügbar."
+  }
+}

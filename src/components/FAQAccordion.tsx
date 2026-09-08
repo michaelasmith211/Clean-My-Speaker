@@ -6,6 +6,7 @@ import { FAQItem } from '@/lib/types';
 interface FAQAccordionProps {
   items: FAQItem[];
   includeSchema?: boolean;
+  locale?: string;
 }
 
 export const FAQAccordion: React.FC<FAQAccordionProps> = ({ items, includeSchema = false }) => {

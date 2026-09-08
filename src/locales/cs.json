@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Vyčistit Reproduktor Telefonu Online — Odstranit Vodu a Prach Zvukem",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker is an independent web tool and is not affiliated with Apple Inc., Google LLC, or Samsung. Sound vibrations cannot reverse permanent internal liquid damage.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "Domů",
+    "languages": "Jazyky",
+    "changeLanguage": "Změnit jazyk",
+    "selectLanguage": "Vybrat jazyk",
+    "allLanguages": "Všechny jazyky",
+    "close": "Zavřít",
+    "share": "Sdílet",
+    "copyLink": "Kopírovat odkaz",
+    "copied": "Zkopírováno!",
+    "shareTitle": "Pomohl vám Clean My Speaker? Sdílejte!",
+    "shareDesc": "Pomozte přátelům dostat vodu z reproduktoru mobilu.",
+    "cookieNotice": "Nastavení cookies",
+    "loading": "Načítání..."
+  },
+  "nav": {
+    "home": "Domů",
+    "tool": "Nástroj na vodu",
+    "howItWorks": "Jak to funguje",
+    "removeWater": "Odstranit vodu",
+    "iphone": "Vyčistit iPhone",
+    "android": "Vyčistit Android",
+    "test": "Test reproduktoru",
+    "guide": "Průvodce čištěním",
+    "faq": "FAQ",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "privacy": "Soukromí",
+    "terms": "Podmínky",
+    "disclaimer": "Vyloučení odpovědnosti",
+    "cookiePolicy": "Cookies",
+    "cleanNow": "Vyčistit nyní",
+    "audioTools": "Audio Nástroje",
+    "deviceGuides": "Návody",
+    "information": "Informace",
+    "connectWithUs": "Sledujte nás"
+  },
+  "tool": {
+    "badge": "Akustické Vyfouknutí Vody",
+    "title": "VYČISTIT REPRODUKTOR",
+    "subtitle": "Nastavte hlasitost na 100 %, otočte reproduktor dolů a klepněte níže.",
+    "buttonClean": "VYČISTIT REPRODUKTOR",
+    "buttonStop": "ZASTAVIT",
+    "statusReady": "Připraveno k přehrání zvuku 165 Hz.",
+    "statusPlaying": "Přehrává se zvuk {freq} Hz (zbývá {timeRemaining}s)...",
+    "statusCompleted": "Hotovo! Otřete reproduktor suchým hadříkem.",
+    "selectMode": "Vyberte režim",
+    "quickClean": "Rychlé čištění",
+    "quickCleanDesc": "30s pro lehkou vlhkost",
+    "deepClean": "Hloubkové čištění",
+    "deepCleanDesc": "60s pro odolné kapky",
+    "waterEject": "Vyfouknutí vody",
+    "waterEjectDesc": "45s maximální vibrace",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Audio Test",
+    "title": "Test Reproduktoru a Stereo",
+    "subtitle": "Otestujte levý/pravý kanál a frekvence.",
+    "stereoTitle": "Stereo Test",
+    "stereoDesc": "Zkontrolujte vyvážení reproduktorů.",
+    "leftChannel": "Levý",
+    "rightChannel": "Pravý",
+    "bothChannels": "Oba",
+    "stopTest": "Zastavit",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Vyčistit Reproduktor – Odstranit Vodu a Opravit Zvuk Online",
+    "metaDesc": "Odstraňte vodu z reproduktoru mobilu pomocí zvukových vln 165 Hz zdarma.",
+    "heroH1": "Vyčistit Reproduktor – Vyfouknout Vodu & Opravit Zvuk",
+    "heroSub": "Přehrajte 165 Hz zvukové vlny pro vytlačení vody a prachu z reproduktoru.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Jak to funguje – Akustická Fyzika",
+    "metaDesc": "Jak 165 Hz zvuk vytlačuje vodu ven.",
+    "h1": "Jak to funguje: Akustická věda",
+    "sub": "Vibrace membrány a tlak vzduchu."
+  },
+  "removeWater": {
+    "metaTitle": "Jak Dostanout Vodu z Reproduktoru Telefonu",
+    "metaDesc": "Návod na bezpečné odstranění vody z telefonu.",
+    "h1": "Jak Dostanout Vodu z Reproduktoru: 5 Kroků",
+    "sub": "Spadl vám mobil do vody? Postupujte podle tohoto návodu."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Vyčistit Reproduktor iPhone – Vyfouknutí Vody",
+    "metaDesc": "Vyčistěte reproduktor iPhone online v Safari.",
+    "h1": "Čištění Reproduktoru iPhone",
+    "sub": "Pro iPhone 15, 14, 13, 12, SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "Vyčistit Reproduktor Android – Samsung & Xiaomi",
+    "metaDesc": "Dostaňte vodu z reproduktorů Samsung Galaxy, Pixel, Xiaomi.",
+    "h1": "Čištění Reproduktoru Android",
+    "sub": "Bezpečné pro všechny telefony Android."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Průvodce Čištěním Reproduktoru",
+    "metaDesc": "Bezpečné odstranění prachu a nečistot.",
+    "h1": "Průvodce Čištěním Reproduktoru",
+    "sub": "Praktické tipy pro údržbu."
+  },
+  "faq": {
+    "metaTitle": "Často Kladené Otázky – FAQ",
+    "metaDesc": "Odpovědi na otázky k čištění reproduktorů.",
+    "h1": "Často Kladené Otázky",
+    "sub": "Vše, co potřebujete vědět."
+  },
+  "about": {
+    "metaTitle": "O nás – Clean My Speaker",
+    "metaDesc": "O našem bezplatném audio nástroji.",
+    "h1": "O nás",
+    "sub": "Bezplatný nástroj pro uživatele smartphonů."
+  },
+  "contact": {
+    "metaTitle": "Kontakt",
+    "metaDesc": "Podpora a zpětná vazba.",
+    "h1": "Kontakt a Podpora",
+    "sub": "Napište nám."
+  },
+  "privacy": {
+    "metaTitle": "Zásady Ochrany Soukromí",
+    "metaDesc": "Ochrana soukromí.",
+    "h1": "Zásady Soukromí"
+  },
+  "terms": {
+    "metaTitle": "Podmínky Použití",
+    "metaDesc": "Podmínky.",
+    "h1": "Podmínky Použití"
+  },
+  "disclaimer": {
+    "metaTitle": "Vyloučení Odpovědnosti",
+    "metaDesc": "Bezpečnost.",
+    "h1": "Vyloučení Odpovědnosti"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Zásady Cookies",
+    "metaDesc": "Cookies.",
+    "h1": "Zásady Cookies"
+  },
+  "languages": {
+    "metaTitle": "Jazyky – Clean My Speaker",
+    "metaDesc": "K dispozici ve 27 jazycích.",
+    "h1": "Vyberte Jazyk",
+    "sub": "K dispozici ve 27 jazycích."
+  }
+}

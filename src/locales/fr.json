@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Nettoyer Mon Haut-Parleur en Ligne — Éjecter l'Eau et l'Humidité",
+    "allRightsReserved": "Tous droits réservés.",
+    "disclaimerFooter": "Avertissement : Clean My Speaker est un outil indépendant non affilié à Apple, Google ou Samsung. Les vibrations sonores ne réparent pas les dommages internes permanents causés par les liquides.",
+    "clientSideProcessing": "Traitement 100% dans le navigateur • Sans accès micro • Zéro cookie de suivi",
+    "home": "Accueil",
+    "languages": "Langues",
+    "changeLanguage": "Changer de langue",
+    "selectLanguage": "Choisir la langue",
+    "allLanguages": "Toutes les langues",
+    "close": "Fermer",
+    "share": "Partager",
+    "copyLink": "Copier le lien",
+    "copied": "Copié !",
+    "shareTitle": "Clean My Speaker a fonctionné pour vous ? Partagez-le !",
+    "shareDesc": "Aidez vos proches à éjecter l'eau, retirer la poussière et réparer le son étouffé de leur téléphone sans frais de réparation.",
+    "cookieNotice": "Paramètres des cookies",
+    "loading": "Chargement..."
+  },
+  "nav": {
+    "home": "Accueil",
+    "tool": "Éjecteur d'eau",
+    "howItWorks": "Comment ça marche",
+    "removeWater": "Retirer l'eau",
+    "iphone": "Nettoyer iPhone",
+    "android": "Nettoyer Android",
+    "test": "Test haut-parleur",
+    "guide": "Guide de nettoyage",
+    "faq": "FAQ",
+    "about": "À propos",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "terms": "Conditions d'utilisation",
+    "disclaimer": "Avertissement",
+    "cookiePolicy": "Cookies",
+    "cleanNow": "Nettoyer",
+    "audioTools": "Outils Audio",
+    "deviceGuides": "Guides Appareils",
+    "information": "Informations",
+    "connectWithUs": "Nous rejoindre"
+  },
+  "tool": {
+    "badge": "Utilitaire Acoustique d'Éjection d'Eau",
+    "title": "NETTOYER MON HAUT-PARLEUR",
+    "subtitle": "Réglez le volume à 100 %, orientez le haut-parleur vers le bas et appuyez ci-dessous.",
+    "buttonClean": "NETTOYER MON HAUT-PARLEUR",
+    "buttonStop": "ARRÊTER LE NETTOYAGE",
+    "statusReady": "Prêt à émettre des ondes à 165 Hz. Montez le son et appuyez pour démarrer.",
+    "statusPlaying": "Émission d'ondes sonores à {freq} Hz ({timeRemaining}s restantes)...",
+    "statusCompleted": "Cycle terminé ! Essuyez délicatement les ouvertures avec un chiffon sec.",
+    "selectMode": "Choisir le mode de nettoyage",
+    "quickClean": "Nettoyage Rapide",
+    "quickCleanDesc": "Cycle de 30s pour humidité légère ou entretien régulier.",
+    "deepClean": "Nettoyage Approfondi",
+    "deepCleanDesc": "Balayage de fréquences de 60s pour gouttes tenaces et poussières.",
+    "waterEject": "Éjection d'Eau",
+    "waterEjectDesc": "Impulsions de 45s à oscillation maximale pour expulser les liquides.",
+    "tipPosition": "Haut-parleur orienté vers le bas",
+    "tipCloth": "Tapotez doucement sur une serviette",
+    "tipVolume": "Volume maximal nécessaire",
+    "tipNoHeat": "Ne jamais utiliser de sèche-cheveux ni de riz",
+    "tipRepeat": "Répétez 2 à 3 fois si nécessaire",
+    "safetyTitle": "Conseils de Sécurité Importants",
+    "safetyRule1": "N'insérez jamais d'aiguilles, d'épingles ou de cotons-tiges dans les grilles.",
+    "safetyRule2": "La chaleur excessive d'un sèche-cheveux fait fondre les joints d'étanchéité.",
+    "safetyRule3": "Le son décolle les gouttes en surface mais ne répare pas la corrosion interne."
+  },
+  "speakerTest": {
+    "badge": "Suite de Diagnostic Acoustique",
+    "title": "Testeur de Haut-Parleurs et Stéréo en Ligne",
+    "subtitle": "Testez la séparation stéréo gauche/droite, le spectre complet (100 Hz – 10 kHz) et détectez les distorsions.",
+    "stereoTitle": "Test de Séparation des Canaux Stéréo",
+    "stereoDesc": "Émettez des sons calibrés par canal pour détecter les haut-parleurs obstrués ou déséquilibrés.",
+    "leftChannel": "Canal Gauche",
+    "rightChannel": "Canal Droit",
+    "bothChannels": "Deux Canaux",
+    "stopTest": "Arrêter le son",
+    "playingChannel": "Test du canal {channel}...",
+    "frequencyTitle": "Diagnostic du Spectre de Fréquences",
+    "frequencyDesc": "Sélectionnez des fréquences audio spécifiques pour tester les graves, médiums et aigus.",
+    "playingFreq": "Lecture de la fréquence {freq}..."
+  },
+  "home": {
+    "metaTitle": "Nettoyer Mon Haut-Parleur – Éjecter l'Eau & Réparer le Son",
+    "metaDesc": "Nettoyez le haut-parleur de votre téléphone et réparez le son étouffé en ligne. Éjectez l'eau avec des ondes sonores à 165 Hz gratuites.",
+    "heroH1": "Nettoyer Mon Haut-Parleur – Éjecter l'Eau & Réparer le Son",
+    "heroSub": "Émettez des ondes sonores calibrées à 165 Hz pour éjecter l'eau, retirer la poussière et restaurer un son clair sans aucune application.",
+    "step1Title": "Montez le volume à 100 %",
+    "step1Desc": "Assurez-vous que le volume média de votre téléphone est au maximum.",
+    "step2Title": "Pointez le haut-parleur vers le bas",
+    "step2Desc": "Tenez le téléphone avec les grilles orientées vers un tissu sec.",
+    "step3Title": "Lancez le son de nettoyage",
+    "step3Desc": "Appuyez sur le bouton pour émettre des fréquences à 165 Hz qui font vibrer le haut-parleur.",
+    "step4Title": "Répétez 2 à 3 fois si besoin",
+    "step4Desc": "Refaites plusieurs cycles pour l'humidité persistante et testez la clarté audio.",
+    "whyChooseTitle": "Pourquoi utiliser Clean My Speaker ?",
+    "whyChooseDesc": "Notre outil acoustique en ligne déloge l'humidité et les poussières grâce aux lois de la physique sonore.",
+    "feature1Title": "100% Gratuit et Sans Installation",
+    "feature1Desc": "Fonctionne directement dans Safari, Chrome, Firefox et Edge.",
+    "feature2Title": "Fréquence Calibrée à 165 Hz",
+    "feature2Desc": "Conçue pour correspondre à la fréquence de résonance des haut-parleurs miniatures.",
+    "feature3Title": "Sûr pour iPhone et Android",
+    "feature3Desc": "Nettoyage acoustique non invasif protégeant les membranes et les joints d'étanchéité.",
+    "videoTitle": "Regardez Comment Fonctionne l'Éjection d'Eau",
+    "videoDesc": "Découvrez comment les ondes sonores créent des impulsions d'air pour expulser les gouttes d'eau.",
+    "faqHeading": "Questions Fréquentes sur le Nettoyage des Haut-Parleurs"
+  },
+  "howItWorks": {
+    "metaTitle": "Comment Fonctionne Clean My Speaker – Réparer le Son",
+    "metaDesc": "Découvrez la physique acoustique et les ondes à 165 Hz utilisées pour expulser l'eau des haut-parleurs.",
+    "h1": "Comment Fonctionne Clean My Speaker : La Science Acoustique",
+    "sub": "Comprendre les principes acoustiques et la pression d'air pour déloger l'eau et la poussière."
+  },
+  "removeWater": {
+    "metaTitle": "Comment Retirer l'Eau d'un Haut-Parleur de Téléphone",
+    "metaDesc": "Guide d'urgence pour expulser l'eau du haut-parleur de votre smartphone et réparer le son étouffé.",
+    "h1": "Comment Retirer l'Eau d'un Haut-Parleur : Guide Étape par Étape",
+    "sub": "Votre téléphone est tombé dans l'eau ? Suivez ce protocole d'urgence en 5 étapes simples."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Nettoyer Haut-Parleur iPhone – Éjecter l'Eau & Réparer le Son",
+    "metaDesc": "Nettoyez le haut-parleur de votre iPhone en ligne. Éjectez l'eau sur iPhone 15, 14, 13, 12 et SE.",
+    "h1": "Nettoyeur de Haut-Parleur iPhone : Éjecter l'Eau sur iPhone",
+    "sub": "Guide et fréquence acoustique adaptés aux haut-parleurs des appareils Apple iPhone."
+  },
+  "androidCleaner": {
+    "metaTitle": "Nettoyer Haut-Parleur Android – Éjecter l'Eau sur Samsung et Xiaomi",
+    "metaDesc": "Nettoyez le haut-parleur de votre Android en ligne. Éjectez l'eau sur Samsung Galaxy, Xiaomi et Pixel.",
+    "h1": "Nettoyeur de Haut-Parleur Android : Expulser l'Eau et la Poussière",
+    "sub": "Guide d'éjection par ondes sonores pour smartphones Samsung, Xiaomi, Pixel et OnePlus."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Guide de Nettoyage de Haut-Parleur – Retirer Poussière & Saleté",
+    "metaDesc": "Apprenez à nettoyer la poussière, le sable et les peluches des grilles de haut-parleur en toute sécurité.",
+    "h1": "Guide de Nettoyage de Haut-Parleur : Enlever Poussières et Saletés",
+    "sub": "Manuel pratique pour entretenir et décrasser les grilles de votre smartphone."
+  },
+  "faq": {
+    "metaTitle": "FAQ Clean My Speaker – Réponses aux Questions Fréquentes",
+    "metaDesc": "Toutes les réponses sur l'éjection d'eau par le son et la sécurité sur iPhone et Android.",
+    "h1": "FAQ Clean My Speaker : Réponses à Vos Questions",
+    "sub": "Tout ce que vous devez savoir sur le nettoyage acoustique et le dépannage audio."
+  },
+  "about": {
+    "metaTitle": "À Propos de Clean My Speaker – Outil Audio Gratuit",
+    "metaDesc": "Découvrez notre mission : fournir un outil en ligne gratuit, privé et instantané pour réparer les haut-parleurs.",
+    "h1": "À Propos de Clean My Speaker",
+    "sub": "Outil web léger aidant les utilisateurs du monde entier à restaurer un son clair sans frais."
+  },
+  "contact": {
+    "metaTitle": "Contact Clean My Speaker – Support & Assistance",
+    "metaDesc": "Contactez l'équipe de Clean My Speaker pour toute question, retour ou suggestion technique.",
+    "h1": "Contact & Support",
+    "sub": "Une remarque sur l'outil ou un rapport de compatibilité ? Écrivez-nous."
+  },
+  "privacy": {
+    "metaTitle": "Politique de Confidentialité",
+    "metaDesc": "Politique de confidentialité de Clean My Speaker. Données, conformité RGPD et traitement local.",
+    "h1": "Politique de Confidentialité"
+  },
+  "terms": {
+    "metaTitle": "Conditions d'Utilisation",
+    "metaDesc": "Conditions d'utilisation et règles du site Clean My Speaker.",
+    "h1": "Conditions d'Utilisation"
+  },
+  "disclaimer": {
+    "metaTitle": "Avertissement & Sécurité Matérielle",
+    "metaDesc": "Avertissement sur les limites de l'éjection d'eau par le son.",
+    "h1": "Avertissement & Sécurité"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Politique des Cookies",
+    "metaDesc": "Utilisation des cookies et gestion du consentement sur Clean My Speaker.",
+    "h1": "Politique des Cookies"
+  },
+  "languages": {
+    "metaTitle": "Langues Disponibles – Clean My Speaker",
+    "metaDesc": "Clean My Speaker est disponible en 27 langues. Choisissez votre langue.",
+    "h1": "Choisissez Votre Langue",
+    "sub": "Disponible dans le monde entier en 27 langues."
+  }
+}

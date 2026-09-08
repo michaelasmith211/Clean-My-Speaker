@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Pulisci il Mio Altoparlante Online — Espelli Acqua e Umidità",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker è uno strumento indipendente. Le vibrazioni sonore non riparano danni interni da liquidi.",
+    "clientSideProcessing": "Elaborazione 100% nel browser • Nessun accesso al microfono • Zero cookie",
+    "home": "Home",
+    "languages": "Lingue",
+    "changeLanguage": "Cambia lingua",
+    "selectLanguage": "Seleziona lingua",
+    "allLanguages": "Tutte le lingue",
+    "close": "Chiudi",
+    "share": "Condividi",
+    "copyLink": "Copia link",
+    "copied": "Copiato!",
+    "shareTitle": "Clean My Speaker ti è stato utile? Condividilo!",
+    "shareDesc": "Aiuta amici e parenti a espellere acqua e rimuovere polvere dal telefono.",
+    "cookieNotice": "Impostazioni Cookie",
+    "loading": "Caricamento..."
+  },
+  "nav": {
+    "home": "Home",
+    "tool": "Espelli Acqua",
+    "howItWorks": "Come Funziona",
+    "removeWater": "Rimuovi Acqua",
+    "iphone": "Pulisci iPhone",
+    "android": "Pulisci Android",
+    "test": "Test Altoparlante",
+    "guide": "Guida Pulizia",
+    "faq": "FAQ",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "disclaimer": "Disclaimer",
+    "cookiePolicy": "Cookie",
+    "cleanNow": "Pulisci Ora",
+    "audioTools": "Strumenti Audio",
+    "deviceGuides": "Guide Dispositivi",
+    "information": "Informazioni",
+    "connectWithUs": "Seguici"
+  },
+  "tool": {
+    "badge": "Utility Acustica di Espulsione Acqua",
+    "title": "PULISCI IL MIO ALTOPARLANTE",
+    "subtitle": "Imposta il volume al 100%, orienta l'altoparlante verso il basso e tocca sotto.",
+    "buttonClean": "PULISCI ALTOPARLANTE",
+    "buttonStop": "FERMA PULIZIA",
+    "statusReady": "Pronto a emettere onde a 165 Hz. Alza il volume e tocca per avviare.",
+    "statusPlaying": "Emissione onde a {freq} Hz ({timeRemaining}s rimanenti)...",
+    "statusCompleted": "Ciclo completato! Tampona delicatamente le fessure con un panno asciutto.",
+    "selectMode": "Seleziona Modalità",
+    "quickClean": "Pulizia Rapida",
+    "quickCleanDesc": "Ciclo rapido di 30s per umidità leggera.",
+    "deepClean": "Pulizia Profonda",
+    "deepCleanDesc": "Frequenze a scansione di 60s per gocce ostinate.",
+    "waterEject": "Espulsione Acqua",
+    "waterEjectDesc": "Impulsi da 45s a massima oscillazione per espellere liquidi.",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Diagnostica Acustica",
+    "title": "Test Altoparlante e Canali Stereo",
+    "subtitle": "Verifica separazione stereo sinistra/destra e gamma di frequenze (100 Hz – 10 kHz).",
+    "stereoTitle": "Test Canali Stereo",
+    "stereoDesc": "Riproduci audio su canali singoli per rilevare altoparlanti ostruiti.",
+    "leftChannel": "Canale Sinistro",
+    "rightChannel": "Canale Destro",
+    "bothChannels": "Entrambi i Canali",
+    "stopTest": "Ferma Tono",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Pulisci Altoparlante – Espelli Acqua e Ripara Suono Online",
+    "metaDesc": "Pulisci l'altoparlante del telefono ed espelli acqua con onde sonore a 165 Hz gratis online.",
+    "heroH1": "Pulisci il Mio Altoparlante – Espelli Acqua e Ripara il Suono",
+    "heroSub": "Riproduci onde sonore a 165 Hz per espellere acqua e polvere senza installare app.",
+    "step1Title": "Volume al 100%",
+    "step1Desc": "Alza il volume del telefono al massimo.",
+    "step2Title": "Altoparlante verso il basso",
+    "step2Desc": "Tieni il telefono con i fori rivolti verso un panno.",
+    "step3Title": "Avvia il suono",
+    "step3Desc": "Emetti onde sonore a 165 Hz.",
+    "step4Title": "Ripeti 2-3 volte",
+    "step4Desc": "Esegui più cicli se necessario.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Come Funziona Clean My Speaker – Fisica del Suono",
+    "metaDesc": "Scopri come le onde a 165 Hz creano pressione per espellere acqua.",
+    "h1": "Come Funziona Clean My Speaker: La Scienza Acustica",
+    "sub": "Oscillazione della membrana e onde di pressione cinetica."
+  },
+  "removeWater": {
+    "metaTitle": "Come Rimuovere Acqua dall'Altoparlante del Telefono",
+    "metaDesc": "Guida per espellere acqua dall'altoparlante e sistemare il suono ovattato.",
+    "h1": "Come Rimuovere Acqua dall'Altoparlante: Guida Pratica",
+    "sub": "Telefono bagnato? Segui questo protocollo sicuro in 5 passaggi."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Pulisci Altoparlante iPhone – Espelli Acqua su iPhone",
+    "metaDesc": "Pulisci l'altoparlante dell'iPhone online con onde sonore in Safari.",
+    "h1": "Pulisci Altoparlante iPhone: Espelli Acqua da iPhone",
+    "sub": "Guida per iPhone 15, 14, 13, 12, 11 e SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "Pulisci Altoparlante Android – Samsung e Xiaomi",
+    "metaDesc": "Espelli acqua dall'altoparlante di smartphone Samsung Galaxy, Xiaomi e Pixel.",
+    "h1": "Pulisci Altoparlante Android: Espelli Acqua e Polvere",
+    "sub": "Espulsione acustica sicura per telefoni Android."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Guida Pulizia Altoparlanti – Togliere Polvere e Sporco",
+    "metaDesc": "Come pulire polvere e lanugine dalle griglie dell'altoparlante in sicurezza.",
+    "h1": "Guida Pulizia Altoparlanti: Rimuovere Polvere e Sporco",
+    "sub": "Manuale pratico per la manutenzione delle griglie audio."
+  },
+  "faq": {
+    "metaTitle": "FAQ Clean My Speaker – Domande e Risposte",
+    "metaDesc": "Tutte le risposte sulla pulizia dell'altoparlante con il suono.",
+    "h1": "FAQ Clean My Speaker: Domande Frequenti",
+    "sub": "Tutto sulla pulizia acustica e sicurezza del dispositivo."
+  },
+  "about": {
+    "metaTitle": "Chi Siamo – Clean My Speaker",
+    "metaDesc": "Scopri la nostra missione: utility audio gratuite nel browser.",
+    "h1": "Chi Siamo",
+    "sub": "Strumento leggero per ripristinare il suono del telefono."
+  },
+  "contact": {
+    "metaTitle": "Contatti e Assistenza – Clean My Speaker",
+    "metaDesc": "Contatta il team di Clean My Speaker per feedback o supporto.",
+    "h1": "Contatti e Supporto",
+    "sub": "Hai domande o suggerimenti tecnici? Scrivici."
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy",
+    "metaDesc": "Informativa sulla privacy di Clean My Speaker.",
+    "h1": "Privacy Policy"
+  },
+  "terms": {
+    "metaTitle": "Termini di Servizio",
+    "metaDesc": "Termini di utilizzo del sito Clean My Speaker.",
+    "h1": "Termini di Servizio"
+  },
+  "disclaimer": {
+    "metaTitle": "Disclaimer e Sicurezza",
+    "metaDesc": "Avvertenze sulla sicurezza dell'hardware.",
+    "h1": "Disclaimer"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Cookie Policy",
+    "metaDesc": "Informativa sull'uso dei cookie e consenso.",
+    "h1": "Cookie Policy"
+  },
+  "languages": {
+    "metaTitle": "Lingue Disponibili – Clean My Speaker",
+    "metaDesc": "Clean My Speaker è disponibile in 27 lingue.",
+    "h1": "Scegli la tua Lingua",
+    "sub": "Disponibile in tutto il mondo in 27 lingue."
+  }
+}

@@ -4,8 +4,17 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SOCIAL_LINKS } from '@/lib/constants';
+import { DEFAULT_LOCALE } from '@/i18n/config';
+import { getTranslations } from '@/i18n/getTranslations';
+import { getLocalizedPath } from '@/i18n/locale-utils';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  locale?: string;
+}
+
+export const Footer: React.FC<FooterProps> = ({ locale = DEFAULT_LOCALE }) => {
+  const { t } = getTranslations(locale);
+
   const handleOpenCookieSettings = () => {
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent('open-cookie-preferences'));
@@ -21,24 +30,26 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-2.5">
               <Image
                 src="/icon.png"
-                alt="Clean My Speaker Icon"
+                alt={t('common.siteName')}
                 width={32}
                 height={32}
                 className="rounded-lg shadow shrink-0"
               />
-              <span className="font-bold text-white text-lg tracking-tight">Clean My Speaker</span>
+              <span className="font-bold text-white text-lg tracking-tight">
+                {t('common.siteName')}
+              </span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-              Clean My Speaker is a lightweight, browser-based audio utility providing specially calibrated sound wave vibrations to help loosen trapped water, droplets, and surface moisture from mobile phone speaker grilles.
+              {t('common.tagline')}
             </p>
             <p className="text-xs text-slate-400">
-              100% Client-Side Processing • No microphone access required • Zero tracking cookies
+              {t('common.clientSideProcessing')}
             </p>
 
             {/* Social Media Channels */}
             <div className="pt-2">
               <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-300 block mb-2">
-                Connect With Us
+                {t('nav.connectWithUs')}
               </span>
               <div className="flex flex-wrap items-center gap-2" aria-label="Social media profiles">
                 {SOCIAL_LINKS.map((item) => (
@@ -59,26 +70,31 @@ export const Footer: React.FC = () => {
 
           {/* Quick Tools */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-white text-xs uppercase tracking-wider">Audio Tools</h3>
+            <h3 className="font-semibold text-white text-xs uppercase tracking-wider">{t('nav.audioTools')}</h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/" className="hover:text-sky-300 transition-colors">
-                  Clean My Speaker (Home)
+                <Link href={getLocalizedPath('/', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
-                <Link href="/speaker-test" className="hover:text-sky-300 transition-colors">
-                  Online Speaker Test
+                <Link href={getLocalizedPath('/speaker-test', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.test')}
                 </Link>
               </li>
               <li>
-                <Link href="/how-it-works" className="hover:text-sky-300 transition-colors">
-                  How the Sound Waves Work
+                <Link href={getLocalizedPath('/how-it-works', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.howItWorks')}
                 </Link>
               </li>
               <li>
-                <Link href="/#tool" className="hover:text-sky-300 transition-colors">
-                  Water Eject Frequency (165Hz)
+                <Link href={`${getLocalizedPath('/', locale)}#tool`} className="hover:text-sky-300 transition-colors">
+                  {t('tool.badge')} (165Hz)
+                </Link>
+              </li>
+              <li>
+                <Link href={getLocalizedPath('/languages', locale)} className="hover:text-sky-300 transition-colors text-sky-400 font-medium flex items-center gap-1">
+                  <span>🌐</span> {t('common.allLanguages')} (27)
                 </Link>
               </li>
             </ul>
@@ -86,26 +102,26 @@ export const Footer: React.FC = () => {
 
           {/* Guides */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-white text-xs uppercase tracking-wider">Device Guides</h3>
+            <h3 className="font-semibold text-white text-xs uppercase tracking-wider">{t('nav.deviceGuides')}</h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/remove-water-from-phone-speaker" className="hover:text-sky-300 transition-colors">
-                  Remove Water From Speaker
+                <Link href={getLocalizedPath('/remove-water-from-phone-speaker', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.removeWater')}
                 </Link>
               </li>
               <li>
-                <Link href="/iphone-speaker-cleaner" className="hover:text-sky-300 transition-colors">
-                  iPhone Speaker Cleaner
+                <Link href={getLocalizedPath('/iphone-speaker-cleaner', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.iphone')}
                 </Link>
               </li>
               <li>
-                <Link href="/android-speaker-cleaner" className="hover:text-sky-300 transition-colors">
-                  Android Speaker Cleaner
+                <Link href={getLocalizedPath('/android-speaker-cleaner', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.android')}
                 </Link>
               </li>
               <li>
-                <Link href="/speaker-cleaning-guide" className="hover:text-sky-300 transition-colors">
-                  Physical Cleaning &amp; Dust Guide
+                <Link href={getLocalizedPath('/speaker-cleaning-guide', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.guide')}
                 </Link>
               </li>
             </ul>
@@ -113,41 +129,41 @@ export const Footer: React.FC = () => {
 
           {/* Company & Legal */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-white text-xs uppercase tracking-wider">Information</h3>
+            <h3 className="font-semibold text-white text-xs uppercase tracking-wider">{t('nav.information')}</h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/faq" className="hover:text-sky-300 transition-colors">
-                  Frequently Asked Questions
+                <Link href={getLocalizedPath('/faq', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.faq')}
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-sky-300 transition-colors">
-                  About Clean My Speaker
+                <Link href={getLocalizedPath('/about', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-sky-300 transition-colors">
-                  Contact &amp; Support
+                <Link href={getLocalizedPath('/contact', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.contact')}
                 </Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="hover:text-sky-300 transition-colors">
-                  Privacy Policy
+                <Link href={getLocalizedPath('/privacy-policy', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.privacy')}
                 </Link>
               </li>
               <li>
-                <Link href="/terms-of-service" className="hover:text-sky-300 transition-colors">
-                  Terms of Service
+                <Link href={getLocalizedPath('/terms-of-service', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.terms')}
                 </Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="hover:text-sky-300 transition-colors">
-                  Disclaimer
+                <Link href={getLocalizedPath('/disclaimer', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.disclaimer')}
                 </Link>
               </li>
               <li>
-                <Link href="/cookie-policy" className="hover:text-sky-300 transition-colors">
-                  Cookie Policy
+                <Link href={getLocalizedPath('/cookie-policy', locale)} className="hover:text-sky-300 transition-colors">
+                  {t('nav.cookiePolicy')}
                 </Link>
               </li>
               <li>
@@ -157,7 +173,7 @@ export const Footer: React.FC = () => {
                   className="hover:text-sky-300 transition-colors text-left flex items-center gap-1 text-sky-400 font-medium"
                   aria-label="Open cookie preferences modal"
                 >
-                  <span>🍪</span> Cookie Settings
+                  <span>🍪</span> {t('common.cookieNotice')}
                 </button>
               </li>
             </ul>
@@ -165,9 +181,9 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
-          <p>© 2026 Clean My Speaker (cleanmyspeaker.net). All rights reserved.</p>
-          <p className="text-center md:text-right text-xs text-slate-400">
-            Disclaimer: Clean My Speaker is an independent web tool and is not affiliated with Apple Inc., Google LLC, or Samsung. Sound vibrations cannot reverse permanent internal liquid damage.
+          <p>© 2026 {t('common.siteName')} (cleanmyspeaker.net). {t('common.allRightsReserved')}</p>
+          <p className="text-center md:text-right text-xs text-slate-400 max-w-xl">
+            {t('common.disclaimerFooter')}
           </p>
         </div>
       </div>

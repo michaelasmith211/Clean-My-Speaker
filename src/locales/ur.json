@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "فون اسپیکر صاف کریں آن لائن — آواز کے ذریعے پانی اور دھول نکالیں",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "دستبرداری: Clean My Speaker ایک آزاد ٹول ہے۔",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "ہوم",
+    "languages": "زبانیں",
+    "changeLanguage": "زبان تبدیل کریں",
+    "selectLanguage": "زبان منتخب کریں",
+    "allLanguages": "تمام زبانیں",
+    "close": "بند کریں",
+    "share": "شیئر کریں",
+    "copyLink": "لنک کاپی کریں",
+    "copied": "کاپی ہو گیا!",
+    "shareTitle": "کیا Clean My Speaker نے مدد کی؟ شیئر کریں!",
+    "shareDesc": "دوستوں کو اسپیکر سے پانی نکالنے میں مدد کریں۔",
+    "cookieNotice": "کوکی سیٹنگز",
+    "loading": "لوڈ ہو رہا ہے..."
+  },
+  "nav": {
+    "home": "ہوم",
+    "tool": "پانی نکالنے کا ٹول",
+    "howItWorks": "یہ کیسے کام کرتا ہے",
+    "removeWater": "پانی نکالیں",
+    "iphone": "iPhone اسپیکر",
+    "android": "Android اسپیکر",
+    "test": "اسپیکر ٹیسٹ",
+    "guide": "صفائی گائیڈ",
+    "faq": "FAQ",
+    "about": "ہمارے بارے میں",
+    "contact": "رابطہ",
+    "privacy": "رازداری",
+    "terms": "شرائط",
+    "disclaimer": "دستبرداری",
+    "cookiePolicy": "کوکیز",
+    "cleanNow": "ابھی صاف کریں",
+    "audioTools": "آڈیو ٹولز",
+    "deviceGuides": "ڈیوائس گائیڈز",
+    "information": "معلومات",
+    "connectWithUs": "ہم سے جڑیں"
+  },
+  "tool": {
+    "badge": "آواز سے پانی نکالنے کا ٹول",
+    "title": "اسپیکر صاف کریں",
+    "subtitle": "والیوم 100% کریں، اسپیکر کو نیچے کی طرف رکھیں اور نیچے کلک کریں۔",
+    "buttonClean": "اسپیکر صاف کریں",
+    "buttonStop": "روکیں",
+    "statusReady": "165 ہرٹز آواز چلانے کے لیے تیار۔",
+    "statusPlaying": "{freq} Hz آواز چل رہی ہے ({timeRemaining} سیکنڈ باقی)...",
+    "statusCompleted": "صفائی مکمل ہو گئی! خشک کپڑے سے صاف کریں۔",
+    "selectMode": "موڈ منتخب کریں",
+    "quickClean": "فوری صفائی",
+    "quickCleanDesc": "30 سیکنڈ ہلکی نمی کے لیے",
+    "deepClean": "گہری صفائی",
+    "deepCleanDesc": "60 سیکنڈ ضدی قطروں کے لیے",
+    "waterEject": "پانی باہر نکالیں",
+    "waterEjectDesc": "45 سیکنڈ مکمل ارتعاش",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "آڈیو ٹیسٹ",
+    "title": "اسپیکر اور سٹیریو ٹیسٹ",
+    "subtitle": "دائیں/بائیں چینل اور آواز کا ٹیسٹ۔",
+    "stereoTitle": "سٹیریو ٹیسٹ",
+    "stereoDesc": "اسپیکر توازن چیک کریں۔",
+    "leftChannel": "بایاں",
+    "rightChannel": "دایاں",
+    "bothChannels": "دونوں",
+    "stopTest": "روکیں",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "اسپیکر سے پانی نکالیں – آواز کے ذریعے صفائی آن لائن",
+    "metaDesc": "165 ہرٹز آواز کے ذریعے فون کے اسپیکر سے پانی اور دھول مفت نکالیں۔",
+    "heroH1": "اسپیکر سے پانی نکالیں – آواز درست کریں",
+    "heroSub": "کسی ایپ کے بغیر 165 ہرٹز آواز سے فون اسپیکر کا پانی باہر نکالیں۔",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "یہ کیسے کام کرتا ہے – صوتی سائنس",
+    "metaDesc": "آواز کی لہریں کس طرح پانی نکالتی ہیں۔",
+    "h1": "یہ کیسے کام کرتا ہے: صوتی سائنس",
+    "sub": "ہوا کا دباؤ اور ڈایافرام کی حرکت۔"
+  },
+  "removeWater": {
+    "metaTitle": "فون اسپیکر سے پانی کیسے نکالیں",
+    "metaDesc": "فون سے پانی نکالنے کا آسان طریقہ۔",
+    "h1": "فون اسپیکر سے پانی نکالنے کے 5 مراحل",
+    "sub": "فون پانی میں گر گیا؟ یہ طریقہ اپنائیں۔"
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone اسپیکر صاف کریں – پانی نکالیں",
+    "metaDesc": "iPhone اسپیکر سے پانی نکالنے کا آن لائن ٹول۔",
+    "h1": "iPhone اسپیکر کلینر",
+    "sub": "تمام iPhone ماڈلز کے لیے۔"
+  },
+  "androidCleaner": {
+    "metaTitle": "Android اسپیکر صاف کریں – سام سنگ اور شیاؤمی",
+    "metaDesc": "Android فون سے پانی اور دھول نکالیں۔",
+    "h1": "Android اسپیکر کلینر",
+    "sub": "Samsung, Xiaomi اور Pixel کے لیے۔"
+  },
+  "cleaningGuide": {
+    "metaTitle": "اسپیکر صفائی گائیڈ",
+    "metaDesc": "دھول اور کچرا صاف کرنے کا طریقہ۔",
+    "h1": "اسپیکر صفائی گائیڈ",
+    "sub": "آسان حفاظتی تدابیر۔"
+  },
+  "faq": {
+    "metaTitle": "عام سوالات – FAQ",
+    "metaDesc": "اسپیکر کی صفائی کے متعلق سوالات کے جوابات۔",
+    "h1": "عام سوالات",
+    "sub": "وہ سب جو آپ جاننا چاہتے ہیں۔"
+  },
+  "about": {
+    "metaTitle": "ہمارے بارے میں – Clean My Speaker",
+    "metaDesc": "ہمارے مفت آن لائن ٹول کے بارے में۔",
+    "h1": "ہمارے بارے میں",
+    "sub": "دنیا بھر کے صارفین کے لیے مفت ٹول۔"
+  },
+  "contact": {
+    "metaTitle": "رابطہ کریں",
+    "metaDesc": "مدد اور تجاویز کے لیے۔",
+    "h1": "رابطہ اور مدد",
+    "sub": "ہمیں پیغام بھیجیں۔"
+  },
+  "privacy": {
+    "metaTitle": "رازداری کی پالیسی",
+    "metaDesc": "رازداری کی پالیسی۔",
+    "h1": "رازداری کی پالیسی"
+  },
+  "terms": {
+    "metaTitle": "استعمال کی شرائط",
+    "metaDesc": "استعمال کی شرائط۔",
+    "h1": "استعمال کی شرائط"
+  },
+  "disclaimer": {
+    "metaTitle": "دستبرداری",
+    "metaDesc": "حفاظتی انتباہ۔",
+    "h1": "دستبرداری"
+  },
+  "cookiePolicy": {
+    "metaTitle": "کوکی پالیسی",
+    "metaDesc": "کوکیز کی معلومات۔",
+    "h1": "کوکی پالیسی"
+  },
+  "languages": {
+    "metaTitle": "زبانیں – Clean My Speaker",
+    "metaDesc": "27 زبانوں میں دستیاب۔",
+    "h1": "اپنی زبان منتخب کریں",
+    "sub": "27 زبانوں میں دنیا بھر میں دستیاب۔"
+  }
+}

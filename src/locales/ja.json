@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "スピーカーの水抜き・音質修復オンライン — スマホの水を音で排出",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "免責事項：Clean My Speakerは独立したツールであり、Apple、Google、Samsungとは提携していません。",
+    "clientSideProcessing": "100%ブラウザ処理 • マイク不要 • トラッキングクッキーなし",
+    "home": "ホーム",
+    "languages": "言語",
+    "changeLanguage": "言語を変更",
+    "selectLanguage": "言語を選択",
+    "allLanguages": "すべての言語",
+    "close": "閉じる",
+    "share": "シェア",
+    "copyLink": "リンクをコピー",
+    "copied": "コピー完了！",
+    "shareTitle": "Clean My Speakerは役立ちましたか？シェアしよう！",
+    "shareDesc": "友達や家族のスマホの水抜きやこもった音の修復をサポートします。",
+    "cookieNotice": "クッキー設定",
+    "loading": "読み込み中..."
+  },
+  "nav": {
+    "home": "ホーム",
+    "tool": "水抜きツール",
+    "howItWorks": "仕組み",
+    "removeWater": "水抜き方法",
+    "iphone": "iPhoneスピーカー",
+    "android": "Androidスピーカー",
+    "test": "スピーカーテスト",
+    "guide": "掃除ガイド",
+    "faq": "よくある質問",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "disclaimer": "免責事項",
+    "cookiePolicy": "クッキー",
+    "cleanNow": "今すぐ水抜き",
+    "audioTools": "オーディオツール",
+    "deviceGuides": "機種別ガイド",
+    "information": "情報",
+    "connectWithUs": "SNS"
+  },
+  "tool": {
+    "badge": "音波水抜きユーティリティ",
+    "title": "スピーカー水抜き",
+    "subtitle": "音量を100%にし、スピーカーを下に向けて下のボタンをタップしてください。",
+    "buttonClean": "スピーカーを掃除する",
+    "buttonStop": "停止する",
+    "statusReady": "165Hzの音波を再生する準備ができました。",
+    "statusPlaying": "{freq}Hzの音波を再生中（残り{timeRemaining}秒）...",
+    "statusCompleted": "完了しました！乾いた布で拭き取ってください。",
+    "selectMode": "モード選択",
+    "quickClean": "クイック",
+    "quickCleanDesc": "軽い湿気に最適な30秒サイクル",
+    "deepClean": "ディープ",
+    "deepCleanDesc": "頑固な水滴向けの60秒サイクル",
+    "waterEject": "強力水抜き",
+    "waterEjectDesc": "最大振動で水を押し出す45秒モード",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "音響診断",
+    "title": "スピーカー・ステレオテスト",
+    "subtitle": "左右ステレオチャンネルと周波数（100Hz〜10kHz）をテスト。",
+    "stereoTitle": "ステレオチャンネルテスト",
+    "stereoDesc": "左右個別に音を鳴らして詰まりを検知します。",
+    "leftChannel": "左チャンネル",
+    "rightChannel": "右チャンネル",
+    "bothChannels": "両チャンネル",
+    "stopTest": "停止",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "スピーカーの水抜き – スマホの水を音で排出して音質修復",
+    "metaDesc": "スマホのスピーカーに入った水を165Hzの音波で排出。アプリ不要でこもった音を直します。",
+    "heroH1": "スピーカーの水抜き – 音波で水を排出＆音質修復",
+    "heroSub": "165Hzの音波振動でスマホスピーカーに入った水やホコリを今すぐ排出。",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "仕組み – 音波と空気圧の科学",
+    "metaDesc": "165Hzの周波数が水滴を押し出す音響物理の仕組み。",
+    "h1": "仕組み：音波による水抜きの科学",
+    "sub": "振動板の振幅と空気圧による液体の排出。"
+  },
+  "removeWater": {
+    "metaTitle": "スマホのスピーカーから水を抜く方法",
+    "metaDesc": "水没したスマホのスピーカーから安全に水を抜く手順。",
+    "h1": "スマホスピーカーの水抜き方法：5ステップ",
+    "sub": "スマホが水没したときの応急処置ガイド。"
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhoneスピーカー水抜き – Safariで音波再生",
+    "metaDesc": "iPhone 15, 14, 13, 12, SE対応のスピーカー水抜きツール。",
+    "h1": "iPhoneスピーカー水抜きツール",
+    "sub": "Apple iPhone専用の音波水抜きガイド。"
+  },
+  "androidCleaner": {
+    "metaTitle": "Androidスピーカー水抜き – Galaxy・Xiaomi",
+    "metaDesc": "Samsung Galaxy、Pixel、Xiaomi対応のスピーカー水抜き。",
+    "h1": "Androidスピーカー水抜き",
+    "sub": "Androidスマホ向け安全水抜きガイド。"
+  },
+  "cleaningGuide": {
+    "metaTitle": "スピーカー掃除ガイド – ホコリ除去",
+    "metaDesc": "スピーカーの網目に入ったホコリや汚れを安全に掃除する方法。",
+    "h1": "スマホスピーカーの掃除ガイド",
+    "sub": "メッシュ部分のお手入れ方法。"
+  },
+  "faq": {
+    "metaTitle": "よくある質問 – スピーカー水抜きFAQ",
+    "metaDesc": "音波水抜きツールの安全性や効果についてのFAQ。",
+    "h1": "よくある質問",
+    "sub": "疑問にお答えします。"
+  },
+  "about": {
+    "metaTitle": "概要 – Clean My Speaker",
+    "metaDesc": "Clean My Speakerのミッションと概要。",
+    "h1": "概要",
+    "sub": "世界中のスマホユーザーのための無料ツール。"
+  },
+  "contact": {
+    "metaTitle": "お問い合わせ",
+    "metaDesc": "サポートやフィードバックはこちらから。",
+    "h1": "お問い合わせ",
+    "sub": "ご意見・ご要望をお待ちしております。"
+  },
+  "privacy": {
+    "metaTitle": "プライバシーポリシー",
+    "metaDesc": "プライバシーポリシー。",
+    "h1": "プライバシーポリシー"
+  },
+  "terms": {
+    "metaTitle": "利用規約",
+    "metaDesc": "利用規約。",
+    "h1": "利用規約"
+  },
+  "disclaimer": {
+    "metaTitle": "免責事項",
+    "metaDesc": "ハードウェアの安全性に関する免責事項。",
+    "h1": "免責事項"
+  },
+  "cookiePolicy": {
+    "metaTitle": "クッキーポリシー",
+    "metaDesc": "クッキーの使用について。",
+    "h1": "クッキーポリシー"
+  },
+  "languages": {
+    "metaTitle": "対応言語 – Clean My Speaker",
+    "metaDesc": "27言語に対応。",
+    "h1": "言語を選択",
+    "sub": "お好きな言語をご利用ください。"
+  }
+}

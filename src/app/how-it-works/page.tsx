@@ -4,6 +4,9 @@ import Image from 'next/image';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { ShareButtons } from '@/components/ShareButtons';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { getHreflangAlternates } from '@/i18n/locale-utils';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,6 +15,7 @@ export const metadata: Metadata = {
     'Discover the acoustic physics behind how Clean My Speaker generates low-frequency sound waves and air pressure to fix clean my speaker sound and safely eject water.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/how-it-works/',
+    languages: getHreflangAlternates('/how-it-works'),
   },
   openGraph: {
     title: 'How Clean My Speaker Works – Fix Clean My Speaker Sound & Physics',
@@ -69,12 +73,14 @@ export default function HowItWorksPage() {
   };
 
   return (
-    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
-      />
-      <Breadcrumbs items={breadcrumbs} />
+    <div className="min-h-screen flex flex-col">
+      <Header locale="en" />
+      <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
+        />
+        <Breadcrumbs items={breadcrumbs} locale="en" />
 
       <article className="space-y-12 mt-6 text-slate-300">
         <header className="space-y-4">
@@ -334,5 +340,7 @@ export default function HowItWorksPage() {
         </footer>
       </article>
     </main>
+    <Footer locale="en" />
+  </div>
   );
 }

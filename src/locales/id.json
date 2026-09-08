@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Bersihkan Speaker HP Online — Keluarkan Air & Debu dengan Suara",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker adalah alat independen.",
+    "clientSideProcessing": "100% Proses di Browser • Tanpa Izin Mikrofon • Bebas Cookie Pelacak",
+    "home": "Beranda",
+    "languages": "Bahasa",
+    "changeLanguage": "Ganti Bahasa",
+    "selectLanguage": "Pilih Bahasa",
+    "allLanguages": "Semua Bahasa",
+    "close": "Tutup",
+    "share": "Bagikan",
+    "copyLink": "Salin Tautan",
+    "copied": "Tersalin!",
+    "shareTitle": "Clean My Speaker membantu Anda? Bagikan!",
+    "shareDesc": "Bantu teman mengeluarkan air dari speaker HP tanpa biaya servis.",
+    "cookieNotice": "Pengaturan Cookie",
+    "loading": "Memuat..."
+  },
+  "nav": {
+    "home": "Beranda",
+    "tool": "Alat Pembuang Air",
+    "howItWorks": "Cara Kerja",
+    "removeWater": "Keluarkan Air",
+    "iphone": "Bersihkan iPhone",
+    "android": "Bersihkan Android",
+    "test": "Tes Speaker",
+    "guide": "Panduan Pembersihan",
+    "faq": "FAQ",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "privacy": "Privasi",
+    "terms": "Ketentuan",
+    "disclaimer": "Sanggahan",
+    "cookiePolicy": "Cookie",
+    "cleanNow": "Bersihkan Sekarang",
+    "audioTools": "Alat Audio",
+    "deviceGuides": "Panduan HP",
+    "information": "Informasi",
+    "connectWithUs": "Ikuti Kami"
+  },
+  "tool": {
+    "badge": "Utilitas Akustik Pengeluar Air",
+    "title": "BERSIHKAN SPEAKER",
+    "subtitle": "Atur volume ke 100%, hadapkan speaker ke bawah, dan tekan tombol di bawah.",
+    "buttonClean": "BERSIHKAN SPEAKER",
+    "buttonStop": "HENTIKAN PEMBERSIHAN",
+    "statusReady": "Siap memutar gelombang suara 165 Hz.",
+    "statusPlaying": "Memancarkan suara {freq} Hz (sisa {timeRemaining} detik)...",
+    "statusCompleted": "Selesai! Usap lubang speaker dengan kain kering.",
+    "selectMode": "Pilih Mode",
+    "quickClean": "Pembersihan Cepat",
+    "quickCleanDesc": "30 detik untuk air ringan",
+    "deepClean": "Pembersihan Mendalam",
+    "deepCleanDesc": "60 detik untuk tetesan membandel",
+    "waterEject": "Keluarkan Air",
+    "waterEjectDesc": "45 detik getaran maksimal",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Tes Suara",
+    "title": "Tes Speaker & Saluran Stereo",
+    "subtitle": "Uji saluran kiri/kanan dan respons frekuensi.",
+    "stereoTitle": "Tes Stereo",
+    "stereoDesc": "Periksa keseimbangan suara speaker.",
+    "leftChannel": "Saluran Kiri",
+    "rightChannel": "Saluran Kanan",
+    "bothChannels": "Kedua Saluran",
+    "stopTest": "Hentikan",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Bersihkan Speaker HP – Keluarkan Air & Perbaiki Suara Online",
+    "metaDesc": "Keluarkan air dari speaker HP dan perbaiki suara cempreng dengan gelombang suara 165 Hz gratis.",
+    "heroH1": "Bersihkan Speaker HP – Keluarkan Air & Perbaiki Suara",
+    "heroSub": "Putar gelombang suara 165 Hz untuk mengeluarkan air dan debu dari speaker HP tanpa install aplikasi.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Cara Kerja – Fisika Suara",
+    "metaDesc": "Pelajari bagaimana suara 165 Hz mendorong air keluar.",
+    "h1": "Cara Kerja: Sains Pengeluaran Air",
+    "sub": "Getaran diafragma dan tekanan udara."
+  },
+  "removeWater": {
+    "metaTitle": "Cara Mengeluarkan Air dari Speaker HP",
+    "metaDesc": "Panduan aman mengeluarkan air dari speaker HP.",
+    "h1": "Cara Mengeluarkan Air dari Speaker HP: 5 Langkah",
+    "sub": "HP kemasukan air? Ikuti langkah aman ini."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Bersihkan Speaker iPhone – Keluarkan Air",
+    "metaDesc": "Alat pengeluar air speaker iPhone online di Safari.",
+    "h1": "Pembersih Speaker iPhone",
+    "sub": "Khusus iPhone 15, 14, 13, 12, SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "Bersihkan Speaker Android – Samsung & Xiaomi",
+    "metaDesc": "Keluarkan air dari speaker HP Samsung, Xiaomi, Pixel.",
+    "h1": "Pembersih Speaker Android",
+    "sub": "Aman untuk semua HP Android."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Panduan Membersihkan Speaker HP",
+    "metaDesc": "Cara membersihkan debu dan kotoran dari kisi-kisi speaker.",
+    "h1": "Panduan Membersihkan Speaker HP",
+    "sub": "Tips perawatan praktis."
+  },
+  "faq": {
+    "metaTitle": "Pertanyaan Umum – FAQ",
+    "metaDesc": "Jawaban lengkap tentang pembersihan speaker.",
+    "h1": "Pertanyaan Umum",
+    "sub": "Semua yang perlu Anda ketahui."
+  },
+  "about": {
+    "metaTitle": "Tentang Kami – Clean My Speaker",
+    "metaDesc": "Tentang utilitas web audio gratis.",
+    "h1": "Tentang Kami",
+    "sub": "Alat bantu untuk pengguna HP sedunia."
+  },
+  "contact": {
+    "metaTitle": "Hubungi Kami",
+    "metaDesc": "Dukungan dan pertanyaan.",
+    "h1": "Hubungi Kami",
+    "sub": "Ada saran atau pertanyaan? Hubungi kami."
+  },
+  "privacy": {
+    "metaTitle": "Kebijakan Privasi",
+    "metaDesc": "Kebijakan privasi.",
+    "h1": "Kebijakan Privasi"
+  },
+  "terms": {
+    "metaTitle": "Syarat & Ketentuan",
+    "metaDesc": "Ketentuan penggunaan.",
+    "h1": "Syarat & Ketentuan"
+  },
+  "disclaimer": {
+    "metaTitle": "Sanggahan",
+    "metaDesc": "Sanggahan keamanan perangkat keras.",
+    "h1": "Sanggahan"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Kebijakan Cookie",
+    "metaDesc": "Penggunaan cookie.",
+    "h1": "Kebijakan Cookie"
+  },
+  "languages": {
+    "metaTitle": "Bahasa – Clean My Speaker",
+    "metaDesc": "Tersedia dalam 27 bahasa.",
+    "h1": "Pilih Bahasa",
+    "sub": "Tersedia dalam 27 bahasa dunia."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Wyczyść Głośnik Telefonu Online — Usuń Wodę i Kurz Dźwiękiem",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Zastrzeżenie: Clean My Speaker to niezależne narzędzie.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "Główna",
+    "languages": "Języki",
+    "changeLanguage": "Zmień język",
+    "selectLanguage": "Wybierz język",
+    "allLanguages": "Wszystkie języki",
+    "close": "Zamknij",
+    "share": "Udostępnij",
+    "copyLink": "Kopiuj link",
+    "copied": "Skopiowano!",
+    "shareTitle": "Czy Clean My Speaker pomógł? Udostępnij!",
+    "shareDesc": "Pomóż znajomym usunąć wodę z głośnika telefonu.",
+    "cookieNotice": "Ustawienia ciasteczek",
+    "loading": "Ładowanie..."
+  },
+  "nav": {
+    "home": "Główna",
+    "tool": "Usuwanie Wody",
+    "howItWorks": "Jak to działa",
+    "removeWater": "Usuń wodę",
+    "iphone": "Wyczyść iPhone",
+    "android": "Wyczyść Android",
+    "test": "Test głośnika",
+    "guide": "Poradnik",
+    "faq": "FAQ",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "privacy": "Prywatność",
+    "terms": "Regulamin",
+    "disclaimer": "Zastrzeżenia",
+    "cookiePolicy": "Ciasteczka",
+    "cleanNow": "Wyczyść teraz",
+    "audioTools": "Narzędzia Audio",
+    "deviceGuides": "Poradniki",
+    "information": "Informacje",
+    "connectWithUs": "Obserwuj nas"
+  },
+  "tool": {
+    "badge": "Akustyczne Usuwanie Wody",
+    "title": "WYCZYŚĆ GŁOŚNIK",
+    "subtitle": "Ustaw głośność na 100%, skieruj głośnik w dół i naciśnij poniżej.",
+    "buttonClean": "WYCZYŚĆ GŁOŚNIK",
+    "buttonStop": "ZATRZYMAJ",
+    "statusReady": "Gotowy do odtworzenia dźwięku 165 Hz.",
+    "statusPlaying": "Odtwarzanie dźwięku {freq} Hz (pozostało {timeRemaining}s)...",
+    "statusCompleted": "Zakończono! Przetrzyj głośnik suchą ściereczką.",
+    "selectMode": "Wybierz tryb",
+    "quickClean": "Szybkie",
+    "quickCleanDesc": "30s na lekką wilgoć",
+    "deepClean": "Głębokie",
+    "deepCleanDesc": "60s na uporczywe krople",
+    "waterEject": "Wyrzut wody",
+    "waterEjectDesc": "45s maksymalnych wibracji",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Test Audio",
+    "title": "Test Głośnika i Stereo",
+    "subtitle": "Sprawdź kanał lewy/prawy i częstotliwości.",
+    "stereoTitle": "Test Stereo",
+    "stereoDesc": "Sprawdź zbalansowanie głośników.",
+    "leftChannel": "Lewy Kanał",
+    "rightChannel": "Prawy Kanał",
+    "bothChannels": "Oba Kanały",
+    "stopTest": "Stop",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Wyczyść Głośnik – Usuń Wodę i Napraw Dźwięk Online",
+    "metaDesc": "Usuń wodę z głośnika telefonu falami dźwiękowymi 165 Hz za darmo.",
+    "heroH1": "Wyczyść Głośnik – Usuń Wodę i Napraw Dźwięk",
+    "heroSub": "Odtwórz fale dźwiękowe 165 Hz, aby usunąć wodę i kurz bez instalacji aplikacji.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Jak to działa – Fizyka Dźwięku",
+    "metaDesc": "Dowiedz się, jak dźwięk 165 Hz wypycha wodę.",
+    "h1": "Jak to działa: Nauka o dźwięku",
+    "sub": "Wibracje membrany i ciśnienie powietrza."
+  },
+  "removeWater": {
+    "metaTitle": "Jak Usunąć Wodę z Głośnika Telefonu",
+    "metaDesc": "Poradnik bezpiecznego usuwania wody z głośnika.",
+    "h1": "Jak Usunąć Wodę z Głośnika: 5 Kroków",
+    "sub": "Telefon wpadł do wody? Sprawdź te kroki."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Wyczyść Głośnik iPhone – Usuwanie Wody",
+    "metaDesc": "Usuwanie wody z iPhone 15, 14, 13, 12, SE online.",
+    "h1": "Czyszczenie Głośnika iPhone",
+    "sub": "Dźwięk dostosowany do Apple iPhone."
+  },
+  "androidCleaner": {
+    "metaTitle": "Wyczyść Głośnik Android – Samsung & Xiaomi",
+    "metaDesc": "Usuń wodę z głośnika Samsung Galaxy, Pixel, Xiaomi.",
+    "h1": "Czyszczenie Głośnika Android",
+    "sub": "Bezpieczne dla telefonów z systemem Android."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Poradnik Czyszczenia Głośnika",
+    "metaDesc": "Bezpieczne usuwanie kurzu z siatki głośnika.",
+    "h1": "Poradnik Czyszczenia Głośnika",
+    "sub": "Praktyczne porady pielęgnacji."
+  },
+  "faq": {
+    "metaTitle": "Często Zadawane Pytania – FAQ",
+    "metaDesc": "Pytania i odpowiedzi dotyczące czyszczenia głośnika.",
+    "h1": "Często Zadawane Pytania",
+    "sub": "Wszystko, co musisz wiedzieć."
+  },
+  "about": {
+    "metaTitle": "O nas – Clean My Speaker",
+    "metaDesc": "O naszym darmowym narzędziu audio.",
+    "h1": "O nas",
+    "sub": "Darmowe narzędzie dla każdego."
+  },
+  "contact": {
+    "metaTitle": "Kontakt",
+    "metaDesc": "Wsparcie i pytania.",
+    "h1": "Kontakt i Wsparcie",
+    "sub": "Napisz do nas."
+  },
+  "privacy": {
+    "metaTitle": "Polityka Prywatności",
+    "metaDesc": "Polityka prywatności.",
+    "h1": "Polityka Prywatności"
+  },
+  "terms": {
+    "metaTitle": "Regulamin",
+    "metaDesc": "Regulamin serwisu.",
+    "h1": "Regulamin"
+  },
+  "disclaimer": {
+    "metaTitle": "Zastrzeżenia",
+    "metaDesc": "Bezpieczeństwo sprzętu.",
+    "h1": "Zastrzeżenia"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Polityka Cookies",
+    "metaDesc": "Informacja o ciasteczkach.",
+    "h1": "Polityka Cookies"
+  },
+  "languages": {
+    "metaTitle": "Języki – Clean My Speaker",
+    "metaDesc": "Dostępny w 27 językach.",
+    "h1": "Wybierz Język",
+    "sub": "Dostępny na całym świecie."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "在线清理手机扬声器 — 声波排水与灰尘清理",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "免责声明：Clean My Speaker 是独立工具，与 Apple、Google 或 Samsung 无关。",
+    "clientSideProcessing": "100% 浏览器运行 • 无需麦克风 • 零追踪",
+    "home": "首页",
+    "languages": "语言",
+    "changeLanguage": "切换语言",
+    "selectLanguage": "选择语言",
+    "allLanguages": "所有语言",
+    "close": "关闭",
+    "share": "分享",
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "shareTitle": "Clean My Speaker 帮到你了吗？分享给好友吧！",
+    "shareDesc": "帮助好友排出手机喇叭进水，修复发闷的声音。",
+    "cookieNotice": "Cookie 设置",
+    "loading": "加载中..."
+  },
+  "nav": {
+    "home": "首页",
+    "tool": "声波排水",
+    "howItWorks": "工作原理",
+    "removeWater": "排水方法",
+    "iphone": "iPhone 清理",
+    "android": "Android 清理",
+    "test": "喇叭测试",
+    "guide": "清洁指南",
+    "faq": "常见问题",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "disclaimer": "免责声明",
+    "cookiePolicy": "Cookie",
+    "cleanNow": "立即清理",
+    "audioTools": "音频工具",
+    "deviceGuides": "机型指南",
+    "information": "信息",
+    "connectWithUs": "社交媒体"
+  },
+  "tool": {
+    "badge": "声波排水实用工具",
+    "title": "清理扬声器",
+    "subtitle": "将音量调至 100%，扬声器朝下，点击下方按钮开始。",
+    "buttonClean": "开始清理扬声器",
+    "buttonStop": "停止清理",
+    "statusReady": "已准备好播放 165 Hz 特效声波。",
+    "statusPlaying": "正在播放 {freq} Hz 声波（剩余 {timeRemaining} 秒）...",
+    "statusCompleted": "清理完成！请用干布擦拭出音孔。",
+    "selectMode": "选择模式",
+    "quickClean": "快速清理",
+    "quickCleanDesc": "30秒轻度排水",
+    "deepClean": "深度清理",
+    "deepCleanDesc": "60秒强力振动",
+    "waterEject": "强力排水",
+    "waterEjectDesc": "45秒最大振幅",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "音频检测",
+    "title": "扬声器与立体声测试",
+    "subtitle": "测试左右声道分离与 100Hz ~ 10kHz 音频响应。",
+    "stereoTitle": "立体声测试",
+    "stereoDesc": "分别播放左右声道以检测喇叭是否堵塞。",
+    "leftChannel": "左声道",
+    "rightChannel": "右声道",
+    "bothChannels": "双声道",
+    "stopTest": "停止测试",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "手机扬声器声波排水 – 在线清理喇叭进水与修复声音",
+    "metaDesc": "使用 165Hz 声波在线排出手机喇叭进水，修复声音发闷，无需下载 App 完全免费。",
+    "heroH1": "手机扬声器声波排水 – 在线排出进水与修复声音",
+    "heroSub": "播放专用的 165Hz 共振声波，快速震出喇叭内的水珠与灰尘。",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "工作原理 – 声波排水物理科学",
+    "metaDesc": "了解 165Hz 声波如何产生空气微压震出水珠。",
+    "h1": "工作原理：声波震动排水的科学",
+    "sub": "振膜位移与动能气流排出液体。"
+  },
+  "removeWater": {
+    "metaTitle": "手机扬声器进水怎么处理 – 排水指南",
+    "metaDesc": "手机进水后安全排出扬声器水分的 5 个步骤。",
+    "h1": "手机扬声器进水处理：安全指南",
+    "sub": "手机掉水里了？按照这 5 个步骤操作。"
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone 扬声器排水 – 苹果手机喇叭清理",
+    "metaDesc": "iPhone 15, 14, 13, 12, SE 专用声波排水工具。",
+    "h1": "iPhone 扬声器声波排水",
+    "sub": "专为苹果 iPhone 设计的排水音频。"
+  },
+  "androidCleaner": {
+    "metaTitle": "Android 扬声器排水 – 华为·小米·三星",
+    "metaDesc": "三星 Galaxy、小米、华为手机声波排水。",
+    "h1": "Android 扬声器排水清理",
+    "sub": "适用于所有安卓智能手机。"
+  },
+  "cleaningGuide": {
+    "metaTitle": "手机喇叭清洁指南 – 清理灰尘杂物",
+    "metaDesc": "如何安全清洁手机扬声器网罩上的灰尘和毛屑。",
+    "h1": "手机扬声器清洁指南",
+    "sub": "日常保养与清洁技巧。"
+  },
+  "faq": {
+    "metaTitle": "常见问题 – Clean My Speaker FAQ",
+    "metaDesc": "关于声波排水工具的常见疑问解答。",
+    "h1": "常见问题解答",
+    "sub": "为您解答关于声波排水的疑问。"
+  },
+  "about": {
+    "metaTitle": "关于我们 – Clean My Speaker",
+    "metaDesc": "免费在线浏览器音频工具介绍。",
+    "h1": "关于我们",
+    "sub": "为全球智能手机用户打造的实用工具。"
+  },
+  "contact": {
+    "metaTitle": "联系我们",
+    "metaDesc": "技术支持与反馈。",
+    "h1": "联系我们",
+    "sub": "欢迎提供建议或反馈。"
+  },
+  "privacy": {
+    "metaTitle": "隐私政策",
+    "metaDesc": "隐私保护政策。",
+    "h1": "隐私政策"
+  },
+  "terms": {
+    "metaTitle": "服务条款",
+    "metaDesc": "网站使用条款。",
+    "h1": "服务条款"
+  },
+  "disclaimer": {
+    "metaTitle": "免责声明",
+    "metaDesc": "硬件安全免责声明。",
+    "h1": "免责声明"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Cookie 政策",
+    "metaDesc": "Cookie 使用说明。",
+    "h1": "Cookie 政策"
+  },
+  "languages": {
+    "metaTitle": "支持语言 – Clean My Speaker",
+    "metaDesc": "支持 27 种语言。",
+    "h1": "选择您的语言",
+    "sub": "支持全球 27 种常用语言。"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Καθαρισμός Ηχείου Κινητού Online — Αποβολή Νερού με Ήχο",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker is an independent web tool and is not affiliated with Apple Inc., Google LLC, or Samsung. Sound vibrations cannot reverse permanent internal liquid damage.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "Αρχική",
+    "languages": "Γλώσσες",
+    "changeLanguage": "Αλλαγή γλώσσας",
+    "selectLanguage": "Επιλογή γλώσσας",
+    "allLanguages": "Όλες οι γλώσσες",
+    "close": "Κλείσιμο",
+    "share": "Κοινοποίηση",
+    "copyLink": "Αντιγραφή συνδέσμου",
+    "copied": "Αντιγράφηκε!",
+    "shareTitle": "Σας βοήθησε το Clean My Speaker; Μοιραστείτε το!",
+    "shareDesc": "Βοηθήστε τους φίλους σας να αποβάλουν το νερό από το ηχείο.",
+    "cookieNotice": "Ρυθμίσεις cookies",
+    "loading": "Φόρτωση..."
+  },
+  "nav": {
+    "home": "Αρχική",
+    "tool": "Εξαγωγή Νερού",
+    "howItWorks": "Πώς Λειτουργεί",
+    "removeWater": "Αφαίρεση Νερού",
+    "iphone": "Καθαρισμός iPhone",
+    "android": "Καθαρισμός Android",
+    "test": "Τεστ Ηχείου",
+    "guide": "Οδηγός Καθαρισμού",
+    "faq": "FAQ",
+    "about": "Σχετικά",
+    "contact": "Επικοινωνία",
+    "privacy": "Απόρρητο",
+    "terms": "Όροι",
+    "disclaimer": "Αποποίηση",
+    "cookiePolicy": "Cookies",
+    "cleanNow": "Καθαρισμός Τώρα",
+    "audioTools": "Εργαλεία Ήχου",
+    "deviceGuides": "Οδηγοί Συσκευών",
+    "information": "Πληροφορίες",
+    "connectWithUs": "Ακολουθήστε μας"
+  },
+  "tool": {
+    "badge": "Ακουστικό Εργαλείο Εξαγωγής Νερού",
+    "title": "ΚΑΘΑΡΙΣΜΟΣ ΗΧΕΙΟΥ",
+    "subtitle": "Βάλτε την ένταση στο 100%, στρέψτε το ηχείο προς τα κάτω και πατήστε.",
+    "buttonClean": "ΚΑΘΑΡΙΣΜΟΣ ΗΧΕΙΟΥ",
+    "buttonStop": "ΔΙΑΚΟΠΗ",
+    "statusReady": "Έτοιμο για αναπαραγωγή ήχου 165 Hz.",
+    "statusPlaying": "Αναπαραγωγή ήχου {freq} Hz ({timeRemaining}δ απομένουν)...",
+    "statusCompleted": "Ολοκληρώθηκε! Σκουπίστε απαλά με στεγνό πανί.",
+    "selectMode": "Επιλογή λειτουργίας",
+    "quickClean": "Γρήγορος καθαρισμός",
+    "quickCleanDesc": "30δ για λίγη υγρασία",
+    "deepClean": "Βαθύς καθαρισμός",
+    "deepCleanDesc": "60δ για επίμονες σταγόνες",
+    "waterEject": "Εξαγωγή νερού",
+    "waterEjectDesc": "45δ μέγιστης δόνησης",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Τεστ Ήχου",
+    "title": "Τεστ Ηχείου & Στέρεο",
+    "subtitle": "Έλεγχος καναλιών αριστερά/δεξιά και συχνοτήτων.",
+    "stereoTitle": "Τεστ Στέρεο",
+    "stereoDesc": "Ελέγξτε την ισορροπία των ηχείων.",
+    "leftChannel": "Αριστερό",
+    "rightChannel": "Δεξί",
+    "bothChannels": "Και τα δύο",
+    "stopTest": "Διακοπή",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Καθαρισμός Ηχείου – Εξαγωγή Νερού & Διόρθωση Ήχου Online",
+    "metaDesc": "Αποβάλετε το νερό από το ηχείο του κινητού με ηχητικά κύματα 165 Hz δωρεάν.",
+    "heroH1": "Καθαρισμός Ηχείου – Αποβολή Νερού & Διόρθωση Ήχου",
+    "heroSub": "Παίξτε ηχητικά κύματα 165 Hz για να αποβάλετε νερό και σκόνη χωρίς εφαρμογή.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Πώς Λειτουργεί – Ακουστική Φυσική",
+    "metaDesc": "Πώς ο ήχος 165 Hz σπρώχνει το νερό έξω.",
+    "h1": "Πώς Λειτουργεί: Η Επιστήμη του Ήχου",
+    "sub": "Δόνηση μεμβράνης και πίεση αέρα."
+  },
+  "removeWater": {
+    "metaTitle": "Πώς να Βγάλετε το Νερό από το Ηχείο του Κινητού",
+    "metaDesc": "Ασφαλής οδηγός αφαίρεσης νερού.",
+    "h1": "Πώς να Βγάλετε το Νερό από το Ηχείο: 5 Βήματα",
+    "sub": "Έπεσε το κινητό στο νερό; Ακολουθήστε αυτά τα βήματα."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Καθαρισμός Ηχείου iPhone – Εξαγωγή Νερού",
+    "metaDesc": "Καθαρίστε το ηχείο του iPhone στο Safari.",
+    "h1": "Καθαρισμός Ηχείου iPhone",
+    "sub": "Για iPhone 15, 14, 13, 12, SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "Καθαρισμός Ηχείου Android – Samsung & Xiaomi",
+    "metaDesc": "Εξαγωγή νερού για Samsung Galaxy, Pixel και Xiaomi.",
+    "h1": "Καθαρισμός Ηχείου Android",
+    "sub": "Ασφαλές για όλες τις συσκευές Android."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Οδηγός Καθαρισμού Ηχείου",
+    "metaDesc": "Ασφαλής αφαίρεση σκόνης.",
+    "h1": "Οδηγός Καθαρισμού Ηχείου",
+    "sub": "Πρακτικές συμβουλές συντήρησης."
+  },
+  "faq": {
+    "metaTitle": "Συχνές Ερωτήσεις – FAQ",
+    "metaDesc": "Ερωτήσεις και απαντήσεις για τον καθαρισμό ηχείων.",
+    "h1": "Συχνές Ερωτήσεις",
+    "sub": "Όλα όσα πρέπει να γνωρίζετε."
+  },
+  "about": {
+    "metaTitle": "Σχετικά με εμάς – Clean My Speaker",
+    "metaDesc": "Σχετικά με το δωρεάν εργαλείο ήχου.",
+    "h1": "Σχετικά με εμάς",
+    "sub": "Δωρεάν εργαλείο για χρήστες κινητών."
+  },
+  "contact": {
+    "metaTitle": "Επικοινωνία",
+    "metaDesc": "Υποστήριξη και σχόλια.",
+    "h1": "Επικοινωνία & Υποστήριξη",
+    "sub": "Επικοινωνήστε μαζί μας."
+  },
+  "privacy": {
+    "metaTitle": "Πολιτική Απορρήτου",
+    "metaDesc": "Προστασία δεδομένων.",
+    "h1": "Πολιτική Απορρήτου"
+  },
+  "terms": {
+    "metaTitle": "Όροι Χρήσης",
+    "metaDesc": "Όροι χρήσης της ιστοσελίδας.",
+    "h1": "Όροι Χρήσης"
+  },
+  "disclaimer": {
+    "metaTitle": "Αποποίηση Ευθύνης",
+    "metaDesc": "Ασφάλεια υλικού.",
+    "h1": "Αποποίηση Ευθύνης"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Πολιτική Cookies",
+    "metaDesc": "Χρήση cookies.",
+    "h1": "Πολιτική Cookies"
+  },
+  "languages": {
+    "metaTitle": "Γλώσσες – Clean My Speaker",
+    "metaDesc": "Διαθέσιμο σε 27 γλώσσες.",
+    "h1": "Επιλέξτε τη Γλώσσα σας",
+    "sub": "Διαθέσιμο σε 27 γλώσσες."
+  }
+}

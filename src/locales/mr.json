@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "क्लीन माय स्पीकर ऑनलाइन — फोनच्या स्पीकरमधून पाणी व धूळ काढा",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "सूचना: Clean My Speaker हे एक स्वतंत्र साधन आहे.",
+    "clientSideProcessing": "100% ब्राउझर प्रोसेसिंग • नो ट्रॅकिंग",
+    "home": "मुख्यपृष्ठ",
+    "languages": "भाषा",
+    "changeLanguage": "भाषा बदला",
+    "selectLanguage": "भाषा निवडा",
+    "allLanguages": "सर्व भाषा",
+    "close": "बंद करा",
+    "share": "शेअर करा",
+    "copyLink": "लिंक कॉपी करा",
+    "copied": "कॉपी झाले!",
+    "shareTitle": "Clean My Speaker उपयुक्त ठरले का? शेअर करा!",
+    "shareDesc": "मित्रांना फोन स्पीकरमधील पाणी काढण्यास मदत करा.",
+    "cookieNotice": "कुकी सेटिंग्ज",
+    "loading": "लोड होत आहे..."
+  },
+  "nav": {
+    "home": "मुख्यपृष्ठ",
+    "tool": "पाणी काढण्याचे टूल",
+    "howItWorks": "कसे कार्य करते",
+    "removeWater": "पाणी काढा",
+    "iphone": "iPhone स्पीकर",
+    "android": "Android स्पीकर",
+    "test": "स्पीकर टेस्ट",
+    "guide": "सफाई गाइड",
+    "faq": "FAQ",
+    "about": "माहिती",
+    "contact": "संपर्क",
+    "privacy": "गोपनीयता",
+    "terms": "अटी",
+    "disclaimer": "अस्वीकरण",
+    "cookiePolicy": "कुकीज",
+    "cleanNow": "साफ करा",
+    "audioTools": "ऑडिओ टूल्स",
+    "deviceGuides": "डिव्हाइस गाइड",
+    "information": "माहिती",
+    "connectWithUs": "सोशल मीडिया"
+  },
+  "tool": {
+    "badge": "ध्वनी जल निष्कासन टूल",
+    "title": "स्पीकर साफ करा",
+    "subtitle": "आवाज 100% करा, स्पीकर खाली ठेवा आणि खाली दाबा.",
+    "buttonClean": "स्पीकर साफ करा",
+    "buttonStop": "थांबवा",
+    "statusReady": "165 Hz ध्वनी लहरी सुरू करण्यास तयार.",
+    "statusPlaying": "{freq} Hz लहरी सुरू आहेत ({timeRemaining} सेकंद बाकी)...",
+    "statusCompleted": "सफाई पूर्ण झाली!",
+    "selectMode": "मोड निवडा",
+    "quickClean": "जलद सफाई",
+    "quickCleanDesc": "30 सेकंद",
+    "deepClean": "खोल सफाई",
+    "deepCleanDesc": "60 सेकंद",
+    "waterEject": "पाणी बाहेर काढा",
+    "waterEjectDesc": "45 सेकंद",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "ऑडिओ टेस्ट",
+    "title": "स्पीकर व स्टिरिओ टेस्ट",
+    "subtitle": "डावा/उजवा चॅनल तपासा.",
+    "stereoTitle": "स्टिरिओ टेस्ट",
+    "stereoDesc": "स्पीकर कार्यक्षमता तपासा.",
+    "leftChannel": "डावा",
+    "rightChannel": "उजवा",
+    "bothChannels": "दोन्ही",
+    "stopTest": "थांबवा",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "क्लीन माय स्पीकर – फोनच्या स्पीकरमधून पाणी काढा",
+    "metaDesc": "फोनच्या स्पीकरमधून 165 Hz ध्वनी लहरींद्वारे पाणी बाहेर काढा.",
+    "heroH1": "क्लीन माय स्पीकर – स्पीकरमधून पाणी काढा व आवाज सुधारा",
+    "heroSub": "165 Hz ध्वनी लहरी वापरून फोन स्पीकरमधील पाणी व धूळ त्वरित बाहेर काढा.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "कसे कार्य करते – ध्वनी विज्ञान",
+    "metaDesc": "165 Hz लहरींद्वारे पाणी कसे बाहेर पडते ते जाणून घ्या.",
+    "h1": "कसे कार्य करते: ध्वनी कंपन विज्ञान",
+    "sub": "हवेचा दाब आणि ध्वनी लहरींचा वापर."
+  },
+  "removeWater": {
+    "metaTitle": "फोन स्पीकरमधून पाणी कसे काढावे",
+    "metaDesc": "फोन स्पीकरमधील पाणी काढण्याची सोपी पद्धत.",
+    "h1": "फोन स्पीकरमधून पाणी कसे काढावे",
+    "sub": "फोन पाण्यात पडलाय? या 5 पायऱ्या वापरा."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone स्पीकर साफ करा – पाणी काढा",
+    "metaDesc": "iPhone स्पीकरमधील पाणी काढण्यासाठी ऑनलाइन टूल.",
+    "h1": "iPhone स्पीकर क्लीनर",
+    "sub": "सर्व iPhone मॉडेल्ससाठी."
+  },
+  "androidCleaner": {
+    "metaTitle": "Android स्पीकर साफ करा",
+    "metaDesc": "Android फोन स्पीकरमधील पाणी व धूळ साफ करा.",
+    "h1": "Android स्पीकर क्लीनर",
+    "sub": "Samsung, Xiaomi, Pixel साठी."
+  },
+  "cleaningGuide": {
+    "metaTitle": "स्पीकर सफाई गाइड",
+    "metaDesc": "धूळ व कचरा काढण्यासाठी मार्गदर्शक.",
+    "h1": "स्पीकर सफाई गाइड",
+    "sub": "सुरक्षित सफाई पद्धती."
+  },
+  "faq": {
+    "metaTitle": "वारंवार विचारले जाणारे प्रश्न",
+    "metaDesc": "स्पीकर सफाईविषयी सर्व माहिती.",
+    "h1": "वारंवार विचारले जाणारे प्रश्न",
+    "sub": "सर्व प्रश्नांची उत्तरे."
+  },
+  "about": {
+    "metaTitle": "आमच्याबद्दल",
+    "metaDesc": "Clean My Speaker बद्दल माहिती.",
+    "h1": "आमच्याबद्दल",
+    "sub": "मोफत ऑनलाइन ऑडिओ टूल."
+  },
+  "contact": {
+    "metaTitle": "संपर्क",
+    "metaDesc": "आमच्याशी संपर्क साधा.",
+    "h1": "संपर्क साधा",
+    "sub": "मदत किंवा फीडबॅकसाठी."
+  },
+  "privacy": {
+    "metaTitle": "गोपनीयता धोरण",
+    "metaDesc": "गोपनीयता धोरण.",
+    "h1": "गोपनीयता धोरण"
+  },
+  "terms": {
+    "metaTitle": "सेवा अटी",
+    "metaDesc": "सेवा अटी.",
+    "h1": "सेवा अटी"
+  },
+  "disclaimer": {
+    "metaTitle": "अस्वीकरण",
+    "metaDesc": "अस्वीकरण.",
+    "h1": "अस्वीकरण"
+  },
+  "cookiePolicy": {
+    "metaTitle": "कुकी धोरण",
+    "metaDesc": "कुकी धोरण.",
+    "h1": "कुकी धोरण"
+  },
+  "languages": {
+    "metaTitle": "भाषा",
+    "metaDesc": "27 भाषांमध्ये उपलब्ध.",
+    "h1": "भाषा निवडा",
+    "sub": "तुमची भाषा निवडा."
+  }
+}

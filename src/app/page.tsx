@@ -6,6 +6,9 @@ import { SafetyNotice } from '@/components/SafetyNotice';
 import { FAQAccordion } from '@/components/FAQAccordion';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { ShareButtons } from '@/components/ShareButtons';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { getHreflangAlternates } from '@/i18n/locale-utils';
 import { FAQItem } from '@/lib/types';
 
 const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
@@ -68,6 +71,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://cleanmyspeaker.net/',
+    languages: getHreflangAlternates('/'),
   },
   openGraph: {
     title: 'Clean My Speaker – Fix My Speaker & Fix Clean My Speaker Online',
@@ -253,8 +257,10 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen">
-      {/* Schema.org Structured Data */}
+    <div className="min-h-screen flex flex-col">
+      <Header locale="en" />
+      <main className="flex-1">
+        {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
@@ -912,6 +918,8 @@ export default function HomePage() {
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/" />
       </article>
-    </main>
+      </main>
+      <Footer locale="en" />
+    </div>
   );
 }

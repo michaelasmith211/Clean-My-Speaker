@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { CookieConsent } from '@/components/CookieConsent';
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/constants';
 import './globals.css';
@@ -199,9 +197,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-slate-950 font-sans">
-        <Header />
-        <div className="flex-1">{children}</div>
-        <Footer />
+        {children}
         <CookieConsent />
 
         {/* Google Consent Mode v2 Default (Global Privacy Standard) */}

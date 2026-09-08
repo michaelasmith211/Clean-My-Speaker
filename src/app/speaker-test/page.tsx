@@ -5,6 +5,9 @@ import dynamic from 'next/dynamic';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { ShareButtons } from '@/components/ShareButtons';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { getHreflangAlternates } from '@/i18n/locale-utils';
 
 const SpeakerTester = dynamic(() => import('@/components/SpeakerTester'), {
   ssr: false,
@@ -37,6 +40,7 @@ export const metadata: Metadata = {
     'Free online speaker test. Test stereo channels, check audio frequencies from 100 Hz to 10 kHz, diagnose muffled sound, and fix clean my speaker audio clarity.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/speaker-test/',
+    languages: getHreflangAlternates('/speaker-test'),
   },
   openGraph: {
     title: 'Speaker Test Online – Test & Fix Clean My Speaker Sound Quality',
@@ -81,12 +85,14 @@ export default function SpeakerTestPage() {
   };
 
   return (
-    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdTestApp) }}
-      />
-      <Breadcrumbs items={breadcrumbs} />
+    <div className="min-h-screen flex flex-col">
+      <Header locale="en" />
+      <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdTestApp) }}
+        />
+        <Breadcrumbs items={breadcrumbs} locale="en" />
 
       <article className="space-y-12 mt-6 text-slate-300">
         <header className="space-y-4 text-center">
@@ -198,5 +204,7 @@ export default function SpeakerTestPage() {
         </footer>
       </article>
     </main>
+    <Footer locale="en" />
+  </div>
   );
 }

@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Limpar Meu Alto-Falante Online — Ejetar Água e Umidade do Celular",
+    "allRightsReserved": "Todos os direitos reservados.",
+    "disclaimerFooter": "Aviso: O Clean My Speaker é uma ferramenta web independente e não possui vínculo com Apple, Google ou Samsung. Vibrações sonoras não reparam danos internos permanentes por líquidos.",
+    "clientSideProcessing": "Processamento 100% no navegador • Sem acesso ao microfone • Zero cookies de rastreamento",
+    "home": "Início",
+    "languages": "Idiomas",
+    "changeLanguage": "Mudar idioma",
+    "selectLanguage": "Selecionar idioma",
+    "allLanguages": "Todos os idiomas",
+    "close": "Fechar",
+    "share": "Compartilhar",
+    "copyLink": "Copiar link",
+    "copied": "Copiado!",
+    "shareTitle": "O Clean My Speaker ajudou você? Compartilhe!",
+    "shareDesc": "Ajude amigos e familiares a ejetar água, remover poeira e consertar o som abafado sem pagar assistência técnica.",
+    "cookieNotice": "Configurações de Cookies",
+    "loading": "Carregando..."
+  },
+  "nav": {
+    "home": "Início",
+    "tool": "Ejetor de Água",
+    "howItWorks": "Como Funciona",
+    "removeWater": "Tirar Água",
+    "iphone": "Limpar iPhone",
+    "android": "Limpar Android",
+    "test": "Testar Alto-Falante",
+    "guide": "Guia de Limpeza",
+    "faq": "FAQ",
+    "about": "Sobre",
+    "contact": "Contato",
+    "privacy": "Privacidade",
+    "terms": "Termos de Uso",
+    "disclaimer": "Aviso Legal",
+    "cookiePolicy": "Cookies",
+    "cleanNow": "Limpar Agora",
+    "audioTools": "Ferramentas de Áudio",
+    "deviceGuides": "Guias por Aparelho",
+    "information": "Informações",
+    "connectWithUs": "Redes Sociais"
+  },
+  "tool": {
+    "badge": "Utilitário Acústico de Ejeção de Água",
+    "title": "LIMPAR MEU ALTO-FALANTE",
+    "subtitle": "Aumente o volume para 100%, aponte o alto-falante para baixo e toque abaixo.",
+    "buttonClean": "LIMPAR MEU ALTO-FALANTE",
+    "buttonStop": "PARAR LIMPEZA",
+    "statusReady": "Pronto para emitir ondas de 165 Hz. Aumente o som e toque para iniciar.",
+    "statusPlaying": "Emitindo ondas sonoras a {freq} Hz (restam {timeRemaining}s)...",
+    "statusCompleted": "Ciclo concluído! Seque suavemente as saídas com um pano seco.",
+    "selectMode": "Selecionar Modo de Limpeza",
+    "quickClean": "Limpeza Rápida",
+    "quickCleanDesc": "Ciclo de 30s para umidade leve.",
+    "deepClean": "Limpeza Profunda",
+    "deepCleanDesc": "Varredura de 60s para gotas persistentes.",
+    "waterEject": "Ejetar Água",
+    "waterEjectDesc": "Pulsos de 45s com oscilação máxima da membrana para expulsar líquidos.",
+    "tipPosition": "Alto-falante voltado para baixo",
+    "tipCloth": "Bata suavemente em uma toalha",
+    "tipVolume": "Volume máximo obrigatório",
+    "tipNoHeat": "Nunca use secador de cabelo nem arroz",
+    "tipRepeat": "Repita 2 a 3 vezes se necessário",
+    "safetyTitle": "Dicas Importantes de Segurança",
+    "safetyRule1": "Nunca insira agulhas, palitos ou cotonetes nas grades.",
+    "safetyRule2": "Calor de secador derrete adesivos internos e quebra membranas.",
+    "safetyRule3": "O som expele gotículas da grade, mas não repara corrosão interna."
+  },
+  "speakerTest": {
+    "badge": "Diagnóstico Acústico Online",
+    "title": "Testador de Alto-Falante e Canais Estéreo",
+    "subtitle": "Teste separação estéreo esquerda/direita, espectro de 100 Hz a 10 kHz e detecte ruídos.",
+    "stereoTitle": "Teste de Separação de Canais Estéreo",
+    "stereoDesc": "Toque áudio por canal para identificar alto-falantes entupidos ou desbalanceados.",
+    "leftChannel": "Canal Esquerdo",
+    "rightChannel": "Canal Direito",
+    "bothChannels": "Ambos os Canais",
+    "stopTest": "Parar Som",
+    "playingChannel": "Testando canal {channel}...",
+    "frequencyTitle": "Diagnóstico de Frequência",
+    "frequencyDesc": "Teste frequências sonoras específicas para avaliar graves, médios e agudos.",
+    "playingFreq": "Tocando frequência de {freq}..."
+  },
+  "home": {
+    "metaTitle": "Limpar Meu Alto-Falante – Ejetar Água e Consertar Som",
+    "metaDesc": "Limpe o alto-falante do celular e conserte o som abafado online. Ejete água com ondas sonoras de 165 Hz grátis.",
+    "heroH1": "Limpar Meu Alto-Falante – Ejetar Água e Consertar Som",
+    "heroSub": "Toque ondas de 165 Hz para ejetar água, retirar poeira e recuperar o áudio nítido sem instalar aplicativos.",
+    "step1Title": "Coloque o volume no máximo (100%)",
+    "step1Desc": "Deixe o volume do celular no máximo para máxima vibração da membrana.",
+    "step2Title": "Aponte o alto-falante para baixo",
+    "step2Desc": "Segure o celular com as saídas voltadas para uma toalha seca.",
+    "step3Title": "Toque em Limpar Alto-Falante",
+    "step3Desc": "Emita tons de 165 Hz que sacodem a membrana acústica.",
+    "step4Title": "Repita de 2 a 3 vezes",
+    "step4Desc": "Faça vários ciclos para água persistente e teste com nosso testador de áudio.",
+    "whyChooseTitle": "Por que usar o Clean My Speaker?",
+    "whyChooseDesc": "Nossa ferramenta usa física acústica para expulsar água e poeira com segurança.",
+    "feature1Title": "100% Grátis e Sem Downloads",
+    "feature1Desc": "Funciona no Safari, Chrome, Firefox e Edge.",
+    "feature2Title": "Frequência Calibrada de 165 Hz",
+    "feature2Desc": "Projetada para a frequência de ressonância dos alto-falantes de celular.",
+    "feature3Title": "Seguro para iPhone e Android",
+    "feature3Desc": "Limpeza não invasiva que preserva a vedação contra água.",
+    "videoTitle": "Veja Como Funciona a Ejeção de Água",
+    "videoDesc": "Descubra como as ondas sonoras empurram as gotas para fora.",
+    "faqHeading": "Perguntas Frequentes sobre Limpeza de Alto-Falante"
+  },
+  "howItWorks": {
+    "metaTitle": "Como Funciona o Clean My Speaker – Física do Som",
+    "metaDesc": "Entenda como ondas de 165 Hz criam pressão de ar para ejetar água do celular.",
+    "h1": "Como Funciona o Clean My Speaker: A Ciência do Som",
+    "sub": "Oscilação da membrana acústica e ondas de pressão cinética."
+  },
+  "removeWater": {
+    "metaTitle": "Como Tirar Água do Alto-Falante do Celular",
+    "metaDesc": "Guia de emergência para tirar água do alto-falante e consertar o som abafado.",
+    "h1": "Como Tirar Água do Alto-Falante: Passo a Passo Seguro",
+    "sub": "Celular molhou? Siga este protocolo de 5 passos rápidos."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Limpar Alto-Falante iPhone – Ejetar Água no iPhone",
+    "metaDesc": "Limpe o alto-falante do iPhone online. Ejete água no iPhone 15, 14, 13, 12 e SE.",
+    "h1": "Limpar Alto-Falante iPhone: Como Ejetar Água",
+    "sub": "Guia e frequência sonora calibrados para aparelhos Apple iPhone."
+  },
+  "androidCleaner": {
+    "metaTitle": "Limpar Alto-Falante Android – Samsung e Xiaomi",
+    "metaDesc": "Limpe o alto-falante do Android online no Samsung Galaxy, Xiaomi e Motorola.",
+    "h1": "Limpar Alto-Falante Android: Ejetar Água e Poeira",
+    "sub": "Ejeção por ondas sonoras para celulares Samsung, Xiaomi e Pixel."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Guia de Limpeza de Alto-Falante – Tirar Poeira",
+    "metaDesc": "Como tirar poeira, areia e sujeira das saídas de som do celular com segurança.",
+    "h1": "Guia de Limpeza de Alto-Falante: Remover Poeira e Sujeira",
+    "sub": "Manual prático de manutenção e higienização das grades de som."
+  },
+  "faq": {
+    "metaTitle": "FAQ Clean My Speaker – Dúvidas Frequentes",
+    "metaDesc": "Perguntas e respostas sobre ejeção de água com som no iPhone e Android.",
+    "h1": "FAQ Clean My Speaker: Dúvidas Comuns",
+    "sub": "Tudo sobre limpeza sonora e recuperação de áudio."
+  },
+  "about": {
+    "metaTitle": "Sobre o Clean My Speaker – Ferramenta Gratuita",
+    "metaDesc": "Conheça nossa missão de oferecer ferramentas acústicas gratuitas e privadas.",
+    "h1": "Sobre o Clean My Speaker",
+    "sub": "Utilitário web leve ajudando usuários do mundo todo a recuperar o som."
+  },
+  "contact": {
+    "metaTitle": "Contato e Suporte – Clean My Speaker",
+    "metaDesc": "Fale com a equipe do Clean My Speaker para dúvidas e sugestões.",
+    "h1": "Contato e Suporte",
+    "sub": "Tem sugestões de calibração ou encontrou um erro? Fale conosco."
+  },
+  "privacy": {
+    "metaTitle": "Política de Privacidade",
+    "metaDesc": "Política de privacidade do Clean My Speaker.",
+    "h1": "Política de Privacidade"
+  },
+  "terms": {
+    "metaTitle": "Termos de Uso",
+    "metaDesc": "Termos de serviço e uso do Clean My Speaker.",
+    "h1": "Termos de Uso"
+  },
+  "disclaimer": {
+    "metaTitle": "Aviso Legal e Segurança",
+    "metaDesc": "Aviso sobre limitações da ejeção de líquidos por som.",
+    "h1": "Aviso Legal"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Política de Cookies",
+    "metaDesc": "Uso de cookies e consentimento no Clean My Speaker.",
+    "h1": "Política de Cookies"
+  },
+  "languages": {
+    "metaTitle": "Idiomas Disponíveis – Clean My Speaker",
+    "metaDesc": "O Clean My Speaker está disponível em 27 idiomas.",
+    "h1": "Escolha Seu Idioma",
+    "sub": "Disponível globalmente em 27 idiomas."
+  }
+}

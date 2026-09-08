@@ -2,6 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { getHreflangAlternates } from '@/i18n/locale-utils';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,6 +13,7 @@ export const metadata: Metadata = {
     'Important disclaimer regarding acoustic speaker cleaning capabilities, physical limitations, hearing safety, and non-affiliation with smartphone manufacturers.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/disclaimer/',
+    languages: getHreflangAlternates('/disclaimer'),
   },
 };
 
@@ -17,8 +21,10 @@ export default function DisclaimerPage() {
   const breadcrumbs = [{ name: 'Disclaimer', href: '/disclaimer' }];
 
   return (
-    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <Breadcrumbs items={breadcrumbs} />
+    <div className="min-h-screen flex flex-col">
+      <Header locale="en" />
+      <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        <Breadcrumbs items={breadcrumbs} locale="en" />
 
       <article className="space-y-8 mt-6 text-slate-300">
         <header className="space-y-4">
@@ -103,5 +109,7 @@ export default function DisclaimerPage() {
         </footer>
       </article>
     </main>
+    <Footer locale="en" />
+  </div>
   );
 }

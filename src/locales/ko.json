@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "스피커 물빼기 온라인 — 스마트폰 물기와 먼지를 소리로 배출",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "면책 조항: Clean My Speaker는 독립적인 웹 도구입니다.",
+    "clientSideProcessing": "100% 브라우저 내 처리 • 마이크 불필요 • 무추적",
+    "home": "홈",
+    "languages": "언어",
+    "changeLanguage": "언어 변경",
+    "selectLanguage": "언어 선택",
+    "allLanguages": "모든 언어",
+    "close": "닫기",
+    "share": "공유",
+    "copyLink": "링크 복사",
+    "copied": "복사됨!",
+    "shareTitle": "Clean My Speaker가 도움이 되셨나요? 공유해 보세요!",
+    "shareDesc": "앱 설치 없이 스마트폰 스피커의 물기를 제거하세요.",
+    "cookieNotice": "쿠키 설정",
+    "loading": "로딩 중..."
+  },
+  "nav": {
+    "home": "홈",
+    "tool": "물빼기 도구",
+    "howItWorks": "작동 원리",
+    "removeWater": "물기 제거",
+    "iphone": "iPhone 청소",
+    "android": "Android 청소",
+    "test": "스피커 테스트",
+    "guide": "청소 가이드",
+    "faq": "자주 묻는 질문",
+    "about": "소개",
+    "contact": "문의",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "disclaimer": "면책 조항",
+    "cookiePolicy": "쿠키 정책",
+    "cleanNow": "지금 청소",
+    "audioTools": "오디오 도구",
+    "deviceGuides": "기기 가이드",
+    "information": "정보",
+    "connectWithUs": "소셜 미디어"
+  },
+  "tool": {
+    "badge": "음파 기반 스피커 물빼기",
+    "title": "스피커 물빼기",
+    "subtitle": "볼륨을 100%로 올리고 스피커를 아래로 향하게 한 후 버튼을 누르세요.",
+    "buttonClean": "스피커 청소 시작",
+    "buttonStop": "청소 중지",
+    "statusReady": "165Hz 음파를 재생할 준비가 되었습니다.",
+    "statusPlaying": "{freq}Hz 음파 재생 중 (남은 시간: {timeRemaining}초)...",
+    "statusCompleted": "청소 완료! 마른 천으로 닦아주세요.",
+    "selectMode": "모드 선택",
+    "quickClean": "빠른 청소",
+    "quickCleanDesc": "가벼운 물기를 위한 30초 모드",
+    "deepClean": "정밀 청소",
+    "deepCleanDesc": "완벽한 물기 배출을 위한 60초 모드",
+    "waterEject": "강력 물빼기",
+    "waterEjectDesc": "최대 진동 45초 모드",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "오디오 진단",
+    "title": "스피커 및 스테레오 채널 테스트",
+    "subtitle": "좌/우 채널 및 100Hz ~ 10kHz 주파수 테스트.",
+    "stereoTitle": "스테레오 테스트",
+    "stereoDesc": "좌우 스피커 소리를 개별 테스트합니다.",
+    "leftChannel": "좌측 채널",
+    "rightChannel": "우측 채널",
+    "bothChannels": "양쪽 채널",
+    "stopTest": "정지",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "스피커 물빼기 – 스마트폰 물기 제거 및 소리 복원",
+    "metaDesc": "165Hz 음파 진동으로 휴대폰 스피커의 물을 빼고 먹먹한 소리를 해결하세요.",
+    "heroH1": "스피커 물빼기 – 음파로 물기 배출 및 소리 복원",
+    "heroSub": "앱 설치 없이 165Hz 음파로 스마트폰 스피커의 물과 먼지를 배출하세요.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "작동 원리 – 음파 물리 과학",
+    "metaDesc": "165Hz 음파가 스피커의 물기를 밀어내는 원리.",
+    "h1": "작동 원리: 음파 스피커 청소의 과학",
+    "sub": "진동판 진폭과 공기 압력을 통한 액체 배출."
+  },
+  "removeWater": {
+    "metaTitle": "휴대폰 스피커 물빼는 방법 – 가이드",
+    "metaDesc": "물에 빠진 스마트폰 스피커에서 물기를 안전하게 빼는 5단계 방법.",
+    "h1": "스마트폰 스피커 물빼는 방법: 5단계 가이드",
+    "sub": "휴대폰이 물에 빠졌을 때의 안전한 대처법."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone 스피커 물빼기 – 아이폰 물기 제거",
+    "metaDesc": "아이폰 15, 14, 13, 12, SE 스피커 물빼기 도구.",
+    "h1": "iPhone 스피커 물빼기 도구",
+    "sub": "Apple iPhone 전용 음파 물빼기."
+  },
+  "androidCleaner": {
+    "metaTitle": "Android 스피커 물빼기 – 갤럭시·샤오미",
+    "metaDesc": "갤럭시, 픽셀, 샤오미 스마트폰 스피커 물빼기.",
+    "h1": "Android 스피커 물빼기",
+    "sub": "안드로이드 폰을 위한 안전한 물빼기."
+  },
+  "cleaningGuide": {
+    "metaTitle": "스피커 청소 가이드 – 먼지 제거",
+    "metaDesc": "스피커 그릴의 먼지와 이물질을 안전하게 청소하는 법.",
+    "h1": "스피커 청소 가이드: 먼지 제거",
+    "sub": "스피커 메쉬 청소 및 관리법."
+  },
+  "faq": {
+    "metaTitle": "자주 묻는 질문 – FAQ",
+    "metaDesc": "음파 물빼기 도구에 관한 질문과 답변.",
+    "h1": "자주 묻는 질문",
+    "sub": "궁금한 점을 확인하세요."
+  },
+  "about": {
+    "metaTitle": "소개 – Clean My Speaker",
+    "metaDesc": "무료 웹 오디오 도구 소개.",
+    "h1": "소개",
+    "sub": "전 세계 스마트폰 사용자를 위한 도구."
+  },
+  "contact": {
+    "metaTitle": "문의 – Clean My Speaker",
+    "metaDesc": "지원 및 문의사항.",
+    "h1": "문의 및 지원",
+    "sub": "피드백을 보내주세요."
+  },
+  "privacy": {
+    "metaTitle": "개인정보처리방침",
+    "metaDesc": "개인정보처리방침.",
+    "h1": "개인정보처리방침"
+  },
+  "terms": {
+    "metaTitle": "이용약관",
+    "metaDesc": "이용약관.",
+    "h1": "이용약관"
+  },
+  "disclaimer": {
+    "metaTitle": "면책 조항",
+    "metaDesc": "하드웨어 안전 면책 조항.",
+    "h1": "면책 조항"
+  },
+  "cookiePolicy": {
+    "metaTitle": "쿠키 정책",
+    "metaDesc": "쿠키 정책.",
+    "h1": "쿠키 정책"
+  },
+  "languages": {
+    "metaTitle": "지원 언어 – Clean My Speaker",
+    "metaDesc": "27개 언어 지원.",
+    "h1": "언어 선택",
+    "sub": "모국어로 편리하게 이용하세요."
+  }
+}

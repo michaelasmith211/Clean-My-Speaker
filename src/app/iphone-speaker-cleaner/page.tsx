@@ -4,6 +4,9 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { ShareButtons } from '@/components/ShareButtons';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { getHreflangAlternates } from '@/i18n/locale-utils';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,6 +15,7 @@ export const metadata: Metadata = {
     'Clean and fix your iPhone speaker online. Play 165 Hz water eject sound waves directly in Safari to fix clean my speaker, expel trapped liquid, and fix muffled iPhone audio.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/iphone-speaker-cleaner/',
+    languages: getHreflangAlternates('/iphone-speaker-cleaner'),
   },
   openGraph: {
     title: 'iPhone Speaker Cleaner – Fix Clean My Speaker & Eject Water on iPhone',
@@ -86,12 +90,14 @@ export default function IPhoneSpeakerCleanerPage() {
   };
 
   return (
-    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
-      />
-      <Breadcrumbs items={breadcrumbs} />
+    <div className="min-h-screen flex flex-col">
+      <Header locale="en" />
+      <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
+        />
+        <Breadcrumbs items={breadcrumbs} locale="en" />
 
       <article className="space-y-12 mt-6 text-slate-300">
         <header className="space-y-4">
@@ -204,5 +210,7 @@ export default function IPhoneSpeakerCleanerPage() {
         </footer>
       </article>
     </main>
+    <Footer locale="en" />
+  </div>
   );
 }

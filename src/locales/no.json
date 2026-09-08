@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Rens Høyttaler Online — Få Ut Vann og Støv med Lyd",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker is an independent web tool and is not affiliated with Apple Inc., Google LLC, or Samsung. Sound vibrations cannot reverse permanent internal liquid damage.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "Hjem",
+    "languages": "Språk",
+    "changeLanguage": "Endre språk",
+    "selectLanguage": "Velg språk",
+    "allLanguages": "Alle språk",
+    "close": "Lukk",
+    "share": "Del",
+    "copyLink": "Kopier lenke",
+    "copied": "Kopiert!",
+    "shareTitle": "Hjalp Clean My Speaker? Del det!",
+    "shareDesc": "Hjelp venner med å få vann ut av telefonhøyttaleren.",
+    "cookieNotice": "Innstillinger for informasjonskapsler",
+    "loading": "Laster..."
+  },
+  "nav": {
+    "home": "Hjem",
+    "tool": "Vannutkaster",
+    "howItWorks": "Slik fungerer det",
+    "removeWater": "Fjern vann",
+    "iphone": "Rens iPhone",
+    "android": "Rens Android",
+    "test": "Høyttalertest",
+    "guide": "Renseguide",
+    "faq": "FAQ",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "privacy": "Personvern",
+    "terms": "Vilkår",
+    "disclaimer": "Ansvarsfraskrivelse",
+    "cookiePolicy": "Cookies",
+    "cleanNow": "Rens nå",
+    "audioTools": "Lydverktøy",
+    "deviceGuides": "Mobilguider",
+    "information": "Informasjon",
+    "connectWithUs": "Følg oss"
+  },
+  "tool": {
+    "badge": "Akustisk Vannutkaster",
+    "title": "RENS HØYTTALER",
+    "subtitle": "Sett volumet på 100%, pek høyttaleren ned og trykk under.",
+    "buttonClean": "RENS HØYTTALER",
+    "buttonStop": "STOPP",
+    "statusReady": "Klar til å spille av 165 Hz lydbølger.",
+    "statusPlaying": "Spiller av {freq} Hz ({timeRemaining}s igjen)...",
+    "statusCompleted": "Fullført! Tørk av høyttaleren med en tørr klut.",
+    "selectMode": "Velg modus",
+    "quickClean": "Rask rens",
+    "quickCleanDesc": "30s for lett fukt",
+    "deepClean": "Dyprens",
+    "deepCleanDesc": "60s for vanskelige dråper",
+    "waterEject": "Vannutkasting",
+    "waterEjectDesc": "45s maksimal vibrasjon",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Lydtest",
+    "title": "Høyttaler- & Stereotest",
+    "subtitle": "Test venstre/høyre kanal og frekvenser.",
+    "stereoTitle": "Stereotest",
+    "stereoDesc": "Sjekk høyttalerbalansen.",
+    "leftChannel": "Venstre",
+    "rightChannel": "Høyre",
+    "bothChannels": "Begge",
+    "stopTest": "Stopp",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Rens Høyttaler – Få Ut Vann & Fiks Lyden Online",
+    "metaDesc": "Fjern vann fra telefonens høyttaler gratis med 165 Hz lydbølger.",
+    "heroH1": "Rens Høyttaler – Få Ut Vann & Fiks Lyden",
+    "heroSub": "Spill 165 Hz lydbølger for å skyve vann og støv ut av høyttaleren.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Slik fungerer det – Lydfysikk",
+    "metaDesc": "Hvordan 165 Hz lydbølger presser ut vann.",
+    "h1": "Slik fungerer det: Akustisk vitenskap",
+    "sub": "Membranbevegelse og lufttrykk."
+  },
+  "removeWater": {
+    "metaTitle": "Hvordan Fjerne Vann Fra Høyttaleren",
+    "metaDesc": "Guide til å fjerne vann fra telefonen.",
+    "h1": "Fjern Vann Fra Høyttaleren: 5 Trinn",
+    "sub": "Mistet telefonen i vann? Følg disse trinnene."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Rens iPhone Høyttaler – Vannutkasting",
+    "metaDesc": "Rens iPhone-høyttaleren online i Safari.",
+    "h1": "Rens iPhone Høyttaler",
+    "sub": "For iPhone 15, 14, 13, 12, SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "Rens Android Høyttaler – Samsung & Xiaomi",
+    "metaDesc": "Få vann ut av Samsung Galaxy, Pixel og Xiaomi.",
+    "h1": "Rens Android Høyttaler",
+    "sub": "Trygt for alle Android-telefoner."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Renseguide for Høyttalere",
+    "metaDesc": "Fjern støv og smuss trygt.",
+    "h1": "Renseguide for Høyttalere",
+    "sub": "Praktiske vedlikeholdstips."
+  },
+  "faq": {
+    "metaTitle": "Ofte Stilte Spørsmål – FAQ",
+    "metaDesc": "Spørsmål og svar om høyttalerrensing.",
+    "h1": "Ofte Stilte Spørsmål",
+    "sub": "Alt du trenger å vite."
+  },
+  "about": {
+    "metaTitle": "Om oss – Clean My Speaker",
+    "metaDesc": "Om vårt gratis lydverktøy.",
+    "h1": "Om oss",
+    "sub": "Gratis verktøy for smartphone-brukere."
+  },
+  "contact": {
+    "metaTitle": "Kontakt",
+    "metaDesc": "Støtte og tilbakemeldinger.",
+    "h1": "Kontakt & Støtte",
+    "sub": "Ta kontakt med oss."
+  },
+  "privacy": {
+    "metaTitle": "Personvern",
+    "metaDesc": "Personvernpolicy.",
+    "h1": "Personvernerklæring"
+  },
+  "terms": {
+    "metaTitle": "Vilkår",
+    "metaDesc": "Bruksvilkår.",
+    "h1": "Bruksvilkår"
+  },
+  "disclaimer": {
+    "metaTitle": "Ansvarsfraskrivelse",
+    "metaDesc": "Sikkerhet.",
+    "h1": "Ansvarsfraskrivelse"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Cookiepolicy",
+    "metaDesc": "Informasjonskapsler.",
+    "h1": "Cookiepolicy"
+  },
+  "languages": {
+    "metaTitle": "Språk – Clean My Speaker",
+    "metaDesc": "Tilgjengelig på 27 språk.",
+    "h1": "Velg Språk",
+    "sub": "Tilgjengelig på 27 språk."
+  }
+}

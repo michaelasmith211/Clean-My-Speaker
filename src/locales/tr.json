@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Hoparlör Temizleme Online — Telefonda Kalan Suyu ve Tozu Çıkarın",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Uyarı: Clean My Speaker bağımsız bir web aracıdır.",
+    "clientSideProcessing": "100% Tarayıcıda Çalışır • Mikrofon İstemez • Takip Çerezi Yok",
+    "home": "Ana Sayfa",
+    "languages": "Diller",
+    "changeLanguage": "Dili Değiştir",
+    "selectLanguage": "Dil Seçin",
+    "allLanguages": "Tüm Diller",
+    "close": "Kapat",
+    "share": "Paylaş",
+    "copyLink": "Bağlantıyı Kopyala",
+    "copied": "Kopyalandı!",
+    "shareTitle": "Clean My Speaker işinize yaradı mı? Paylaşın!",
+    "shareDesc": "Arkadaşlarınızın telefon hoparlöründen suyu çıkarmasına yardımcı olun.",
+    "cookieNotice": "Çerez Ayarları",
+    "loading": "Yükleniyor..."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "tool": "Su Çıkarma Aracı",
+    "howItWorks": "Nasıl Çalışır",
+    "removeWater": "Suyu Çıkar",
+    "iphone": "iPhone Temizle",
+    "android": "Android Temizle",
+    "test": "Hoparlör Testi",
+    "guide": "Temizlik Rehberi",
+    "faq": "SSS",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "disclaimer": "Feragatname",
+    "cookiePolicy": "Çerezler",
+    "cleanNow": "Şimdi Temizle",
+    "audioTools": "Ses Araçları",
+    "deviceGuides": "Cihaz Rehberleri",
+    "information": "Bilgi",
+    "connectWithUs": "Bizi Takip Edin"
+  },
+  "tool": {
+    "badge": "Akustik Su Çıkarma Aracı",
+    "title": "HOPARLÖRÜ TEMİZLE",
+    "subtitle": "Sesi %100'e getirin, hoparlörü aşağı doğru tutun ve butona dokunun.",
+    "buttonClean": "HOPARLÖRÜ TEMİZLE",
+    "buttonStop": "TEMİZLİĞİ DURDUR",
+    "statusReady": "165 Hz ses dalgalarını çalmaya hazır.",
+    "statusPlaying": "{freq} Hz frekansta ses çalınıyor ({timeRemaining} sn kaldı)...",
+    "statusCompleted": "Temizlik tamamlandı! Hoparlör çıkışını kuru bezle silin.",
+    "selectMode": "Mod Seçin",
+    "quickClean": "Hızlı Temizlik",
+    "quickCleanDesc": "30 sn hafif nem için",
+    "deepClean": "Derin Temizlik",
+    "deepCleanDesc": "60 sn inatçı damlalar için",
+    "waterEject": "Suyu Çıkar",
+    "waterEjectDesc": "45 sn maksimum diyafram titreşimi",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Ses Testi",
+    "title": "Hoparlör ve Stereo Testi",
+    "subtitle": "Sol/sağ kanal ve frekans testi.",
+    "stereoTitle": "Stereo Kanal Testi",
+    "stereoDesc": "Tıkanıklığı tespit etmek için kanalları test edin.",
+    "leftChannel": "Sol Kanal",
+    "rightChannel": "Sağ Kanal",
+    "bothChannels": "Her İki Kanal",
+    "stopTest": "Durdur",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Hoparlör Temizleme – Telefondaki Suyu Çıkarma & Ses Düzeltme",
+    "metaDesc": "Telefon hoparlöründeki suyu 165 Hz ses dalgalarıyla ücretsiz olarak çıkarın ve boğuk sesi düzeltin.",
+    "heroH1": "Hoparlör Temizleme – Suyu Çıkar & Sesi Düzelt",
+    "heroSub": "Uygulama yüklemeden 165 Hz ses dalgalarıyla telefon hoparlöründeki suyu ve tozu atın.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Nasıl Çalışır – Ses Fiziği",
+    "metaDesc": "165 Hz ses dalgalarının suyu nasıl dışarı ittiğini keşfedin.",
+    "h1": "Nasıl Çalışır: Akustik Su Çıkarma Fiziği",
+    "sub": "Hava basıncı ve diyafram titreşimi."
+  },
+  "removeWater": {
+    "metaTitle": "Telefon Hoparlöründen Su Nasıl Çıkarılır",
+    "metaDesc": "Hoparlörden su çıkarma rehberi.",
+    "h1": "Telefon Hoparlöründen Su Çıkarma: 5 Adım",
+    "sub": "Telefonunuz suya mı düştü? Bu adımları takip edin."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone Hoparlör Temizleme – Suyu Çıkar",
+    "metaDesc": "iPhone 15, 14, 13, 12, SE için hoparlör su çıkarma aracı.",
+    "h1": "iPhone Hoparlör Temizleme",
+    "sub": "Apple iPhone cihazlarına özel ses dalgası."
+  },
+  "androidCleaner": {
+    "metaTitle": "Android Hoparlör Temizleme – Samsung & Xiaomi",
+    "metaDesc": "Android telefonlar için su ve toz çıkarma.",
+    "h1": "Android Hoparlör Temizleme",
+    "sub": "Samsung, Xiaomi, Pixel için güvenli su çıkarma."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Hoparlör Temizlik Rehberi",
+    "metaDesc": "Toz ve kir temizleme rehberi.",
+    "h1": "Hoparlör Temizlik Rehberi",
+    "sub": "Pratik bakım tavsiyeleri."
+  },
+  "faq": {
+    "metaTitle": "Sıkça Sorulan Sorular",
+    "metaDesc": "Hoparlör temizliği hakkında tüm yanıtlar.",
+    "h1": "Sıkça Sorulan Sorular",
+    "sub": "Merak ettikleriniz."
+  },
+  "about": {
+    "metaTitle": "Hakkında – Clean My Speaker",
+    "metaDesc": "Ücretsiz ses aracı hakkında.",
+    "h1": "Hakkımızda",
+    "sub": "Dünya genelinde ücretsiz kullanım."
+  },
+  "contact": {
+    "metaTitle": "İletişim",
+    "metaDesc": "Destek ve geri bildirim.",
+    "h1": "İletişim ve Destek",
+    "sub": "Bize ulaşın."
+  },
+  "privacy": {
+    "metaTitle": "Gizlilik Politikası",
+    "metaDesc": "Gizlilik politikası.",
+    "h1": "Gizlilik Politikası"
+  },
+  "terms": {
+    "metaTitle": "Kullanım Şartları",
+    "metaDesc": "Kullanım koşulları.",
+    "h1": "Kullanım Şartları"
+  },
+  "disclaimer": {
+    "metaTitle": "Feragatname",
+    "metaDesc": "Donanım güvenliği uyarısı.",
+    "h1": "Feragatname"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Çerez Politikası",
+    "metaDesc": "Çerez kullanımı.",
+    "h1": "Çerez Politikası"
+  },
+  "languages": {
+    "metaTitle": "Diller – Clean My Speaker",
+    "metaDesc": "27 dilde kullanılabilir.",
+    "h1": "Dilinizi Seçin",
+    "sub": "Kendi dilinizde kullanın."
+  }
+}

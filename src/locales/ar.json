@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "تنظيف سماعة الهاتف أونلاين — طرد الماء والرطوبة من مكبر الصوت",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "إخلاء مسؤولية: Clean My Speaker أداة مستقلة. لا يمكن للموجات الصوتية إصلاح التلف الداخلي الدائم الناتج عن السوائل.",
+    "clientSideProcessing": "معالجة 100% داخل المتصفح • بدون وصول للميكروفون • بدون ملفات تعريف ارتباط للتتبع",
+    "home": "الرئيسية",
+    "languages": "اللغات",
+    "changeLanguage": "تغيير اللغة",
+    "selectLanguage": "اختر اللغة",
+    "allLanguages": "جميع اللغات",
+    "close": "إغلاق",
+    "share": "مشاركة",
+    "copyLink": "نسخ الرابط",
+    "copied": "تم النسخ!",
+    "shareTitle": "هل ساعدك Clean My Speaker؟ شاركه!",
+    "shareDesc": "ساعد الأصدقاء والعائلة في طرد الماء وإصلاح صوت الهاتف المكتوم مجاناً.",
+    "cookieNotice": "إعدادات الكوكيز",
+    "loading": "جاري التحميل..."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "tool": "أداة طرد الماء",
+    "howItWorks": "كيف تعمل الأداة",
+    "removeWater": "إزالة الماء",
+    "iphone": "تنظيف آيفون",
+    "android": "تنظيف أندرويد",
+    "test": "فحص السماعة",
+    "guide": "دليل التنظيف",
+    "faq": "الأسئلة الشائعة",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "privacy": "الخصوصية",
+    "terms": "الشروط",
+    "disclaimer": "إخلاء المسؤولية",
+    "cookiePolicy": "الكوكيز",
+    "cleanNow": "نظف الآن",
+    "audioTools": "أدوات الصوت",
+    "deviceGuides": "أدلة الأجهزة",
+    "information": "معلومات",
+    "connectWithUs": "تابعنا"
+  },
+  "tool": {
+    "badge": "أداة صوتية لطرد الماء والرطوبة",
+    "title": "تنظيف سماعة الهاتف",
+    "subtitle": "اضبط مستوى الصوت على 100%، وجه السماعة لأسفل واضغط بالأسفل.",
+    "buttonClean": "تنظيف مكبر الصوت",
+    "buttonStop": "إيقاف التنظيف",
+    "statusReady": "جاهز لتشغيل موجات 165 هرتز. ارفع الصوت واضغط للبدء.",
+    "statusPlaying": "يتم تشغيل موجات بتردد {freq} هرتز (المتبقي {timeRemaining} ثانية)...",
+    "statusCompleted": "اكتملت دورة التنظيف! امسح فتحات السماعة بقطعة قماش جافة.",
+    "selectMode": "اختر وضع التنظيف",
+    "quickClean": "تنظيف سريع",
+    "quickCleanDesc": "دورة 30 ثانية للرطوبة الخفيفة.",
+    "deepClean": "تنظيف عميق",
+    "deepCleanDesc": "مسح ترددات 60 ثانية لقطرات الماء العنيدة.",
+    "waterEject": "طرد الماء",
+    "waterEjectDesc": "نبضات 45 ثانية بأقصى اهتزاز للغشاء لطرد السوائل.",
+    "tipPosition": "وجه السماعة لأسفل",
+    "tipCloth": "انقر بلطف على منشفة",
+    "tipVolume": "يجب رفع الصوت للأعلى",
+    "tipNoHeat": "لا تستخدم مجفف الشعر أو الأرز",
+    "tipRepeat": "كرر 2-3 مرات إذا لزم الأمر",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "فحص الصوت",
+    "title": "اختبار السماعة وقنوات الستيريو",
+    "subtitle": "فحص فصل الستيريو يمين/يسار والترددات (100 هرتز – 10 كيلوهرتز).",
+    "stereoTitle": "اختبار قنوات الستيريو",
+    "stereoDesc": "تشغيل نغمات لفحص توازن السماعات وكشف الانسداد.",
+    "leftChannel": "القناة اليسرى",
+    "rightChannel": "القناة اليمنى",
+    "bothChannels": "كلا القناتين",
+    "stopTest": "إيقاف النغمة",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "تنظيف سماعة الهاتف – طرد الماء وإصلاح الصوت المكتوم",
+    "metaDesc": "نظف سماعة هاتفك أونلاين وتخلص من الماء والغبار بموجات 165 هرتز مجاناً.",
+    "heroH1": "تنظيف سماعة الهاتف – طرد الماء وإصلاح الصوت أونلاين",
+    "heroSub": "شغل موجات صوتية بتردد 165 هرتز لطرد الماء وإزالة الغبار وإصلاح الصوت المكتوم بدون تحميل أي تطبيق.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "كيف تعمل الأداة – فيزياء الصوت وطرد الماء",
+    "metaDesc": "اكتشف كيف تولد موجات 165 هرتز ضغط هواء يطرد قطرات الماء.",
+    "h1": "كيف تعمل أداة تنظيف السماعة: العلم وراء الصوت",
+    "sub": "اهتزاز الغشاء وموجات الضغط الحركي لإخراج السوائل."
+  },
+  "removeWater": {
+    "metaTitle": "كيفية إزالة الماء من سماعة الهاتف – دليل شامل",
+    "metaDesc": "دليل طوارئ للتخلص من الماء في سماعة الهاتف وإصلاح الصوت المكتوم.",
+    "h1": "كيفية إزالة الماء من سماعة الهاتف: خطوات آمنة",
+    "sub": "سقط هاتفك في الماء؟ اتبع هذه الخطوات الـ 5 الموثوقة."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "تنظيف سماعة آيفون – طرد الماء من الآيفون",
+    "metaDesc": "نظف سماعة آيفون أونلاين عبر سفاري لجميع هواتف iPhone.",
+    "h1": "تنظيف سماعة آيفون: طرد الماء من هواتف iPhone",
+    "sub": "دليل مخصص لهواتف iPhone 15 و 14 و 13 و 12 و SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "تنظيف سماعة أندرويد – سامسونج وشاومي",
+    "metaDesc": "طرد الماء من سماعات هواتف سامسونج جالاكسي، بكسل، وشاومي.",
+    "h1": "تنظيف سماعة أندرويد: طرد الماء والغبار",
+    "sub": "طرد صوتي آمن لهواتف سامسونج وشاومي وبكسل."
+  },
+  "cleaningGuide": {
+    "metaTitle": "دليل تنظيف سماعة الهاتف – إزالة الغبار",
+    "metaDesc": "تعلم كيفية تنظيف الغبار والشوائب من شبكة السماعة بأمان.",
+    "h1": "دليل تنظيف سماعات الهاتف: إزالة الغبار والشوائب",
+    "sub": "إرشادات عملية للعناية بفتحات السماعات."
+  },
+  "faq": {
+    "metaTitle": "الأسئلة الشائعة حول تنظيف السماعة وطرد الماء",
+    "metaDesc": "إجابات على الأسئلة الشائعة حول طرد الماء بالصوت والأمان.",
+    "h1": "الأسئلة الشائعة: إجابات لكل استفساراتك",
+    "sub": "كل ما تريد معرفته عن التنظيف بالصوت."
+  },
+  "about": {
+    "metaTitle": "من نحن – Clean My Speaker",
+    "metaDesc": "تعرف على مهمتنا في توفير أدوات صوتية مجانية وفورية.",
+    "h1": "من نحن",
+    "sub": "أداة ويب خفيفة لمساعدة مستخدمي الهواتف حول العالم."
+  },
+  "contact": {
+    "metaTitle": "اتصل بنا – الدعم والمساعدة",
+    "metaDesc": "تواصل مع فريق Clean My Speaker للاستفسارات والدعم.",
+    "h1": "اتصل بنا والدعم",
+    "sub": "لديك استفسار أو اقتراح؟ يسعدنا تواصلك."
+  },
+  "privacy": {
+    "metaTitle": "سياسة الخصوصية",
+    "metaDesc": "سياسة الخصوصية وحماية البيانات.",
+    "h1": "سياسة الخصوصية"
+  },
+  "terms": {
+    "metaTitle": "شروط الخدمة",
+    "metaDesc": "شروط الاستخدام والأحكام.",
+    "h1": "شروط الخدمة"
+  },
+  "disclaimer": {
+    "metaTitle": "إخلاء المسؤولية وسلامة الأجهزة",
+    "metaDesc": "تنبيه هام حول سلامة الأجهزة وحدود طرد السوائل.",
+    "h1": "إخلاء المسؤولية"
+  },
+  "cookiePolicy": {
+    "metaTitle": "سياسة ملفات تعريف الارتباط",
+    "metaDesc": "معلومات عن ملفات تعريف الارتباط وإدارتها.",
+    "h1": "سياسة الكوكيز"
+  },
+  "languages": {
+    "metaTitle": "اللغات المدعومة – Clean My Speaker",
+    "metaDesc": "Clean My Speaker متاح بـ 27 لغة.",
+    "h1": "اختر لغتك",
+    "sub": "متاح عالمياً بـ 27 لغة."
+  }
+}

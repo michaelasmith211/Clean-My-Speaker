@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Telefoon Luidspreker Schoonmaken Online — Water & Vocht Verwijderen",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker is een onafhankelijke tool.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "Home",
+    "languages": "Talen",
+    "changeLanguage": "Taal wijzigen",
+    "selectLanguage": "Selecteer taal",
+    "allLanguages": "Alle talen",
+    "close": "Sluiten",
+    "share": "Delen",
+    "copyLink": "Link kopiëren",
+    "copied": "Gekopieerd!",
+    "shareTitle": "Heeft Clean My Speaker geholpen? Deel het!",
+    "shareDesc": "Help vrienden en familie water uit hun telefoon te verwijderen.",
+    "cookieNotice": "Cookie-instellingen",
+    "loading": "Laden..."
+  },
+  "nav": {
+    "home": "Home",
+    "tool": "Wateruitwerp Tool",
+    "howItWorks": "Hoe het werkt",
+    "removeWater": "Water verwijderen",
+    "iphone": "iPhone reinigen",
+    "android": "Android reinigen",
+    "test": "Luidsprekertest",
+    "guide": "Reinigingsgids",
+    "faq": "FAQ",
+    "about": "Over ons",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "disclaimer": "Disclaimer",
+    "cookiePolicy": "Cookies",
+    "cleanNow": "Nu reinigen",
+    "audioTools": "Audio Tools",
+    "deviceGuides": "Apparaatgidsen",
+    "information": "Informatie",
+    "connectWithUs": "Volg ons"
+  },
+  "tool": {
+    "badge": "Akoestische Wateruitwerp Tool",
+    "title": "LUIDSPREKER REINIGEN",
+    "subtitle": "Zet het volume op 100%, houd de luidspreker omlaag en tik hieronder.",
+    "buttonClean": "LUIDSPREKER REINIGEN",
+    "buttonStop": "STOP REINIGING",
+    "statusReady": "Klaar om 165 Hz geluidsgolven af te spelen.",
+    "statusPlaying": "Geluidsgolven op {freq} Hz ({timeRemaining}s resterend)...",
+    "statusCompleted": "Cyclus voltooid! Dep de opening met een droge doek.",
+    "selectMode": "Selecteer modus",
+    "quickClean": "Snelle reiniging",
+    "quickCleanDesc": "30s voor licht vocht",
+    "deepClean": "Diepe reiniging",
+    "deepCleanDesc": "60s voor hardnekkige druppels",
+    "waterEject": "Water uitwerpen",
+    "waterEjectDesc": "45s maximale membraanbeweging",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Geluidstest",
+    "title": "Luidspreker & Stereo Test",
+    "subtitle": "Test linker/rechterkanaal en frequenties.",
+    "stereoTitle": "Stereotest",
+    "stereoDesc": "Controleer de balans van je speakers.",
+    "leftChannel": "Linkerkanaal",
+    "rightChannel": "Rechterkanaal",
+    "bothChannels": "Beide Kanalen",
+    "stopTest": "Stop",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Luidspreker Schoonmaken – Water Uitwerpen & Geluid Repareren",
+    "metaDesc": "Verwijder water uit je telefoonluidspreker met gratis 165 Hz geluidsgolven.",
+    "heroH1": "Luidspreker Schoonmaken – Water Uitwerpen & Geluid Repareren",
+    "heroSub": "Speel gekalibreerde 165 Hz geluidsgolven af om water en stof te verwijderen zonder app.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Hoe het werkt – Geluidsfysica",
+    "metaDesc": "Ontdek hoe 165 Hz geluidsgolven water uitwerpen.",
+    "h1": "Hoe het werkt: De akoestische wetenschap",
+    "sub": "Membraanbeweging en kinetische luchtdruk."
+  },
+  "removeWater": {
+    "metaTitle": "Water uit Telefoon Luidspreker Verwijderen",
+    "metaDesc": "Stappenplan om water veilig uit je luidspreker te krijgen.",
+    "h1": "Water uit Telefoon Luidspreker Verwijderen: Gids",
+    "sub": "Telefoon in het water gevallen? Volg deze 5 stappen."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone Luidspreker Schoonmaken – Water Uitwerpen",
+    "metaDesc": "iPhone luidspreker online reinigen in Safari.",
+    "h1": "iPhone Luidspreker Reinigen",
+    "sub": "Voor iPhone 15, 14, 13, 12 en SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "Android Luidspreker Schoonmaken – Samsung & Xiaomi",
+    "metaDesc": "Water uitwerpen voor Samsung Galaxy, Pixel en Xiaomi.",
+    "h1": "Android Luidspreker Reinigen",
+    "sub": "Veilig voor alle Android-toestellen."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Luidspreker Reinigingsgids",
+    "metaDesc": "Stof en vuil veilig verwijderen.",
+    "h1": "Luidspreker Reinigingsgids",
+    "sub": "Onderhoudstips voor je smartphone."
+  },
+  "faq": {
+    "metaTitle": "Veelgestelde Vragen – FAQ",
+    "metaDesc": "Vragen en antwoorden over luidsprekerreiniging.",
+    "h1": "Veelgestelde Vragen",
+    "sub": "Alles wat je moet weten."
+  },
+  "about": {
+    "metaTitle": "Over ons – Clean My Speaker",
+    "metaDesc": "Over onze gratis audiotool.",
+    "h1": "Over ons",
+    "sub": "Gratis tool voor smartphonegebruikers."
+  },
+  "contact": {
+    "metaTitle": "Contact",
+    "metaDesc": "Ondersteuning en feedback.",
+    "h1": "Contact & Ondersteuning",
+    "sub": "Vragen? Neem contact met ons op."
+  },
+  "privacy": {
+    "metaTitle": "Privacybeleid",
+    "metaDesc": "Privacybeleid.",
+    "h1": "Privacybeleid"
+  },
+  "terms": {
+    "metaTitle": "Voorwaarden",
+    "metaDesc": "Gebruiksvoorwaarden.",
+    "h1": "Gebruiksvoorwaarden"
+  },
+  "disclaimer": {
+    "metaTitle": "Disclaimer",
+    "metaDesc": "Hardware veiligheid.",
+    "h1": "Disclaimer"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Cookiebeleid",
+    "metaDesc": "Cookiebeleid.",
+    "h1": "Cookiebeleid"
+  },
+  "languages": {
+    "metaTitle": "Talen – Clean My Speaker",
+    "metaDesc": "Beschikbaar in 27 talen.",
+    "h1": "Kies je taal",
+    "sub": "Wereldwijd beschikbaar."
+  }
+}

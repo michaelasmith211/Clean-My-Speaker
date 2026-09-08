@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import { DEFAULT_LOCALE } from '@/i18n/config';
+import { getLocalizedPath } from '@/i18n/locale-utils';
 
 interface GuideLink {
   title: string;
@@ -11,12 +13,13 @@ interface GuideLink {
 
 interface RelatedGuidesProps {
   currentPath: string;
+  locale?: string;
 }
 
 const ALL_GUIDES: GuideLink[] = [
   {
     title: 'Clean My Speaker Tool',
-    href: '/#tool',
+    href: '/',
     description: 'Instant 165 Hz water ejection tone to dislodge moisture droplets right from your browser.',
     icon: '🔊',
     badge: 'Popular Tool',
@@ -59,85 +62,62 @@ const ALL_GUIDES: GuideLink[] = [
   {
     title: 'Dust & Physical Cleaning Guide',
     href: '/speaker-cleaning-guide',
-    description: 'How to safely dry-brush compacted pocket lint and grime without piercing delicate acoustic mesh.',
-    icon: '🪥',
+    description: 'Safe tools (soft-bristle brushes, poster putty), lint removal, and avoiding mesh puncture.',
+    icon: '🧹',
     badge: 'Maintenance',
   },
   {
-    title: 'Speaker Cleaning FAQ',
+    title: 'Troubleshooting & FAQ',
     href: '/faq',
-    description: '14+ in-depth answers covering safety, sound levels, rice myths, and persistent muffled audio.',
+    description: 'Answers to top questions regarding water ejection tones, hardware safety, and blown speakers.',
     icon: '❓',
-    badge: 'FAQ',
-  },
-  {
-    title: 'Terms of Service',
-    href: '/terms-of-service',
-    description: 'Terms and conditions governing use of our free browser-based audio sound wave cleaner.',
-    icon: '⚖️',
-    badge: 'Legal',
-  },
-  {
-    title: 'Safety Disclaimer',
-    href: '/disclaimer',
-    description: 'Acoustic cleaning limits, hearing safety precautions, and non-affiliation disclosures.',
-    icon: '🛡️',
-    badge: 'Notice',
-  },
-  {
-    title: 'Cookie Policy',
-    href: '/cookie-policy',
-    description: 'Transparency regarding Google AdSense cookies, DART preferences, and tracking controls.',
-    icon: '🍪',
-    badge: 'Privacy',
+    badge: 'FAQ Hub',
   },
 ];
 
-export const RelatedGuides: React.FC<RelatedGuidesProps> = ({ currentPath }) => {
-  const filteredGuides = ALL_GUIDES.filter((g) => g.href !== currentPath).slice(0, 4);
+export const RelatedGuides: React.FC<RelatedGuidesProps> = ({ currentPath, locale = DEFAULT_LOCALE }) => {
+  const cleanPath = currentPath.replace(/^\/[a-z]{2}(\/|$)/, '/').replace(/\/$/, '') || '/';
+  const related = ALL_GUIDES.filter((g) => g.href !== cleanPath).slice(0, 4);
 
   return (
-    <section aria-labelledby="related-guides-title" className="mt-14 pt-10 border-t border-slate-800/80">
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-2">
+    <section className="my-12 pt-8 border-t border-slate-800 text-start" aria-label="Related Guides & Tools">
+      <div className="flex items-center justify-between mb-6">
         <div>
-          <span className="text-[11px] font-bold text-sky-400 uppercase tracking-widest">
-            Explore Audio Guides & Utilities
-          </span>
-          <h2 id="related-guides-title" className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-            Related Speaker Resources & Tools
+          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+            Related Guides &amp; Diagnostic Tools
           </h2>
+          <p className="text-xs sm:text-sm text-slate-400 mt-1">
+            Explore more audio guides, frequency tests, and speaker care tutorials.
+          </p>
         </div>
-        <Link href="/faq" className="text-xs font-semibold text-sky-300 underline hover:text-sky-200">
-          View All Resources →
-        </Link>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {filteredGuides.map((guide) => (
+        {related.map((guide) => (
           <Link
             key={guide.href}
-            href={guide.href}
-            className="group block p-5 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-sky-500/40 hover:bg-slate-900 transition-all hover:shadow-lg hover:shadow-sky-950/30"
+            href={getLocalizedPath(guide.href, locale)}
+            className="group p-5 rounded-2xl bg-slate-900/80 hover:bg-slate-850 border border-slate-800 hover:border-sky-500/50 transition-all hover:-translate-y-0.5 shadow-lg flex flex-col justify-between"
           >
-            <div className="flex items-start gap-3">
-              <span className="text-2xl p-2 rounded-xl bg-slate-800/80 group-hover:scale-110 transition-transform">
-                {guide.icon}
-              </span>
-              <div className="space-y-1 flex-1 min-w-0">
-                <div className="flex items-center justify-between gap-2">
-                  <h3 className="text-sm font-bold text-white group-hover:text-sky-300 transition-colors truncate">
-                    {guide.title}
-                  </h3>
-                  {guide.badge && (
-                    <span className="shrink-0 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
-                      {guide.badge}
-                    </span>
-                  )}
-                </div>
-                <p className="text-xs text-slate-400 leading-relaxed line-clamp-2">
-                  {guide.description}
-                </p>
+            <div>
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="text-2xl" aria-hidden="true">{guide.icon}</span>
+                {guide.badge && (
+                  <span className="px-2 py-0.5 rounded-full bg-sky-950 border border-sky-500/30 text-sky-400 text-[10px] font-semibold tracking-wide uppercase">
+                    {guide.badge}
+                  </span>
+                )}
               </div>
+              <h3 className="font-bold text-slate-100 group-hover:text-sky-300 transition-colors text-sm sm:text-base">
+                {guide.title}
+              </h3>
+              <p className="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                {guide.description}
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center text-xs font-semibold text-sky-400 group-hover:text-sky-300">
+              <span>Read guide</span>
+              <span className="ms-1 group-hover:translate-x-1 transition-transform rtl:rotate-180">→</span>
             </div>
           </Link>
         ))}

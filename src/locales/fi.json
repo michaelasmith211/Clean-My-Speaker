@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Puhdista Puhelimen Kaiutin Online — Poista Vesi Ääniaalloilla",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker is an independent web tool and is not affiliated with Apple Inc., Google LLC, or Samsung. Sound vibrations cannot reverse permanent internal liquid damage.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "Koti",
+    "languages": "Kielet",
+    "changeLanguage": "Vaihda kieli",
+    "selectLanguage": "Valitse kieli",
+    "allLanguages": "Kaikki kielet",
+    "close": "Sulje",
+    "share": "Jaa",
+    "copyLink": "Kopioi linkki",
+    "copied": "Kopioitu!",
+    "shareTitle": "Auttoiko Clean My Speaker? Jaa se!",
+    "shareDesc": "Auta ystäviäsi poistamaan vesi puhelimen kaiuttimesta.",
+    "cookieNotice": "Evästeasetukset",
+    "loading": "Ladataan..."
+  },
+  "nav": {
+    "home": "Koti",
+    "tool": "Vedenpoistaja",
+    "howItWorks": "Miten se toimii",
+    "removeWater": "Poista vesi",
+    "iphone": "Puhdista iPhone",
+    "android": "Puhdista Android",
+    "test": "Kaiutintesti",
+    "guide": "Puhdistusopas",
+    "faq": "UKK",
+    "about": "Tietoa meistä",
+    "contact": "Ota yhteyttä",
+    "privacy": "Tietosuoja",
+    "terms": "Käyttöehdot",
+    "disclaimer": "Vastuuvapauslauseke",
+    "cookiePolicy": "Evästeet",
+    "cleanNow": "Puhdista nyt",
+    "audioTools": "Äänityökalut",
+    "deviceGuides": "Laiteoppaat",
+    "information": "Tiedot",
+    "connectWithUs": "Seuraa meitä"
+  },
+  "tool": {
+    "badge": "Akustinen Vedenpoistaja",
+    "title": "PUHDISTA KAIUTIN",
+    "subtitle": "Aseta äänenvoimakkuus 100%:iin, osoita kaiutin alaspäin ja paina alta.",
+    "buttonClean": "PUHDISTA KAIUTIN",
+    "buttonStop": "PYSÄYTÄ",
+    "statusReady": "Valmis toistamaan 165 Hz ääniaaltoja.",
+    "statusPlaying": "Toistetaan {freq} Hz ääntä ({timeRemaining}s jäljellä)...",
+    "statusCompleted": "Valmis! Pyyhi kaiutin kuivalla liinalla.",
+    "selectMode": "Valitse tila",
+    "quickClean": "Nopea puhdistus",
+    "quickCleanDesc": "30s kevyeen kosteuteen",
+    "deepClean": "Syväpuhdistus",
+    "deepCleanDesc": "60s sitkeille pisaroille",
+    "waterEject": "Vedenpoisto",
+    "waterEjectDesc": "45s maksimivärinällä",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Äänitesti",
+    "title": "Kaiutin- & Stereotesti",
+    "subtitle": "Testaa vasen/oikea kanava ja taajuudet.",
+    "stereoTitle": "Stereotesti",
+    "stereoDesc": "Tarkista kaiuttimien tasapaino.",
+    "leftChannel": "Vasen",
+    "rightChannel": "Oikea",
+    "bothChannels": "Molemmat",
+    "stopTest": "Pysäytä",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Puhdista Kaiutin – Poista Vesi & Korjaa Ääni Online",
+    "metaDesc": "Poista vesi puhelimen kaiuttimesta 165 Hz ääniaalloilla ilmaiseksi.",
+    "heroH1": "Puhdista Kaiutin – Poista Vesi & Korjaa Ääni",
+    "heroSub": "Toista 165 Hz ääniaaltoja poistaaksesi veden ja pölyn puhelimesta.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Miten se toimii – Akustiikka",
+    "metaDesc": "Miten 165 Hz ääniaallot työntävät vettä ulos.",
+    "h1": "Miten se toimii: Akustinen fysiikka",
+    "sub": "Kalvon liike ja ilmanpaine."
+  },
+  "removeWater": {
+    "metaTitle": "Miten Poistaa Vesi Puhelimen Kaiuttimesta",
+    "metaDesc": "Opas veden poistamiseen kaiuttimesta.",
+    "h1": "Miten Poistaa Vesi Kaiuttimesta: 5 Vaihetta",
+    "sub": "Putosiko puhelin veteen? Seuraa näitä ohjeita."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Puhdista iPhone Kaiutin – Vedenpoisto",
+    "metaDesc": "Puhdista iPhone-kaiutin Safarissa.",
+    "h1": "iPhone Kaiuttimen Puhdistus",
+    "sub": "iPhone 15, 14, 13, 12, SE -malleille."
+  },
+  "androidCleaner": {
+    "metaTitle": "Puhdista Android Kaiutin – Samsung & Xiaomi",
+    "metaDesc": "Poista vesi Samsung Galaxy, Pixel ja Xiaomi -puhelimista.",
+    "h1": "Android Kaiuttimen Puhdistus",
+    "sub": "Turvallinen kaikille Android-laitteille."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Kaiuttimen Puhdistusopas",
+    "metaDesc": "Poista pöly ja lika turvallisesti.",
+    "h1": "Kaiuttimen Puhdistusopas",
+    "sub": "Käytännön huoltovinkit."
+  },
+  "faq": {
+    "metaTitle": "Usein Kysytyt Kysymykset – UKK",
+    "metaDesc": "Kysymyksiä ja vastauksia kaiuttimen puhdistuksesta.",
+    "h1": "Usein Kysytyt Kysymykset",
+    "sub": "Kaikki mitä sinun tarvitsee tietää."
+  },
+  "about": {
+    "metaTitle": "Tietoa meistä – Clean My Speaker",
+    "metaDesc": "Tietoa ilmaisesta äänityökalustamme.",
+    "h1": "Tietoa meistä",
+    "sub": "Ilmainen työkalu älypuhelinten käyttäjille."
+  },
+  "contact": {
+    "metaTitle": "Ota yhteyttä",
+    "metaDesc": "Tuki ja palaute.",
+    "h1": "Ota yhteyttä",
+    "sub": "Kirjoita meille."
+  },
+  "privacy": {
+    "metaTitle": "Tietosuojakäytäntö",
+    "metaDesc": "Tietosuoja.",
+    "h1": "Tietosuojakäytäntö"
+  },
+  "terms": {
+    "metaTitle": "Käyttöehdot",
+    "metaDesc": "Käyttöehdot.",
+    "h1": "Käyttöehdot"
+  },
+  "disclaimer": {
+    "metaTitle": "Vastuuvapauslauseke",
+    "metaDesc": "Turvallisuus.",
+    "h1": "Vastuuvapauslauseke"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Evästekäytäntö",
+    "metaDesc": "Evästeet.",
+    "h1": "Evästekäytäntö"
+  },
+  "languages": {
+    "metaTitle": "Kielet – Clean My Speaker",
+    "metaDesc": "Saatavilla 27 kielellä.",
+    "h1": "Valitse Kieli",
+    "sub": "Käytä omalla kielelläsi."
+  }
+}

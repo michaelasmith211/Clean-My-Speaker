@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Очистить динамик телефона онлайн — Вытолкнуть воду и пыль",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Дисклеймер: Clean My Speaker — независимый сервис. Звуковые вибрации не устраняют внутреннюю коррозию.",
+    "clientSideProcessing": "100% обработка в браузере • Без доступа к микрофону • Ноль трекеров",
+    "home": "Главная",
+    "languages": "Языки",
+    "changeLanguage": "Сменить язык",
+    "selectLanguage": "Выбрать язык",
+    "allLanguages": "Все языки",
+    "close": "Закрыть",
+    "share": "Поделиться",
+    "copyLink": "Скопировать ссылку",
+    "copied": "Скопировано!",
+    "shareTitle": "Clean My Speaker помог вам? Поделитесь!",
+    "shareDesc": "Помогите близким вытолкнуть воду из динамика и восстановить чистый звук без похода в сервис.",
+    "cookieNotice": "Настройки куки",
+    "loading": "Загрузка..."
+  },
+  "nav": {
+    "home": "Главная",
+    "tool": "Выталкиватель воды",
+    "howItWorks": "Как это работает",
+    "removeWater": "Удалить воду",
+    "iphone": "Очистить iPhone",
+    "android": "Очистить Android",
+    "test": "Тест динамика",
+    "guide": "Руководство",
+    "faq": "Частые вопросы",
+    "about": "О проекте",
+    "contact": "Контакты",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия",
+    "disclaimer": "Отказ от ответственности",
+    "cookiePolicy": "Куки",
+    "cleanNow": "Очистить",
+    "audioTools": "Аудиоинструменты",
+    "deviceGuides": "Инструкции",
+    "information": "Информация",
+    "connectWithUs": "Соцсети"
+  },
+  "tool": {
+    "badge": "Акустический инструмент выброса воды",
+    "title": "ОЧИСТИТЬ ДИНАМИК",
+    "subtitle": "Установите громкость на 100%, направьте динамик вниз и нажмите кнопку.",
+    "buttonClean": "ОЧИСТИТЬ ДИНАМИК",
+    "buttonStop": "ОСТАНОВИТЬ ОЧИСТКУ",
+    "statusReady": "Готово к воспроизведению звука 165 Гц. Прибавьте громкость и запустите.",
+    "statusPlaying": "Воспроизведение волн {freq} Гц (осталось {timeRemaining} сек)...",
+    "statusCompleted": "Цикл завершен! Протрите отверстия динамика сухой тканью.",
+    "selectMode": "Выберите режим",
+    "quickClean": "Быстрая очистка",
+    "quickCleanDesc": "30 сек для легкой влаги.",
+    "deepClean": "Глубокая очистка",
+    "deepCleanDesc": "60 сек для стойких капель.",
+    "waterEject": "Выброс воды",
+    "waterEjectDesc": "45 сек с максимальной амплитудой мембраны.",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Диагностика звука",
+    "title": "Тест динамиков и стереоканалов",
+    "subtitle": "Проверка левого/правого каналов и диапазона частот (100 Гц – 10 кГц).",
+    "stereoTitle": "Тест стереоканалов",
+    "stereoDesc": "Воспроизведение звука по каналам для выявления забитых динамиков.",
+    "leftChannel": "Левый канал",
+    "rightChannel": "Правый канал",
+    "bothChannels": "Оба канала",
+    "stopTest": "Остановить звук",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Очистить динамик – Вытолкнуть воду звуком онлайн",
+    "metaDesc": "Очистите динамик смартфона онлайн и исправьте глухой звук с помощью бесплатных звуковых волн 165 Гц.",
+    "heroH1": "Очистить динамик – Вытолкнуть воду и восстановить звук",
+    "heroSub": "Воспроизведите откалиброванные звуковые волны 165 Гц, чтобы вытолкнуть воду и пыль из динамика без скачивания приложений.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "Как работает Clean My Speaker – Акустика и физика",
+    "metaDesc": "Узнайте, как звуковые волны 165 Гц создают давление воздуха для выброса воды.",
+    "h1": "Как работает Clean My Speaker: Акустическая физика",
+    "sub": "Колебания мембраны и кинетическое давление воздуха."
+  },
+  "removeWater": {
+    "metaTitle": "Как убрать воду из динамика телефона",
+    "metaDesc": "Пошаговая инструкция по удалению воды из динамика смартфона.",
+    "h1": "Как убрать воду из динамика телефона: Инструкция",
+    "sub": "Телефон упал в воду? Выполните эти 5 безопасных шагов."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "Очистить динамик iPhone – Выброс воды из iPhone",
+    "metaDesc": "Очистите динамик iPhone онлайн через Safari для iPhone 15, 14, 13, 12 и SE.",
+    "h1": "Очистка динамика iPhone: Выброс воды",
+    "sub": "Специальный гид для смартфонов Apple iPhone."
+  },
+  "androidCleaner": {
+    "metaTitle": "Очистить динамик Android – Samsung и Xiaomi",
+    "metaDesc": "Вытолкните воду из динамиков Samsung Galaxy, Xiaomi и Pixel звуком.",
+    "h1": "Очистка динамика Android: Выброс воды и пыли",
+    "sub": "Безопасная очистка для устройств Android."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Руководство по очистке динамиков – Удаление пыли",
+    "metaDesc": "Как безопасно очистить сетку динамика от пыли и ворсинок.",
+    "h1": "Руководство по очистке динамика: Пыль и грязь",
+    "sub": "Практические советы по уходу за смартфоном."
+  },
+  "faq": {
+    "metaTitle": "Частые вопросы – Clean My Speaker FAQ",
+    "metaDesc": "Ответы на вопросы о звуковой очистке динамиков и безопасности.",
+    "h1": "Частые вопросы: Ответы экспертов",
+    "sub": "Все об акустической очистке и устранении проблем со звуком."
+  },
+  "about": {
+    "metaTitle": "О проекте – Clean My Speaker",
+    "metaDesc": "Бесплатный инструмент для восстановления чистоты звука.",
+    "h1": "О проекте",
+    "sub": "Легкая веб-утилита для помощи пользователям по всему миру."
+  },
+  "contact": {
+    "metaTitle": "Контакты – Поддержка Clean My Speaker",
+    "metaDesc": "Свяжитесь с нашей командой для вопросов и предложений.",
+    "h1": "Контакты и поддержка",
+    "sub": "Есть вопросы или отзывы? Напишите нам."
+  },
+  "privacy": {
+    "metaTitle": "Политика конфиденциальности",
+    "metaDesc": "Политика конфиденциальности сервиса.",
+    "h1": "Политика конфиденциальности"
+  },
+  "terms": {
+    "metaTitle": "Условия использования",
+    "metaDesc": "Условия использования сайта.",
+    "h1": "Условия использования"
+  },
+  "disclaimer": {
+    "metaTitle": "Отказ от ответственности",
+    "metaDesc": "Предупреждение о безопасности оборудования.",
+    "h1": "Отказ от ответственности"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Политика куки",
+    "metaDesc": "Информация об использовании файлов cookie.",
+    "h1": "Политика куки"
+  },
+  "languages": {
+    "metaTitle": "Доступные языки – Clean My Speaker",
+    "metaDesc": "Clean My Speaker доступен на 27 языках.",
+    "h1": "Выберите ваш язык",
+    "sub": "Доступно на 27 языках по всему миру."
+  }
+}

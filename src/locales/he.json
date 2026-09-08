@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "ניקוי רמקול הטלפון אונליין — הוצאת מים ולחות באמצעות צליל",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "כתב ויתור: Clean My Speaker הוא כלי עצמאי.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "בית",
+    "languages": "שפות",
+    "changeLanguage": "החלף שפה",
+    "selectLanguage": "בחר שפה",
+    "allLanguages": "כל השפות",
+    "close": "סגור",
+    "share": "שתף",
+    "copyLink": "העתק קישור",
+    "copied": "הועתק!",
+    "shareTitle": "האם Clean My Speaker עזר לך? שתף!",
+    "shareDesc": "עזור לחברים להוציא מים מרמקול הטלפון ללא עלות.",
+    "cookieNotice": "הגדרות קובצי Cookie",
+    "loading": "טוען..."
+  },
+  "nav": {
+    "home": "בית",
+    "tool": "מוציא מים",
+    "howItWorks": "איך זה עובד",
+    "removeWater": "הסרת מים",
+    "iphone": "ניקוי אייפון",
+    "android": "ניקוי אנדרואיד",
+    "test": "בדיקת רמקול",
+    "guide": "מדריך ניקוי",
+    "faq": "שאלות נפוצות",
+    "about": "אודות",
+    "contact": "צור קשר",
+    "privacy": "פרטיות",
+    "terms": "תנאים",
+    "disclaimer": "הצהרה",
+    "cookiePolicy": "עוגיות",
+    "cleanNow": "נקה עכשיו",
+    "audioTools": "כלי שמע",
+    "deviceGuides": "מדריכי מכשירים",
+    "information": "מידע",
+    "connectWithUs": "עקבו אחרינו"
+  },
+  "tool": {
+    "badge": "כלי אקוסטי להוצאת מים",
+    "title": "ניקוי רמקול הטלפון",
+    "subtitle": "הגבר את עוצמת השמע ל-100%, הפנה את הרמקול כלפי מטה ולחץ למטה.",
+    "buttonClean": "נקה את הרמקול",
+    "buttonStop": "עצור ניקוי",
+    "statusReady": "מוכן להשמעת גלי קול בתדר 165 הרץ.",
+    "statusPlaying": "משמיע גלי קול בתדר {freq} הרץ (נותרו {timeRemaining} שניות)...",
+    "statusCompleted": "הושלם! נגב את פתחי הרמקול במטלית יבשה.",
+    "selectMode": "בחר מצב",
+    "quickClean": "ניקוי מהיר",
+    "quickCleanDesc": "30 שניות ללחות קלה",
+    "deepClean": "ניקוי עמוק",
+    "deepCleanDesc": "60 שניות לטיפות עיקשות",
+    "waterEject": "פליטת מים",
+    "waterEjectDesc": "45 שניות ברטט מקסימלי",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "בדיקת שמע",
+    "title": "בדיקת רמקולים וערוצי סטריאו",
+    "subtitle": "בדיקת ערוצי שמאל/ימין ותדרים.",
+    "stereoTitle": "בדיקת סטריאו",
+    "stereoDesc": "בדוק את איזון הרמקולים.",
+    "leftChannel": "שמאל",
+    "rightChannel": "ימין",
+    "bothChannels": "שניהם",
+    "stopTest": "עצור",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "ניקוי רמקול – הוצאת מים ותיקון צליל אונליין",
+    "metaDesc": "הוצא מים מרמקול הטלפון באמצעות גלי קול של 165 הרץ בחינם.",
+    "heroH1": "ניקוי רמקול הטלפון – הוצאת מים ותיקון סאונד",
+    "heroSub": "השמע גלי קול בתדר 165 הרץ להוצאת מים ואבק ללא הורדת אפליקציה.",
+    "step1Title": "Turn Volume to Maximum (100%)",
+    "step1Desc": "Ensure your phone or device media volume is set to maximum for maximum diaphragm excursion.",
+    "step2Title": "Position Speaker Facing Downward",
+    "step2Desc": "Hold your phone with the speaker openings facing down toward a clean microfiber cloth.",
+    "step3Title": "Tap Clean My Speaker & Run Sound Waves",
+    "step3Desc": "Press the button above to play 165 Hz resonant tones that physically oscillate the speaker cone.",
+    "step4Title": "Repeat 2–3 Times Until Crystal Clear",
+    "step4Desc": "Run multiple cycles for stubborn moisture, then test your audio clarity using our speaker test tool.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "איך זה עובד – פיזיקה של גלי קול",
+    "metaDesc": "כיצד גלי קול בתדר 165 הרץ דוחפים מים החוצה.",
+    "h1": "איך זה עובד: מדע האקוסטיקה",
+    "sub": "תנודות הדיאפרגמה ולחץ אוויר."
+  },
+  "removeWater": {
+    "metaTitle": "איך להוציא מים מרמקול הטלפון",
+    "metaDesc": "מדריך בטוח להוצאת מים מהטלפון.",
+    "h1": "איך להוציא מים מהרמקול: 5 שלבים",
+    "sub": "הטלפון נפל למים? עקוב אחר השלבים."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "ניקוי רמקול אייפון – הוצאת מים מ-iPhone",
+    "metaDesc": "הוצאת מים מרמקול אייפון דרך ספארי.",
+    "h1": "ניקוי רמקול iPhone",
+    "sub": "עבור iPhone 15, 14, 13, 12, SE."
+  },
+  "androidCleaner": {
+    "metaTitle": "ניקוי רמקול אנדרואיד – סמסונג ושיאומי",
+    "metaDesc": "הוצאת מים מרמקולי Samsung Galaxy, Pixel, Xiaomi.",
+    "h1": "ניקוי רמקול Android",
+    "sub": "בטוח לכל מכשירי האנדרואיד."
+  },
+  "cleaningGuide": {
+    "metaTitle": "מדריך לניקוי רמקולים",
+    "metaDesc": "הסרת אבק ולכלוך בבטחה.",
+    "h1": "מדריך לניקוי רמקולים",
+    "sub": "טיפים מעשיים לתחזוקה."
+  },
+  "faq": {
+    "metaTitle": "שאלות נפוצות – FAQ",
+    "metaDesc": "תשובות לשאלות נפוצות על ניקוי רמקולים.",
+    "h1": "שאלות נפוצות",
+    "sub": "כל מה שאתה צריך לדעת."
+  },
+  "about": {
+    "metaTitle": "אודות – Clean My Speaker",
+    "metaDesc": "אודות כלי השמע החינמי שלנו.",
+    "h1": "אודותינו",
+    "sub": "כלי חינמי למשתמשי סמארטפון."
+  },
+  "contact": {
+    "metaTitle": "צור קשר",
+    "metaDesc": "תמיכה ומשוב.",
+    "h1": "צור קשר ותמיכה",
+    "sub": "כתבו לנו."
+  },
+  "privacy": {
+    "metaTitle": "מדיניות פרטיות",
+    "metaDesc": "מדיניות פרטיות.",
+    "h1": "מדיניות פרטיות"
+  },
+  "terms": {
+    "metaTitle": "תנאי שימוש",
+    "metaDesc": "תנאי השימוש באתר.",
+    "h1": "תנאי שימוש"
+  },
+  "disclaimer": {
+    "metaTitle": "כתב ויתור",
+    "metaDesc": "בטיחות החומרה.",
+    "h1": "כתב ויתור"
+  },
+  "cookiePolicy": {
+    "metaTitle": "מדיניות קובצי Cookie",
+    "metaDesc": "קובצי Cookie.",
+    "h1": "מדיניות קובצי Cookie"
+  },
+  "languages": {
+    "metaTitle": "שפות – Clean My Speaker",
+    "metaDesc": "זמין ב-27 שפות.",
+    "h1": "בחר שפה",
+    "sub": "זמין ב-27 שפות ברחבי העולם."
+  }
+}

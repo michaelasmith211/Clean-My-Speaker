@@ -1,24 +1,30 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { getAudioEngine } from '@/lib/audioEngine';
 import { CLEANING_MODES } from '@/lib/constants';
 import { CleaningMode } from '@/lib/types';
+import { DEFAULT_LOCALE } from '@/i18n/config';
+import { getTranslations } from '@/i18n/getTranslations';
 
-export const SpeakerCleaner: React.FC = () => {
+interface SpeakerCleanerProps {
+  locale?: string;
+}
+
+export const SpeakerCleaner: React.FC<SpeakerCleanerProps> = ({ locale = DEFAULT_LOCALE }) => {
+  const { t } = getTranslations(locale);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [currentMode, setCurrentMode] = useState<CleaningMode>('quick');
   const [frequency, setFrequency] = useState<number>(165);
-  const [volume, setVolume] = useState<number>(90); // 90% volume default
+  const [volume, setVolume] = useState<number>(90);
   const [progress, setProgress] = useState<number>(0);
   const [secondsRemaining, setSecondsRemaining] = useState<number>(30);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [statusMessage, setStatusMessage] = useState<string>('Ready to clean');
+  const [statusMessage, setStatusMessage] = useState<string>(t('tool.statusReady'));
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const durationRef = useRef<number>(30);
 
-  // Set duration when mode changes
   useEffect(() => {
     const config = CLEANING_MODES[currentMode];
     if (config) {
@@ -41,10 +47,9 @@ export const SpeakerCleaner: React.FC = () => {
       engine.stop();
     }
     setIsPlaying(false);
-    setStatusMessage('Cleaning stopped. Check speaker sound.');
-  }, []);
+    setStatusMessage(t('tool.statusCompleted'));
+  }, [t]);
 
-  // Cleanup on unmount or tab switch
   useEffect(() => {
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
@@ -57,73 +62,56 @@ export const SpeakerCleaner: React.FC = () => {
     setErrorMessage(null);
     const engine = getAudioEngine();
     if (!engine) {
-      setErrorMessage('Audio engine could not be initialized in this browser environment.');
+      setErrorMessage('Web Audio API is not supported in this browser.');
       return;
     }
 
     try {
-      await engine.resumeIfNeeded();
-      const config = CLEANING_MODES[currentMode];
-      const totalSeconds = config.duration;
-      durationRef.current = totalSeconds;
-      setSecondsRemaining(totalSeconds);
+      const modeConfig = CLEANING_MODES[currentMode];
+      const duration = modeConfig.duration;
+      durationRef.current = duration;
+      setSecondsRemaining(duration);
       setProgress(0);
 
-      // Start Audio Engine
-      engine.startCleaningTone(currentMode, frequency, volume / 100);
+      setFrequency(modeConfig.defaultFrequency);
+      setStatusMessage(
+        t('tool.statusPlaying', { freq: modeConfig.defaultFrequency.toString(), timeRemaining: duration.toString() })
+      );
+
+      engine.setVolume(volume / 100);
+      engine.startCleaningTone(currentMode, modeConfig.defaultFrequency, volume / 100);
+
       setIsPlaying(true);
-      setStatusMessage(`Cleaning in progress: ${config.name} at ${frequency} Hz.`);
-
-      const startTime = Date.now();
-      const endTime = startTime + totalSeconds * 1000;
-
-      if (intervalRef.current) clearInterval(intervalRef.current);
+      let elapsed = 0;
 
       intervalRef.current = setInterval(() => {
-        const now = Date.now();
-        const timeLeftMs = Math.max(0, endTime - now);
-        const elapsedMs = totalSeconds * 1000 - timeLeftMs;
-        const currentProgress = Math.min(100, (elapsedMs / (totalSeconds * 1000)) * 100);
+        elapsed += 1;
+        const remaining = Math.max(0, duration - elapsed);
+        setSecondsRemaining(remaining);
+        setProgress((elapsed / duration) * 100);
 
-        setProgress(currentProgress);
-        setSecondsRemaining(Math.ceil(timeLeftMs / 1000));
-
-        if (timeLeftMs <= 0) {
+        if (remaining <= 0) {
           handleStop();
-          setProgress(100);
-          setSecondsRemaining(0);
-          setStatusMessage('Cleaning complete! Wipe off any ejected moisture beads.');
         }
-      }, 100);
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Error starting audio playback.';
-      setErrorMessage(msg);
+      }, 1000);
+    } catch (err) {
+      const error = err instanceof Error ? err : new Error(String(err));
+      console.error('Audio start error:', error);
+      setErrorMessage(error.message || 'Failed to start audio. Please interact with the page first.');
       setIsPlaying(false);
     }
   };
 
-  const handleFrequencyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = parseInt(e.target.value, 10);
-    setFrequency(val);
-    if (isPlaying) {
-      const engine = getAudioEngine();
-      if (engine) engine.setFrequency(val);
-    }
-  };
-
-  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = parseInt(e.target.value, 10);
-    setVolume(val);
-    if (isPlaying) {
-      const engine = getAudioEngine();
-      if (engine) engine.setVolume(val / 100);
-    }
+  const modeDescriptions: Record<CleaningMode, { name: string; desc: string }> = {
+    quick: { name: t('tool.quickClean'), desc: t('tool.quickCleanDesc') },
+    deep: { name: t('tool.deepClean'), desc: t('tool.deepCleanDesc') },
+    eject: { name: t('tool.waterEject'), desc: t('tool.waterEjectDesc') },
   };
 
   return (
     <div
       id="tool"
-      className="w-full max-w-xl mx-auto bg-slate-900/90 border-2 border-sky-500/40 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-sky-950/60 backdrop-blur-xl relative overflow-hidden"
+      className="w-full max-w-xl mx-auto bg-slate-900/90 border-2 border-sky-500/40 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-sky-950/60 backdrop-blur-xl relative overflow-hidden text-start"
     >
       {/* Decorative ambient glow */}
       <div className="absolute -top-24 -right-24 w-60 h-60 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -138,13 +126,13 @@ export const SpeakerCleaner: React.FC = () => {
       <div className="text-center mb-6">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-300 text-xs font-semibold uppercase tracking-wider mb-2">
           <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-          Acoustic Water Eject Utility
+          {t('tool.badge')}
         </div>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          CLEAN MY SPEAKER
+          {t('tool.title')}
         </h2>
         <p className="text-slate-400 text-xs sm:text-sm mt-1">
-          Turn your device volume to 100%, point your speaker downward, and tap below.
+          {t('tool.subtitle')}
         </p>
       </div>
 
@@ -153,7 +141,7 @@ export const SpeakerCleaner: React.FC = () => {
         <div className="mb-5 p-4 rounded-xl bg-red-950/60 border border-red-500/50 text-red-200 text-xs sm:text-sm flex items-start gap-3">
           <span className="text-red-400 text-lg">⚠️</span>
           <div>
-            <p className="font-semibold">Audio playback notice</p>
+            <p className="font-semibold">Audio notice</p>
             <p>{errorMessage}</p>
           </div>
         </div>
@@ -162,12 +150,13 @@ export const SpeakerCleaner: React.FC = () => {
       {/* Mode Selector Tabs */}
       <div className="mb-6">
         <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2 text-center">
-          Select Cleaning Mode
+          {t('tool.selectMode')}
         </label>
         <div className="grid grid-cols-3 gap-2 bg-slate-950/70 p-1.5 rounded-2xl border border-slate-800">
           {(Object.keys(CLEANING_MODES) as CleaningMode[]).map((modeKey) => {
             const config = CLEANING_MODES[modeKey];
             const isSelected = currentMode === modeKey;
+            const localizedInfo = modeDescriptions[modeKey] || { name: config.name, desc: config.description };
             return (
               <button
                 key={modeKey}
@@ -180,14 +169,14 @@ export const SpeakerCleaner: React.FC = () => {
                     : 'text-slate-400 hover:text-white hover:bg-slate-800/60 disabled:opacity-50'
                 }`}
               >
-                <span>{config.name}</span>
+                <span>{localizedInfo.name}</span>
                 <span className="text-[10px] opacity-75 font-normal">{config.duration}s</span>
               </button>
             );
           })}
         </div>
         <p className="text-[11px] text-slate-400 text-center mt-2">
-          {CLEANING_MODES[currentMode]?.description}
+          {modeDescriptions[currentMode]?.desc}
         </p>
       </div>
 
@@ -207,17 +196,17 @@ export const SpeakerCleaner: React.FC = () => {
               type="button"
               onClick={handleStart}
               className="relative w-44 h-44 sm:w-52 sm:h-52 rounded-full bg-gradient-to-tr from-sky-500 via-sky-400 to-blue-600 p-1.5 shadow-xl shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-103 active:scale-97 transition-all flex flex-col items-center justify-center text-center group cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
-              aria-label="Start cleaning speaker sound"
+              aria-label={t('tool.buttonClean')}
             >
               <div className="w-full h-full rounded-full bg-slate-950 flex flex-col items-center justify-center p-4 group-hover:bg-slate-900 transition-colors">
                 <span className="text-4xl sm:text-5xl mb-2 filter drop-shadow-md group-hover:scale-110 transition-transform">
                   🔊
                 </span>
                 <span className="font-extrabold text-sm sm:text-base tracking-wide text-white group-hover:text-sky-300 transition-colors">
-                  CLEAN MY SPEAKER
+                  {t('tool.buttonClean')}
                 </span>
                 <span className="text-[10px] text-sky-400 uppercase tracking-widest mt-1 font-semibold">
-                  TAP TO START
+                  165 Hz
                 </span>
               </div>
             </button>
@@ -226,125 +215,97 @@ export const SpeakerCleaner: React.FC = () => {
               type="button"
               onClick={handleStop}
               className="relative w-44 h-44 sm:w-52 sm:h-52 rounded-full bg-gradient-to-tr from-red-500 to-rose-600 p-1.5 shadow-xl shadow-rose-500/30 hover:scale-103 active:scale-97 transition-all flex flex-col items-center justify-center text-center cursor-pointer focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-300"
-              aria-label="Stop cleaning speaker sound"
+              aria-label={t('tool.buttonStop')}
             >
               <div className="w-full h-full rounded-full bg-slate-950 flex flex-col items-center justify-center p-4">
-                <div className="flex items-center gap-1.5 h-8 mb-2">
-                  <span className="w-1.5 bg-rose-400 rounded-full animate-soundwave" style={{ animationDelay: '0.1s' }} />
-                  <span className="w-1.5 bg-rose-400 rounded-full animate-soundwave" style={{ animationDelay: '0.3s' }} />
-                  <span className="w-1.5 bg-rose-400 rounded-full animate-soundwave" style={{ animationDelay: '0.2s' }} />
-                  <span className="w-1.5 bg-rose-400 rounded-full animate-soundwave" style={{ animationDelay: '0.4s' }} />
-                  <span className="w-1.5 bg-rose-400 rounded-full animate-soundwave" style={{ animationDelay: '0.25s' }} />
-                </div>
-                <span className="font-extrabold text-base sm:text-lg tracking-wide text-rose-400">
-                  STOP SOUND
+                <span className="text-4xl sm:text-5xl mb-2 animate-bounce">
+                  ⏹️
                 </span>
-                <span className="text-xs text-slate-300 mt-1 font-mono font-bold">
-                  {secondsRemaining}s remaining
+                <span className="font-extrabold text-sm sm:text-base tracking-wide text-rose-400">
+                  {t('tool.buttonStop')}
+                </span>
+                <span className="text-xs text-white font-mono font-bold mt-1">
+                  {secondsRemaining}s
                 </span>
               </div>
             </button>
           )}
         </div>
 
-        {/* Progress Bar & Status Text */}
-        <div className="w-full mt-6 space-y-2">
-          <div className="flex justify-between items-center text-xs font-semibold text-slate-300">
-            <span>Cycle Progress</span>
-            <span className="font-mono text-sky-400">{Math.round(progress)}%</span>
+        {/* Live Frequency & Timer Indicator */}
+        <div className="mt-6 flex items-center gap-4 text-xs">
+          <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950 border border-slate-800 text-slate-300">
+            <span className="text-sky-400 font-bold">⚡ Freq:</span>
+            <span className="font-mono">{frequency} Hz</span>
           </div>
-          <div
-            className="w-full h-3 rounded-full bg-slate-950 border border-slate-800 overflow-hidden"
-            role="progressbar"
-            aria-valuenow={Math.round(progress)}
-            aria-valuemin={0}
-            aria-valuemax={100}
-            aria-label="Cleaning progress"
-          >
+          <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950 border border-slate-800 text-slate-300">
+            <span className="text-sky-400 font-bold">⏱ Time:</span>
+            <span className="font-mono">{secondsRemaining}s</span>
+          </div>
+        </div>
+
+        {/* Progress Bar */}
+        {isPlaying && (
+          <div className="w-full mt-4 bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-800">
             <div
-              className="h-full bg-gradient-to-r from-sky-500 to-blue-500 rounded-full transition-all duration-150"
+              className="bg-gradient-to-r from-sky-500 to-blue-500 h-full transition-all duration-1000 ease-linear rounded-full"
               style={{ width: `${progress}%` }}
+              role="progressbar"
+              aria-valuenow={Math.round(progress)}
+              aria-valuemin={0}
+              aria-valuemax={100}
             />
           </div>
-          <div className="flex justify-between text-xs text-slate-300 font-medium">
-            <span>{isPlaying ? 'Acoustic wave active' : 'Status: Idle'}</span>
-            <span>{secondsRemaining}s / {durationRef.current}s</span>
-          </div>
+        )}
+      </div>
+
+      {/* Volume Slider */}
+      <div className="mb-6 p-4 rounded-2xl bg-slate-950/60 border border-slate-800">
+        <div className="flex justify-between items-center text-xs font-semibold mb-2">
+          <label htmlFor="volume-slider" className="text-slate-300 flex items-center gap-1.5">
+            <span>🔊</span> Output Intensity
+          </label>
+          <span className="text-sky-400 font-mono font-bold">{volume}%</span>
+        </div>
+        <input
+          id="volume-slider"
+          type="range"
+          min="10"
+          max="100"
+          value={volume}
+          onChange={(e) => {
+            const val = Number(e.target.value);
+            setVolume(val);
+            const engine = getAudioEngine();
+            if (engine) engine.setVolume(val / 100);
+          }}
+          className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-400"
+          aria-label="Output intensity slider"
+        />
+      </div>
+
+      {/* Quick Action Tips */}
+      <div className="grid grid-cols-2 gap-2 text-xs text-slate-300">
+        <div className="p-3 rounded-xl bg-slate-950/40 border border-slate-800/80 flex items-center gap-2">
+          <span className="text-base shrink-0">📱</span>
+          <span>{t('tool.tipPosition')}</span>
+        </div>
+        <div className="p-3 rounded-xl bg-slate-950/40 border border-slate-800/80 flex items-center gap-2">
+          <span className="text-base shrink-0">💧</span>
+          <span>{t('tool.tipCloth')}</span>
         </div>
       </div>
 
-      {/* Advanced Sound Controls (Collapsible or visible) */}
-      <div className="bg-slate-950/60 rounded-2xl p-4 border border-slate-800 space-y-4">
-        {/* Frequency */}
-        <div>
-          <div className="flex justify-between text-xs font-semibold text-slate-300 mb-1.5">
-            <label htmlFor="frequency-slider" className="flex items-center gap-1">
-              <span>Acoustic Frequency:</span>
-              <span className="text-sky-400 font-mono">{frequency} Hz</span>
-            </label>
-            <button
-              type="button"
-              onClick={() => {
-                setFrequency(165);
-                if (isPlaying) {
-                  const engine = getAudioEngine();
-                  if (engine) engine.setFrequency(165);
-                }
-              }}
-              className="text-[10px] text-slate-400 hover:text-sky-300 underline"
-            >
-              Reset to 165 Hz (Optimal)
-            </button>
-          </div>
-          <input
-            id="frequency-slider"
-            type="range"
-            min={100}
-            max={500}
-            step={5}
-            value={frequency}
-            onChange={handleFrequencyChange}
-            className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-400"
-            aria-label="Speaker cleaning frequency in Hertz"
-          />
-          <div className="flex justify-between text-xs text-slate-300 font-medium mt-1">
-            <span>100 Hz (Low Bass)</span>
-            <span className="text-sky-300 font-semibold">165 Hz (Water Eject Peak)</span>
-            <span>500 Hz (Mid)</span>
-          </div>
-        </div>
-
-        {/* Volume */}
-        <div>
-          <div className="flex justify-between text-xs font-semibold text-slate-300 mb-1.5">
-            <label htmlFor="volume-slider" className="flex items-center gap-1">
-              <span>Oscillator Gain:</span>
-              <span className="text-sky-400 font-mono">{volume}%</span>
-            </label>
-            <span className="text-[10px] text-slate-400">Keep phone volume at 100%</span>
-          </div>
-          <input
-            id="volume-slider"
-            type="range"
-            min={10}
-            max={100}
-            step={5}
-            value={volume}
-            onChange={handleVolumeChange}
-            className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-400"
-            aria-label="Acoustic volume percentage"
-          />
-        </div>
-      </div>
-
-      {/* Safety / Practical advice under the tool */}
-      <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-300 font-medium">
-        <span className="flex items-center gap-1">
-          <span>💡</span> Position speaker face-down
-        </span>
-        <span className="flex items-center gap-1">
-          <span>💧</span> Gently tap phone on a soft towel
-        </span>
+      {/* Safety Banner */}
+      <div className="mt-4 p-4 rounded-2xl bg-amber-950/20 border border-amber-500/30 text-xs text-amber-200/90 space-y-1.5">
+        <p className="font-bold flex items-center gap-1.5 text-amber-300">
+          <span>⚠️</span> {t('tool.safetyTitle')}
+        </p>
+        <ul className="list-disc list-inside space-y-1 text-slate-300 text-[11px] leading-relaxed">
+          <li>{t('tool.safetyRule1')}</li>
+          <li>{t('tool.safetyRule2')}</li>
+          <li>{t('tool.safetyRule3')}</li>
+        </ul>
       </div>
     </div>
   );
