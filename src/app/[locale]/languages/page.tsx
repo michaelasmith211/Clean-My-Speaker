@@ -49,7 +49,7 @@ export default function LanguagesPage({ params }: LanguagesPageProps) {
 
       <header className="space-y-4 my-8 text-center max-w-2xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider">
-          <span>🌐</span> 27 Supported Languages
+          <span>🌐</span> 40 Supported Languages
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
           {t('languages.h1')}

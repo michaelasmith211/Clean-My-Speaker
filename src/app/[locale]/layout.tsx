@@ -2,6 +2,7 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { LocaleHtmlSync } from '@/components/LocaleHtmlSync';
 import { getLocaleStaticParams, isLocaleSupported, isRTL, getLocaleConfig } from '@/i18n/config';
 import { getHreflangAlternates, getCanonicalUrl } from '@/i18n/locale-utils';
 import { getTranslations } from '@/i18n/getTranslations';
@@ -57,6 +58,7 @@ export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
 
   return (
     <div lang={locale} dir={dir} className="min-h-screen flex flex-col">
+      <LocaleHtmlSync locale={locale} dir={dir} />
       <Header locale={locale} />
       <div className="flex-1">{children}</div>
       <Footer locale={locale} />

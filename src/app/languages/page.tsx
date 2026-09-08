@@ -9,14 +9,14 @@ import { getHreflangAlternates } from '@/i18n/locale-utils';
 
 export const metadata: Metadata = {
   title: 'Languages – Select Your Language | Clean My Speaker',
-  description: 'Choose your language to access Clean My Speaker in 27 supported languages. Fast, browser-based phone speaker cleaner and water eject tool.',
+  description: 'Choose your language to access Clean My Speaker in 40 supported languages. Fast, browser-based phone speaker cleaner and water eject tool.',
   alternates: {
     canonical: 'https://cleanmyspeaker.net/languages/',
     languages: getHreflangAlternates('/languages'),
   },
   openGraph: {
     title: 'Languages – Select Your Language | Clean My Speaker',
-    description: 'Choose your language to access Clean My Speaker in 27 supported languages.',
+    description: 'Choose your language to access Clean My Speaker in 40 supported languages.',
     url: 'https://cleanmyspeaker.net/languages/',
   },
 };
@@ -33,7 +33,7 @@ export default function LanguagesRootPage() {
 
         <header className="space-y-4 my-8 text-center max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider">
-            <span>🌐</span> 27 Supported Languages
+            <span>🌐</span> 40 Supported Languages
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             {t('languages.h1')}
