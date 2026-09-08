@@ -72,5 +72,5 @@ export function getLocaleConfig(locale: string): LocaleConfig {
 }
 
 export function getLocaleStaticParams() {
-  return SUPPORTED_LOCALES.map((locale) => ({ locale }));
+  return SUPPORTED_LOCALES.filter((locale) => locale !== DEFAULT_LOCALE).map((locale) => ({ locale }));
 }

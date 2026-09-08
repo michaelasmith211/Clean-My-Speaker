@@ -94,7 +94,7 @@ export const Footer: React.FC<FooterProps> = ({ locale = DEFAULT_LOCALE }) => {
               </li>
               <li>
                 <Link href={getLocalizedPath('/languages', locale)} className="hover:text-sky-300 transition-colors text-sky-400 font-medium flex items-center gap-1">
-                  <span>🌐</span> {t('common.allLanguages')} (27)
+                  <span>🌐</span> {t('common.allLanguages')} (40)
                 </Link>
               </li>
             </ul>

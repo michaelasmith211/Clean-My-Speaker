@@ -46,10 +46,14 @@ export function getCleanPath(pathname: string): string {
 
 /**
  * Constructs a localized pathname for a target locale.
- * Example: getLocalizedPath('/how-it-works', 'es') -> '/es/how-it-works/'
+ * For default English: returns root paths like '/' or '/how-it-works/'
+ * For other languages: returns '/es/', '/es/how-it-works/', etc.
  */
-export function getLocalizedPath(pathname: string, targetLocale: string): string {
+export function getLocalizedPath(pathname: string, targetLocale: string = DEFAULT_LOCALE): string {
   const clean = getCleanPath(pathname);
+  if (targetLocale === DEFAULT_LOCALE) {
+    return clean ? `/${clean}/` : '/';
+  }
   if (!clean) {
     return `/${targetLocale}/`;
   }
@@ -65,7 +69,7 @@ export function getLocalizedUrl(pathname: string, targetLocale: string): string 
 }
 
 /**
- * Generates alternate hreflang tags for all 27 locales + x-default (pointing to English)
+ * Generates alternate hreflang tags for all 40 locales + x-default (pointing to English default)
  */
 export function getHreflangAlternates(pathname: string): Record<string, string> {
   const clean = getCleanPath(pathname);
@@ -75,7 +79,7 @@ export function getHreflangAlternates(pathname: string): Record<string, string> 
     alternates[code] = getLocalizedUrl(clean, code);
   }
 
-  // x-default points to default English version
+  // x-default points to default English version at root
   alternates['x-default'] = getLocalizedUrl(clean, DEFAULT_LOCALE);
 
   return alternates;
