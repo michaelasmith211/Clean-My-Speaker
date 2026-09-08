@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { ShareButtons } from '@/components/ShareButtons';
@@ -9,29 +8,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { getHreflangAlternates } from '@/i18n/locale-utils';
 
-const SpeakerTester = dynamic(() => import('@/components/SpeakerTester'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full max-w-2xl mx-auto rounded-3xl bg-slate-900/90 border border-slate-800 p-6 sm:p-8 space-y-6 shadow-2xl animate-pulse">
-      <div className="flex items-center justify-between border-b border-slate-800 pb-4">
-        <div className="h-5 w-40 bg-slate-800 rounded-full" />
-        <div className="h-6 w-24 bg-slate-800 rounded-full" />
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <div className="h-16 bg-slate-800 rounded-2xl" />
-        <div className="h-16 bg-slate-800 rounded-2xl" />
-        <div className="h-16 bg-slate-800 rounded-2xl" />
-        <div className="h-16 bg-slate-800 rounded-2xl" />
-      </div>
-      <div className="grid grid-cols-3 gap-3">
-        <div className="h-12 bg-slate-800 rounded-xl" />
-        <div className="h-12 bg-slate-800 rounded-xl" />
-        <div className="h-12 bg-slate-800 rounded-xl" />
-      </div>
-      <div className="h-14 bg-slate-800 rounded-2xl" />
-    </div>
-  ),
-});
+import { SpeakerTester } from '@/components/SpeakerTester';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

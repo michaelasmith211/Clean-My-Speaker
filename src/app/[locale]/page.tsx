@@ -1,25 +1,14 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { Metadata } from 'next';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { ShareButtons } from '@/components/ShareButtons';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { FAQAccordion } from '@/components/FAQAccordion';
 import { FAQItem } from '@/lib/types';
+import { SpeakerCleaner } from '@/components/SpeakerCleaner';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
-
-const SpeakerCleaner = dynamic(() => import('@/components/SpeakerCleaner'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full max-w-xl mx-auto rounded-3xl bg-slate-900/90 border-2 border-sky-500/40 p-6 sm:p-8 space-y-6 shadow-2xl animate-pulse">
-      <div className="h-6 w-48 bg-slate-800 rounded-full mx-auto" />
-      <div className="h-44 w-44 rounded-full bg-slate-800 mx-auto" />
-      <div className="h-4 w-64 bg-slate-800 rounded-full mx-auto" />
-    </div>
-  ),
-});
 
 export function generateStaticParams() {
   return getLocaleStaticParams();

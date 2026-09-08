@@ -1,5 +1,4 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
@@ -8,19 +7,7 @@ import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
 
-const SpeakerTester = dynamic(() => import('@/components/SpeakerTester'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full max-w-2xl mx-auto rounded-3xl bg-slate-900/90 border border-slate-800 p-6 sm:p-8 space-y-6 shadow-2xl animate-pulse">
-      <div className="h-6 w-48 bg-slate-800 rounded-full mx-auto" />
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div className="h-20 bg-slate-800 rounded-2xl" />
-        <div className="h-20 bg-slate-800 rounded-2xl" />
-        <div className="h-20 bg-slate-800 rounded-2xl" />
-      </div>
-    </div>
-  ),
-});
+import { SpeakerTester } from '@/components/SpeakerTester';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
