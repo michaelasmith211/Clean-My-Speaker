@@ -33,45 +33,51 @@ export const Header: React.FC<HeaderProps> = ({ locale = DEFAULT_LOCALE }) => {
   const cleanNowPath = `${homePath}#tool`;
 
   return (
-    <header className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 transition-colors">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800/90 shadow-sm transition-colors">
+      {/* Google-Inspired Top Brand Accent Line */}
+      <div className="h-[2.5px] w-full bg-gradient-to-r from-blue-500 via-sky-400 to-indigo-500" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-3">
-          {/* Brand Logo */}
+          {/* Brand Logo & Title */}
           <Link
             href={homePath}
-            className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-lg p-1 shrink-0"
+            className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-full p-1 shrink-0"
             aria-label={`${t('common.siteName')} - ${t('nav.home')}`}
           >
-            <Image
-              src="/icon.png"
-              alt={t('common.siteName')}
-              width={34}
-              height={34}
-              priority
-              className="rounded-xl shadow-md shadow-sky-500/25 group-hover:scale-105 transition-transform shrink-0"
-            />
+            <div className="relative">
+              <Image
+                src="/icon.png"
+                alt={t('common.siteName')}
+                width={36}
+                height={36}
+                priority
+                className="rounded-xl shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform shrink-0"
+              />
+              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-slate-900" title="Online" />
+            </div>
             <div className="flex flex-col">
               <span className="font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-sky-300 transition-colors leading-tight">
                 {t('common.siteName')}
               </span>
-              <span className="text-[10px] text-slate-400 tracking-wider uppercase font-semibold hidden sm:inline-block leading-tight">
+              <span className="text-[10px] text-sky-400/90 tracking-wider uppercase font-semibold hidden sm:inline-block leading-tight">
                 {t('tool.badge')}
               </span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden xl:flex items-center gap-1.5" aria-label="Main Navigation">
-            {navLinks.slice(1, 6).map((item) => {
+          {/* Desktop Google Material-Style Navigation Pills */}
+          <nav className="hidden xl:flex items-center gap-1 bg-slate-800/40 p-1 rounded-full border border-slate-700/50" aria-label="Main Navigation">
+            {navLinks.slice(0, 6).map((item) => {
               const isActive = pathname === item.href || pathname === item.href.replace(/\/$/, '');
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-2.5 py-1.5 text-xs lg:text-sm font-medium rounded-lg transition-colors ${
+                  className={`px-3.5 py-1.5 text-xs lg:text-sm font-medium rounded-full transition-all ${
                     isActive
-                      ? 'bg-sky-500/20 text-sky-300 font-semibold'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                      ? 'bg-sky-500 text-slate-950 font-bold shadow-sm'
+                      : 'text-slate-300 hover:text-white hover:bg-slate-700/60'
                   }`}
                 >
                   {item.name}
@@ -82,25 +88,27 @@ export const Header: React.FC<HeaderProps> = ({ locale = DEFAULT_LOCALE }) => {
 
           {/* Right Action Bar: Language Selector + Clean Now CTA */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            {/* Language Selector Modal Trigger */}
+            {/* Google Translate Style Language Selector Modal Trigger */}
             <LanguageSelector currentLocale={locale} />
 
+            {/* Google-Style CTA Pill Button */}
             <Link
               href={cleanNowPath}
-              className="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 shadow-md shadow-sky-500/25 transition-all hover:scale-105 shrink-0"
+              className="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-bold rounded-full bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-sky-500/25 transition-all hover:scale-[1.03] active:scale-95 shrink-0"
             >
-              {t('nav.cleanNow')}
+              <span>🔊</span>
+              <span>{t('nav.cleanNow')}</span>
             </Link>
 
             {/* Mobile Hamburger Button */}
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
+              className="xl:hidden p-2 rounded-full text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 border border-slate-700/60"
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
             >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 {mobileMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -114,7 +122,7 @@ export const Header: React.FC<HeaderProps> = ({ locale = DEFAULT_LOCALE }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-slate-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-1 shadow-2xl animate-fade-in">
+        <div className="xl:hidden bg-slate-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-1.5 shadow-2xl animate-fade-in">
           {navLinks.map((item) => {
             const isActive = pathname === item.href || pathname === item.href.replace(/\/$/, '');
             return (
@@ -122,13 +130,14 @@ export const Header: React.FC<HeaderProps> = ({ locale = DEFAULT_LOCALE }) => {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+                className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium transition-colors ${
                   isActive
-                    ? 'bg-sky-500/20 text-sky-300 font-semibold'
+                    ? 'bg-sky-500/20 text-sky-300 font-bold border border-sky-500/30'
                     : 'text-slate-300 hover:text-white hover:bg-slate-800'
                 }`}
               >
-                {item.name}
+                <span>{item.name}</span>
+                {isActive && <span className="text-sky-400 text-xs">● Active</span>}
               </Link>
             );
           })}
@@ -139,3 +148,4 @@ export const Header: React.FC<HeaderProps> = ({ locale = DEFAULT_LOCALE }) => {
 };
 
 export default Header;
+

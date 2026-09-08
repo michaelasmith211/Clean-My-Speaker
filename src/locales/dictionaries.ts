@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // Auto-generated type-safe translations dictionary
 export const dictionaries: Record<string, Record<string, any>> = {
   "ar": {

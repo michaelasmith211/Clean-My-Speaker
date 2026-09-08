@@ -1,7 +1,7 @@
 import { DEFAULT_LOCALE, isLocaleSupported } from './config';
 import { dictionaries } from '@/locales/dictionaries';
 
-export type TranslationDictionary = Record<string, any>;
+export type TranslationDictionary = Record<string, unknown>;
 
 /**
  * Load dictionary for a locale statically
@@ -17,11 +17,11 @@ export function getLocaleDictionary(locale: string): TranslationDictionary {
 function getNestedValue(obj: TranslationDictionary, keyPath: string): string | undefined {
   if (!obj || !keyPath) return undefined;
   const parts = keyPath.split('.');
-  let current: any = obj;
+  let current: unknown = obj;
 
   for (const part of parts) {
     if (current && typeof current === 'object' && part in current) {
-      current = current[part];
+      current = (current as Record<string, unknown>)[part];
     } else {
       return undefined;
     }
