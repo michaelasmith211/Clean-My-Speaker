@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // Localized URLs for all 27 supported languages
+  // Localized URLs for all 40 supported languages
   for (const locale of SUPPORTED_LOCALES) {
     for (const page of pages) {
       const url = page.path ? `${SITE_URL}/${locale}/${page.path}/` : `${SITE_URL}/${locale}/`;

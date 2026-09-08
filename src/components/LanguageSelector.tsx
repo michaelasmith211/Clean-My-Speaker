@@ -82,7 +82,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                   Select Language / Escolha o Idioma / Wählen Sie Ihre Sprache
                 </h2>
                 <p className="text-xs text-slate-400 mt-0.5">
-                  27 supported languages with full native scripts • Current: <strong className="text-sky-300 font-semibold">{activeLocaleConfig.nativeName} ({activeLocaleConfig.englishName})</strong>
+                  40 supported languages with full native scripts • Current: <strong className="text-sky-300 font-semibold">{activeLocaleConfig.nativeName} ({activeLocaleConfig.englishName})</strong>
                 </p>
               </div>
             </div>

@@ -1,0 +1,184 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Dinamiki Onlayn Təmizləyin — Telefon Dinamikindən Su və Rütubəti Çıxarın",
+    "allRightsReserved": "Bütün hüquqlar qorunur.",
+    "disclaimerFooter": "Xəbərdarlıq: Clean My Speaker müstəqil veb alətidir. Səs vibrasiyası daxili maye zədəsini bərpa edə bilməz.",
+    "clientSideProcessing": "100% Brauzerdə emal • Mikrofona ehtiyac yoxdur • İzləmə kukiləri yoxdur",
+    "home": "Əsas Səhifə",
+    "languages": "Dillər",
+    "changeLanguage": "Dili Dəyişin",
+    "selectLanguage": "Dil Seçin",
+    "allLanguages": "Bütün Dillər",
+    "close": "Bağla",
+    "share": "Paylaş",
+    "copyLink": "Linki Kopyala",
+    "copied": "Kopyalandı!",
+    "shareTitle": "Clean My Speaker kömək etdimi? Paylaşın!",
+    "shareDesc": "Dostlarınıza və ailənizə telefon dinamikindən suyu təmizləməyə kömək edin.",
+    "cookieNotice": "Kuki Tənzimləmələri",
+    "loading": "Yüklənir..."
+  },
+  "nav": {
+    "home": "Əsas Səhifə",
+    "tool": "Su Çıxarma Aləti",
+    "howItWorks": "Necə İşləyir",
+    "removeWater": "Suyu Çıxarmaq",
+    "iphone": "iPhone Təmizləyici",
+    "android": "Android Təmizləyici",
+    "test": "Dinamik Testi",
+    "guide": "Təmizləmə Təlimatı",
+    "faq": "FAQ",
+    "about": "Haqqımızda",
+    "contact": "Əlaqə",
+    "privacy": "Məxfilik Siyasəti",
+    "terms": "İstifadə Şərtləri",
+    "disclaimer": "Xəbərdarlıq",
+    "cookiePolicy": "Kuki Siyasəti",
+    "cleanNow": "İndi Təmizləyin",
+    "audioTools": "Audio Alətləri",
+    "deviceGuides": "Cihaz Təlimatları",
+    "information": "Məlumat",
+    "connectWithUs": "Bizimlə Əlaqə"
+  },
+  "tool": {
+    "badge": "Akustik Su Çıxarma Sistemi",
+    "title": "DİNAMİKİ TƏMİZLƏYİN",
+    "subtitle": "Səsi 100%-ə qaldırın, dinamiki aşağı çevirin və aşağıdakı düyməyə vurun.",
+    "buttonClean": "DİNAMİKİ TƏMİZLƏYİN",
+    "buttonStop": "TƏMİZLƏMƏNİ DAYANDIR",
+    "statusReady": "165 Hz səs dalğalarını oxutmağa hazırdır. Səsi artırın və başlayın.",
+    "statusPlaying": "{freq} Hz tezliyində su çıxarma dalğaları oxudulur ({timeRemaining} san qaldı)...",
+    "statusCompleted": "Təmizləmə tamamlandı! Dinamik dəliyini quru parça ilə silin.",
+    "selectMode": "Təmizləmə Rejimini Seçin",
+    "quickClean": "Sürətli Təmizləmə",
+    "quickCleanDesc": "Yüngül nəm üçün 30 saniyəlik sürətli impuls.",
+    "deepClean": "Dərin Təmizləmə",
+    "deepCleanDesc": "Damcıları və tozu çıxarmaq üçün 60 saniyəlik tezlik silsiləsi.",
+    "waterEject": "Suyu Çıxarmaq",
+    "waterEjectDesc": "Mayeni xaric etmək üçün 45 saniyəlik maksimum membran vibrasiyası.",
+    "tipPosition": "Dinamiki aşağı yönəldin",
+    "tipCloth": "Dəsmalın üzərinə yavaşca vurun",
+    "tipVolume": "Maksimum səs vacibdir",
+    "tipNoHeat": "Fen və ya düyüdən istifadə etməyin",
+    "tipRepeat": "Lazım gələrsə 2-3 dəfə təkrarlayın",
+    "safetyTitle": "Təhlükəsizlik Tövsiyələri",
+    "safetyRule1": "Dinamik toruna heç vaxt iynə və ya diş çöpü daxil etməyin.",
+    "safetyRule2": "Fen istisi daxili yapışqanı əridir və dinamiki sıradan çıxarır.",
+    "safetyRule3": "Səs vibrasiyası səthdəki suyu çıxarır, lakin daxili korroziyanı bərpa etmir."
+  },
+  "speakerTest": {
+    "badge": "Akustik Diaqnostika",
+    "title": "Onlayn Dinamik və Stereo Testi",
+    "subtitle": "Sol/sağ stereo kanalları və səs tezliklərini (100 Hz – 10 kHz) yoxlayın.",
+    "stereoTitle": "Stereo Kanal Ayırma Testi",
+    "stereoDesc": "Dinamiklərin balansını və xırıltısını yoxlamaq üçün səs impulslarını oxudun.",
+    "leftChannel": "Sol Kanal",
+    "rightChannel": "Sağ Kanal",
+    "bothChannels": "Hər İki Kanal",
+    "stopTest": "Səsi Dayandır",
+    "playingChannel": "{channel} kanalı yoxlanılır...",
+    "frequencyTitle": "Tezlik Diaqnostikası",
+    "frequencyDesc": "Bas, orta və yüksək tezliklərin aydınlığını yoxlamaq üçün tezlik seçin.",
+    "playingFreq": "{freq} tonu oxudulur..."
+  },
+  "home": {
+    "metaTitle": "Clean My Speaker – Telefon Dinamikindən Suyu Çıxarmaq və Səsi Düzəltmək",
+    "metaDesc": "Telefon dinamikini onlayn təmizləyin. 165 Hz səs dalğaları ilə suyu çıxarın və aydın səsi bərpa edin.",
+    "heroH1": "Telefon Dinamikini Təmizləyin və Suyu Çıxarın",
+    "heroSub": "Telefon dinamikindən suyu təmizləmək və boğuq səsi düzəltmək üçün 165 Hz səs dalğalarını oxudun. Proqram yükləmək tələb olunmur.",
+    "step1Title": "Səsi Maksimuma Qaldırın (100%)",
+    "step1Desc": "Maksimum vibrasiya üçün telefonun səsini ən yüksək səviyyəyə qoyun.",
+    "step2Title": "Dinamiki Aşağı Yönəldin",
+    "step2Desc": "Telefonu dinamik dəlikləri aşağı baxacaq şəkildə tutun.",
+    "step3Title": "Təmizləmə Düyməsinə Vurun",
+    "step3Desc": "Dinamik membranını hərəkətə gətirən 165 Hz rezonans dalğalarını başladın.",
+    "step4Title": "Səs Düzələnə Qədər Təkrarlayın",
+    "step4Desc": "Tam quruyana qədər 2-3 dövr təkrar edin, sonra səs testi ilə yoxlayın.",
+    "whyChooseTitle": "Niyə Clean My Speaker Seçməlisiniz?",
+    "whyChooseDesc": "Onlayn akustik təmizləyicimiz səs fizikası vasitəsilə nəm və tozu təhlükəsiz şəkildə çıxarır.",
+    "feature1Title": "100% Pulsuz və Quraşdırmasız",
+    "feature1Desc": "Safari, Chrome və digər brauzerlərdə dərhal işləyir.",
+    "feature2Title": "Kalibrlənmiş 165 Hz Tezliyi",
+    "feature2Desc": "Mobil dinamik membranlarının təbii rezonans tezliyinə uyğunlaşdırılmışdır.",
+    "feature3Title": "iPhone və Android Üçün Təhlükəsizdir",
+    "feature3Desc": "Daxili qoruyucu təbəqəni zədələməyən akustik təmizləmə.",
+    "videoTitle": "Səs Dalğalarının Necə Təmizlədiyinə Baxın",
+    "videoDesc": "165 Hz səs dalğalarının su damcılarını necə itələdiyini görün.",
+    "faqHeading": "Dinamik Təmizləmə Haqqında Tez-Tez Verilən Suallar"
+  },
+  "howItWorks": {
+    "metaTitle": "Clean My Speaker Necə İşləyir – Səs Dalğaları",
+    "metaDesc": "Clean My Speaker alətinin aşağı tezlikli səs dalğaları ilə suyu necə çıxardığını kəşf edin.",
+    "h1": "Necə İşləyir: Dinamiki Təmizləyən Səs Elmi",
+    "sub": "Suyu və tozu çıxaran akustik prinsiplər və hava təzyiqi dalğaları."
+  },
+  "removeWater": {
+    "metaTitle": "Telefon Dinamikindən Suyu Necə Çıxarmaq Olar",
+    "metaDesc": "Telefon dinamikindən suyu təhlükəsiz çıxarmaq üçün addım-addım təlimat.",
+    "h1": "Telefon Dinamikindən Suyu Çıxarmaq: Təlimat",
+    "sub": "Telefonunuz suya düşüb? Nəmi çıxarmaq üçün bu təlimata əməl edin."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone Dinamik Təmizləyici – Suyu Çıxarın",
+    "metaDesc": "iPhone dinamikini onlayn təmizləyin. Safari-də 165 Hz səs dalğalarını oxudun.",
+    "h1": "iPhone Dinamik Təmizləyici",
+    "sub": "iPhone 15, 14, 13, 12, 11 və SE modelləri üçün xüsusi tezliklər."
+  },
+  "androidCleaner": {
+    "metaTitle": "Android Dinamik Təmizləyici – Suyu Çıxarın",
+    "metaDesc": "Android telefon dinamikini onlayn təmizləyin. Samsung, Pixel və Xiaomi üçün.",
+    "h1": "Android Dinamik Təmizləyici",
+    "sub": "Samsung Galaxy, Google Pixel, Xiaomi və digər Android cihazları üçün səs təlimatı."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Dinamik Təmizləmə Təlimatı – Toz və Su",
+    "metaDesc": "Telefon dinamikindən toz, tük və nəmi təhlükəsiz təmizləmə qaydaları.",
+    "h1": "Telefon Dinamiki Təmizləmə Təlimatı",
+    "sub": "Dinamik torunu zədələmədən kirləri təmizləmək üçün praktiki bələdçi."
+  },
+  "faq": {
+    "metaTitle": "Clean My Speaker FAQ – Su Çıxarma və Səs Köməyi",
+    "metaDesc": "Dinamik təmizləmə və səs bərpası haqqında tez-tez verilən suallar.",
+    "h1": "Tez-Tez Verilən Suallar",
+    "sub": "Səslə dinamik təmizləmə və su çıxarma təhlükəsizliyi haqqında hər şey."
+  },
+  "about": {
+    "metaTitle": "Clean My Speaker Haqqında",
+    "metaDesc": "Clean My Speaker haqqında məlumat: pulsuz, təhlükəsiz onlayn səs təmizləyici.",
+    "h1": "Haqqımızda",
+    "sub": "Telefon dinamiklərini təmir xərci olmadan bərpa edən pulsuz veb alət."
+  },
+  "contact": {
+    "metaTitle": "Əlaqə – Clean My Speaker",
+    "metaDesc": "Dəstək və təkliflər üçün Clean My Speaker komandası ilə əlaqə saxlayın.",
+    "h1": "Bizimlə Əlaqə",
+    "sub": "Rəy və suallarınız üçün bizə yazın."
+  },
+  "privacy": {
+    "metaTitle": "Məxfilik Siyasəti",
+    "metaDesc": "Clean My Speaker məxfilik siyasəti və məlumatların qorunması.",
+    "h1": "Məxfilik Siyasəti"
+  },
+  "terms": {
+    "metaTitle": "İstifadə Şərtləri",
+    "metaDesc": "Clean My Speaker istifadə qaydaları və şərtləri.",
+    "h1": "İstifadə Şərtləri"
+  },
+  "disclaimer": {
+    "metaTitle": "Xəbərdarlıq və Təhlükəsizlik",
+    "metaDesc": "Avadanlıq təhlükəsizliyi və maye zədəsi haqqında xəbərdarlıq.",
+    "h1": "Xəbərdarlıq və Təhlükəsizlik"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Kuki Siyasəti",
+    "metaDesc": "Kuki fayllarının istifadə qaydaları.",
+    "h1": "Kuki Siyasəti"
+  },
+  "languages": {
+    "metaTitle": "Dəstəklənən Dillər – Clean My Speaker",
+    "metaDesc": "Clean My Speaker-i 40 dildə kəşf edin. Öz dilinizi seçin.",
+    "h1": "Dilinizi Seçin",
+    "sub": "Clean My Speaker 40 dildə mövcuddur. Aşağıdan dilinizi seçin."
+  }
+}

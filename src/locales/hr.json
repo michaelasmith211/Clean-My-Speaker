@@ -1,0 +1,185 @@
+{
+  "common": {
+    "siteName": "Clean My Speaker",
+    "tagline": "Očistite zvučnik mobitela na internetu — Izbacite vodu i vlagu",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerFooter": "Disclaimer: Clean My Speaker is an independent web tool and is not affiliated with Apple Inc., Google LLC, or Samsung. Sound vibrations cannot reverse permanent internal liquid damage.",
+    "clientSideProcessing": "100% Client-Side Processing • No microphone access required • Zero tracking cookies",
+    "home": "Home",
+    "languages": "Languages",
+    "changeLanguage": "Change Language",
+    "selectLanguage": "Select Language",
+    "allLanguages": "All Languages",
+    "close": "Close",
+    "share": "Share",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "shareTitle": "Did Clean My Speaker Work For You? Share It!",
+    "shareDesc": "Help friends, family, and followers eject water, remove dust, and fix muffled phone sound without paying repair shop fees.",
+    "cookieNotice": "Cookie Settings",
+    "loading": "...",
+    "cleanNow": "Očisti sada"
+  },
+  "nav": {
+    "home": "Home",
+    "tool": "Izbacivanje vode",
+    "howItWorks": "Kako radi",
+    "removeWater": "Ukloni vodu",
+    "iphone": "iPhone čistač",
+    "android": "Android čistač",
+    "test": "Test zvučnika",
+    "guide": "Vodič za čišćenje",
+    "faq": "ČPP",
+    "about": "O nama",
+    "contact": "Kontakt",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "disclaimer": "Disclaimer",
+    "cookiePolicy": "Cookie Policy",
+    "cleanNow": "Očisti sada",
+    "audioTools": "Audio Tools",
+    "deviceGuides": "Device Guides",
+    "information": "Information",
+    "connectWithUs": "Connect With Us"
+  },
+  "tool": {
+    "badge": "Akustično izbacivanje vode",
+    "title": "OČISTI ZVUČNIK",
+    "subtitle": "Turn your device volume to 100%, point your speaker downward, and tap below.",
+    "buttonClean": "OČISTI ZVUČNIK",
+    "buttonStop": "ZAUSTAVI ČIŠĆENJE",
+    "statusReady": "Ready to play calibrated 165 Hz sound waves. Turn volume up and tap to start.",
+    "statusPlaying": "Emitting acoustic water ejection sound waves at {freq} Hz ({timeRemaining}s remaining)...",
+    "statusCompleted": "Sound cleaning cycle complete! Dab speaker openings with a dry cloth.",
+    "selectMode": "Select Cleaning Mode",
+    "quickClean": "Quick Clean",
+    "quickCleanDesc": "Fast 30s acoustic pulse cycle for light moisture or routine clearing.",
+    "deepClean": "Deep Clean",
+    "deepCleanDesc": "60s sweeping tone sequence to dislodge stubborn droplets and debris.",
+    "waterEject": "Water Eject",
+    "waterEjectDesc": "45s maximum speaker diaphragm displacement pulses for liquid expulsion.",
+    "tipPosition": "Position speaker face-down",
+    "tipCloth": "Gently tap on soft towel",
+    "tipVolume": "Max volume required",
+    "tipNoHeat": "Never use hair dryers or rice",
+    "tipRepeat": "Repeat 2-3 times if needed",
+    "safetyTitle": "Important Safety & Device Advice",
+    "safetyRule1": "Never insert needles, pins, toothpicks, or cotton buds into speaker grilles.",
+    "safetyRule2": "Excessive heat from hair dryers softens internal waterproof adhesives and destroys speaker diaphragms.",
+    "safetyRule3": "Sound vibrations help displace surface liquid droplets from speaker mesh, but cannot repair internal circuit corrosion."
+  },
+  "speakerTest": {
+    "badge": "Acoustic Diagnostic Suite",
+    "title": "Online Speaker & Stereo Channel Tester",
+    "subtitle": "Test left/right stereo separation, full audio frequency range (100 Hz – 10 kHz), and detect speaker buzz, distortion, or blown hardware.",
+    "stereoTitle": "Stereo Channel Separation Test",
+    "stereoDesc": "Play calibrated audio pulses through individual channels to detect blocked, quiet, or unbalanced phone speakers.",
+    "leftChannel": "Left Channel",
+    "rightChannel": "Right Channel",
+    "bothChannels": "Both Channels",
+    "stopTest": "Stop Tone",
+    "playingChannel": "Testing {channel} channel...",
+    "frequencyTitle": "Frequency Spectrum Diagnostic",
+    "frequencyDesc": "Select specific audio frequencies to test your phone speaker's bass, midrange, and treble clarity.",
+    "playingFreq": "Playing {freq} tone..."
+  },
+  "home": {
+    "metaTitle": "Očistite zvučnik mobitela i izbacite vodu – Clean My Speaker",
+    "metaDesc": "Pustite kalibrirane zvučne valove od 165 Hz za izbacivanje vode i uklanjanje prigušenog zvuka.",
+    "heroH1": "Očistite zvučnik mobitela i izbacite vodu",
+    "heroSub": "Pustite kalibrirane zvučne valove od 165 Hz za izbacivanje vode i uklanjanje prigušenog zvuka.",
+    "step1Title": "Postavite glasnoću na maksimum (100%)",
+    "step1Desc": "Osigurajte maksimalnu glasnoću medija za snažnu vibraciju membrane.",
+    "step2Title": "Okrenite zvučnik prema dolje",
+    "step2Desc": "Držite telefon tako da otvori zvučnika gledaju prema tkanini.",
+    "step3Title": "Pokrenite zvučne valove od 165 Hz",
+    "step3Desc": "Pritisnite gumb za pokretanje rezonantnih tonova koji vibriraju zvučnik.",
+    "step4Title": "Ponovite 2–3 puta do čistog zvuka",
+    "step4Desc": "Ponovite postupak dok zvučnik ne bude potpuno čist i jasan.",
+    "whyChooseTitle": "Why Use Clean My Speaker to Fix Your Phone Sound?",
+    "whyChooseDesc": "Our online acoustic cleaner is engineered to safely dislodge moisture and fine dust particles using pure sound physics.",
+    "feature1Title": "100% Free & No App Download",
+    "feature1Desc": "Runs directly in Safari, Chrome, Firefox, and Edge with zero downloads or subscriptions.",
+    "feature2Title": "Calibrated 165 Hz Resonant Frequency",
+    "feature2Desc": "Engineered to match the natural resonant frequency of miniature mobile speaker diaphragms.",
+    "feature3Title": "Safe for iPhone & Android Devices",
+    "feature3Desc": "Safe, non-invasive acoustic cleaning that protects internal waterproof seals and speaker mesh.",
+    "videoTitle": "Watch How Clean My Speaker Cleans & Fixes Phone Speakers",
+    "videoDesc": "See how 165 Hz sound waves generate microscopic air vibrations that push water droplets out of speaker grilles.",
+    "faqHeading": "Frequently Asked Questions About Speaker Cleaning"
+  },
+  "howItWorks": {
+    "metaTitle": "How Clean My Speaker Works – Fix Speaker Sound",
+    "metaDesc": "Discover the acoustic physics behind how Clean My Speaker generates low-frequency sound waves and air pressure to fix clean my speaker sound and safely eject water.",
+    "h1": "Kako radi",
+    "sub": "Understand the acoustic principles, diaphragm displacement, and kinetic pressure waves used to eject water and dislodge dust."
+  },
+  "removeWater": {
+    "metaTitle": "How to Remove Water From Phone Speaker & Fix Sound",
+    "metaDesc": "Complete emergency guide to remove water from phone speakers and fix clean my speaker sound online. Learn safe drying steps, sound ejection, and what never to do.",
+    "h1": "Ukloni vodu",
+    "sub": "Dropped your phone in water? Follow this proven 5-step emergency protocol to safely eject trapped moisture and restore muffled sound."
+  },
+  "iphoneCleaner": {
+    "metaTitle": "iPhone Speaker Cleaner – Eject Water & Fix Sound",
+    "metaDesc": "Clean and fix your iPhone speaker online. Play 165 Hz water eject sound waves directly in Safari to fix clean my speaker, expel trapped liquid, and fix muffled iPhone audio.",
+    "h1": "iPhone čistač",
+    "sub": "Specialized guide and acoustic frequency tool for iPhone 15, 14, 13, 12, 11, and SE speakers."
+  },
+  "androidCleaner": {
+    "metaTitle": "Android Speaker Cleaner – Eject Water & Fix Sound",
+    "metaDesc": "Clean and fix your Android phone speaker online. Eject water and fix clean my speaker sound on Samsung Galaxy, Pixel, Xiaomi, and OnePlus with browser sound waves.",
+    "h1": "Android čistač",
+    "sub": "Safe sound wave ejection guide for Samsung Galaxy, Google Pixel, Xiaomi, Motorola, and OnePlus devices."
+  },
+  "cleaningGuide": {
+    "metaTitle": "Speaker Cleaning Guide – Clean Dust & Fix Sound",
+    "metaDesc": "Comprehensive phone speaker cleaning guide. Learn how to clean my speaker, fix clean my speaker sound, and remove pocket lint, dirt, wax, and moisture safely.",
+    "h1": "Vodič za čišćenje",
+    "sub": "Complete practical manual for removing lint, sand, cosmetic powder, and sticky debris from phone speaker grilles."
+  },
+  "faq": {
+    "metaTitle": "Clean My Speaker FAQ – Water Eject & Audio Help",
+    "metaDesc": "Frequently asked questions about how to clean my speaker, fix my speaker, and fix clean my speaker sound with 165 Hz water eject tones on iPhone & Android.",
+    "h1": "ČPP",
+    "sub": "Everything you need to know about sound-based speaker cleaning, water ejection safety, and audio troubleshooting."
+  },
+  "about": {
+    "metaTitle": "About Clean My Speaker – Free Audio Cleaner Tool",
+    "metaDesc": "Learn about Clean My Speaker: our mission to provide free, private, instant in-browser sound utilities to clean and fix phone speakers worldwide.",
+    "h1": "O nama",
+    "sub": "Free, private, browser-based acoustic utility helping smartphone users worldwide restore clear sound without repair costs."
+  },
+  "contact": {
+    "metaTitle": "Contact Clean My Speaker – Support & Inquiries",
+    "metaDesc": "Contact the Clean My Speaker team for support, sound calibration feedback, partnerships, or browser compatibility inquiries.",
+    "h1": "Kontakt",
+    "sub": "Have feedback, sound calibration suggestions, or browser bug reports? Get in touch with our team."
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy",
+    "metaDesc": "Privacy Policy for Clean My Speaker. Full disclosure of data handling, Google AdSense compliance, GDPR, CCPA, and client-side processing.",
+    "h1": "Privacy Policy"
+  },
+  "terms": {
+    "metaTitle": "Terms of Service",
+    "metaDesc": "Terms of Service for Clean My Speaker. Read our website terms, acceptable use policy, and limitations of liability.",
+    "h1": "Terms of Service"
+  },
+  "disclaimer": {
+    "metaTitle": "Disclaimer & Hardware Safety",
+    "metaDesc": "Important hardware safety disclaimer. Understand the scope of acoustic water ejection and liquid damage limitations.",
+    "h1": "Disclaimer & Hardware Safety"
+  },
+  "cookiePolicy": {
+    "metaTitle": "Cookie Policy",
+    "metaDesc": "Cookie Policy for Clean My Speaker. Learn about how cookies, web beacons, and consent modes are managed.",
+    "h1": "Cookie Policy"
+  },
+  "languages": {
+    "metaTitle": "Supported Languages – Clean My Speaker",
+    "metaDesc": "Explore Clean My Speaker in 27 languages. Choose your native language to eject water and clean phone speakers online.",
+    "h1": "Choose Your Language",
+    "sub": "Clean My Speaker is available worldwide in 27 languages. Select your native language below."
+  }
+}

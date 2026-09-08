@@ -38,6 +38,19 @@ export const LOCALES: Record<string, LocaleConfig> = {
   he: { code: 'he', nativeName: 'עברית', englishName: 'Hebrew', direction: 'rtl', enabled: true },
   fa: { code: 'fa', nativeName: 'فارسی', englishName: 'Persian', direction: 'rtl', enabled: true },
   ur: { code: 'ur', nativeName: 'اردو', englishName: 'Urdu', direction: 'rtl', enabled: true },
+  az: { code: 'az', nativeName: 'Azərbaycanca', englishName: 'Azerbaijani', direction: 'ltr', enabled: true },
+  bg: { code: 'bg', nativeName: 'Български', englishName: 'Bulgarian', direction: 'ltr', enabled: true },
+  hr: { code: 'hr', nativeName: 'Hrvatski', englishName: 'Croatian', direction: 'ltr', enabled: true },
+  hu: { code: 'hu', nativeName: 'Magyar', englishName: 'Hungarian', direction: 'ltr', enabled: true },
+  kk: { code: 'kk', nativeName: 'Қазақша', englishName: 'Kazakh', direction: 'ltr', enabled: true },
+  ms: { code: 'ms', nativeName: 'Bahasa Melayu', englishName: 'Malay', direction: 'ltr', enabled: true },
+  ro: { code: 'ro', nativeName: 'Română', englishName: 'Romanian', direction: 'ltr', enabled: true },
+  sk: { code: 'sk', nativeName: 'Slovenčina', englishName: 'Slovak', direction: 'ltr', enabled: true },
+  sr: { code: 'sr', nativeName: 'Српски', englishName: 'Serbian', direction: 'ltr', enabled: true },
+  th: { code: 'th', nativeName: 'ไทย', englishName: 'Thai', direction: 'ltr', enabled: true },
+  tl: { code: 'tl', nativeName: 'Tagalog', englishName: 'Tagalog', direction: 'ltr', enabled: true },
+  uz: { code: 'uz', nativeName: 'Oʻzbekcha', englishName: 'Uzbek', direction: 'ltr', enabled: true },
+  vi: { code: 'vi', nativeName: 'Tiếng Việt', englishName: 'Vietnamese', direction: 'ltr', enabled: true },
 };
 
 export const SUPPORTED_LOCALES = Object.keys(LOCALES);
