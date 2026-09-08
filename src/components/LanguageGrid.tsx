@@ -1,8 +1,8 @@
 'use client';
 
-import React, { Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { LOCALES, DEFAULT_LOCALE } from '@/i18n/config';
 import { getLocalizedPath } from '@/i18n/locale-utils';
 
@@ -12,14 +12,19 @@ interface LanguageGridProps {
   className?: string;
 }
 
-const LanguageGridContent: React.FC<LanguageGridProps> = ({
+export const LanguageGrid: React.FC<LanguageGridProps> = ({
   currentLocale = DEFAULT_LOCALE,
   onSelect,
   className = '',
 }) => {
   const pathname = usePathname() || '/';
-  const searchParams = useSearchParams();
-  const queryString = searchParams?.toString() ? `?${searchParams.toString()}` : '';
+  const [queryString, setQueryString] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.search) {
+      setQueryString(window.location.search);
+    }
+  }, []);
 
   const localesList = Object.values(LOCALES).filter((loc) => loc.enabled);
 
@@ -70,35 +75,6 @@ const LanguageGridContent: React.FC<LanguageGridProps> = ({
         );
       })}
     </div>
-  );
-};
-
-export const LanguageGrid: React.FC<LanguageGridProps> = (props) => {
-  const localesList = Object.values(LOCALES).filter((loc) => loc.enabled);
-  const fallback = (
-    <div
-      role="list"
-      aria-label="Select Language"
-      className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3 ${props.className || ''}`}
-    >
-      {localesList.map((loc) => (
-        <div
-          key={loc.code}
-          className="flex items-center justify-between p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white min-h-[48px]"
-        >
-          <div className="flex flex-col">
-            <span className="text-sm sm:text-base font-medium text-slate-800">{loc.nativeName}</span>
-            <span className="text-[11px] sm:text-xs text-slate-400 font-normal mt-0.5">{loc.englishName}</span>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-
-  return (
-    <Suspense fallback={fallback}>
-      <LanguageGridContent {...props} />
-    </Suspense>
   );
 };
 
