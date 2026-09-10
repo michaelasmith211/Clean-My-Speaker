@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded Squircle Background -->
+  <rect x="16" y="16" width="480" height="480" rx="110" fill="url(#bgGrad)" stroke="#38bdf8" stroke-width="8" stroke-opacity="0.6"/>
+  <!-- Speaker Body -->
+  <g fill="#ffffff" transform="translate(110, 140)">
+    <!-- Back base box -->
+    <rect x="0" y="70" width="70" height="92" rx="12"/>
+    <!-- Expanding cone -->
+    <path d="M70,70 L145,20 C155,14 165,22 165,34 L165,198 C165,210 155,218 145,212 L70,162 Z"/>
+    <!-- Sound Waves -->
+    <path d="M205,75 C225,95 225,137 205,157" fill="none" stroke="url(#waveGrad)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M245,45 C280,80 280,152 245,187" fill="none" stroke="url(#waveGrad)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M285,15 C335,65 335,167 285,217" fill="none" stroke="url(#waveGrad)" stroke-width="18" stroke-linecap="round"/>
+    <!-- Water droplet ejection -->
+    <circle cx="280" cy="80" r="10" fill="#38bdf8"/>
+    <circle cx="250" cy="155" r="8" fill="#7dd3fc"/>
+  </g>
+</svg>

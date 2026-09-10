@@ -6,6 +6,7 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { FAQAccordion } from '@/components/FAQAccordion';
 import { FAQItem } from '@/lib/types';
 import { SpeakerCleaner } from '@/components/SpeakerCleaner';
+import { YouTubeFacade } from '@/components/YouTubeFacade';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
@@ -241,18 +242,12 @@ export default function LocalizedHomePage({ params }: LocalePageProps) {
             </p>
           </div>
 
-          {/* 16:9 Responsive Video Player Container */}
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-black">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/PmxN3frqKJY?si=AeWTwWh4JpMbk_Ki"
-              title={t('home.videoTitle')}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              loading="lazy"
-            />
-          </div>
+          {/* 16:9 Responsive Video Player Container with Zero-Cookie Facade */}
+          <YouTubeFacade
+            videoId="PmxN3frqKJY"
+            title={t('home.videoTitle')}
+            posterUrl="/images/how-to-clean-my-speaker-fix-sound.jpg"
+          />
         </div>
       </section>
 

@@ -8,6 +8,7 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { SpeakerCleaner } from '@/components/SpeakerCleaner';
+import { YouTubeFacade } from '@/components/YouTubeFacade';
 import { getHreflangAlternates } from '@/i18n/locale-utils';
 import { FAQItem } from '@/lib/types';
 import { Metadata } from 'next';
@@ -323,18 +324,12 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* 16:9 Responsive Video Player Container */}
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-950">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/PmxN3frqKJY?si=AeWTwWh4JpMbk_Ki"
-              title="Clean My Speaker - Video Introduction & How It Works"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
+          {/* 16:9 Responsive Video Player Container with Zero-Cookie Facade */}
+          <YouTubeFacade
+            videoId="PmxN3frqKJY"
+            title="Clean My Speaker - Video Introduction & How It Works"
+            posterUrl="/images/how-to-clean-my-speaker-fix-sound.jpg"
+          />
 
           {/* Video Trust & Feature Highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-300">

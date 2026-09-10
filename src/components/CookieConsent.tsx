@@ -104,9 +104,8 @@ export const CookieConsent: React.FC = () => {
     <>
       {/* Floating Bottom Banner */}
       {showBanner && !showModal && (
-        <aside
-          role="dialog"
-          aria-modal="true"
+        <div
+          role="region"
           aria-label="Cookie consent banner"
           className="fixed bottom-0 inset-x-0 z-50 p-4 sm:p-6 bg-slate-950/95 backdrop-blur-xl border-t border-sky-500/30 shadow-2xl animate-fade-in"
         >
@@ -161,7 +160,7 @@ export const CookieConsent: React.FC = () => {
               </button>
             </div>
           </div>
-        </aside>
+        </div>
       )}
 
       {/* Detailed Cookie Preferences Modal */}
