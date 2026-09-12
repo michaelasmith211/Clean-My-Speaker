@@ -187,17 +187,36 @@ export default function SpeakerCleaningGuidePage() {
           </div>
         </section>
 
-        {/* Section 3: Dangerous Mistakes */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-white">3. Dangerous Practices that Void Warranties</h2>
-          <div className="p-6 rounded-2xl bg-rose-950/20 border border-rose-500/30 text-rose-200/90 text-sm space-y-2">
-            <p className="font-bold text-rose-300">Avoid these destructive techniques:</p>
-            <ul className="list-disc list-inside space-y-1 text-xs text-rose-200/80">
-              <li><strong>Do not soak with alcohol or cleaners:</strong> Even 99% isopropyl alcohol can dissolve acoustic glue membranes.</li>
-              <li><strong>Do not use sewing needles:</strong> Metal needles pierce the waterproof mesh membrane and short internal speakers.</li>
-              <li><strong>Do not use high-pressure air compressors:</strong> High PSI tears fragile micro-speaker diaphragms.</li>
-            </ul>
-          </div>
+        {/* Quick Links to Related Tools & Privacy */}
+        <section className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-3 text-xs sm:text-sm">
+          <h2 className="text-lg font-bold text-white">Explore Additional Audio Tools &amp; Resources</h2>
+          <p className="text-slate-300 leading-relaxed">
+            If your phone speaker was splashed with liquid, run our{' '}
+            <Link href="/remove-water-from-phone-speaker" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Emergency Water Removal Guide
+            </Link>{' '}
+            or use the primary 165 Hz sound waves on the{' '}
+            <Link href="/" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Clean My Speaker Homepage
+            </Link>
+            . Check left and right stereo balance in the{' '}
+            <Link href="/speaker-test" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Speaker Test Tool
+            </Link>
+            , or browse all 9 utility modes in the{' '}
+            <Link href="/tools" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Audio Tools Suite
+            </Link>
+            . Learn about our project on our{' '}
+            <Link href="/about" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              About page
+            </Link>{' '}
+            and read our{' '}
+            <Link href="/privacy-policy" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Privacy Policy
+            </Link>
+            .
+          </p>
         </section>
 
         <SafetyNotice />

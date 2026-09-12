@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -6,7 +7,7 @@ import { RelatedGuides } from '@/components/RelatedGuides';
 import { ShareButtons } from '@/components/ShareButtons';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
-import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
+import { getCanonicalUrl, getHreflangAlternates, getLocalizedPath } from '@/i18n/locale-utils';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -60,6 +61,48 @@ export default function CleaningGuidePage({ params }: PageProps) {
           className="w-full h-auto object-cover"
         />
       </div>
+
+      {/* Contextual Action Links */}
+      <section className="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800 space-y-4 my-8">
+        <h2 className="text-lg sm:text-xl font-bold text-white">
+          {t('nav.audioTools')} &amp; {t('nav.deviceGuides')}
+        </h2>
+        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          {t('common.clientSideProcessing')}
+        </p>
+        <div className="flex flex-wrap items-center gap-3 pt-1 text-xs font-semibold">
+          <Link
+            href={getLocalizedPath('/', locale)}
+            className="px-3.5 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold shadow transition-colors"
+          >
+            🔊 {t('nav.cleanNow')} (165 Hz)
+          </Link>
+          <Link
+            href={getLocalizedPath('/remove-water-from-phone-speaker', locale)}
+            className="px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-sky-300 border border-slate-800 hover:border-sky-400 transition-colors"
+          >
+            💧 {t('nav.removeWater')} →
+          </Link>
+          <Link
+            href={getLocalizedPath('/tools', locale)}
+            className="px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-sky-300 border border-slate-800 hover:border-sky-400 transition-colors"
+          >
+            🎛️ {t('nav.tools') || 'Tools'} →
+          </Link>
+          <Link
+            href={getLocalizedPath('/about', locale)}
+            className="px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 hover:border-sky-400 transition-colors"
+          >
+            {t('nav.about')} →
+          </Link>
+          <Link
+            href={getLocalizedPath('/privacy-policy', locale)}
+            className="px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 hover:border-sky-400 transition-colors"
+          >
+            {t('nav.privacy')} →
+          </Link>
+        </div>
+      </section>
 
       <ShareButtons locale={locale} />
       <RelatedGuides currentPath="/speaker-cleaning-guide" locale={locale} />

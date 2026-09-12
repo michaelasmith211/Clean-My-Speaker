@@ -245,11 +245,30 @@ export default function RemoveWaterPage() {
           </p>
         </section>
 
-        {/* Section: When to Seek Professional Repair */}
+        {/* Section: When to Seek Professional Repair & Further Resources */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-white">When to Seek Professional Repair</h2>
+          <h2 className="text-2xl font-bold text-white">When to Seek Professional Repair &amp; Maintenance</h2>
           <p className="leading-relaxed text-sm">
-            If your speaker remains entirely silent, crackles constantly, or the screen displays abnormal green/white lines after 24 hours of drying, liquid may have reached internal circuitry. Contact Apple Support, Samsung Authorized Care, or a qualified local repair technician immediately. Continuing to use a shorted device risks permanent battery or motherboard failure.
+            If your speaker remains entirely silent, crackles constantly, or the screen displays abnormal lines after 24 hours of drying, liquid may have reached internal circuitry. Contact an authorized repair technician immediately.
+          </p>
+          <p className="leading-relaxed text-sm">
+            For ongoing dust and maintenance, consult our step-by-step{' '}
+            <Link href="/speaker-cleaning-guide" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Phone Speaker Cleaning Guide
+            </Link>
+            , explore our full{' '}
+            <Link href="/tools" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Audio Tools Suite
+            </Link>
+            , or read about our engineering standards on the{' '}
+            <Link href="/about" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              About Clean My Speaker page
+            </Link>{' '}
+            and{' '}
+            <Link href="/privacy-policy" className="text-sky-300 underline font-semibold hover:text-sky-200">
+              Privacy Policy
+            </Link>
+            .
           </p>
         </section>
 
