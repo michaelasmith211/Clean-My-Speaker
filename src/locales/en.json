@@ -36,6 +36,8 @@
     "disclaimer": "Disclaimer",
     "cookiePolicy": "Cookie Policy",
     "cleanNow": "Clean Now",
+    "tools": "Tools Hub",
+    "allTools": "All Tools",
     "audioTools": "Audio Tools",
     "deviceGuides": "Device Guides",
     "information": "Information",
@@ -180,5 +182,16 @@
     "metaDesc": "Explore Clean My Speaker in 27 languages. Choose your native language to eject water and clean phone speakers online.",
     "h1": "Choose Your Language",
     "sub": "Clean My Speaker is available worldwide in 27 languages. Select your native language below."
+  },
+  "tools": {
+    "badge": "Audio Tools & Utilities",
+    "metaTitle": "All Audio Tools & Speaker Cleaner Utilities – Clean My Speaker",
+    "metaDesc": "Free online browser audio suite: 165 Hz Water Ejection Sound Cleaner, Left/Right Stereo Channel Tester, Diaphragm Frequency Sweeper, and Phone Cleaners.",
+    "h1": "Free Online Audio Tools & Speaker Utilities Suite",
+    "sub": "Explore our complete collection of fast, private, 100% in-browser sound tools to eject water, clean speaker grilles, test stereo balance, and diagnose audio quality.",
+    "openTool": "Open Tool",
+    "allToolsTitle": "All In-Browser Audio Tools",
+    "allToolsDesc": "No apps, no plugins, no permissions. Runs purely on native HTML5 Web Audio API.",
+    "backHome": "Back to Main Cleaner"
   }
 }

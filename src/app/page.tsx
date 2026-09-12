@@ -848,7 +848,34 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Section 10: Diagnostic Test Banner */}
+        {/* Section 10: Complete Audio Tools Hub Banner */}
+        <section className="p-8 rounded-3xl bg-slate-900 border border-slate-800 space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="space-y-1">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-400 text-xs font-semibold uppercase tracking-wider">
+                <span>🎛️</span> Audio Tools Hub
+              </div>
+              <h2 className="text-2xl font-bold text-white tracking-tight">
+                Explore All Free Audio Tools &amp; Speaker Utilities
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+                Looking for more acoustic utilities? Explore our complete collection in the{' '}
+                <Link href="/tools" className="text-sky-300 underline font-semibold hover:text-sky-200">
+                  Audio Tools Hub
+                </Link>
+                , featuring the 165 Hz Water Ejector, Stereo Sound Channel Tester, Frequency Diaphragm Sweepers, and dedicated iPhone/Android cleaners.
+              </p>
+            </div>
+            <Link
+              href="/tools"
+              className="shrink-0 px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md transition-all self-start sm:self-auto"
+            >
+              Open Tools Hub (9 Tools) →
+            </Link>
+          </div>
+        </section>
+
+        {/* Section 11: Diagnostic Test Banner */}
         <section className="p-8 rounded-3xl bg-gradient-to-r from-sky-950/60 to-blue-950/60 border border-sky-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center sm:text-left">
             <h2 className="text-xl sm:text-2xl font-bold text-white">Need to Test Your Speaker Health?</h2>
@@ -862,6 +889,36 @@ export default function HomePage() {
           >
             Open Speaker Test →
           </Link>
+        </section>
+
+        {/* Section 12: About Project & Privacy Trust */}
+        <section className="p-8 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-4">
+          <div className="space-y-2">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold uppercase tracking-wider">
+              <span>🔒</span> Engineering Transparency &amp; Privacy
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white">
+              About Clean My Speaker &amp; Client-Side Privacy
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+              Clean My Speaker was engineered to provide smartphone owners with an open, safe, and 100% in-browser acoustic repair tool. All sound waves are synthesized purely inside your browser using the native HTML5 Web Audio API—meaning zero microphone access, zero audio uploads, and zero tracking cookies. 
+            </p>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
+              Learn more about our mission and acoustic research on our{' '}
+              <Link href="/about" className="text-sky-300 underline font-semibold hover:text-sky-200">
+                About Clean My Speaker page
+              </Link>
+              , review our complete data transparency standards in our{' '}
+              <Link href="/privacy-policy" className="text-sky-300 underline font-semibold hover:text-sky-200">
+                Privacy Policy
+              </Link>
+              , or explore our full collection of sound utilities in the{' '}
+              <Link href="/tools" className="text-sky-300 underline font-semibold hover:text-sky-200">
+                Audio Tools Suite
+              </Link>
+              .
+            </p>
+          </div>
         </section>
 
         {/* Section 11: FAQ Accordion */}

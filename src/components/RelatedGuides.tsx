@@ -57,6 +57,20 @@ export const RelatedGuides: React.FC<RelatedGuidesProps> = ({ currentPath, local
       badge: 'Android',
     },
     {
+      title: t('tools.badge') || 'Audio Tools Suite',
+      path: 'tools',
+      description: t('tools.sub') || 'Complete suite of free browser-based audio tools: 165 Hz Water Ejector, Stereo Tester, and Phone Cleaners.',
+      icon: '🎛️',
+      badge: 'All Tools',
+    },
+    {
+      title: t('nav.about') || 'About Clean My Speaker',
+      path: 'about',
+      description: t('about.sub') || 'Learn about Clean My Speaker: our mission to provide free, private, instant in-browser sound utilities.',
+      icon: 'ℹ️',
+      badge: 'About Us',
+    },
+    {
       title: t('nav.guide'),
       path: 'speaker-cleaning-guide',
       description: t('cleaningGuide.sub'),

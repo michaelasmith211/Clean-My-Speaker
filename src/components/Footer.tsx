@@ -78,6 +78,11 @@ export const Footer: React.FC<FooterProps> = ({ locale = DEFAULT_LOCALE }) => {
                 </Link>
               </li>
               <li>
+                <Link href={getLocalizedPath('/tools', locale)} className="hover:text-sky-300 transition-colors text-sky-400 font-semibold flex items-center gap-1">
+                  <span>🎛️</span> {t('nav.tools') || 'Audio Tools Suite'}
+                </Link>
+              </li>
+              <li>
                 <Link href={getLocalizedPath('/speaker-test', locale)} className="hover:text-sky-300 transition-colors">
                   {t('nav.test')}
                 </Link>

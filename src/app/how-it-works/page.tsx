@@ -302,18 +302,31 @@ export default function HowItWorksPage() {
           </div>
         </section>
 
-        {/* Limitations */}
+        {/* Limitations & Trust */}
         <section className="p-6 rounded-2xl bg-amber-950/30 border border-amber-500/30 space-y-3 text-amber-200/90 text-sm">
-          <h2 className="text-lg font-bold text-amber-300">Acoustic Limits & Safety Notice</h2>
+          <h2 className="text-lg font-bold text-amber-300">Acoustic Limits &amp; Safety Notice</h2>
           <p className="leading-relaxed text-xs">
             Sound vibrations can only move liquid that resides in or near the acoustic speaker chamber. If water has penetrated past internal rubber water-resistant gaskets and contacted the battery, logic board, or display connectors, sound waves cannot remedy the moisture. Read our{' '}
             <Link href="/remove-water-from-phone-speaker" className="text-sky-400 font-semibold underline">
               Emergency Water Removal Guide
             </Link>{' '}
-            for full immersion protocols, or test your acoustic clarity with our{' '}
+            for full immersion protocols, test your acoustic clarity with our{' '}
             <Link href="/speaker-test" className="text-sky-400 font-semibold underline">
               Speaker Test tool
-            </Link>.
+            </Link>
+            , or browse our complete{' '}
+            <Link href="/tools" className="text-sky-400 font-semibold underline">
+              Audio Tools Suite
+            </Link>
+            . Learn about our project on our{' '}
+            <Link href="/about" className="text-sky-400 font-semibold underline">
+              About page
+            </Link>{' '}
+            and read our full{' '}
+            <Link href="/privacy-policy" className="text-sky-400 font-semibold underline">
+              Privacy Policy
+            </Link>
+            .
           </p>
         </section>
 

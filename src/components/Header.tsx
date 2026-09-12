@@ -20,6 +20,7 @@ export const Header: React.FC<HeaderProps> = ({ locale = DEFAULT_LOCALE }) => {
 
   const navLinks = [
     { name: t('nav.home'), href: getLocalizedPath('/', locale) },
+    { name: t('nav.tools') || 'Tools', href: getLocalizedPath('/tools', locale) },
     { name: t('nav.howItWorks'), href: getLocalizedPath('/how-it-works', locale) },
     { name: t('nav.removeWater'), href: getLocalizedPath('/remove-water-from-phone-speaker', locale) },
     { name: t('nav.iphone'), href: getLocalizedPath('/iphone-speaker-cleaner', locale) },

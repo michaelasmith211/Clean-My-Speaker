@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Metadata } from 'next';
 import { SafetyNotice } from '@/components/SafetyNotice';
 import { ShareButtons } from '@/components/ShareButtons';
@@ -9,7 +10,7 @@ import { SpeakerCleaner } from '@/components/SpeakerCleaner';
 import { YouTubeFacade } from '@/components/YouTubeFacade';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
-import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
+import { getCanonicalUrl, getHreflangAlternates, getLocalizedPath } from '@/i18n/locale-utils';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -282,6 +283,61 @@ export default function LocalizedHomePage({ params }: LocalePageProps) {
             <span className="text-sky-400 font-extrabold text-2xl mb-2 block">04</span>
             <h3 className="font-bold text-white text-base sm:text-lg mb-2">{t('home.step4Title')}</h3>
             <p className="text-sm text-slate-400 leading-relaxed">{t('home.step4Desc')}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools Suite & Deep Linking Banner */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="space-y-1 text-start">
+            <span className="text-sky-400 text-xs font-bold uppercase tracking-wider block">
+              🎛️ {t('tools.badge') || 'Audio Tools Suite'}
+            </span>
+            <h2 className="text-xl sm:text-2xl font-bold text-white">
+              {t('tools.h1')}
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
+              {t('tools.sub')}
+            </p>
+          </div>
+          <Link
+            href={getLocalizedPath('/tools', locale)}
+            className="shrink-0 px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md transition-all self-start sm:self-auto"
+          >
+            {t('nav.tools') || 'Tools Hub'} →
+          </Link>
+        </div>
+      </section>
+
+      {/* About & Privacy Trust Section */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="p-6 rounded-3xl bg-slate-900/70 border border-slate-800 text-start space-y-3">
+          <h2 className="text-lg sm:text-xl font-bold text-white">
+            {t('nav.about')} &amp; {t('nav.privacy')}
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            {t('common.clientSideProcessing')}
+          </p>
+          <div className="flex flex-wrap items-center gap-3 pt-1 text-xs font-semibold">
+            <Link
+              href={getLocalizedPath('/about', locale)}
+              className="px-3.5 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-sky-300 border border-slate-800 hover:border-sky-400 transition-colors"
+            >
+              {t('nav.about')} →
+            </Link>
+            <Link
+              href={getLocalizedPath('/privacy-policy', locale)}
+              className="px-3.5 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-sky-300 border border-slate-800 hover:border-sky-400 transition-colors"
+            >
+              {t('nav.privacy')} →
+            </Link>
+            <Link
+              href={getLocalizedPath('/tools', locale)}
+              className="px-3.5 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-sky-300 border border-slate-800 hover:border-sky-400 transition-colors"
+            >
+              {t('nav.tools') || 'Tools'} →
+            </Link>
           </div>
         </div>
       </section>
