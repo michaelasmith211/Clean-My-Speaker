@@ -89,10 +89,31 @@ export default function AndroidSpeakerCleanerPage() {
     ],
   };
 
+  const jsonLdWebApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Clean My Speaker – Android Speaker Cleaner Tool',
+    url: 'https://cleanmyspeaker.net/android-speaker-cleaner/',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Android (Chrome, Samsung Internet, Firefox, Opera)',
+    browserRequirements: 'Requires Chrome, Samsung Internet, or any modern Android browser with Web Audio API',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    description:
+      'Online Android phone speaker cleaner and water eject tool for Samsung Galaxy, Pixel, Xiaomi, Motorola, and OnePlus devices.',
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header locale="en" />
       <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebApp) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}

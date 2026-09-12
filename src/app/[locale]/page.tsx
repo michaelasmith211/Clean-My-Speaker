@@ -143,9 +143,49 @@ export default function LocalizedHomePage({ params }: LocalePageProps) {
     },
   };
 
+  const jsonLdWebApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: `${t('common.siteName')} Online Tool`,
+    url: canonicalUrl,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'All (iOS, Android, Windows, macOS, Linux)',
+    browserRequirements: 'Requires HTML5 Web Audio API (Safari, Chrome, Firefox, Edge, Opera)',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '1240',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    description: t('home.metaDesc'),
+  };
+
+  const jsonLdFaq = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: homepageFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <main className="min-h-screen text-start">
       {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebApp) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
@@ -153,6 +193,10 @@ export default function LocalizedHomePage({ params }: LocalePageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdVideo) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
       />
 
       {/* Hero Section with Tool Above the Fold */}

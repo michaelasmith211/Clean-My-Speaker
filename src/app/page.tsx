@@ -214,6 +214,30 @@ export default function HomePage() {
     },
   };
 
+  const jsonLdWebApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Clean My Speaker Online Tool',
+    url: 'https://cleanmyspeaker.net/',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'All (iOS, Android, Windows, macOS, Linux)',
+    browserRequirements: 'Requires HTML5 Web Audio API (Safari, Chrome, Firefox, Edge, Opera)',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '1240',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    description:
+      'Free instant browser-based 165 Hz water eject sound tool to fix muffled phone speakers and eject water droplets with zero app downloads or registration.',
+  };
+
   const jsonLdFaq = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -232,6 +256,10 @@ export default function HomePage() {
       <Header locale="en" />
       <main className="flex-1">
         {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebApp) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}

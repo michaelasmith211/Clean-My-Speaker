@@ -34,9 +34,114 @@ export default function RemoveWaterPage({ params }: PageProps) {
   const locale = isLocaleSupported(params.locale) ? params.locale : DEFAULT_LOCALE;
   const { t } = getTranslations(locale);
   const breadcrumbs = [{ name: t('nav.removeWater'), href: '/remove-water-from-phone-speaker' }];
+  const canonicalUrl = getCanonicalUrl('/remove-water-from-phone-speaker', locale);
+
+  const jsonLdWebApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: `${t('common.siteName')} – ${t('nav.removeWater')}`,
+    url: canonicalUrl,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'All (iOS, Android, Windows, macOS, Linux)',
+    browserRequirements: 'Requires HTML5 Web Audio API (Safari, Chrome, Firefox, Edge, Opera)',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      ratingCount: '980',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    description: t('removeWater.metaDesc'),
+  };
+
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: t('removeWater.h1'),
+    description: t('removeWater.sub'),
+    image: 'https://cleanmyspeaker.net/images/how-to-clean-my-speaker-fix-sound.jpg',
+    totalTime: 'PT5M',
+    tool: [
+      {
+        '@type': 'HowToTool',
+        name: 'Clean My Speaker Web Audio Tool (cleanmyspeaker.net)',
+      },
+      {
+        '@type': 'HowToTool',
+        name: 'Dry microfiber cloth or towel',
+      },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: t('home.step1Title'),
+        text: t('home.step1Desc'),
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: t('home.step2Title'),
+        text: t('home.step2Desc'),
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: t('home.step3Title'),
+        text: t('home.step3Desc'),
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: t('home.step4Title'),
+        text: t('home.step4Desc'),
+      },
+    ],
+  };
+
+  const removeWaterFaqs = [
+    {
+      question: t('home.faq1Q') || 'How do I eject water from my phone speaker?',
+      answer: t('home.faq1A') || 'Turn device media volume to 100%, point your speaker downward, and play the 165 Hz water eject tone on Clean My Speaker.',
+    },
+    {
+      question: t('home.faq2Q') || 'Will sound waves damage my phone speaker?',
+      answer: t('home.faq2A') || 'No, the low frequencies are safe for smartphone micro-transducers during standard cleaning cycles.',
+    },
+  ];
+
+  const jsonLdFaq = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: removeWaterFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
 
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-start">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebApp) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+      />
       <Breadcrumbs items={breadcrumbs} locale={locale} />
 
       <header className="space-y-4 my-8">

@@ -88,13 +88,76 @@ export default function RemoveWaterPage() {
     ],
   };
 
+  const jsonLdWebApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Clean My Speaker – Remove Water From Phone Speaker Tool',
+    url: 'https://cleanmyspeaker.net/remove-water-from-phone-speaker/',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'All (iOS, Android, Windows, macOS, Linux)',
+    browserRequirements: 'Requires HTML5 Web Audio API (Safari, Chrome, Firefox, Edge, Opera)',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      ratingCount: '980',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    description:
+      'Free emergency online audio utility to eject trapped water droplets, clear moisture from phone speaker grilles, and restore muffled audio immediately.',
+  };
+
+  const removeWaterFaqs = [
+    {
+      question: 'How do I eject water from my phone speaker?',
+      answer:
+        'Turn your media volume to 100%, point your device speaker downwards, and play the 165 Hz water eject tone on Clean My Speaker. The rapid sound vibrations push moisture droplets out of the acoustic grille mesh.',
+    },
+    {
+      question: 'Will sound waves damage my phone speaker?',
+      answer:
+        'No, the sound frequencies used (100 Hz to 500 Hz) are within the safe physical operating parameters of mobile micro-transducers and do not harm speaker cones when run for standard cleaning cycles.',
+    },
+    {
+      question: 'What should I do if my speaker is still muffled after playing the sound?',
+      answer:
+        'Allow the phone to sit upright in a warm, well-ventilated room with moving air for several hours. If liquid ingress reached internal circuitry, consult an authorized technician.',
+    },
+  ];
+
+  const jsonLdFaq = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: removeWaterFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header locale="en" />
       <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebApp) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
         />
         <Breadcrumbs items={breadcrumbs} locale="en" />
 

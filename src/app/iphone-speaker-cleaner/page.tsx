@@ -89,10 +89,31 @@ export default function IPhoneSpeakerCleanerPage() {
     ],
   };
 
+  const jsonLdWebApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Clean My Speaker – iPhone Speaker Cleaner Tool',
+    url: 'https://cleanmyspeaker.net/iphone-speaker-cleaner/',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'iOS, iPadOS (Safari, Chrome, Firefox, Edge)',
+    browserRequirements: 'Requires Safari or any iOS web browser with Web Audio API',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    description:
+      'Online iPhone speaker water ejection tool. Generates calibrated 165 Hz sound waves in Safari to clear trapped moisture without installing apps.',
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header locale="en" />
       <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebApp) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdHowTo) }}
