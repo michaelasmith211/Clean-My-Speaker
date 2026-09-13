@@ -218,9 +218,9 @@ export default function AirPodsWaterEjectPage() {
           </p>
         </header>
 
-        {/* Dedicated Interactive AirPods Cleaner Tool with Autoplay */}
+        {/* Dedicated Interactive AirPods Cleaner Tool */}
         <div className="my-10">
-          <AirPodsCleaner initialAutoplay={true} />
+          <AirPodsCleaner />
         </div>
 
         {/* Independent Trademark Notice */}

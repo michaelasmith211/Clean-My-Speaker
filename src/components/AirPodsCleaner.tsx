@@ -4,13 +4,13 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { getAudioEngine } from '@/lib/audioEngine';
 
 interface AirPodsCleanerProps {
-  initialAutoplay?: boolean;
+  className?: string;
 }
 
 type EarbudChannel = 'both' | 'left' | 'right';
 type AirPodsModel = 'pro' | 'gen3' | 'gen2' | 'max';
 
-export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ initialAutoplay = true }) => {
+export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ className = '' }) => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [channel, setChannel] = useState<EarbudChannel>('both');
   const [model, setModel] = useState<AirPodsModel>('pro');
@@ -19,12 +19,10 @@ export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ initialAutoplay 
   const [progress, setProgress] = useState<number>(0);
   const [volume, setVolume] = useState<number>(95);
   const [frequency, setFrequency] = useState<number>(165);
-  const [needsUserGesture, setNeedsUserGesture] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [cycleCompleted, setCycleCompleted] = useState<boolean>(false);
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const hasAttemptedAutoplayRef = useRef<boolean>(false);
 
   const handleStop = useCallback(() => {
     if (intervalRef.current) {
@@ -52,11 +50,6 @@ export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ initialAutoplay 
 
     try {
       await engine.resumeIfNeeded();
-      const ctxState = engine.getContextState();
-      if (ctxState === 'suspended') {
-        setNeedsUserGesture(true);
-        return;
-      }
 
       setSecondsRemaining(duration);
       setProgress(0);
@@ -65,7 +58,6 @@ export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ initialAutoplay 
       engine.startCleaningTone('eject', targetFreq, volume / 100, targetChannel);
 
       setIsPlaying(true);
-      setNeedsUserGesture(false);
 
       if (intervalRef.current) clearInterval(intervalRef.current);
 
@@ -89,49 +81,20 @@ export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ initialAutoplay 
       }, 1000);
     } catch (err) {
       const error = err instanceof Error ? err : new Error(String(err));
-      console.warn('Audio autoplay prevented by browser policy:', error.message);
-      setNeedsUserGesture(true);
+      console.warn('Audio start error:', error.message);
+      setErrorMessage('Unable to start audio. Please click Eject Water again.');
       setIsPlaying(false);
     }
   }, [channel, frequency, duration, volume]);
 
-  // Attempt autoplay on mount, or set up one-touch trigger if browser policies require user interaction
+  // Clean up audio nodes on unmount
   useEffect(() => {
-    if (!initialAutoplay || hasAttemptedAutoplayRef.current) return;
-    hasAttemptedAutoplayRef.current = true;
-
-    const attemptAutoplay = async () => {
-      try {
-        const engine = getAudioEngine();
-        if (!engine) return;
-
-        // Try direct playback
-        await handleStart();
-      } catch {
-        setNeedsUserGesture(true);
-      }
-    };
-
-    attemptAutoplay();
-
-    // Fallback: One-time listener to start instantly on first tap anywhere if suspended
-    const handleFirstTap = () => {
-      handleStart();
-      window.removeEventListener('click', handleFirstTap);
-      window.removeEventListener('touchstart', handleFirstTap);
-    };
-
-    window.addEventListener('click', handleFirstTap, { once: true });
-    window.addEventListener('touchstart', handleFirstTap, { once: true });
-
     return () => {
-      window.removeEventListener('click', handleFirstTap);
-      window.removeEventListener('touchstart', handleFirstTap);
       if (intervalRef.current) clearInterval(intervalRef.current);
       const engine = getAudioEngine();
       if (engine) engine.stop();
     };
-  }, [handleStart, initialAutoplay]);
+  }, []);
 
   // Update dynamic volume while playing
   useEffect(() => {
@@ -177,7 +140,7 @@ export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ initialAutoplay 
   return (
     <div
       id="airpods-tool"
-      className="w-full max-w-2xl mx-auto bg-slate-900/95 border-2 border-sky-500/50 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-sky-950/70 backdrop-blur-xl relative overflow-hidden text-start"
+      className={`w-full max-w-2xl mx-auto bg-slate-900/95 border-2 border-sky-500/50 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-sky-950/70 backdrop-blur-xl relative overflow-hidden text-start ${className}`.trim()}
     >
       {/* Background ambient light effects */}
       <div className="absolute -top-28 -right-28 w-64 h-64 bg-sky-500/15 rounded-full blur-3xl pointer-events-none" />
@@ -210,22 +173,6 @@ export const AirPodsCleaner: React.FC<AirPodsCleanerProps> = ({ initialAutoplay 
           <span>This 165 Hz frequency tone plays at maximum amplitude to physically displace trapped moisture. Do not wear earbuds during playback.</span>
         </div>
       </div>
-
-      {/* Autoplay Standby Prompt */}
-      {needsUserGesture && !isPlaying && (
-        <div
-          onClick={() => handleStart()}
-          className="mb-6 p-4 rounded-2xl bg-gradient-to-r from-sky-900/80 to-blue-900/80 border-2 border-sky-400 text-white text-center cursor-pointer hover:brightness-110 active:scale-98 transition-all shadow-lg animate-pulse"
-        >
-          <div className="flex items-center justify-center gap-2 font-black text-sm sm:text-base">
-            <span>🔊</span>
-            <span>Tap Anywhere or Click Here to Start 165 Hz Tone</span>
-          </div>
-          <p className="text-xs text-sky-200 mt-1">
-            Browser audio requires 1 user touch to activate the high-power Web Audio engine.
-          </p>
-        </div>
-      )}
 
       {/* Error Notice */}
       {errorMessage && (

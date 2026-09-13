@@ -60,7 +60,7 @@ export default function LocalizedAirPodsWaterEjectPage({ params }: PageProps) {
 
       {/* Interactive Tool */}
       <div className="my-8">
-        <AirPodsCleaner initialAutoplay={false} />
+        <AirPodsCleaner />
       </div>
 
       {/* Critical Warnings */}

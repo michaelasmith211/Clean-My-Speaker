@@ -108,7 +108,7 @@ const toolsList: ToolItem[] = [
     badge: 'AirPods 165Hz',
     url: '/airpods-water-eject',
     actionText: 'Eject Water from AirPods',
-    features: ['Left/Right Earbud Isolation', 'AirPods Pro & Max Support', 'Autoplay 165 Hz Tone'],
+    features: ['Left/Right Earbud Isolation', 'AirPods Pro & Max Support', 'Calibrated 165 Hz Tone'],
   },
   {
     id: 'android-cleaner',
