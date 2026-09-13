@@ -50,6 +50,13 @@ export const RelatedGuides: React.FC<RelatedGuidesProps> = ({ currentPath, local
       badge: 'iOS',
     },
     {
+      title: 'AirPods Water Eject (165Hz)',
+      path: 'airpods-water-eject',
+      description: 'Eject trapped moisture from AirPods and AirPods Pro using calibrated 165 Hz sound waves. Fix muffled earbud audio instantly.',
+      icon: '🎧',
+      badge: 'AirPods 165Hz',
+    },
+    {
       title: t('nav.android'),
       path: 'android-speaker-cleaner',
       description: t('androidCleaner.sub'),

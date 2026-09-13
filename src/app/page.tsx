@@ -646,17 +646,31 @@ export default function HomePage() {
         </section>
 
         {/* Section 5 & 6: Device specific callouts */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-3">
             <div className="text-2xl">🍎</div>
             <h2 className="text-xl font-bold text-white">Fix Clean My Speaker for iPhone</h2>
             <p className="text-sm text-slate-400 leading-relaxed">
-              Modern iPhones (from iPhone 7 through iPhone 15 and 16 Pro) feature stereo audio with an earpiece receiver speaker and bottom speaker grilles. While newer models have IP68 water resistance, water frequently muffles the microphone and speaker cavities after swimming, showering, or rain.
+              Modern iPhones feature stereo audio with an earpiece receiver speaker and bottom speaker grilles. Water frequently muffles the microphone and speaker cavities after swimming or showers.
             </p>
             <p className="text-xs text-slate-300">
-              Clean My Speaker works instantly in Mobile Safari without downloading shortcuts or third-party apps.{' '}
+              Works in Mobile Safari without downloading shortcuts or apps.{' '}
               <Link href="/iphone-speaker-cleaner" className="text-sky-300 font-semibold underline hover:text-sky-200">
-                View iPhone Speaker Cleaner Guide →
+                View iPhone Guide →
+              </Link>
+            </p>
+          </div>
+
+          <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-3">
+            <div className="text-2xl">🎧</div>
+            <h2 className="text-xl font-bold text-white">AirPods Water Eject Sound (165Hz)</h2>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Dropped your AirPods or AirPods Pro in water? Play calibrated 165 Hz sound waves with left/right earbud isolation to safely eject moisture without damaging the micro-mesh.
+            </p>
+            <p className="text-xs text-slate-300">
+              Safe acoustic ejection without rice or heat.{' '}
+              <Link href="/airpods-water-eject" className="text-sky-300 font-semibold underline hover:text-sky-200">
+                Eject AirPods Water →
               </Link>
             </p>
           </div>
@@ -664,13 +678,13 @@ export default function HomePage() {
           <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-3">
             <div className="text-2xl">🤖</div>
             <h2 className="text-xl font-bold text-white">Fix Clean My Speaker for Android</h2>
-            <p className="text-sm text-slate-300 leading-relaxed">
-              From Samsung Galaxy S24 and Pixel 8 to Xiaomi and OnePlus devices, Android hardware designs feature varied speaker grille sizes and acoustic chamber dimensions. Our multi-frequency sweeps ensure compatibility across all speaker geometries.
+            <p className="text-sm text-slate-400 leading-relaxed">
+              From Samsung Galaxy S24 and Pixel 8 to Xiaomi and OnePlus, Android hardware features varied speaker grille sizes and chambers. Our sweeps ensure compatibility across all designs.
             </p>
             <p className="text-xs text-slate-300">
-              Compatible with Chrome, Samsung Internet, and Firefox for Android.{' '}
+              Compatible with Chrome, Samsung Internet, and Firefox.{' '}
               <Link href="/android-speaker-cleaner" className="text-sky-300 font-semibold underline hover:text-sky-200">
-                View Android Speaker Cleaner Guide →
+                View Android Guide →
               </Link>
             </p>
           </div>

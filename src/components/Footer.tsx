@@ -120,6 +120,11 @@ export const Footer: React.FC<FooterProps> = ({ locale = DEFAULT_LOCALE }) => {
                 </Link>
               </li>
               <li>
+                <Link href={getLocalizedPath('/airpods-water-eject', locale)} className="hover:text-sky-300 transition-colors text-sky-400 font-medium">
+                  AirPods Water Eject (165Hz)
+                </Link>
+              </li>
+              <li>
                 <Link href={getLocalizedPath('/android-speaker-cleaner', locale)} className="hover:text-sky-300 transition-colors">
                   {t('nav.android')}
                 </Link>

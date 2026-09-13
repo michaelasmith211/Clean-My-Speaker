@@ -99,6 +99,18 @@ const toolsList: ToolItem[] = [
     features: ['Optimized for iPhone 11 - 16', 'Safari Compatible', 'No App Store Download Required'],
   },
   {
+    id: 'airpods-ejector',
+    name: 'AirPods Water Eject Sound (165Hz)',
+    description:
+      'Calibrated 165 Hz water eject tone with left/right earbud channel isolation to safely expel trapped liquid from AirPods and AirPods Pro without rice or heat.',
+    category: 'Cleaner',
+    icon: '🎧',
+    badge: 'AirPods 165Hz',
+    url: '/airpods-water-eject',
+    actionText: 'Eject Water from AirPods',
+    features: ['Left/Right Earbud Isolation', 'AirPods Pro & Max Support', 'Autoplay 165 Hz Tone'],
+  },
+  {
     id: 'android-cleaner',
     name: 'Android Speaker Cleaner & Moisture Expeller',
     description:

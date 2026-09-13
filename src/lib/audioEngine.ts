@@ -12,6 +12,7 @@ export class AudioEngine {
   private modGain: GainNode | null = null;
   private pulseGain: GainNode | null = null;
   private gainNode: GainNode | null = null;
+  private pannerNode: StereoPannerNode | null = null;
   private isPlaying: boolean = false;
   private sweepTimer: NodeJS.Timeout | null = null;
   private stopTimeout: NodeJS.Timeout | null = null;
@@ -108,6 +109,15 @@ export class AudioEngine {
       this.pulseGain = null;
     }
 
+    if (this.pannerNode) {
+      try {
+        this.pannerNode.disconnect();
+      } catch {
+        // Safe swallow
+      }
+      this.pannerNode = null;
+    }
+
     if (this.gainNode) {
       try {
         this.gainNode.disconnect();
@@ -123,11 +133,13 @@ export class AudioEngine {
   /**
    * Starts a clean tone or sound wave specifically tuned for speaker clearing.
    * mode: 'quick' | 'deep' | 'eject' | 'tone'
+   * channel: 'both' | 'left' | 'right' (useful for AirPods earbud isolation)
    */
   public startCleaningTone(
     mode: 'quick' | 'deep' | 'eject' | 'tone',
     baseFrequency: number = 165,
-    volume: number = 0.85
+    volume: number = 0.85,
+    channel: 'both' | 'left' | 'right' = 'both'
   ): void {
     // 1. Immediately cancel any pending stop and cleanup existing nodes synchronously
     this.cleanupNodes();
@@ -139,7 +151,17 @@ export class AudioEngine {
     masterGain.gain.setValueAtTime(0.001, now);
     const targetGain = Math.max(0.1, Math.min(1, volume));
     masterGain.gain.linearRampToValueAtTime(targetGain, now + 0.05);
-    masterGain.connect(ctx.destination);
+
+    if (typeof ctx.createStereoPanner === 'function') {
+      const panner = ctx.createStereoPanner();
+      const panValue = channel === 'left' ? -1 : channel === 'right' ? 1 : 0;
+      panner.pan.setValueAtTime(panValue, now);
+      masterGain.connect(panner);
+      panner.connect(ctx.destination);
+      this.pannerNode = panner;
+    } else {
+      masterGain.connect(ctx.destination);
+    }
     this.gainNode = masterGain;
 
     if (mode === 'eject') {
@@ -299,6 +321,17 @@ export class AudioEngine {
     const clamped = Math.max(0, Math.min(1, vol));
     try {
       this.gainNode.gain.setTargetAtTime(clamped, now, 0.05);
+    } catch {
+      // Ignore if node is ending
+    }
+  }
+
+  public setChannel(channel: 'both' | 'left' | 'right'): void {
+    if (!this.ctx || !this.pannerNode || !this.isPlaying) return;
+    const now = this.ctx.currentTime;
+    const panValue = channel === 'left' ? -1 : channel === 'right' ? 1 : 0;
+    try {
+      this.pannerNode.pan.setTargetAtTime(panValue, now, 0.05);
     } catch {
       // Ignore if node is ending
     }

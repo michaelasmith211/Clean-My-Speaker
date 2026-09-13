@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     { path: '', priority: 1.0, changeFrequency: 'daily' as const },
     { path: 'remove-water-from-phone-speaker', priority: 0.95, changeFrequency: 'weekly' as const },
+    { path: 'airpods-water-eject', priority: 0.95, changeFrequency: 'weekly' as const },
     { path: 'speaker-cleaning-guide', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: 'tools', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: 'about', priority: 0.9, changeFrequency: 'weekly' as const },
