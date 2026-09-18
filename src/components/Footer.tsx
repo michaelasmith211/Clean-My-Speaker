@@ -29,11 +29,11 @@ export const Footer: React.FC<FooterProps> = ({ locale = DEFAULT_LOCALE }) => {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2.5">
               <Image
-                src="/icon.png"
+                src="/icon.svg"
                 alt={t('common.siteName')}
                 width={36}
                 height={36}
-                className="rounded-xl shadow-md shadow-sky-500/20 ring-1 ring-slate-800 shrink-0"
+                className="rounded-xl shadow-md shadow-sky-500/20 shrink-0"
               />
               <span className="font-bold text-white text-lg tracking-tight">
                 {t('common.siteName')}

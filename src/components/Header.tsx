@@ -48,12 +48,12 @@ export const Header: React.FC<HeaderProps> = ({ locale = DEFAULT_LOCALE }) => {
           >
             <div className="relative">
               <Image
-                src="/icon.png"
+                src="/icon.svg"
                 alt={t('common.siteName')}
                 width={38}
                 height={38}
                 priority
-                className="rounded-xl shadow-lg shadow-sky-500/25 ring-1 ring-sky-500/30 group-hover:scale-105 group-hover:shadow-sky-400/40 transition-all duration-300 shrink-0"
+                className="rounded-xl shadow-lg shadow-sky-500/25 group-hover:scale-105 group-hover:shadow-sky-400/40 transition-all duration-300 shrink-0"
               />
               <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-slate-900 animate-pulse" title="Online" />
             </div>

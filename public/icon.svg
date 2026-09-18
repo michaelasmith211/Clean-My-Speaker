@@ -1,151 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <!-- Background Gradient (Deep Space Navy to Midnight Dark) -->
+    <!-- Background Gradient: Deep High-Tech Midnight -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#04091a"/>
-      <stop offset="50%" stop-color="#091433"/>
+      <stop offset="0%" stop-color="#070e1f"/>
+      <stop offset="45%" stop-color="#0c1938"/>
       <stop offset="100%" stop-color="#020617"/>
     </linearGradient>
 
-    <!-- Outer Squircle Neon Border Glow -->
+    <!-- Outer Squircle Crisp Glow Border -->
     <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.95"/>
-      <stop offset="35%" stop-color="#0ea5e9" stop-opacity="0.6"/>
-      <stop offset="70%" stop-color="#6366f1" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.3"/>
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
 
-    <!-- Radial Ambient Backlight -->
-    <radialGradient id="centerAcousticGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.42"/>
-      <stop offset="45%" stop-color="#0369a1" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Speaker Body Gradient (Frosted Metallic Silver) -->
-    <linearGradient id="speakerBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Solid Crisp Speaker Body Gradient -->
+    <linearGradient id="speakerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="45%" stop-color="#f1f5f9"/>
-      <stop offset="80%" stop-color="#cbd5e1"/>
-      <stop offset="100%" stop-color="#94a3b8"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
     </linearGradient>
 
-    <!-- Vibrating Diaphragm Dome Gradient (Electric Aqua Cyan) -->
+    <!-- Transducer Diaphragm Accent -->
     <linearGradient id="diaphragmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0284c7"/>
-      <stop offset="45%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#67e8f9"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
 
-    <!-- Wave 1 Gradient -->
+    <!-- Sound Wave Gradients (High Contrast, Razor Sharp) -->
     <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8"/>
       <stop offset="100%" stop-color="#0ea5e9"/>
     </linearGradient>
 
-    <!-- Wave 2 Gradient -->
     <linearGradient id="wave2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#60a5fa"/>
       <stop offset="100%" stop-color="#3b82f6"/>
     </linearGradient>
 
-    <!-- Wave 3 Gradient -->
     <linearGradient id="wave3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#818cf8"/>
       <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
 
-    <!-- Luminous Ejected Water Droplet Gradient -->
-    <linearGradient id="waterDropGrad" x1="15%" y1="15%" x2="85%" y2="85%">
-      <stop offset="0%" stop-color="#f0f9ff"/>
-      <stop offset="25%" stop-color="#7dd3fc"/>
-      <stop offset="65%" stop-color="#0284c7"/>
+    <!-- Dynamic Liquid Water Droplet -->
+    <linearGradient id="dropletGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#bae6fd"/>
+      <stop offset="30%" stop-color="#38bdf8"/>
+      <stop offset="75%" stop-color="#0284c7"/>
       <stop offset="100%" stop-color="#0369a1"/>
     </linearGradient>
-
-    <!-- Specular Highlight for Droplet -->
-    <linearGradient id="dropSpecGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Soft Glow Filter -->
-    <filter id="neonAura" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-
-    <!-- Drop Shadow for Dimensionality -->
-    <filter id="chassisShadow" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0284c7" flood-opacity="0.4"/>
-    </filter>
   </defs>
 
-  <!-- iOS-Style Smooth Squircle Chassis -->
-  <rect x="18" y="18" width="476" height="476" rx="118" fill="url(#bgGradient)"/>
+  <!-- Squircle Base Chassis (Full 512x512 with Apple-standard curvature, no blur) -->
+  <rect x="4" y="4" width="504" height="504" rx="116" fill="url(#bgGradient)"/>
 
-  <!-- Radial Acoustic Glow Layer -->
-  <rect x="18" y="18" width="476" height="476" rx="118" fill="url(#centerAcousticGlow)"/>
+  <!-- High-Precision Crisp Edge Border -->
+  <rect x="4" y="4" width="504" height="504" rx="116" fill="none" stroke="url(#borderGlow)" stroke-width="7"/>
 
-  <!-- Precision High-Tech Border Outline -->
-  <rect x="18" y="18" width="476" height="476" rx="118" fill="none" stroke="url(#borderGlow)" stroke-width="4.5"/>
+  <!-- Inner Subtle Glass Rim -->
+  <rect x="9" y="9" width="494" height="494" rx="112" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.2"/>
 
-  <!-- Inner Glass Bevel Highlight -->
-  <rect x="21" y="21" width="470" height="470" rx="116" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.14"/>
+  <!-- SPEAKER ICON UNIT (Solid, Crisp Geometry) -->
+  <g>
+    <!-- Rear Magnet Cap -->
+    <rect x="64" y="192" width="46" height="128" rx="16" fill="url(#speakerGrad)"/>
 
-  <!-- Perfectly Centered Brand Emblem -->
-  <g filter="url(#chassisShadow)">
-    <!-- Speaker Unit (Left Component) -->
-    <!-- Magnetic Rear Cap -->
-    <rect x="78" y="200" width="38" height="112" rx="15" fill="url(#speakerBodyGrad)"/>
+    <!-- Magnet Coupling Neck -->
+    <rect x="104" y="208" width="28" height="96" rx="5" fill="url(#speakerGrad)"/>
 
-    <!-- Magnet Coupling Sleeve -->
-    <rect x="112" y="214" width="22" height="84" rx="4" fill="url(#speakerBodyGrad)" opacity="0.95"/>
-
-    <!-- Acoustic Flare Horn (Flared Sound Aperture) -->
-    <path d="M132,214 L216,146 C228,137 238,145 238,158 L238,354 C238,367 228,375 216,366 L132,298 Z" fill="url(#speakerBodyGrad)"/>
-
-    <!-- Front Acoustic Transducer Rim -->
-    <path d="M238,158 C248,166 252,180 252,196 L252,316 C252,332 248,346 238,354" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+    <!-- Flared Speaker Cone -->
+    <path d="M128,208 L228,130 C240,121 252,129 252,144 L252,368 C252,383 240,391 228,382 L128,304 Z" fill="url(#speakerGrad)"/>
 
     <!-- Vibrating Diaphragm Dome -->
-    <path d="M238,178 C258,206 258,306 238,334 Z" fill="url(#diaphragmGrad)" filter="url(#neonAura)"/>
+    <path d="M252,164 C278,198 278,314 252,348 Z" fill="url(#diaphragmGrad)"/>
 
-    <!-- Concentric Acoustic Sound Waves (Expanding Rightward) -->
-    <!-- Wave 1 (165 Hz Core Resonance) -->
-    <path d="M276,192 C302,216 302,296 276,320" fill="none" stroke="url(#wave1Grad)" stroke-width="17" stroke-linecap="round" filter="url(#neonAura)"/>
+    <!-- Outer rim line for diaphragm definition -->
+    <path d="M252,144 C266,158 272,180 272,200 L272,312 C272,332 266,354 252,368" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+  </g>
 
-    <!-- Wave 2 (Acoustic Velocity Ring) -->
-    <path d="M324,162 C366,200 366,312 324,350" fill="none" stroke="url(#wave2Grad)" stroke-width="17" stroke-linecap="round" filter="url(#neonAura)"/>
+  <!-- CONCENTRIC SOUND WAVES (Bold, High Contrast, 26px Wide, Razor Sharp) -->
+  <path d="M300,186 C330,214 330,298 300,326" fill="none" stroke="url(#wave1Grad)" stroke-width="26" stroke-linecap="round"/>
+  <path d="M358,148 C406,194 406,318 358,364" fill="none" stroke="url(#wave2Grad)" stroke-width="26" stroke-linecap="round"/>
+  <path d="M416,110 C482,174 482,338 416,402" fill="none" stroke="url(#wave3Grad)" stroke-width="26" stroke-linecap="round"/>
 
-    <!-- Wave 3 (Air Displacement Amplitude) -->
-    <path d="M372,132 C430,184 430,328 372,380" fill="none" stroke="url(#wave3Grad)" stroke-width="17" stroke-linecap="round" filter="url(#neonAura)"/>
+  <!-- HERO WATER DROPLET EJECTION (Crisp, High Contrast, Glossy) -->
+  <g transform="translate(348, 218) rotate(22)">
+    <!-- Droplet Base -->
+    <path d="M26,0 C42,20 52,38 52,56 C52,74 39,88 26,88 C13,88 0,74 0,56 C0,38 10,20 26,0 Z" fill="url(#dropletGrad)"/>
 
-    <!-- Dynamic Liquid Water Ejection Bead (Hero Droplet) -->
-    <g transform="translate(322, 216) rotate(24)" filter="url(#neonAura)">
-      <!-- Main Drop Silhouette -->
-      <path d="M20,0 C32,16 40,30 40,44 C40,58 30,68 20,68 C10,68 0,58 0,44 C0,30 8,16 20,0 Z" fill="url(#waterDropGrad)"/>
+    <!-- Specular Highlight Arc (Sharp, not blurred) -->
+    <path d="M16,28 C12,38 12,54 18,66" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.95"/>
 
-      <!-- Specular Surface Highlight (Gleaming Reflection) -->
-      <ellipse cx="13" cy="38" rx="5.5" ry="11" transform="rotate(-18 13 38)" fill="url(#dropSpecGrad)"/>
-      <circle cx="23" cy="54" r="3" fill="#ffffff" opacity="0.85"/>
-    </g>
+    <!-- Specular Dot Highlight -->
+    <circle cx="31" cy="70" r="4" fill="#ffffff" opacity="0.9"/>
+  </g>
 
-    <!-- Clarity & Cleanliness Purity Sparkle -->
-    <g filter="url(#neonAura)">
-      <path d="M400,166 L402.5,175.5 L412,178 L402.5,180.5 L400,190 L397.5,180.5 L388,178 L397.5,175.5 Z" fill="#ffffff"/>
-      <circle cx="400" cy="178" r="2.5" fill="#38bdf8"/>
-    </g>
+  <!-- SECONDARY ATOMIZED WATER DROPLET -->
+  <g>
+    <circle cx="408" cy="336" r="12" fill="url(#dropletGrad)"/>
+    <circle cx="404" cy="332" r="3.5" fill="#ffffff" opacity="0.95"/>
+  </g>
 
-    <!-- Secondary Micro Droplets (Expelled from Speaker Vents) -->
-    <g filter="url(#neonAura)">
-      <!-- Lower Splash Bead -->
-      <circle cx="366" cy="324" r="8" fill="url(#waterDropGrad)"/>
-      <circle cx="364" cy="322" r="2.8" fill="#ffffff" opacity="0.9"/>
-
-      <!-- Outer Micro Droplet -->
-      <circle cx="428" cy="276" r="6" fill="#38bdf8" opacity="0.9"/>
-      <circle cx="427" cy="275" r="2" fill="#ffffff" opacity="0.95"/>
-    </g>
+  <!-- PURITY / CLARITY SPARKLE (Crisp 4-Point Star) -->
+  <g>
+    <path d="M446,146 L450,158 L462,162 L450,166 L446,178 L442,166 L430,162 L442,158 Z" fill="#ffffff"/>
+    <circle cx="446" cy="162" r="3" fill="#38bdf8"/>
   </g>
 </svg>
