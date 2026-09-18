@@ -31,9 +31,9 @@ export const Footer: React.FC<FooterProps> = ({ locale = DEFAULT_LOCALE }) => {
               <Image
                 src="/icon.png"
                 alt={t('common.siteName')}
-                width={32}
-                height={32}
-                className="rounded-lg shadow shrink-0"
+                width={36}
+                height={36}
+                className="rounded-xl shadow-md shadow-sky-500/20 ring-1 ring-slate-800 shrink-0"
               />
               <span className="font-bold text-white text-lg tracking-tight">
                 {t('common.siteName')}

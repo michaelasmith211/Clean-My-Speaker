@@ -18,12 +18,34 @@
 
   <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <circle cx="950" cy="315" r="220" fill="#38bdf8" opacity="0.08" filter="url(#glow)"/>
-  <circle cx="950" cy="315" r="160" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.2"/>
-  <circle cx="950" cy="315" r="110" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.4"/>
-  <circle cx="950" cy="315" r="60" fill="#0284c7" opacity="0.6"/>
+  <circle cx="950" cy="315" r="230" fill="#38bdf8" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="950" cy="315" r="175" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.2" stroke-dasharray="8 6"/>
+  <circle cx="950" cy="315" r="130" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.35"/>
 
-  <text x="950" y="338" font-size="54" text-anchor="middle" fill="#ffffff">🔊</text>
+  <!-- Modern Logo Emblem in OG Graphic -->
+  <g transform="translate(800, 165) scale(0.6)">
+    <!-- Speaker Body -->
+    <rect x="80" y="206" width="38" height="100" rx="15" fill="#ffffff"/>
+    <rect x="114" y="218" width="22" height="76" rx="4" fill="#ffffff" opacity="0.95"/>
+    <path d="M134,218 L218,154 C228,146 238,153 238,165 L238,347 C238,359 228,366 218,358 L134,294 Z" fill="#ffffff"/>
+    <path d="M238,182 C256,208 256,304 238,330 Z" fill="#38bdf8"/>
+
+    <!-- Soundwaves -->
+    <path d="M276,198 C298,220 298,292 276,314" fill="none" stroke="#38bdf8" stroke-width="16" stroke-linecap="round"/>
+    <path d="M322,170 C360,204 360,308 322,342" fill="none" stroke="#60a5fa" stroke-width="16" stroke-linecap="round"/>
+    <path d="M368,142 C422,188 422,324 368,370" fill="none" stroke="#818cf8" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Hero Water Droplet -->
+    <g transform="translate(320, 222) rotate(25)">
+      <path d="M18,0 C28,14 36,26 36,39 C36,51 27,60 18,60 C9,60 0,51 0,39 C0,26 8,14 18,0 Z" fill="#38bdf8"/>
+      <ellipse cx="12" cy="35" rx="5" ry="9" transform="rotate(-18 12 35)" fill="#ffffff" opacity="0.9"/>
+    </g>
+    <!-- Micro Droplets -->
+    <circle cx="396" cy="188" r="9" fill="#38bdf8"/>
+    <circle cx="394" cy="186" r="3" fill="#ffffff"/>
+    <circle cx="366" cy="318" r="8" fill="#38bdf8"/>
+    <circle cx="424" cy="272" r="6" fill="#60a5fa"/>
+  </g>
 
   <rect x="80" y="90" width="310" height="42" rx="21" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
   <circle cx="106" cy="111" r="5" fill="#38bdf8"/>
