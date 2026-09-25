@@ -34,6 +34,11 @@ export async function generateMetadata({ params }: LanguagesPageProps): Promise<
       description: t('languages.metaDesc'),
       url: canonical,
     },
+    // Locale language-selector pages are identical utility pages — prevent indexing 40 thin variants
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 

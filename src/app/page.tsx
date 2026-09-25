@@ -209,7 +209,7 @@ export default function HomePage() {
       url: 'https://cleanmyspeaker.net',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://cleanmyspeaker.net/icon.png/',
+        url: 'https://cleanmyspeaker.net/icon.png',
       },
     },
   };

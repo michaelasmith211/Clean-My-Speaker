@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <!--
+    GitHub Pages WWW → non-WWW redirect via 404.html trick.
+    GitHub Pages serves this file for any 404. We use it to redirect
+    www.cleanmyspeaker.net → cleanmyspeaker.net preserving path/query.
+  -->
+  <script>
+    (function () {
+      var host = window.location.hostname;
+      var href = window.location.href;
+
+      // Redirect www → non-www (HTTPS always enforced by GitHub Pages)
+      if (host.startsWith('www.')) {
+        var canonical = href.replace('://www.', '://');
+        window.location.replace(canonical);
+      }
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://cleanmyspeaker.net/" />
+  <link rel="canonical" href="https://cleanmyspeaker.net/" />
+</head>
+<body>
+  <p>Redirecting to <a href="https://cleanmyspeaker.net/">cleanmyspeaker.net</a>…</p>
+</body>
+</html>

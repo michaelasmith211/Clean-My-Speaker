@@ -25,6 +25,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: t('contact.metaDesc'),
     alternates: { canonical, languages: alternates },
     openGraph: { title: t('contact.metaTitle'), description: t('contact.metaDesc'), url: canonical },
+    // Locale contact pages are thin utility pages — prevent indexing 40 near-identical variants
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 

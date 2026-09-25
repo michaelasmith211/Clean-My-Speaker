@@ -66,7 +66,7 @@ export default function HowItWorksPage() {
       name: 'Clean My Speaker',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://cleanmyspeaker.net/icon.png/',
+        url: 'https://cleanmyspeaker.net/icon.png',
       },
     },
     mainEntityOfPage: 'https://cleanmyspeaker.net/how-it-works/',
