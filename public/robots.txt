@@ -1,5 +1,0 @@
-User-Agent: *
-Allow: /
-
-Host: https://cleanmyspeaker.net
-Sitemap: https://cleanmyspeaker.net/sitemap.xml
