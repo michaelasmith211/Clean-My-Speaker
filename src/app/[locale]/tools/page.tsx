@@ -7,6 +7,7 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates, getLocalizedPath } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -221,6 +222,8 @@ export default function LocalizedToolsPage({ params }: PageProps) {
 
         <RelatedGuides currentPath="/tools" locale={locale} />
       </article>
+      <AdUnit format="auto" />
+
     </main>
   );
 }

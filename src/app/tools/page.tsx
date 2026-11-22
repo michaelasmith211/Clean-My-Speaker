@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { ShareButtons } from '@/components/ShareButtons';
 import { getHreflangAlternates } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -370,7 +371,9 @@ export default function ToolsHubPage() {
           <RelatedGuides currentPath="/tools" locale="en" />
         </article>
       </main>
-      <Footer locale="en" />
+      <AdUnit format="auto" />
+
+        <Footer locale="en" />
     </div>
   );
 }

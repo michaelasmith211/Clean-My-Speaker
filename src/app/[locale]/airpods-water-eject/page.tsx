@@ -7,6 +7,7 @@ import { AirPodsCleaner } from '@/components/AirPodsCleaner';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -75,6 +76,8 @@ export default function LocalizedAirPodsWaterEjectPage({ params }: PageProps) {
 
       <ShareButtons locale={locale} />
       <RelatedGuides currentPath="/airpods-water-eject" locale={locale} />
+      <AdUnit format="auto" />
+
     </main>
   );
 }

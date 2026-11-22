@@ -6,6 +6,7 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 import { SpeakerTester } from '@/components/SpeakerTester';
 
@@ -59,6 +60,8 @@ export default function SpeakerTestPage({ params }: PageProps) {
 
       <ShareButtons locale={locale} />
       <RelatedGuides currentPath="/speaker-test" locale={locale} />
+
+        <AdUnit format="auto" />
     </main>
   );
 }

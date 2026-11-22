@@ -8,6 +8,7 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates, getLocalizedPath } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -106,6 +107,8 @@ export default function CleaningGuidePage({ params }: PageProps) {
 
       <ShareButtons locale={locale} />
       <RelatedGuides currentPath="/speaker-cleaning-guide" locale={locale} />
+      <AdUnit format="auto" />
+
     </main>
   );
 }

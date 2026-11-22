@@ -8,6 +8,7 @@ import { FAQItem } from '@/lib/types';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -67,6 +68,8 @@ export default function FaqPage({ params }: PageProps) {
 
       <ShareButtons locale={locale} />
       <RelatedGuides currentPath="/faq" locale={locale} />
+      <AdUnit format="auto" />
+
     </main>
   );
 }

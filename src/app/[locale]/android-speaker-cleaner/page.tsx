@@ -7,6 +7,7 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -63,6 +64,8 @@ export default function AndroidCleanerPage({ params }: PageProps) {
 
       <ShareButtons locale={locale} />
       <RelatedGuides currentPath="/android-speaker-cleaner" locale={locale} />
+
+        <AdUnit format="auto" />
     </main>
   );
 }

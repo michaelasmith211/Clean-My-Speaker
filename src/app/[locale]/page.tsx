@@ -11,6 +11,7 @@ import { YouTubeFacade } from '@/components/YouTubeFacade';
 import { DEFAULT_LOCALE, getLocaleStaticParams, isLocaleSupported } from '@/i18n/config';
 import { getTranslations } from '@/i18n/getTranslations';
 import { getCanonicalUrl, getHreflangAlternates, getLocalizedPath } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 export function generateStaticParams() {
   return getLocaleStaticParams();
@@ -398,6 +399,8 @@ export default function LocalizedHomePage({ params }: LocalePageProps) {
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <RelatedGuides currentPath="/" locale={locale} />
       </section>
+      <AdUnit format="auto" />
+
     </main>
   );
 }

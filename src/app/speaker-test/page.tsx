@@ -7,6 +7,7 @@ import { ShareButtons } from '@/components/ShareButtons';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { getHreflangAlternates } from '@/i18n/locale-utils';
+import { AdUnit } from '@/components/AdUnit';
 
 import { SpeakerTester } from '@/components/SpeakerTester';
 import { Metadata } from 'next';
@@ -180,6 +181,8 @@ export default function SpeakerTestPage() {
           </Link>
         </footer>
       </article>
+
+        <AdUnit format="auto" />
     </main>
     <Footer locale="en" />
   </div>

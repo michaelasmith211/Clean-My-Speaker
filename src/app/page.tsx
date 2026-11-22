@@ -9,6 +9,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { SpeakerCleaner } from '@/components/SpeakerCleaner';
 import { YouTubeFacade } from '@/components/YouTubeFacade';
+import { AdUnit } from '@/components/AdUnit';
 import { getHreflangAlternates } from '@/i18n/locale-utils';
 import { FAQItem } from '@/lib/types';
 import { Metadata } from 'next';
@@ -296,6 +297,11 @@ export default function HomePage() {
         {/* Safety / Practical advice under the tool */}
         <SafetyNotice />
 
+        {/* Ad Unit — below tool, high-intent users */}
+        <div className="mt-6 max-w-2xl mx-auto">
+          <AdUnit format="auto" />
+        </div>
+
         {/* Social Sharing Callout */}
         <div className="mt-8 max-w-2xl mx-auto">
           <ShareButtons variant="card" />
@@ -376,6 +382,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Ad Unit — between video and how-to guide */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdUnit format="horizontal" />
+      </div>
 
       {/* HOW TO CLEAN MY SPEAKER & FIX MY SPEAKER SOUND */}
       <section id="how-to-clean-and-fix-my-speaker" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -963,6 +974,9 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Ad Unit — above FAQ (high dwell-time zone) */}
+        <AdUnit format="auto" className="max-w-2xl mx-auto" />
+
         {/* Section 11: FAQ Accordion */}
         <section className="space-y-6">
           <div className="text-center space-y-2">
@@ -978,6 +992,9 @@ export default function HomePage() {
 
         {/* Social Sharing Callout */}
         <ShareButtons variant="card" />
+
+        {/* Ad Unit — above Related Guides / before footer */}
+        <AdUnit format="horizontal" className="max-w-4xl mx-auto" />
 
         {/* Dynamic Contextual Interlinking */}
         <RelatedGuides currentPath="/" />

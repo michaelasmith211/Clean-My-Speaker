@@ -215,8 +215,8 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('consent', 'default', {
               'analytics_storage': 'denied',
-              'ad_storage': 'denied',
-              'ad_user_data': 'denied',
+              'ad_storage': 'granted',
+              'ad_user_data': 'granted',
               'ad_personalization': 'denied',
               'wait_for_update': 500
             });
@@ -238,7 +238,16 @@ export default function RootLayout({
             });
           `}
         </Script>
+
+        {/* Google AdSense — Auto Ads (shows ads sitewide automatically) */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6889606875840958"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
 }
+
